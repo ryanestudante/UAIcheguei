@@ -1,7 +1,3 @@
-Aqui está uma sugestão completa e bem estruturada de README.md para o seu projeto UAI CHEGUEI.
-
-Você pode copiar o código abaixo e salvar em um arquivo chamado README.md na raiz do seu projeto.
-
 🍔 UAI CHEGUEI — Cardápio & Delivery
 UAI CHEGUEI é uma aplicação web completa (Single Page Application - SPA) desenvolvida em arquivo único (HTML/CSS/JS) que simula um ecossistema completo de delivery de comida. O sistema possui diferentes níveis de acesso, oferecendo funcionalidades específicas para Clientes, Restaurantes e Administradores.
 
