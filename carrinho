@@ -106,3 +106,259 @@
 
 </body>
 </html>
+
+=================================================================================================================================================================================================================================body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #112221;
+    background-color: #F5F5F5;
+}
+
+h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.limpa {
+    clear: both;
+}
+
+.topo {
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #FF6B00;
+    padding: 15px 0;
+}
+
+.topo .logo {
+    float: left;
+    width: 90px;
+    height: 90px;
+    background-color: #FF6B00;
+    border-radius: 50%;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 25px;
+}
+
+.topo .entrega {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.topo .entrega span {
+    display: block;
+    font-size: 13px;
+}
+
+.topo .entrega .rua {
+    color: #FF6B00;
+    font-weight: bold;
+}
+
+.topo .busca {
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.topo .busca input {
+    width: 260px;
+    padding: 10px 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 20px;
+    background-color: #F0F0F0;
+}
+
+.topo .acoes {
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.topo .acoes a {
+    display: inline-block;
+    margin-left: 25px;
+    text-decoration: none;
+    color: #112221;
+    font-size: 13px;
+}
+
+.topo .avatar {
+    float: right;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #FCD9AB;
+    margin-top: 10px;
+    border: 2px solid #FF6B00;
+}
+
+.menu-categorias {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 10px 0;
+}
+
+.menu-categorias ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-categorias li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.menu-categorias a {
+    text-decoration: none;
+    color: #112221;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menu-categorias a:hover {
+    color: #FF6B00;
+}
+
+.titulo-secao {
+    color: #FF6B00;
+    font-size: 22px;
+    border-bottom: 3px solid #FF6B00;
+    padding-bottom: 8px;
+    margin-top: 35px;
+}
+
+.botao-secundario {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: #FF6B00;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px 28px;
+    border: 2px solid #FF6B00;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.carrinho-conteudo .coluna-itens {
+    float: left;
+    width: 62%;
+}
+
+.carrinho-conteudo .coluna-resumo {
+    float: right;
+    width: 34%;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.item-carrinho {
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.item-carrinho .foto {
+    float: left;
+    width: 100px;
+    height: 80px;
+    background-color: #FCD9AB;
+    border-radius: 10px;
+}
+
+.item-carrinho .info {
+    float: left;
+    margin-left: 20px;
+    width: 55%;
+}
+
+.item-carrinho .preco {
+    float: right;
+    text-align: right;
+    color: #FF6B00;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.linha-resumo {
+    padding: 8px 0;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.linha-resumo span.valor {
+    float: right;
+    font-weight: bold;
+}
+
+.linha-total {
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF6B00;
+}
+
+.linha-total span.valor {
+    float: right;
+}
+
+.caixa-entrega {
+    background-color: #112221;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #FF6B00;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.rodape {
+    background-color: #112221;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+    .carrinho-conteudo .coluna-itens,
+    .carrinho-conteudo .coluna-resumo {
+        float: none;
+        width: 100%;
+    }
+
+    .topo .busca input {
+        width: 150px;
+    }
+}
