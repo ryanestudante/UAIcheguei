@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>UAIcheguei - Meu carrinho</title>
+    <link rel="stylesheet" type="text/css" href="carrinho.css">
+</head>
+<body>
+
+    <div class="topo">
+        <div class="container">
+            <div class="logo">UAI<br>CHEGUEI</div>
+            <div class="entrega">
+                <span>Entregar em</span>
+                <span><strong>Minha Casa</strong></span>
+                <span class="rua">Rua -------</span>
+            </div>
+            <div class="busca">
+                <input type="text" placeholder="O que você quer comer hoje?">
+            </div>
+            <div class="avatar"></div>
+            <div class="acoes">
+                <a href="index.html">Início</a>
+                <a href="carrinho.html" style="color:#FF6B00;">Carrinho</a>
+                <a href="favoritos.html">Favoritos</a>
+            </div>
+            <div class="limpa"></div>
+        </div>
+    </div>
+
+    <div class="menu-categorias">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Restaurantes</a></li>
+                <li><a href="#">Lanches</a></li>
+                <li><a href="#">Pizza</a></li>
+                <li><a href="#">Japonesa</a></li>
+                <li><a href="#">Açaí</a></li>
+                <li><a href="#">Doces</a></li>
+                <li><a href="#">Promoções</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h2 class="titulo-secao">Meu carrinho</h2>
+        <p>Revise os itens e continue o pagamento &nbsp; <a href="index.html" class="botao-secundario">+ Adicionar mais</a></p>
+
+        <div class="carrinho-conteudo">
+
+            <div class="coluna-itens">
+
+                <div class="item-carrinho">
+                    <div class="foto"></div>
+                    <div class="info">
+                        <h3>X-Bacon</h3>
+                        <p>Acompanha batatas fritas</p>
+                    </div>
+                    <div class="preco">R$ 29,90</div>
+                    <div class="limpa"></div>
+                </div>
+
+                <div class="item-carrinho">
+                    <div class="foto"></div>
+                    <div class="info">
+                        <h3>Batata frita</h3>
+                        <p>Batata frita, tamanho P</p>
+                    </div>
+                    <div class="preco">R$ 7,99</div>
+                    <div class="limpa"></div>
+                </div>
+
+            </div>
+
+            <div class="coluna-resumo">
+
+                <h3>Resumo do seu pedido</h3>
+
+                <div class="linha-resumo">Subtotal <span class="valor">R$ 29,90</span></div>
+                <div class="linha-resumo">Taxa de entrega <span class="valor">R$ 9,99</span></div>
+                <div class="linha-total">Total <span class="valor">R$ 39,89</span></div>
+
+                <div class="caixa-entrega">
+                    <strong>Entrega estimada</strong><br>
+                    <span style="color:#FF6B00; font-size:20px;">15-25 minutos</span><br>
+                    Para sua região
+                </div>
+
+                <p style="text-align:center;">
+                    <a href="pagamento.html" class="botao" style="width:100%;">Finalizar compra</a>
+                </p>
+
+            </div>
+
+            <div class="limpa"></div>
+
+        </div>
+
+    </div>
+
+    <div class="rodape">
+        <p>UAIcheguei &copy; 2026 - Projeto escolar FDW1</p>
+    </div>
+
+</body>
+</html>
