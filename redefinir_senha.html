@@ -24,6 +24,7 @@
         box-sizing: border-box;
         font-size: 1em;
         max-width:100%;
+        cursor: pointer;
        
       }
 
@@ -39,6 +40,7 @@
 
 
       .caixa-branca{
+        position: relative;
         background-color: white;
         padding: 10px;
         border-radius: 20px;
@@ -65,8 +67,23 @@
         margin-bottom: 25px;
         cursor:pointer;
       }
+      .buton-entrar:active{
+        transform: translateY(4px);
+        box-shadow: 0px 0px 0px 0px
+        cursor:pointer;
+      }
       .laranja {
         color:  #e15800;
+        }
+        .voltar{
+          position:absolute;
+          left: 15px;
+          top: 20px;
+          color: #333;
+          text-decoration:none;
+          font-weight:bold;
+          font-size: 0.9;
+          transition: color 0.2;
         }
        
         .esqueci{
@@ -82,8 +99,9 @@
          
         }
         a:hover{
-          color: blue;
+          color: #e15800;
         }
+        
       </style>
       <style>
         body {
@@ -112,7 +130,7 @@
     <body>
            <div class="container">
             <div class="caixa-branca">
-             
+             <a href="loguin.html" class="voltar"> ← Voltar</a>
         <h1 style="color: black;" >Redefinir Senha  </h1>
          <p style="color: #D3D3D3;" >Ao UAIcheguei, o melhor app<br>de comida de Minas Gerais </p>
            
@@ -139,74 +157,3 @@
     </div>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
