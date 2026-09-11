@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!--Para usar as letras poppins-->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ 
+  <title>Uai Cheguei</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body bgcolor="#F27029">
+
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html">  
+      <img src="img/LOGOUAICHEGUEI.png" class="logo" alt="Uai Cheguei" style="cursor: pointer;" >
+	<a/>	
+      <div class="location">
+        📍 Entregar em <strong>Meu endereço</strong>
+      </div>
+
+      <nav class="nav">
+          <strong><a href="index.html">Início</a></strong>
+          <a href="index.html">Pedidos</a>
+        <a href="index.html">Entrar</a>
+          <a href="Perfil.html">Perfil</a> 
+      </nav>
+    </div>
+  </header>
+
+  <main>
+   
+   
+   <section class="hero">
+  <div class="container hero-content">
+
+    <div class="hero-text">
+      <h1>Comida deliciosa na sua porta 🍔</h1>
+      <p>Escolha seu restaurante favorito e peça agora.</p>
+
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Buscar restaurante ou prato...">
+        
+          <button>Buscar</button>
+      </div>
+    </div>
+      
+     
+    </div>
+
+  </div>
+</section>
+      
+
+ 
+
+</div>
+    </section>
+
+
+            <!--CATEGORIAS-->
+    <section class="categories container">
+      <h2>O que você quer comer?</h2>
+
+      <div class="category-list">
+
+        <button class="category">
+          <span>🍔</span>
+          Hambúrguer
+        </button>
+
+        <button class="category">
+          <span>🍕</span>
+          Pizza
+        </button>
+
+        <button class="category">
+          <span>🍣</span>
+          Japonesa
+        </button>
+
+        <button class="category">
+          <span>🍗</span>
+          Frango
+        </button>
+
+        <button class="category">
+          <span>🥗</span>
+          Saudável
+        </button>
+          
+         <button class="category">
+          <span>🫐</span>
+          Açaí
+        </button>
+          <button class="category">
+          <span>🍦</span>
+          Doces
+        </button>
+          
+           <button class="category">
+          <span>🏷️</span>
+          Promoções
+        </button>
+
+      </div>
+    </section>
+
+
+    <!-- RESTAURANTES -->
+    <section class="restaurants container">
+
+      <div class="section-header">
+        <h2>Restaurantes perto de você</h2>
+        <a href="#">Ver todos</a>
+      </div>
+
+      <div class="restaurant-grid">
+
+        <article class="restaurant-card">
+
+          <div class="restaurant-image">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mZNDf2uI5FLlVpe3cggQuv9CbAXMPujZFevreQbGSQ&s=10"
+              alt="Hambúrguer"
+               width="50px"
+               height="50px" > 
+                                
+          
+          </div>
+
+          <div class="restaurant-info">
+            <h3>Burger King</h3>
+
+            <div class="rating">
+              ⭐ 4.8
+              <span>• 25-35 min</span>
+            </div>
+
+            <p>Hambúrguer • Lanches</p>
+
+            <span class="delivery">
+              🚴 Entrega grátis
+            </span>
+          </div>
+
+        </article>
+
+
+        <article class="restaurant-card">
+
+          <div class="restaurant-image">
+            <img
+              src="https://images.unsplash.com/photo-1579751626657-72bc17010498"
+              alt="Pizza"
+            >
+
+            <span class="discount">15% OFF</span>
+          </div>
+
+          <div class="restaurant-info">
+            <h3>Pizza House</h3>
+
+            <div class="rating">
+              ⭐ 4.7
+              <span>• 30-40 min</span>
+            </div>
+
+            <p>Pizza • Italiana</p>
+
+            <span class="delivery">
+              🚴 Entrega grátis
+            </span>
+          </div>
+
+        </article>
+
+
+        <article class="restaurant-card">
+
+          <div class="restaurant-image">
+            <img
+              src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c"
+              alt="Sushi"
+            >
+          </div>
+
+          <div class="restaurant-info">
+            <h3>Sushi San</h3>
+
+            <div class="rating">
+              ⭐ 4.9
+              <span>• 20-30 min</span>
+            </div>
+
+            <p>Japonesa • Sushi</p>
+
+            <span class="delivery">
+              🚴 R$ 5,90 entrega
+            </span>
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- CARRINHO -->
+   
+
+      <div class="cart-footer">
+
+        <div class="cart-total">
+          
+        </div>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 UAI CHEGUEI. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
