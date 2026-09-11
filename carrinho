@@ -1,175 +1,108 @@
-
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello, World!</title>
-    <style>
-      .container{
-        display: flex;
-        justify-content:space-between;
-        align-items: flex-start;
-      }
-      body{
-        background-image: url(https://uploads.onecompiler.io/44g7ujbgc/1787313298296/ChatGPT%20Image%2021%20de%20ago.%20de%202026,%2008_45_55.png);
-       
-      body}
-       .campo-form{
-        width:100%;
-        padding: 12px 20px;
-        margin-bottom: 15px;
-        border: 2px solid #666;
-        border-radius: 25px;
-        box-sizing: border-box;
-        font-size: 1em;
-        max-width:100%;
-       
-      }
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>UAIcheguei - Meu carrinho</title>
+    <link rel="stylesheet" type="text/css" href="carrinho.css">
+</head>
+<body>
 
-
-
-
-
-
-
-
-
-
-
-
-      .caixa-branca{
-        background-color: white;
-        padding: 10px;
-        border-radius: 20px;
-        width: 500px;
-        text-align: center;
-        color:999;
-        font-size: 0.9em;
-        margin-bottom: 25px;
-        height: 600px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-       
-        left: 10%;
-        transform: translate(120px, 60px);
-       
-      }
-       .uai_imagem{
-        max-width:700px;
-        display: flex;
-        margin-bottom: 25px;
-        flex-direction: column;
-        align-items: center;
-        float: right;
-        z-index: 10;
-       
-      }
-        .caixa-marrom{
-        background-color: #4f3011;
-        padding:1px;
-        border-radius: 20px;
-        width: 450px;
-        text-align: center;
-        color:white;
-        font-size: 0.9em;
-        margin-bottom: 25%;
-        font-size:22px;
-        position:relative;
-        z-index: 20;
-        }
-
-
-
-
-
-
-
-
-        .buton-entrar{
-        background-color: #e15800;
-        padding: 1%;
-        border-radius: 20px;
-        width: 100%;
-        text-align: center;
-        color:black;
-        margin-bottom: 25px;
-        cursor:pointer;
-      }
-      .laranja {
-        color:  #e15800;
-        }
-       
-        .esqueci{
-          color: black;
-          cursor:pointer;
-          display:none;
-          text-decoration: none;
-          font-size: 1.2em;
-          display: block;
-          margin-top: 10px;
-          text-decoration:underline;
-          font-size:1.25em;
-         
-        }
-        a:hover{
-          color: blue;
-        }
-      </style>
-      <style>
-        body {
-        background-color: #e15800;
-        background-image: url(onecompiler.io/44g7ujbgc/1783699274529/C%C3%B3pia%20de%20UAIcheguei%20(1).png)
-        background-size: cover;
-        background-position: center;
-        font-family:arial;
-        }
-        .plano-de-fundo{
-        max-width:100%;
-        display: flex;
-        align-items: center;
-        position: fixed;
-      }
-
-
-
-
-
-
-
-
-
-
-       </style>
-      </head>
-    <body>
-           <div class="container">
-            <div class="caixa-branca">
-              <h1 style="color: #e15800;" >Bem vindo(a)!</h1>
-        <h1 style="color: black;" >Crie sua conta </h1>
-         <p style="color: #D3D3D3;" >Ao UAIcheguei, o melhor app<br>de comida de Minas Gerais </p>
-          <form>
-            <input type="text" class="campo-form" placeholder="CPF:">
-            <br>
-            <input type="text" class="campo-form" placeholder="Email:">
-            <br>
-            <input type="password" class="campo-form" placeholder="Senha:">
-            <br>
-            <input type="password" class="campo-form" placeholder="Confirme a senha:">
-            <br>
-            <button type="button" class="buton-entrar"><h2>Entrar<h2></button>
-            <a href="uairedefinir.html" class="esqueci"><p>Esqueci a senha:<p></a>
-            </form>
-           
+    <div class="topo">
+        <div class="container">
+            <div class="logo">UAI<br>CHEGUEI</div>
+            <div class="entrega">
+                <span>Entregar em</span>
+                <span><strong>Minha Casa</strong></span>
+                <span class="rua">Rua -------</span>
             </div>
-    <div class="uai_imagem">
-    <img align="right" width="800px" src="https://uploads.onecompiler.io/44g7ujbgc/1787314084228/C%C3%B3pia_de_UAIcheguei__2_-removebg-preview.png">
-  <div class="caixa-marrom">
-
-
-
-
- 
-    <p>O melhor lugar para se pedir comida<div class="laranja">em Minas</div></p>
-   
+            <div class="busca">
+                <input type="text" placeholder="O que você quer comer hoje?">
+            </div>
+            <div class="avatar"></div>
+            <div class="acoes">
+                <a href="index.html">Início</a>
+                <a href="carrinho.html" style="color:#FF6B00;">Carrinho</a>
+                <a href="favoritos.html">Favoritos</a>
+            </div>
+            <div class="limpa"></div>
+        </div>
     </div>
-  </body>
+
+    <div class="menu-categorias">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Restaurantes</a></li>
+                <li><a href="#">Lanches</a></li>
+                <li><a href="#">Pizza</a></li>
+                <li><a href="#">Japonesa</a></li>
+                <li><a href="#">Açaí</a></li>
+                <li><a href="#">Doces</a></li>
+                <li><a href="#">Promoções</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h2 class="titulo-secao">Meu carrinho</h2>
+        <p>Revise os itens e continue o pagamento &nbsp; <a href="index.html" class="botao-secundario">+ Adicionar mais</a></p>
+
+        <div class="carrinho-conteudo">
+
+            <div class="coluna-itens">
+
+                <div class="item-carrinho">
+                    <div class="foto"></div>
+                    <div class="info">
+                        <h3>X-Bacon</h3>
+                        <p>Acompanha batatas fritas</p>
+                    </div>
+                    <div class="preco">R$ 29,90</div>
+                    <div class="limpa"></div>
+                </div>
+
+                <div class="item-carrinho">
+                    <div class="foto"></div>
+                    <div class="info">
+                        <h3>Batata frita</h3>
+                        <p>Batata frita, tamanho P</p>
+                    </div>
+                    <div class="preco">R$ 7,99</div>
+                    <div class="limpa"></div>
+                </div>
+
+            </div>
+
+            <div class="coluna-resumo">
+
+                <h3>Resumo do seu pedido</h3>
+
+                <div class="linha-resumo">Subtotal <span class="valor">R$ 29,90</span></div>
+                <div class="linha-resumo">Taxa de entrega <span class="valor">R$ 9,99</span></div>
+                <div class="linha-total">Total <span class="valor">R$ 39,89</span></div>
+
+                <div class="caixa-entrega">
+                    <strong>Entrega estimada</strong><br>
+                    <span style="color:#FF6B00; font-size:20px;">15-25 minutos</span><br>
+                    Para sua região
+                </div>
+
+                <p style="text-align:center;">
+                    <a href="pagamento.html" class="botao" style="width:100%;">Finalizar compra</a>
+                </p>
+
+            </div>
+
+            <div class="limpa"></div>
+
+        </div>
+
+    </div>
+
+    <div class="rodape">
+        <p>UAIcheguei &copy; 2026 - Projeto escolar FDW1</p>
+    </div>
+
+</body>
 </html>
