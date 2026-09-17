@@ -2,825 +2,468 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UAIcheguei - Informações do Usuário</title>
 
 <style>
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background-color:#fff8f3;
+    font-family:Arial;
+    background:#fffaf7;
     color:#222;
 }
 
-/* CABEÇALHO */
-
-.cabecalho{
-    width:100%;
+#topo{
     height:140px;
-    background-color:white;
-    border-bottom:1px solid #e5e5e5;
+    background:white;
+    border-bottom:1px solid #ddd;
 }
 
-.cabecalho-conteudo{
-    width:100%;
-    height:100%;
+#cabecalho{
+    height:140px;
     display:flex;
     align-items:center;
     padding:0 45px;
-    gap:28px;
 }
 
-.logo-area{
-    display:flex;
-    align-items:center;
-}
-
-.logo{
+#logo{
     width:130px;
     height:130px;
-    object-fit:contain;
 }
 
-.divisao{
-    width:2px;
-    height:82px;
-    background-color:#e2e2e2;
+#linha{
+    height:80px;
+    border-left:2px solid #ddd;
+    margin-left:25px;
+    margin-right:25px;
 }
 
-/* ENDEREÇO */
-
-.endereco{
-    min-width:185px;
-    display:flex;
-    align-items:center;
-    gap:12px;
+#endereco{
+    width:180px;
 }
 
-.icone-local{
-    font-size:30px;
-    color:#ff6500;
-}
-
-.texto-endereco{
-    display:flex;
-    flex-direction:column;
-    gap:2px;
-}
-
-.texto-endereco span{
+#endereco p{
+    margin:4px;
     font-size:13px;
-    font-weight:bold;
 }
 
-.texto-endereco strong{
+#endereco strong{
     font-size:20px;
 }
 
-.texto-endereco small{
+#endereco .rua{
     color:#ff6500;
-    font-size:13px;
     font-weight:bold;
 }
 
-/* PESQUISA */
-
-.pesquisa{
+#pesquisa{
     width:390px;
-    height:70px;
-    margin-left:70px;
+    height:55px;
+    margin-left:40px;
     padding:0 20px;
-    display:flex;
-    align-items:center;
     border:2px solid #222;
-    border-radius:40px;
-    background-color:#fafafa;
-}
-
-.icone-pesquisa{
-    font-size:28px;
-    margin-right:15px;
-}
-
-.pesquisa input{
-    width:100%;
-    border:none;
-    outline:none;
-    background-color:transparent;
+    border-radius:30px;
     font-size:16px;
 }
 
-.pesquisa input::placeholder{
-    color:#777;
+#acoes{
+    display:flex;
+    gap:25px;
+    margin-left:30px;
 }
-
-/* AÇÕES */
 
 .acao{
-    min-width:75px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    gap:4px;
-    cursor:pointer;
+    text-align:center;
+    font-size:13px;
 }
 
-.icone-acao{
-    font-size:36px;
-}
-
-.acao span:last-child{
-    font-size:15px;
+.icone{
+    display:block;
+    font-size:30px;
 }
 
 .acao:hover{
     color:#ff6500;
 }
 
-/* PERFIL */
-
-.perfil{
-    width:78px;
-    height:78px;
-    border-radius: 50%;
+#perfil{
+    width:70px;
+    height:70px;
+    margin-left:50px;
+    border-radius:50%;
     overflow:hidden;
-    border:2px solid #eee;
-    margin-left:130px;
 }
 
-.perfil img{
+#perfil img{
     width:100%;
     height:100%;
-    object-fit:cover;
 }
 
-/* MENU */
-
-.menu{
-    width:100%;
-    height:57px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background-color:white;
+#menu{
+    height:55px;
+    background:white;
     border-bottom:2px solid #ff6500;
+    text-align:center;
+    padding-top:2px;
 }
 
-.menu-conteudo{
-    width:91%;
-    max-width:1110px;
-    height:54px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    background-color:white;
-    
-}
-
-.menu-item{
-    height:40px;
-    padding:0 19px;
-    display:flex;
-    align-items:center;
-    gap:10px;
+#menu a{
+    display:inline-block;
+    padding:18px;
     color:#222;
     text-decoration:none;
-    border-right:1px solid #ccc;
-    transition:.2s;
+    font-size:14px;
+    font-weight:bold;
+    border-right:1px solid #ddd;
 }
 
-.menu-item:last-child{
-    border-right:none;
-}
-
-.menu-item:hover,.menu-item.ativo{
+#menu a:hover{
     color:#ff6500;
 }
 
-.menu-icone{
-    font-size:21px;
+#principal{
+    width:1050px;
+    margin:20px auto;
 }
 
-.menu-item span:last-child{
-    font-size:14px;
-    font-weight:bold;
-}
-
-/* PRINCIPAL */
-
-.principal{
-    min-height:calc(100vh - 197px);
-    padding:0 40px 40px;
-    position:relative;
-    overflow:hidden;
-    background-color:#fffaf7;
-}
-
-.principal::before{
-    content:"";
-    position:absolute;
-    width:430px;
-    height:430px;
-    right:-150px;
-    bottom:-260px;
-    border-radius:50%;
-    background-color:#ffd9c1;
-}
-
-.principal::after{
-    content:"";
-    position:absolute;
-    width:270px;
-    height:270px;
-    left:-150px;
-    bottom:-100px;
-    border-radius:50%;
-    background-color:#ffd9c1;
-}
-
-/* TÍTULO */
-
-.titulo-pagina{
-    width:100%;
-    max-width:1050px;
-    height:60px;
-    margin:auto;
+#titulo{
     display:flex;
     align-items:center;
-    gap:12px;
-    position:relative;
-    z-index:2;
+    margin-bottom:15px;
 }
 
-.titulo-icone{
-    width:43px;
-    height:43px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:50%;
-    background-color:#ff6500;
+#titulo-icone{
+    width:45px;
+    height:45px;
+    background:#ff6500;
     color:white;
+    border-radius:50%;
+    text-align:center;
+    line-height:45px;
     font-size:25px;
+    margin-right:12px;
 }
 
-.titulo-pagina h1{
+#titulo h1{
     font-size:21px;
-    margin-bottom:2px;
 }
 
-.titulo-pagina p{
-    font-size:12px;
+#titulo p{
     color:#777;
+    font-size:12px;
+    margin-top:4px;
 }
 
-/* FORMULÁRIO */
-
-.formulario{
-    width:100%;
-    max-width:1050px;
-    margin:auto;
-    padding:25px 12px;
-    position:relative;
-    z-index:2;
-    background-color:white;
-    border-radius:30px;
-    box-shadow:0 8px 30px rgba(0,0,0,.04);
+#formulario{
+    background:white;
+    padding:25px;
+    border-radius:25px;
+    border:1px solid #ddd;
 }
 
 .secao{
-    width:100%;
-}
-
-.titulo-secao{
-    width:100%;
-    height:39px;
     display:flex;
     align-items:center;
-    gap:12px;
-    padding-left:8px;
-    margin-bottom:7px;
+    color:#ff6500;
     border-bottom:2px solid #ff6500;
+    padding:8px;
+    margin-bottom:15px;
 }
 
-.titulo-secao span{
-    color:#ff6500;
-    font-size:28px;
+.secao span{
+    font-size:24px;
+    margin-right:10px;
 }
 
-.titulo-secao h2{
-    color:#ff6500;
-    font-size:20px;
+.secao h2{
+    font-size:19px;
 }
-
-/* CAMPOS */
 
 .linha{
-    width:100%;
     display:flex;
     gap:18px;
-    padding:0 4px;
+    margin-bottom:15px;
 }
 
 .campo{
     display:flex;
     flex-direction:column;
-    gap:5px;
 }
 
 .campo label{
-    color:#aaa5a5;
-    font-size:16px;
+    color:#777;
+    font-size:14px;
     font-weight:bold;
-    padding-left:3px;
+    margin-bottom:5px;
 }
 
 .campo input{
     height:36px;
     padding:0 10px;
-    border:2px solid #afa7a7;
-    border-radius:12px;
-    outline:none;
-    background-color:white;
-    color:#333;
-    font-size:16px;
-    transition:.2s;
-}
-
-.campo input::placeholder{
-    color:#aaa5a5;
-}
-
-.campo input:hover{
-    border-color:#888;
+    border:2px solid #aaa;
+    border-radius:10px;
+    font-size:14px;
 }
 
 .campo input:focus{
     border-color:#ff6500;
-    box-shadow:0 0 0 3px rgba(255,101,0,.1);
+    outline:none;
 }
 
-/* TAMANHOS */
-
-.campo-nome{
+.nome{
     width:38%;
 }
 
-.campo-data{
+.data{
     width:22%;
 }
 
-.campo-cpf{
+.cpf{
     width:38%;
 }
 
 .usuario{
     width:38%;
-    margin-top:17px;
+    margin-bottom:20px;
 }
 
-.entrega{
-    margin-top:20px;
+.endereco{
+    width:55%;
 }
 
-.campo-endereco{
-    width:45%;
-}
-
-.campo-email{
-    width:38%;
+.email{
+    width:43%;
 }
 
 .contato{
     width:38%;
-    margin-top:17px;
 }
 
-/* BOTÕES */
-
 .botoes{
-    width:100%;
+    text-align:right;
     margin-top:25px;
-    display:flex;
-    justify-content:flex-end;
-    gap:12px;
-    padding:0 4px;
 }
 
 .botao{
-    height:44px;
-    padding:0 25px;
-    border:none;
+    padding:12px 25px;
+    border:0;
     border-radius:25px;
-    font-size:15px;
     font-weight:bold;
-    cursor:pointer;
-    transition:.2s;
 }
 
-
-.cancelar{
-    background-color:#eee;
+#cancelar{
+    background:#eee;
     color:#555;
 }
 
-.cancelar:hover{
-    background-color:#ddd;
-}
-
-.salvar{
-    background-color:#ff6500;
+#salvar{
+    background:#ff6500;
     color:white;
-    box-shadow:0 5px 15px rgba(255,101,0,.2);
 }
 
-.salvar:hover{
-    background-color:#e95700;
-    transform:translateY(-2px);
+#salvar:hover{
+    background:#e95700;
 }
-
-/* TABLET */
 
 @media(max-width:1100px){
-
-    .cabecalho-conteudo{
-        padding:0 20px;
-        gap:15px;
+    #principal{
+        width:90%;
     }
 
-    .logo{
-        width:105px;
-        height:105px;
+    #pesquisa{
+        width:280px;
     }
 
-    .endereco{
-        min-width:150px;
-    }
-
-    .texto-endereco strong{
-        font-size:17px;
-    }
-
-    .pesquisa{
-        width:300px;
-    }
-
-    .menu-item{
-        padding:0 10px;
-    }
-
-    .principal{
-        padding-left:25px;
-        padding-right:25px;
+    #perfil{
+        margin-left:20px;
     }
 }
 
-/* TABLET PEQUENO */
-
-@media(max-width:850px){
-
-    .cabecalho{
+@media(max-width:800px){
+    #topo,
+    #cabecalho{
         height:auto;
     }
 
-    .cabecalho-conteudo{
-        min-height:100px;
-        height:auto;
+    #cabecalho{
+        padding:15px;
         flex-wrap:wrap;
-        padding:10px 20px;
     }
 
-    .logo{
-        width:90px;
-        height:90px;
-    }
-
-    .divisao{
-        display:none;
-    }
-
-    .endereco{
-        flex:1;
-    }
-
-    .pesquisa{
-        order:5;
+    #pesquisa{
         width:100%;
-        height:50px;
-        margin:0 0 5px;
+        margin:15px 0;
     }
 
-    .acao span:last-child{
+    #linha{
         display:none;
     }
 
-    .perfil{
-        width:60px;
-        height:60px;
+    #acoes{
+        margin-left:auto;
     }
 
-    .menu{
-        overflow-x:auto;
-        justify-content:flex-start;
+    #perfil{
+        margin-left:20px;
     }
 
-    .menu-conteudo{
-        min-width:850px;
-    }
-
-    .linha{
-        flex-wrap:wrap;
-    }
-
-    .campo-nome,
-    .campo-data,
-    .campo-cpf,
-    .campo-endereco,
-    .campo-email{
-        width:48%;
-    }
-}
-
-/* CELULAR */
-
-@media(max-width:600px){
-
-    .principal{
-        padding:0 12px 30px;
-    }
-
-    .titulo-pagina{
-        height:70px;
-    }
-
-    .titulo-pagina h1{
-        font-size:18px;
-    }
-
-    .titulo-pagina p{
-        font-size:11px;
-    }
-
-    .formulario{
-        padding:20px 10px;
-        border-radius:22px;
+    #menu{
+        overflow:auto;
+        white-space:nowrap;
     }
 
     .linha{
-        flex-direction:column;
-        gap:15px;
+        display:block;
     }
 
-    .campo-nome,
-    .campo-data,
-    .campo-cpf,
-    .campo-endereco,
-    .campo-email,
+    .nome,
+    .data,
+    .cpf,
     .usuario,
+    .endereco,
+    .email,
     .contato{
         width:100%;
-    }
-
-    .titulo-secao h2{
-        font-size:18px;
-    }
-
-    .botoes{
-        flex-direction:column;
-    }
-
-    .botao{
-        width:100%;
-    }
-
-    .texto-endereco strong{
-        font-size:15px;
-    }
-
-    .texto-endereco span,
-    .texto-endereco small{
-        font-size:11px;
+        margin-bottom:15px;
     }
 }
-
 </style>
 </head>
 
 <body>
 
-<header class="cabecalho">
+<div id="topo">
 
-    <div class="cabecalho-conteudo">
+<div id="cabecalho">
 
-        <div class="logo-area">
-            <img src="imagem/logo.png" alt="Logo UAIcheguei" class="logo">
-        </div>
+<img id="logo" src="imagem/logo.png" alt="Logo UAIcheguei">
 
-        <div class="divisao"></div>
+<div id="linha"></div>
 
-        <div class="endereco">
+<div id="endereco">
+<p>Entregar em</p>
+<strong>Minha Casa</strong>
+<p class="rua">Rua ----------------</p>
+</div>
 
-            <div class="icone-local">
-                ♧
-            </div>
+<input id="pesquisa" type="text" placeholder="O que você quer comer hoje?">
 
-            <div class="texto-endereco">
-                <span>Entregar em</span>
-                <strong>Minha Casa</strong>
-                <small>Rua ----------------</small>
-            </div>
+<div id="acoes">
 
-        </div>
+<div class="acao">
+<span class="icone">♡</span>
+Favoritos
+</div>
 
-        <div class="pesquisa">
+<div class="acao">
+<span class="icone">🛒</span>
+Carrinho
+</div>
 
-            <span class="icone-pesquisa">
-                ⌕
-            </span>
+</div>
 
-            <input type="text" placeholder="O que você quer comer hoje?">
+<div id="perfil">
+<img src="imagem/perfil.jpg" alt="Perfil">
+</div>
 
-        </div>
+</div>
 
-        <div class="acao">
+</div>
 
-            <span class="icone-acao">
-                ♡
-            </span>
+<div id="menu">
 
-            <span>
-                Favoritos
-            </span>
+<a href="index.html">⌂ Início</a>
+<a href="#">Restaurantes</a>
+<a href="#">Lanches</a>
+<a href="#">Pizza</a>
+<a href="#">Japonesa</a>
+<a href="#">Açaí</a>
+<a href="#">Doces</a>
+<a href="#">Promoções</a>
 
-        </div>
+</div>
 
-        <div class="acao">
+<div id="principal">
 
-            <span class="icone-acao">
-                🛒
-            </span>
+<div id="titulo">
 
-            <span>
-                Carrinho
-            </span>
+<div id="titulo-icone">♙</div>
 
-        </div>
+<div>
+<h1>Informações de usuário</h1>
+<p>Mantenha seus dados sempre atualizados para uma melhor experiência.</p>
+</div>
 
-        <div class="perfil">
+</div>
 
-            <img src="imagem/perfil.jpg" alt="Foto do perfil">
+<div id="formulario">
 
-        </div>
+<div class="secao">
+<span>♙</span>
+<h2>Dados pessoais</h2>
+</div>
 
-    </div>
+<div class="linha">
 
-</header>
+<div class="campo nome">
+<label>Nome completo</label>
+<input type="text" placeholder="Digite seu nome completo">
+</div>
 
+<div class="campo data">
+<label>Data de nascimento</label>
+<input type="text" placeholder="xx/xx/xxxx">
+</div>
 
-<nav class="menu">
+<div class="campo cpf">
+<label>CPF</label>
+<input type="text" placeholder="000.000.000-00">
+</div>
 
-    <div class="menu-conteudo">
+</div>
 
-        <a href="#" class="menu-item ativo">
-            <span class="menu-icone">⌂</span>
-            <span>Início</span>
-        </a>
+<div class="campo usuario">
+<label>Nome de usuário</label>
+<input type="text" placeholder="Escolha um nome de usuário">
+</div>
 
-        <a href="#" class="menu-item">
-            <span>Restaurantes</span>
-        </a>
+<div class="secao">
+<span>📍</span>
+<h2>Entrega</h2>
+</div>
 
-        <a href="#" class="menu-item">
-            <span>Lanches</span>
-        </a>
+<div class="linha">
 
-        <a href="#" class="menu-item">
-            <span>Pizza</span>
-        </a>
+<div class="campo endereco">
+<label>Endereço</label>
+<input type="text" placeholder="Estado/cidade/Bairro/Rua/Número da casa">
+</div>
 
-        <a href="#" class="menu-item">
-            <span>Japonesa</span>
-        </a>
+<div class="campo email">
+<label>Email</label>
+<input type="email" placeholder="seuemail@gmail.com">
+</div>
 
-        <a href="#" class="menu-item">
-            <span>Açaí</span>
-        </a>
+</div>
 
-        <a href="#" class="menu-item">
-            <span>Doces</span>
-        </a>
+<div class="campo contato">
+<label>Contato</label>
+<input type="text" placeholder="(00) 0000-0000">
+</div>
 
-        <a href="#" class="menu-item">
-            <span>Promoções</span>
-        </a>
+<div class="botoes">
 
-    </div>
+<button class="botao" id="cancelar">Cancelar</button>
+<button class="botao" id="salvar">Salvar alterações</button>
 
-</nav>
+</div>
 
+</div>
 
-<main class="principal">
-
-    <div class="titulo-pagina">
-
-        <div class="titulo-icone">
-            ♙
-        </div>
-
-        <div>
-            <h1>Informações de usuário</h1>
-            <p>Mantenha seus dados sempre atualizados para uma melhor experiência.</p>
-        </div>
-
-    </div>
-
-
-    <section class="formulario">
-
-        <div class="secao">
-
-            <div class="titulo-secao">
-                <span>♙</span>
-                <h2>Dados pessoais</h2>
-            </div>
-
-            <div class="linha">
-
-                <div class="campo campo-nome">
-                    <label for="nome">Nome completo</label>
-                    <input type="text" id="nome" placeholder="Digite seu nome completo">
-                </div>
-
-                <div class="campo campo-data">
-                    <label for="data">Data de nascimento</label>
-                    <input type="text" id="data" placeholder="xx/xx/xxxx">
-                </div>
-
-                <div class="campo campo-cpf">
-                    <label for="cpf">CPF</label>
-                    <input type="text" id="cpf" placeholder="000.000.000-00">
-                </div>
-
-            </div>
-
-            <div class="campo usuario">
-                <label for="usuario">Nome de usuário</label>
-                <input type="text" id="usuario" placeholder="Escolha um nome de usuário">
-            </div>
-
-        </div>
-
-
-        <div class="secao entrega">
-
-            <div class="titulo-secao">
-                <span>♧</span>
-                <h2>Entrega</h2>
-            </div>
-
-            <div class="linha">
-
-                <div class="campo campo-endereco">
-                    <label for="endereco">Endereço</label>
-                    <input type="text" id="endereco" placeholder="Estado/cidade/Bairro/Rua/Número da casa">
-                </div>
-
-                <div class="campo campo-email">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="seuemail@gmail.com">
-                </div>
-
-            </div>
-
-            <div class="campo contato">
-                <label for="telefone">Contato</label>
-                <input type="tel" id="telefone" placeholder="(00) 0000-0000">
-            </div>
-
-        </div>
-
-
-        <div class="botoes">
-
-            <button type="button" class="botao cancelar">
-                Cancelar
-            </button>
-
-            <button type="button" class="botao salvar">
-                Salvar alterações
-            </button>
-
-        </div>
-
-    </section>
-
-</main>
+</div>
 
 </body>
 </html>
