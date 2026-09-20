@@ -1,1 +1,395 @@
-67
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Uai Cheguei</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header class="cabecalho">
+
+    <div class="topo">
+
+        <a href="index.html">
+            <img src="img/LOGOUAICHEGUEI.png" class="logo" alt="Uai Cheguei">
+        </a>
+
+
+        <div class="endereco">
+
+            📍
+
+            <div>
+                <small>Entregar em</small>
+
+                <strong>Minha Casa</strong>
+
+                <p>Rua A</p>
+            </div>
+
+        </div>
+
+
+        <div class="pesquisa">
+
+            🔍
+
+            <input
+                type="text"
+                placeholder="O que você quer comer hoje?"
+            >
+
+        </div>
+
+
+        <div class="opcao">
+
+            <div class="icone">
+                ♡
+            </div>
+
+            <p>Favoritos</p>
+
+        </div>
+
+
+        <div class="opcao">
+
+            <div class="icone">
+                🛒
+            </div>
+
+            <p>Carrinho</p>
+
+        </div>
+
+
+        <div class="perfil">
+
+            <div class="foto">
+                👤
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="menu">
+
+        <a href="index.html">
+            🏠
+            <span>Início</span>
+        </a>
+
+        <a href="#">
+            🏪
+            <span>Restaurantes</span>
+        </a>
+
+        <a href="#">
+            🍔
+            <span>Lanches</span>
+        </a>
+
+        <a href="#">
+            🍕
+            <span>Pizza</span>
+        </a>
+
+        <a href="#">
+            🍣
+            <span>Japonesa</span>
+        </a>
+
+        <a href="#">
+            🥣
+            <span>Açaí</span>
+        </a>
+
+        <a href="#">
+            🧁
+            <span>Doces</span>
+        </a>
+
+        <a href="#">
+            🏷️
+            <span>Promoções</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+<section class="destaque">
+
+    <div class="texto">
+
+        <h1>
+            Comida deliciosa na sua porta 🍔
+        </h1>
+
+        <p>
+            Escolha seu restaurante favorito e peça agora.
+        </p>
+
+    </div>
+
+
+    <div class="ofertas">
+
+        <h2>
+            🔥 Ofertas de hoje
+        </h2>
+
+        <p>
+            Até 30% OFF em restaurantes selecionados!
+        </p>
+
+        <button>
+            Ver ofertas
+        </button>
+
+    </div>
+
+</section>
+
+
+<section class="restaurantes">
+
+    <div class="titulo">
+
+        <h2>
+            Restaurantes perto de você
+        </h2>
+
+        <a href="#">
+            Ver todos
+        </a>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="foto-comida">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mZNDf2uI5FLlVpe3cggQuv9CbAXMPujZFevreQbGSQ&s=10"
+                    alt="Hambúrguer"
+                >
+
+            </div>
+
+            <div class="info">
+
+                <h3>
+                    Burger King
+                </h3>
+
+                <div class="nota">
+
+                    ⭐ 4.8
+
+                    <span>
+                        • 25-35 min
+                    </span>
+
+                </div>
+
+                <p>
+                    Hambúrguer • Lanches
+                </p>
+
+                <span class="entrega">
+                    🚴 Entrega grátis
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="foto-comida">
+
+                <img
+                    src="https://images.unsplash.com/photo-1579751626657-72bc17010498"
+                    alt="Pizza"
+                >
+
+                <span class="promocao">
+                    15% OFF
+                </span>
+
+            </div>
+
+            <div class="info">
+
+                <h3>
+                    Pizza House
+                </h3>
+
+                <div class="nota">
+
+                    ⭐ 4.7
+
+                    <span>
+                        • 30-40 min
+                    </span>
+
+                </div>
+
+                <p>
+                    Pizza • Italiana
+                </p>
+
+                <span class="entrega">
+                    🚴 Entrega grátis
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="foto-comida">
+
+                <img
+                    src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c"
+                    alt="Sushi"
+                >
+
+            </div>
+
+            <div class="info">
+
+                <h3>
+                    Sushi San
+                </h3>
+
+                <div class="nota">
+
+                    ⭐ 4.9
+
+                    <span>
+                        • 20-30 min
+                    </span>
+
+                </div>
+
+                <p>
+                    Japonesa • Sushi
+                </p>
+
+                <span class="entrega">
+                    🚴 Entrega grátis
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="foto-comida">
+
+                <img
+                    src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec"
+                    alt="Frango"
+                >
+
+            </div>
+
+            <div class="info">
+
+                <h3>
+                    Frango Mineiro
+                </h3>
+
+                <div class="nota">
+
+                    ⭐ 4.6
+
+                    <span>
+                        • 25-35 min
+                    </span>
+
+                </div>
+
+                <p>
+                    Frango • Brasileira
+                </p>
+
+                <span class="entrega">
+                    🚴 Entrega grátis
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="oferta">
+
+    <h2>
+        🍔 Oferta especial!
+    </h2>
+
+    <p>
+        Peça seu lanche hoje e aproveite nossas promoções.
+    </p>
+
+    <button>
+        Ver ofertas
+    </button>
+
+</section>
+
+
+<footer>
+
+    <h3>
+        Uai Cheguei
+    </h3>
+
+    <p>
+        Comida boa chegando até você.
+    </p>
+
+    <p>
+        © 2026 Uai Cheguei
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
