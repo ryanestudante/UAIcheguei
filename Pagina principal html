@@ -6,88 +6,368 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Uai Cheguei - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Uai Cheguei</title>
+
+    <link rel="stylesheet" href="Inicio.css">
 
 </head>
 
 <body>
 
-    <div class="container">
 
-        <div class="caixa-branca">
+<header class="cabecalho">
 
-            <h1 class="titulo-laranja">
-                Bem vindo(a)!
-            </h1>
+    <div class="topo">
 
-            <h1 class="titulo-preto">
-                Crie sua conta
-            </h1>
+        <a href="Inicio.html">
+            <img src="img/LOGOUAICHEGUEI.png" class="logo" alt="Uai Cheguei">
+        </a>
 
-            <p class="descricao">
-                Ao UAIcheguei, o melhor app<br>
-                de comida de Minas Gerais
-            </p>
 
-            <form>
+        <div class="endereco">
 
-                <input
-                    type="text"
-                    class="campo-form"
-                    placeholder="CPF:"
-                >
+            📍
 
-                <input
-                    type="text"
-                    class="campo-form"
-                    placeholder="Email:"
-                >
+            <div>
+                <strong>Entregar em</strong>
 
-                <input
-                    type="password"
-                    class="campo-form"
-                    placeholder="Senha:"
-                >
+                <strong>Minha Casa</strong>
 
-                <input
-                    type="password"
-                    class="campo-form"
-                    placeholder="Confirme a senha:"
-                >
-
-                <a href="escolher_area.html" class="buton-entrar">
-                    Entrar
-                </a>
-
-                <a href="redefinir_senha.html" class="esqueci">
-                    Esqueci a senha
-                </a>
-
-            </form>
+                <p>Rua A</p>
+            </div>
 
         </div>
 
-        <div class="uai_imagem">
 
-            <img
-                src="https://uploads.onecompiler.io/44g7ujbgc/1787314084228/C%C3%B3pia_de_UAIcheguei__2_-removebg-preview.png"
-                alt="UAIcheguei"
+        <div class="pesquisa">
+
+            🔍
+
+            <input
+                type="text"
+                placeholder="O que você quer comer hoje?"
             >
 
-            <div class="caixa-marrom">
+        </div>
+
+
+        <div class="opcao">
+
+            <p>♡ Favoritos</p>
+
+        </div>
+
+
+        <div class="opcao">
+
+            <a href="carrinho.html">🛒 Carrinho</a>
+
+        </div>
+
+
+        <div class="perfil">
+
+            <div class="foto">
+                <a href="intranet_cliente.html">👤</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="menu">
+
+        <a href="config.html" class="config">
+            ⚙️
+        </a>
+
+        <a href="Inicio.html">
+            🏠
+            <span>Início</span>
+        </a>
+
+        <a href="#">
+            🏪
+            <span>Restaurantes</span>
+        </a>
+
+        <a href="#">
+            🍔
+            <span>Lanches</span>
+        </a>
+
+        <a href="#">
+            🍕
+            <span>Pizza</span>
+        </a>
+
+        <a href="#">
+            🍣
+            <span>Japonesa</span>
+        </a>
+
+        <a href="#">
+            🥣
+            <span>Açaí</span>
+        </a>
+
+        <a href="#">
+            🧁
+            <span>Doces</span>
+        </a>
+
+        <a href="#">
+            🏷️
+            <span>Promoções</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+<section class="destaque">
+
+    <div class="texto">
+
+        <h1>
+            Comida deliciosa na sua porta 🍔
+        </h1>
+
+        <p>
+            Escolha seu restaurante favorito e peça agora.
+        </p>
+
+    </div>
+
+
+    <div class="ofertas">
+
+        <h2>
+            🔥 Ofertas de hoje
+        </h2>
+
+        <p>
+            Até 30% OFF em restaurantes selecionados!
+        </p>
+
+        <button>
+            Ver ofertas
+        </button>
+
+    </div>
+
+</section>
+
+
+<section class="restaurantes">
+
+    <div class="titulo">
+
+        <h2>
+            Restaurantes perto de você
+        </h2>
+
+        <a href="#">
+            Ver todos
+        </a>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="foto-comida">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mZNDf2uI5FLlVpe3cggQuv9CbAXMPujZFevreQbGSQ&s=10"
+                    alt="Hambúrguer"
+                >
+
+            </div>
+
+            <div class="info">
+
+                <h3>
+                    Burger King
+                </h3>
+
+                <div class="nota">
+
+                    ⭐ 4.8
+
+                    <span>
+                        • 25-35 min
+                    </span>
+
+                </div>
 
                 <p>
-                    O melhor lugar para se pedir comida
-                    <span class="laranja">em Minas</span>
+                    Hambúrguer • Lanches
                 </p>
+
+                <span class="entrega">
+                    🚴 Entrega grátis
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="foto-comida">
+
+                <img
+                    src="https://images.unsplash.com/photo-1579751626657-72bc17010498"
+                    alt="Pizza"
+                >
+
+                <span class="promocao">
+                    15% OFF
+                </span>
+
+            </div>
+
+            <div class="info">
+
+                <h3>
+                    Pizza House
+                </h3>
+
+                <div class="nota">
+
+                    ⭐ 4.7
+
+                    <span>
+                        • 30-40 min
+                    </span>
+
+                </div>
+
+                <p>
+                    Pizza • Italiana
+                </p>
+
+                <span class="entrega">
+                    🚴 Entrega grátis
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="foto-comida">
+
+                <img
+                    src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c"
+                    alt="Sushi"
+                >
+
+            </div>
+
+            <div class="info">
+
+                <h3>
+                    Sushi San
+                </h3>
+
+                <div class="nota">
+
+                    ⭐ 4.9
+
+                    <span>
+                        • 20-30 min
+                    </span>
+
+                </div>
+
+                <p>
+                    Japonesa • Sushi
+                </p>
+
+                <span class="entrega">
+                    🚴 Entrega grátis
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="foto-comida">
+
+                <img
+                    src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec"
+                    alt="Frango"
+                >
+
+            </div>
+
+            <div class="info">
+
+                <h3>
+                    Frango Mineiro
+                </h3>
+
+                <div class="nota">
+
+                    ⭐ 4.6
+
+                    <span>
+                        • 25-35 min
+                    </span>
+
+                </div>
+
+                <p>
+                    Frango • Brasileira
+                </p>
+
+                <span class="entrega">
+                    🚴 Entrega grátis
+                </span>
 
             </div>
 
         </div>
 
     </div>
+
+</section>
+
+
+<footer>
+
+    <h3>
+        Uai Cheguei
+    </h3>
+
+    <p>
+        Comida boa chegando até você.
+    </p>
+
+    <p>
+        © 2026 Uai Cheguei
+    </p>
+
+</footer>
+
 
 </body>
 
