@@ -10,7 +10,7 @@ body {
 }
 
 
-/* CABEÇALHO */
+/* CABEÇA DE ALHO */
 
 .cabecalho {
     background-color: white;
