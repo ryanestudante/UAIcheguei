@@ -11,7 +11,7 @@
         }
 
         body {
-background-image: url(https://uploads.onecompiler.io/44g7ujbgc/1787313298296/ChatGPT%20Image%2021%20de%20ago.%20de%202026,%2008_45_55.png);
+          background-image: url(https://uploads.onecompiler.io/44g7ujbgc/1787313298296/ChatGPT%20Image%2021%20de%20ago.%20de%202026,%2008_45_55.png);
 
             background-color: #e15800;
             background-image: url(https://uploads.onecompiler.io/44g7ujbgc/1783699274529/C%C3%B3pia%20de%20UAIcheguei%20(1).png);
@@ -77,17 +77,25 @@ background-image: url(https://uploads.onecompiler.io/44g7ujbgc/1787313298296/Cha
             background-color: #e15800;
             padding: 1%;
             border-radius: 20px;
-            width: 100%;
+            width: 98%;
             text-align: center;
             color: black;
             margin-bottom: 25px;
             cursor: pointer;
-            border: none;
+            display: block;
+            text-decoration: none;
+        }
+
+        .buton-entrar:hover {
+            background-color: #c94d00;
         }
 
         .buton-entrar:active {
             transform: translateY(4px);
-            box-shadow: 0px 0px 0px 0px;
+        }
+
+        .buton-entrar h2 {
+            margin: 0;
         }
 
         .laranja {
@@ -126,28 +134,37 @@ background-image: url(https://uploads.onecompiler.io/44g7ujbgc/1787313298296/Cha
 
             <form>
 
-                <input type="text" class="campo-form" placeholder="CPF:">
+                <input
+                    type="text"
+                    class="campo-form"
+                    placeholder="CPF:">
 
                 <br>
 
-                <input type="text" class="campo-form" placeholder="Email:">
+                <input
+                    type="text"
+                    class="campo-form"
+                    placeholder="Email:">
 
                 <br>
 
-                <input type="password" class="campo-form" placeholder="Senha:">
+                <input
+                    type="password"
+                    class="campo-form"
+                    placeholder="Senha:">
 
                 <br>
 
-                <input type="password" class="campo-form" placeholder="Confirme a senha:">
+                <input
+                    type="password"
+                    class="campo-form"
+                    placeholder="Confirme a senha:">
 
                 <br>
 
-                <button
-                    type="button"
-                    class="buton-entrar"
-                    onclick="window.location.href='Pagina_principal.html'">
+                <a href="principal.html" class="buton-entrar">
                     <h2>Entrar</h2>
-                </button>
+                </a>
 
                 <a href="redefinir_senha.html" class="esqueci">
                     Esqueci a senha
