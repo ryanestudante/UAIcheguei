@@ -1,132 +1,177 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello, World!</title>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Redefinir Senha - UAIcheguei</title>
+
     <style>
-      .container{
-        display: flex;
-        justify-content:center;
-        align-items: flex-start;
-      }
-      body{
-        background-image: url(https://uploads.onecompiler.io/44g7ujbgc/1787313298296/ChatGPT%20Image%2021%20de%20ago.%20de%202026,%2008_45_55.png);
-       
-      body}
-       .campo-form{
-        width:100%;
-        padding: 12px 20px;
-        margin-bottom: 15px;
-        border: 2px solid #666;
-        border-radius: 25px;
-        box-sizing: border-box;
-        font-size: 1em;
-        max-width:100%;
-        cursor: pointer;
-       
-      }
-      .caixa-branca{
-        position: relative;
-        background-color: white;
-        padding: 10px;
-        border-radius: 20px;
-        width: 500px;
-        text-align: center;
-        color:999;
-        font-size: 0.9em;
-        margin-bottom: 25px;
-        height: 600px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        align: center;
-       
-      }
-        .buton-entrar{
-        background-color: #e15800;
-        padding: 1%;
-        border-radius: 20px;
-        width: 100%;
-        text-align: center;
-        color:black;
-        margin-bottom: 25px;
-        cursor:pointer;
-      }
-      .buton-entrar:active{
-        transform: translateY(4px);
-        box-shadow: 0px 0px 0px 0px
-        cursor:pointer;
-      }
-      .laranja {
-        color:  #e15800;
+
+        * {
+            box-sizing: border-box;
         }
-        .voltar{
-          position:absolute;
-          left: 15px;
-          top: 20px;
-          color: #333;
-          text-decoration:none;
-          font-weight:bold;
-          font-size: 0.9;
-          transition: color 0.2;
-        }
-       
-        .esqueci{
-          color: black;
-          cursor:pointer;
-          display:none;
-          text-decoration: none;
-          font-size: 1.2em;
-          display: block;
-          margin-top: 10px;
-          text-decoration:underline;
-          font-size:1.25em;
-        }
-        a:hover{
-          color: #e15800;
-        }
-        
-      </style>
-      <style>
+
         body {
-        background-color: #e15800;
-        background-image: url(onecompiler.io/44g7ujbgc/1783699274529/C%C3%B3pia%20de%20UAIcheguei%20(1).png)
-        background-size: cover;
-        background-position: center;
-        font-family:arial;
+            margin: 0;
+            background-color: #e15800;
+            background-image: url("https://uploads.onecompiler.io/44g7ujbgc/1787313298296/ChatGPT%20Image%2021%20de%20ago.%20de%202026,%2008_45_55.png");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
         }
-        .plano-de-fundo{
-        max-width:100%;
-        display: flex;
-        align-items: center;
-       
-      }
-      .text{
-        text-align: center;
-        color:black;
-      }
-       </style>
-      </head>
-    <body>
-           <div class="container">
-            <div class="caixa-branca">
-             <a href="index.html" class="voltar"> ← Voltar</a>
-        <h1 style="color: black;" >Redefinir Senha  </h1>
-         <p style="color: #D3D3D3;" >Ao UAIcheguei, o melhor app<br>de comida de Minas Gerais </p>
-           
-            <p>Insira o email: </p>
-            <input type="text" class="campo-form" placeholder="Insira o email do usuario :">
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 40px;
+            min-height: 100vh;
+        }
+
+        .caixa-branca {
+            position: relative;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            width: 500px;
+            text-align: center;
+            color: #333;
+            font-size: 0.9em;
+            min-height: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .campo-form {
+            width: 100%;
+            padding: 12px 20px;
+            margin-bottom: 15px;
+            border: 2px solid #666;
+            border-radius: 25px;
+            font-size: 1em;
+            outline: none;
+        }
+
+        .campo-form:focus {
+            border-color: #e15800;
+        }
+
+        .buton-entrar {
+            background-color: #e15800;
+            padding: 12px;
+            border: none;
+            border-radius: 20px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            margin-bottom: 25px;
+            cursor: pointer;
+        }
+
+        .buton-entrar:hover {
+            background-color: #c94d00;
+        }
+
+        .buton-entrar:active {
+            transform: translateY(4px);
+        }
+
+        .voltar {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        .voltar:hover {
+            color: #e15800;
+        }
+
+        #mensagem {
+            margin-top: 15px;
+            color: red;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="caixa-branca">
+
+            <a href="index.html" class="voltar">
+                ← Voltar
+            </a>
+
+            <br><br>
+
+            <h1>Redefinir Senha</h1>
+
+            <p style="color: #999;">
+                No UAIcheguei, o melhor app<br>
+                de comida de Minas Gerais
+            </p>
+
             <br>
-           
-            <br>
-             <button type="button" class="buton-entrar"><h2>Entrar<h2></button>
-            <input type="code" class="campo-form" placeholder="Codigo:">
-            <br>
-            <input type="password" class="campo-form" placeholder="Redefinir senha:">
-            <br>
-           
-            </div>
-    <div class="uai_imagem">
-   
-  <div class="caixa-marrom">
+
+            <p>
+                Insira o usuário:
+            </p>
+
+            <input
+                type="text"
+                id="usuario"
+                class="campo-form"
+                placeholder="Digite seu usuário"
+            >
+
+            <input
+                type="password"
+                id="senha"
+                class="campo-form"
+                placeholder="Digite sua senha"
+            >
+
+            <button
+                type="button"
+                class="buton-entrar"
+                onclick="entrar()"
+            >
+                <h2>Entrar</h2>
+            </button>
+            <p id="mensagem"></p>
+        </div>
     </div>
-  </body>
+    <script>
+        function entrar() {
+            let usuario = document.getElementById("usuario").value.trim().toLowerCase();
+            let senha = document.getElementById("senha").value;
+            if (usuario === "professor" && senha === "123456") {
+                window.location.href = "professor.html";
+            }
+            else if (usuario === "aluno" && senha === "123456") {
+                window.location.href = "aluno.html";
+            }
+            else if (usuario === "administrador" && senha === "123456") {
+                window.location.href = "administrador.html";
+            }
+            else {
+                document.getElementById("mensagem").innerHTML = "Usuário ou senha não conferem.";
+            }
+
+        }
+    </script>
+
+</body>
+
 </html>
