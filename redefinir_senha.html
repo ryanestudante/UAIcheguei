@@ -176,32 +176,7 @@
             <p id="mensagem"></p>
         </div>
     </div>
-    <script>
-        function entrar() {
-            let email = document.getElementById("email").value.trim().toLowerCase();
-            let codigo = document.getElementById("codigo").value.trim();
-            let senha = document.getElementById("senha").value;
-            let confirmarSenha = document.getElementById("confirmarSenha").value;
-            if (email === "" || codigo === "" || senha === "" || confirmarSenha === "") {
-                document.getElementById("mensagem").innerHTML =
-                    "Preencha todos os campos.";
-                return;
-            }
-            if (codigo !== "123456") {
-                document.getElementById("mensagem").innerHTML =
-                    "Código de recuperação incorreto.";
-                return;
-            }
-            if (senha !== confirmarSenha) {
-                document.getElementById("mensagem").innerHTML =
-                    "As senhas não conferem.";
-                return;
-            }
-            document.getElementById("mensagem").style.color = "green";
-            document.getElementById("mensagem").innerHTML =
-                "Senha redefinida com sucesso!";
-        }
-    </script>
+   
 
 </body>
 
