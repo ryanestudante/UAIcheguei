@@ -40,7 +40,7 @@
             text-align: center;
             color: #333;
             font-size: 0.9em;
-            min-height: 600px;
+            min-height: 650px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
@@ -98,10 +98,13 @@
             font-weight: bold;
         }
 
+        .codigo {
+            margin-top: 5px;
+        }
+
     </style>
 
 </head>
-
 
 <body>
 
@@ -125,50 +128,78 @@
             <br>
 
             <p>
-                Insira o usuário:
+                Digite seu e-mail:
+            </p>
+
+            <input
+                type="email"
+                id="email"
+                class="campo-form"
+                placeholder="Digite seu e-mail"
+            >
+
+            <p>
+                Digite o código enviado para seu e-mail:
             </p>
 
             <input
                 type="text"
-                id="usuario"
-                class="campo-form"
-                placeholder="Digite seu usuário"
+                id="codigo"
+                class="campo-form codigo"
+                placeholder="Digite o código"
             >
+
+            <p>
+                Digite sua nova senha:
+            </p>
 
             <input
                 type="password"
                 id="senha"
                 class="campo-form"
-                placeholder="Digite sua senha"
+                placeholder="Digite sua nova senha"
             >
 
+            <input
+                type="password"
+                id="confirmarSenha"
+                class="campo-form"
+                placeholder="Confirme sua nova senha"
+            >
             <button
                 type="button"
                 class="buton-entrar"
                 onclick="entrar()"
             >
-                <h2>Entrar</h2>
+                <h2>Redefinir senha</h2>
             </button>
             <p id="mensagem"></p>
         </div>
     </div>
     <script>
         function entrar() {
-            let usuario = document.getElementById("usuario").value.trim().toLowerCase();
+            let email = document.getElementById("email").value.trim().toLowerCase();
+            let codigo = document.getElementById("codigo").value.trim();
             let senha = document.getElementById("senha").value;
-            if (usuario === "professor" && senha === "123456") {
-                window.location.href = "professor.html";
+            let confirmarSenha = document.getElementById("confirmarSenha").value;
+            if (email === "" || codigo === "" || senha === "" || confirmarSenha === "") {
+                document.getElementById("mensagem").innerHTML =
+                    "Preencha todos os campos.";
+                return;
             }
-            else if (usuario === "aluno" && senha === "123456") {
-                window.location.href = "aluno.html";
+            if (codigo !== "123456") {
+                document.getElementById("mensagem").innerHTML =
+                    "Código de recuperação incorreto.";
+                return;
             }
-            else if (usuario === "administrador" && senha === "123456") {
-                window.location.href = "administrador.html";
+            if (senha !== confirmarSenha) {
+                document.getElementById("mensagem").innerHTML =
+                    "As senhas não conferem.";
+                return;
             }
-            else {
-                document.getElementById("mensagem").innerHTML = "Usuário ou senha não conferem.";
-            }
-
+            document.getElementById("mensagem").style.color = "green";
+            document.getElementById("mensagem").innerHTML =
+                "Senha redefinida com sucesso!";
         }
     </script>
 
