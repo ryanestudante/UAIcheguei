@@ -1,183 +1,333 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Redefinir Senha - UAIcheguei</title>
 
-    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <style>
         * {
             box-sizing: border-box;
         }
 
         body {
             margin: 0;
-            background-color: #e15800;
-            background-image: url("https://uploads.onecompiler.io/44g7ujbgc/1787313298296/ChatGPT%20Image%2021%20de%20ago.%20de%202026,%2008_45_55.png");
-            background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background: #fff3ec;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
         }
 
         .container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            padding-top: 40px;
-            min-height: 100vh;
-        }
-
-        .caixa-branca {
-            position: relative;
-            background-color: white;
-            padding: 40px;
-            border-radius: 20px;
-            width: 500px;
-            text-align: center;
-            color: #333;
-            font-size: 0.9em;
-            min-height: 650px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .campo-form {
             width: 100%;
-            padding: 12px 20px;
-            margin-bottom: 15px;
-            border: 2px solid #666;
+            max-width: 1150px;
+            min-height: 620px;
+            background: white;
             border-radius: 25px;
-            font-size: 1em;
-            outline: none;
+            display: flex;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(79, 48, 17, 0.15);
         }
 
-        .campo-form:focus {
-            border-color: #e15800;
-        }
-
-        .buton-entrar {
-            background-color: #e15800;
-            padding: 12px;
-            border: none;
-            border-radius: 20px;
-            width: 100%;
-            text-align: center;
-            color: white;
-            margin-bottom: 25px;
-            cursor: pointer;
-        }
-
-        .buton-entrar:hover {
-            background-color: #c94d00;
-        }
-
-        .buton-entrar:active {
-            transform: translateY(4px);
+        .form-box {
+            width: 55%;
+            padding: 55px 65px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .voltar {
             position: absolute;
-            left: 20px;
-            top: 20px;
-            color: #333;
+            top: 30px;
+            left: 40px;
             text-decoration: none;
-            font-weight: bold;
-            font-size: 1em;
+            color: #4f3011;
+            font-weight: 600;
+            font-size: 14px;
         }
 
         .voltar:hover {
             color: #e15800;
         }
 
+        h1 {
+            color: #e15800;
+            font-size: 32px;
+            margin: 25px 0 5px;
+            font-weight: 800;
+        }
+
+        .subtitulo {
+            color: #999;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+
+        .etapa {
+            display: none;
+        }
+
+        .etapa.ativa {
+            display: block;
+        }
+
+        .descricao {
+            color: #4f3011;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .campo-form {
+            width: 100%;
+            padding: 15px 18px;
+            margin-bottom: 18px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+            background: #fafafa;
+        }
+
+        .campo-form:focus {
+            border-color: #e15800;
+            background: white;
+        }
+
+        .buton-entrar {
+            background: #e15800;
+            padding: 14px;
+            border: none;
+            border-radius: 12px;
+            width: 100%;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: 0.3s;
+        }
+
+        .buton-entrar:hover {
+            background: #c94d00;
+            transform: translateY(-2px);
+        }
+
         #mensagem {
+            font-size: 13px;
+            font-weight: 600;
             margin-top: 15px;
             color: red;
-            font-weight: bold;
         }
 
-        .codigo {
-            margin-top: 5px;
+        .imagem-box {
+            width: 45%;
+            background: #fff3ec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 35px;
         }
 
+        .imagem-box img {
+            width: 100%;
+            max-width: 430px;
+            object-fit: contain;
+        }
+
+        @media (max-width: 850px) {
+            .container {
+                max-width: 550px;
+            }
+
+            .form-box {
+                width: 100%;
+                padding: 65px 40px;
+            }
+
+            .imagem-box {
+                display: none;
+            }
+        }
+
+        @media (max-width: 500px) {
+            body {
+                padding: 15px;
+            }
+
+            .form-box {
+                padding: 65px 25px 35px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+        }
     </style>
-
 </head>
 
 <body>
 
     <div class="container">
 
-        <div class="caixa-branca">
+        <div class="form-box">
 
-            <a href="index.html" class="voltar">
-                ← Voltar
-            </a>
-
-            <br><br>
+            <a href="login.html" class="voltar">← Voltar</a>
 
             <h1>Redefinir Senha</h1>
 
-            <p style="color: #999;">
-                No UAIcheguei, o melhor app<br>
-                de comida de Minas Gerais
+            <p class="subtitulo">
+                Recupere seu acesso ao UAIcheguei!
             </p>
 
-            <br>
+            <!-- ETAPA 1 -->
+            <div id="etapaEmail" class="etapa ativa">
 
-            <p>
-                Digite seu e-mail:
-            </p>
+                <p class="descricao">Digite seu e-mail:</p>
 
-            <input
-                type="email"
-                id="email"
-                class="campo-form"
-                placeholder="Digite seu e-mail"
-            >
+                <input
+                    type="email"
+                    id="email"
+                    class="campo-form"
+                    placeholder="Digite seu e-mail"
+                >
 
-            <p>
-                Digite o código enviado para seu e-mail:
-            </p>
+                <button class="buton-entrar" onclick="continuarEmail()">
+                    Continuar
+                </button>
 
-            <input
-                type="text"
-                id="codigo"
-                class="campo-form codigo"
-                placeholder="Digite o código"
-            >
+            </div>
 
-            <p>
-                Digite sua nova senha:
-            </p>
+            <!-- ETAPA 2 -->
+            <div id="etapaCodigo" class="etapa">
 
-            <input
-                type="password"
-                id="senha"
-                class="campo-form"
-                placeholder="Digite sua nova senha"
-            >
+                <p class="descricao">
+                    Digite o código enviado para seu e-mail:
+                </p>
 
-            <input
-                type="password"
-                id="confirmarSenha"
-                class="campo-form"
-                placeholder="Confirme sua nova senha"
-            >
-            <button
-                type="button"
-                class="buton-entrar"
-                onclick="entrar()"
-            >
-                <h2>Redefinir senha</h2>
-            </button>
+                <input
+                    type="text"
+                    id="codigo"
+                    class="campo-form"
+                    placeholder="Digite o código"
+                >
+
+                <button class="buton-entrar" onclick="continuarCodigo()">
+                    Confirmar código
+                </button>
+
+            </div>
+
+            <!-- ETAPA 3 -->
+            <div id="etapaSenha" class="etapa">
+
+                <p class="descricao">Digite sua nova senha:</p>
+
+                <input
+                    type="password"
+                    id="senha"
+                    class="campo-form"
+                    placeholder="Digite sua nova senha"
+                >
+
+                <input
+                    type="password"
+                    id="confirmarSenha"
+                    class="campo-form"
+                    placeholder="Confirme sua nova senha"
+                >
+
+                <button class="buton-entrar" onclick="redefinirSenha()">
+                    Redefinir senha
+                </button>
+
+            </div>
+
             <p id="mensagem"></p>
+
         </div>
+
+        <div class="imagem-box">
+            <img
+                src="https://uploads.onecompiler.io/44g7ujbgc/1787314084228/C%C3%B3pia_de_UAIcheguei__2_-removebg-preview.png"
+                alt="Ilustração UAIcheguei"
+            >
+        </div>
+
     </div>
-   
+
+    <script>
+
+        function continuarEmail() {
+            let email = document.getElementById("email").value;
+            let mensagem = document.getElementById("mensagem");
+
+            if (email === "") {
+                mensagem.style.color = "red";
+                mensagem.innerText = "Digite seu e-mail!";
+                return;
+            }
+
+            if (!email.includes("@") || !email.includes(".")) {
+                mensagem.style.color = "red";
+                mensagem.innerText = "Digite um e-mail válido!";
+                return;
+            }
+
+            mensagem.innerText = "";
+
+            document.getElementById("etapaEmail").classList.remove("ativa");
+            document.getElementById("etapaCodigo").classList.add("ativa");
+        }
+
+        function continuarCodigo() {
+            let codigo = document.getElementById("codigo").value;
+            let mensagem = document.getElementById("mensagem");
+
+            if (codigo === "") {
+                mensagem.style.color = "red";
+                mensagem.innerText = "Digite o código!";
+                return;
+            }
+
+            mensagem.innerText = "";
+
+            document.getElementById("etapaCodigo").classList.remove("ativa");
+            document.getElementById("etapaSenha").classList.add("ativa");
+        }
+
+        function redefinirSenha() {
+            let senha = document.getElementById("senha").value;
+            let confirmarSenha = document.getElementById("confirmarSenha").value;
+            let mensagem = document.getElementById("mensagem");
+
+            if (senha === "" || confirmarSenha === "") {
+                mensagem.style.color = "red";
+                mensagem.innerText = "Preencha os dois campos!";
+                return;
+            }
+
+            if (senha !== confirmarSenha) {
+                mensagem.style.color = "red";
+                mensagem.innerText = "As senhas não são iguais!";
+                return;
+            }
+
+            mensagem.style.color = "green";
+            mensagem.innerText = "Senha redefinida com sucesso!";
+        }
+
+    </script>
 
 </body>
-
 </html>
