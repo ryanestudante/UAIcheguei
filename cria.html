@@ -1,198 +1,308 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UAIcheguei — Cadastro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<title>Cadastro - UAIcheguei</title>
 
 <style>
-:root {
-    --laranja: #e15800;
-    --marrom: #4f3011;
-}
-
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-image: url("https://uploads.onecompiler.io/44g7ujbgc/1787313298296/ChatGPT%20Image%2021%20de%20ago.%20de%202026,%2008_45_55.png");
-    background-size: cover;
-    background-position: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    min-height: 100vh;
+    background: #fff3ec;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 24px;
-    color: #24170e;
-    font-family: Arial, sans-serif;
+    padding: 30px;
+    color: #333;
 }
+
+.container {
+    width: 100%;
+    max-width: 1150px;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(79, 48, 17, 0.10);
+}
+
+/* FORMULÁRIO */
 
 .form-box {
-    position: relative;
-    width: min(430px, 100%);
-    padding: 34px 30px;
-    border-radius: 24px;
-    background: rgba(255, 255, 255, 0.97);
-    box-shadow: 0 14px 35px rgba(79, 48, 17, 0.22);
-}
-
-.voltar {
-    position: absolute;
-    top: 14px;
-    left: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border: 1px solid var(--laranja);
-    border-radius: 50%;
-    color: var(--laranja);
-    font-size: 2rem;
-    line-height: 1;
-    padding-bottom: 8px;
-    text-decoration: none;
-}
-
-.voltar:hover {
-    background-color: var(--laranja);
-    color: white;
+    width: 430px;
+    padding: 10px;
+    text-align: center;
 }
 
 .form-box h1 {
-    margin: 0 0 8px;
-    color: var(--laranja);
-    text-align: center;
+    font-size: 30px;
+    color: #e15800;
+    margin-bottom: 5px;
 }
 
 .form-box p {
-    text-align: center;
-}
-
-.data-label {
-    display: block;
-    margin: 12px 8px 0;
-    font-size: 0.9rem;
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 25px;
 }
 
 .campo-form {
     width: 100%;
-    margin: 8px 0;
-    padding: 14px 17px;
-    border: 2px solid #ddd;
-    border-radius: 25px;
-    font-size: 1rem;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background: #fafafa;
     outline: none;
+    font-family: Poppins;
+    font-size: 13px;
+    transition: 0.3s;
 }
 
 .campo-form:focus {
-    border-color: var(--laranja);
+    border-color: #e15800;
+    background: white;
+    box-shadow: 0 0 0 3px #e1580015;
+}
+
+.campo-form::placeholder {
+    color: #aaa;
+}
+
+.data-label {
+    display: block;
+    text-align: left;
+    margin: 2px 5px 7px;
+    font-size: 12px;
+    color: #777;
 }
 
 .botao {
     width: 100%;
-    margin-top: 12px;
     padding: 14px;
-    border: 0;
-    border-radius: 25px;
-    background-color: var(--laranja);
+    margin-top: 8px;
+    background: #e15800;
     color: white;
-    font-size: 1rem;
-    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .botao:hover {
-    background-color: #c94d00;
+    background: #c94d00;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px #e1580030;
+}
+
+.botao:active {
+    transform: scale(0.98);
 }
 
 #mensagem {
+    color: #d62828;
+    font-size: 12px;
     margin-top: 12px;
+}
+
+.voltar {
+    display: inline-block;
+    margin-top: 18px;
+    color: #e15800;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+/* IMAGEM */
+
+.uai-imagem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff8f3;
+    border-radius: 22px;
+    padding: 35px;
+    min-height: 520px;
+}
+
+.uai-imagem img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+}
+
+.caixa-marrom {
+    background: #4f3011;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
     text-align: center;
-    color: red;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.laranja {
+    color: #f27029;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        max-width: 500px;
+        padding: 30px 20px;
+    }
+
+    .form-box {
+        width: 100%;
+    }
+
+    .uai-imagem {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 25px 15px;
+        border-radius: 18px;
+    }
+
+    .form-box h1 {
+        font-size: 26px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<main class="form-box">
+<div class="container">
 
-    <a class="voltar" href="index.html" aria-label="Voltar">←</a>
+    <main class="form-box">
 
-    <h1>Cadastre-se</h1>
+        <h1>Crie sua conta!</h1>
 
-    <p>Crie sua conta UAIcheguei</p>
+        <p>
+            Faça parte do UAIcheguei e descubra
+            o melhor da comida de Minas Gerais.
+        </p>
 
-    <form>
+        <form>
 
-        <input
-            class="campo-form"
-            id="nome"
-            type="text"
-            placeholder="Nome completo"
-            required
+            <input
+                class="campo-form"
+                id="nome"
+                type="text"
+                placeholder="Nome completo"
+                required
+            >
+
+            <input
+                class="campo-form"
+                id="Email"
+                type="email"
+                placeholder="E-mail"
+                required
+            >
+
+            <input
+                class="campo-form"
+                id="telefone"
+                type="tel"
+                placeholder="Número de telefone"
+                required
+            >
+
+            <label class="data-label" for="data-nascimento">
+                Data de nascimento
+            </label>
+
+            <input
+                class="campo-form"
+                id="data-nascimento"
+                type="date"
+                required
+            >
+
+            <input
+                class="campo-form"
+                id="Senha"
+                type="password"
+                placeholder="Senha"
+                required
+            >
+
+            <input
+                class="campo-form"
+                id="ConfirmarSenha"
+                type="password"
+                placeholder="Confirme sua senha"
+                required
+            >
+
+            <button
+                class="botao"
+                type="button"
+                onclick="entrar()"
+            >
+                Criar conta
+            </button>
+
+            <div id="mensagem"></div>
+
+            <a href="index.html" class="voltar">
+                ← Voltar para o login
+            </a>
+
+        </form>
+
+    </main>
+
+    <div class="uai-imagem">
+
+        <img
+            src="https://uploads.onecompiler.io/44g7ujbgc/1787314084228/C%C3%B3pia_de_UAIcheguei__2_-removebg-preview.png"
+            alt="UAIcheguei"
         >
 
-        <input
-            class="campo-form"
-            id="Email"
-            type="email"
-            placeholder="Email"
-            required
-        >
+        <div class="caixa-marrom">
+            O melhor lugar para pedir comida
+            <span class="laranja">em Minas!</span>
+        </div>
 
-        <input
-            class="campo-form"
-            id="telefone"
-            type="tel"
-            placeholder="Número de telefone"
-            required
-        >
+    </div>
 
-        <label class="data-label" for="data-nascimento">
-            Data de nascimento
-        </label>
-
-        <input
-            class="campo-form"
-            id="data-nascimento"
-            type="date"
-            required
-        >
-
-        <input
-            class="campo-form"
-            id="Senha"
-            type="password"
-            placeholder="Senha"
-            required
-        >
-
-        <input
-            class="campo-form"
-            id="ConfirmarSenha"
-            type="password"
-            placeholder="Confirme sua senha"
-            required
-        >
-
-        <button
-            class="botao"
-            type="button"
-            onclick="entrar()"
-        >
-            Criar conta
-        </button>
-
-        <div id="mensagem"></div>
-
-    </form>
-
-</main>
+</div>
 
 <script>
 
@@ -210,7 +320,6 @@ function entrar() {
 
     let confirmarSenha = document.getElementById("ConfirmarSenha").value;
 
-
     if (
         nome === "" ||
         gmail === "" ||
@@ -223,26 +332,32 @@ function entrar() {
             "Preencha todos os campos.";
         return;
     }
+
     if (senha !== confirmarSenha) {
         document.getElementById("mensagem").innerHTML =
             "As senhas não conferem.";
         return;
     }
+
     if (gmail === "cliente@gmail.com" && senha === "123456") {
         window.location.href = "principal.html";
     }
+
     else if (gmail === "dono@gmail.com" && senha === "123456") {
         window.location.href = "intranet_adm.html";
     }
+
     else if (gmail === "entregador@gmail.com" && senha === "123456") {
         window.location.href = "intranet_entregador.html";
     }
+
     else {
         document.getElementById("mensagem").innerHTML =
-            "Email ou senha não conferem.";
+            "Não foi possível criar a conta.";
     }
 
 }
+
 </script>
 
 </body>
