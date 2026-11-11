@@ -1,255 +1,356 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>UAIcheguei</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        .container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-        body {
+<title>Login - UAIcheguei</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
 background-image: url(https://uploads.onecompiler.io/44g7ujbgc/1787313298296/ChatGPT%20Image%2021%20de%20ago.%20de%202026,%2008_45_55.png);
 
-            background-color: #e15800;
-            background-image: url(https://uploads.onecompiler.io/44g7ujbgc/1783699274529/C%C3%B3pia%20de%20UAIcheguei%20(1).png);
-            background-size: cover;
-            background-position: center;
-            font-family: Arial;
-        }
+    font-family: 'Poppins', Arial, sans-serif;
+    min-height: 100vh;
+    background: #fff3ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
 
-        .campo-form {
-            width: 100%;
-            padding: 12px 20px;
-            margin-bottom: 15px;
-            border: 2px solid #666;
-            border-radius: 25px;
-            box-sizing: border-box;
-            font-size: 1em;
-            max-width: 100%;
-            cursor: pointer;
-        }
+.container {
+    width: 100%;
+    max-width: 1150px;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: white;
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(79, 48, 17, 0.10);
+}
 
-        .caixa-branca {
-            position: relative;
-            margin-top: 4%;
-            left: 10%;
-            background-color: white;
-            padding: 10px;
-            border-radius: 20px;
-            width: 500px;
-            text-align: center;
-            color: #999;
-            font-size: 0.9em;
-            margin-bottom: 25px;
-            height: 600px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            z-index: 20;
-        }
+/* FORMULÁRIO */
 
-        .uai_imagem {
-            max-width: 100%;
-            display: flex;
-            margin-bottom: 25px;
-            flex-direction: column;
-            align-items: center;
-            z-index: 10;
-            margin-top: 2%;
-        }
+.caixa-branca {
+    width: 430px;
+    padding: 15px;
+    text-align: center;
+}
 
-        .caixa-marrom {
-            background-color: #4f3011;
-            padding: 1px;
-            border-radius: 20px;
-            width: 60%;
-            text-align: center;
-            color: white;
-            font-size: 22px;
-            margin-bottom: 25%;
-            position: relative;
-            z-index: 20;
-            margin-top: -20px;
-        }
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
 
-        .buton-entrar {
-            background-color: #e15800;
-            padding: 1%;
-            border-radius: 20px;
-            width: 98%;
-            text-align: center;
-            color: black;
-            margin-bottom: 25px;
-            cursor: pointer;
-            display: block;
-            text-decoration: none;
-            border: none;
-            box-sizing: border-box;
-        }
+.caixa-branca h1 {
+    font-size: 30px;
+    color: #e15800;
+    margin-bottom: 5px;
+}
 
-        .buton-entrar:hover {
-            background-color: #c94d00;
-        }
+.caixa-branca h2 {
+    font-size: 24px;
+    color: #4f3011;
+    margin-bottom: 10px;
+}
 
-        .buton-entrar:active {
-            transform: translateY(4px);
-        }
+.descricao {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
 
-        .buton-entrar h2 {
-            margin: 0;
-        }
+.campo-form {
+    width: 100%;
+    padding: 15px 18px;
+    margin-bottom: 17px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background: #fafafa;
+    outline: none;
+    font-family: Poppins;
+    font-size: 13px;
+    transition: 0.3s;
+}
 
-        .laranja {
-            color: #e15800;
-        }
+.campo-form:focus {
+    border-color: #e15800;
+    background: white;
+    box-shadow: 0 0 0 3px #e1580015;
+}
 
-        .esqueci {
-            color: black;
-            cursor: pointer;
-            text-decoration: underline;
-            font-size: 1.25em;
-            display: block;
-            margin-top: 10px;
-        }
+.campo-form::placeholder {
+    color: #aaa;
+}
 
-        a:hover {
-            color: blue;
-        }
+.buton-entrar {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    background: #e15800;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-        #mensagem {
-            color: red;
-            font-size: 16px;
-            margin-top: 10px;
-        }
-    </style>
+.buton-entrar:hover {
+    background: #c94d00;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px #e1580030;
+}
+
+.buton-entrar:active {
+    transform: scale(0.98);
+}
+
+#mensagem {
+    color: #d62828;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.esqueci {
+    display: block;
+    margin-top: 18px;
+    color: #e15800;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.esqueci:hover {
+    text-decoration: underline;
+}
+
+.criar-conta {
+    display: block;
+    margin-top: 20px;
+    color: #777;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.criar-conta span {
+    color: #e15800;
+    font-weight: 600;
+}
+
+.criar-conta:hover span {
+    text-decoration: underline;
+}
+
+/* IMAGEM */
+
+.uai_imagem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff8f3;
+    border-radius: 22px;
+    padding: 35px;
+    min-height: 520px;
+}
+
+.uai_imagem img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+}
+
+.caixa-marrom {
+    background: #4f3011;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.laranja {
+    color: #f27029;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        max-width: 500px;
+        padding: 30px 20px;
+    }
+
+    .caixa-branca {
+        width: 100%;
+    }
+
+    .uai_imagem {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 25px 15px;
+        border-radius: 18px;
+    }
+
+    .caixa-branca h1 {
+        font-size: 26px;
+    }
+
+    .caixa-branca h2 {
+        font-size: 21px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <div class="caixa-branca">
+    <div class="caixa-branca">
 
-            <h1 style="color: #e15800;">Bem vindo(a)!</h1>
+        <h1>Bem-vindo(a)!</h1>
+        <h2>Entre na sua conta</h2>
 
-            <h1 style="color: black;">Crie sua conta</h1>
+        <p class="descricao">
+            Faça seu login no UAIcheguei e descubra
+            o melhor da comida de Minas Gerais!
+        </p>
 
-            <p style="color: #D3D3D3;">
-                Ao UAIcheguei, o melhor app<br>
-                de comida de Minas Gerais
-            </p>
+        <form>
 
-            <form>
+            <input
+                type="text"
+                id="CPF"
+                class="campo-form"
+                placeholder="CPF"
+            >
 
-                <input
-                    type="text"
-                    id="CPF"
-                    class="campo-form"
-                    placeholder="CPF:">
+            <input
+                type="email"
+                id="Email"
+                class="campo-form"
+                placeholder="E-mail"
+            >
 
-                <br>
+            <input
+                type="password"
+                id="Senha"
+                class="campo-form"
+                placeholder="Senha"
+            >
 
-                <input
-                    type="text"
-                    id="Email"
-                    class="campo-form"
-                    placeholder="Email:">
+            <input
+                type="password"
+                id="ConfirmarSenha"
+                class="campo-form"
+                placeholder="Confirme sua senha"
+            >
 
-                <br>
+            <button
+                type="button"
+                onclick="entrar()"
+                class="buton-entrar"
+            >
+                Entrar
+            </button>
 
-                <input
-                    type="password"
-                    id="Senha"
-                    class="campo-form"
-                    placeholder="Senha:">
+            <div id="mensagem"></div>
 
-                <br>
+            <a href="redefinir_senha.html" class="esqueci">
+                Esqueci minha senha
+            </a>
 
-                <input
-                    type="password"
-                    id="ConfirmarSenha"
-                    class="campo-form"
-                    placeholder="Confirme a senha:">
+            <a href="cria.html" class="criar-conta">
+                Ainda não tem uma conta?
+                <span>Criar conta</span>
+            </a>
 
-                <br>
+        </form>
 
-                <button
-                    type="button"
-                    onclick="entrar()"
-                    class="buton-entrar">
+    </div>
 
-                    <h2>Entrar</h2>
+    <div class="uai_imagem">
 
-                </button>
+        <img
+            src="https://uploads.onecompiler.io/44g7ujbgc/1787314084228/C%C3%B3pia_de_UAIcheguei__2_-removebg-preview.png"
+            alt="UAIcheguei"
+        >
 
-                <div id="mensagem"></div>
-
-                <a href="redefinir_senha.html" class="esqueci">
-    Esqueci a senha
-</a>
-<br>
-<br>
-<a href="cria.html" class="criar-conta">
-    Ainda não tem uma conta? <span>Criar conta</span>
-</a>
-
-            </form>
-
-        </div>
-
-        <div class="uai_imagem">
-
-            <img
-                width="800px"
-                src="https://uploads.onecompiler.io/44g7ujbgc/1787314084228/C%C3%B3pia_de_UAIcheguei__2_-removebg-preview.png">
-
-            <div class="caixa-marrom">
-
-                <p>
-                    O melhor lugar para se pedir comida
-                    <span class="laranja">em Minas</span>
-                </p>
-
-            </div>
-
+        <div class="caixa-marrom">
+            O melhor lugar para pedir comida
+            <span class="laranja">em Minas!</span>
         </div>
 
     </div>
 
-    <script>
+</div>
 
-        function entrar() {
+<script>
 
-            let cpf = document.getElementById("CPF").value.trim();
-            let gmail = document.getElementById("Email").value.trim().toLowerCase();
-            let senha = document.getElementById("Senha").value;
-            let confirmarSenha = document.getElementById("ConfirmarSenha").value;
+function entrar() {
 
-            if (senha !== confirmarSenha) {
-                document.getElementById("mensagem").innerHTML = "As senhas não conferem.";
-                return;
-            }
+    let cpf = document.getElementById("CPF").value.trim();
+    let gmail = document.getElementById("Email").value.trim().toLowerCase();
+    let senha = document.getElementById("Senha").value;
+    let confirmarSenha = document.getElementById("ConfirmarSenha").value;
 
-            if (cpf === "12345678900" && gmail === "cliente@gmail.com" && senha === "123456") {
-                window.location.href = "principal.html";
-            }
+    if (cpf === "" || gmail === "" || senha === "" || confirmarSenha === "") {
+        document.getElementById("mensagem").innerHTML = "Preencha todos os campos.";
+        return;
+    }
 
-            else if (cpf === "98765432100" && gmail === "dono@gmail.com" && senha === "123456") {
-                window.location.href = "intranet_adm.html";
-            }
-else if (cpf === "11122233344" && gmail === "entregador@gmail.com" && senha === "123456") {
-                window.location.href = "intranet_entregador.html";
-            }
+    if (senha !== confirmarSenha) {
+        document.getElementById("mensagem").innerHTML = "As senhas não conferem.";
+        return;
+    }
 
-            else {
-                document.getElementById("mensagem").innerHTML = "CPF, Gmail ou senha não conferem.";
-            }
-        }
+    if (cpf === "12345678900" && gmail === "cliente@gmail.com" && senha === "123456") {
+        window.location.href = "principal.html";
+    }
 
-    </script>
+    else if (cpf === "98765432100" && gmail === "dono@gmail.com" && senha === "123456") {
+        window.location.href = "intranet_adm.html";
+    }
+
+    else if (cpf === "11122233344" && gmail === "entregador@gmail.com" && senha === "123456") {
+        window.location.href = "intranet_entregador.html";
+    }
+
+    else {
+        document.getElementById("mensagem").innerHTML = "CPF, e-mail ou senha não conferem.";
+    }
+
+}
+
+</script>
 
 </body>
 </html>
-```
