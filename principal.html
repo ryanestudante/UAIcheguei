@@ -1,479 +1,510 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <title>Uai Cheguei</title>
-
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Poppins, Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-
-        .cabecalho {
-            background-color: white;
-            padding: 15px 5%;
-        }
-
-        .topo {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .logo {
-            width: 100px;
-        }
-
-        .endereco {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 14px;
-        }
-
-        .endereco small {
-            display: block;
-            color: #777;
-        }
-
-        .endereco strong {
-            color: #f27029;
-        }
-
-        .endereco p {
-            font-size: 12px;
-            color: #777;
-        }
-
-        .pesquisa {
-            display: flex;
-            align-items: center;
-            background-color: #f5f5f5;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 0 10px;
-        }
-
-        .pesquisa input {
-            width: 350px;
-            padding: 12px;
-            border: none;
-            background-color: transparent;
-            outline: none;
-        }
-
-        .opcao {
-            text-align: center;
-            cursor: pointer;
-            margin-left: -8px;
-        }
-
-        .icone {
-            font-size: 22px;
-        }
-
-        .opcao p {
-            font-size: 14px;
-        }
-
-        .opcao a {
-            color: #333;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .opcao a:hover {
-            color: #f27029;
-        }
-
-        .perfil {
-            text-align: center;
-            margin-left: -8px;
-        }
-
-        .foto {
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        .foto a {
-            text-decoration: none;
-        }
-
-        .menu {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
-            padding-top: 15px;
-            border-top: 1px solid #eee;
-        }
-
-        .menu a {
-            color: #333;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .menu a:hover {
-            color: #f27029;
-        }
-
-        .menu span {
-            margin-left: 4px;
-        }
-
-        .config {
-            font-size: 18px !important;
-        }
-
-        .destaque {
-            background-color: #e15800;
-            color: white;
-            padding: 50px 8%;
-            margin-bottom: 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .texto {
-            width: 55%;
-        }
-
-        .texto h1 {
-            font-size: 35px;
-            margin-bottom: 10px;
-        }
-
-        .texto p {
-            font-size: 18px;
-        }
-
-        .ofertas {
-            background-color: white;
-            color: #333;
-            width: 300px;
-            padding: 25px;
-            border-radius: 10px;
-        }
-
-        .ofertas h2 {
-            margin-bottom: 10px;
-            color: #f27029;
-        }
-
-        .ofertas p {
-            margin-bottom: 15px;
-        }
-
-        .ofertas button {
-            background-color: #f27029;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .ofertas button:hover {
-            background-color: #d95d1c;
-        }
-
-        .restaurantes {
-            width: 90%;
-            margin: 30px auto;
-        }
-
-        .titulo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .titulo h2 {
-            font-size: 25px;
-        }
-
-        .titulo a {
-            color: #f27029;
-            text-decoration: none;
-        }
-
-        .cards {
-            display: flex;
-            gap: 20px;
-        }
-
-        .card {
-            background-color: white;
-            width: 25%;
-            border-radius: 10px;
-            overflow: hidden;
-            border: 2px solid transparent;
-        }
-
-        .card:hover {
-            border: 2px solid #f27029;
-        }
-
-        .foto-comida {
-            position: relative;
-        }
-
-        .foto-comida img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .promocao {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: #f27029;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-
-        .info {
-            padding: 15px;
-        }
-
-        .info h3 {
-            margin-bottom: 5px;
-        }
-
-        .nota {
-            margin-bottom: 8px;
-        }
-
-        .nota span {
-            color: #777;
-        }
-
-        .info p {
-            color: #777;
-            margin-bottom: 10px;
-        }
-
-        .entrega {
-            color: #f27029;
-            font-size: 14px;
-        }
-
-        .oferta {
-            width: 80%;
-            margin: 50px auto;
-            padding: 30px;
-            background-color: white;
-            text-align: center;
-            border-radius: 10px;
-        }
-
-        .oferta h2 {
-            margin-bottom: 10px;
-        }
-
-        .oferta p {
-            margin-bottom: 15px;
-        }
-
-        .oferta button {
-            background-color: #f27029;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .oferta button:hover {
-            background-color: #d95d1c;
-        }
-
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 50px;
-        }
-
-        footer h3 {
-            color: #f27029;
-            margin-bottom: 10px;
-        }
-
-        footer p {
-            margin-bottom: 5px;
-        }
-
-    </style>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<title>UAIcheguei</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+.aviso {
+    background: #e15800;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    font-size: 12px;
+}
+
+.cabecalho {
+    background: white;
+    padding: 20px 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    width: 115px;
+}
+
+.endereco {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 13px;
+    border-radius: 12px;
+    background: #fff8f3;
+}
+
+.local {
+    font-size: 25px;
+}
+
+.endereco p {
+    color: #888;
+    font-size: 11px;
+}
+
+.endereco strong {
+    display: block;
+    color: #e15800;
+    font-size: 14px;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    background: #fff3ec;
+    border: 1px solid #f5d6c5;
+    border-radius: 30px;
+    padding: 0 18px;
+    flex: 1;
+    max-width: 430px;
+    transition: 0.3s;
+}
+
+.pesquisa:focus-within {
+    border-color: #e15800;
+    background: white;
+}
+
+.pesquisa input {
+    width: 100%;
+    padding: 14px 12px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: Poppins;
+    font-size: 12px;
+}
+
+.pesquisa span {
+    font-size: 20px;
+}
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #444;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.opcao span {
+    font-size: 23px;
+}
+
+.opcao:hover {
+    color: #e15800;
+}
+
+.perfil {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff3ec;
+    border: 1px solid #ffe0cf;
+    border-radius: 50%;
+    font-size: 21px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.perfil:hover {
+    background: #ffe0cf;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid #eee;
+}
+
+.menu a {
+    padding: 9px 16px;
+    border-radius: 25px;
+    background: #fff8f4;
+    color: #4f3011;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #e15800;
+    color: white;
+}
+.destaque {
+    background: #e15800;
+    color: white;
+    padding: 50px 8%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto {
+    width: 55%;
+}
+
+.texto h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.texto p {
+    font-size: 18px;
+}
+
+.ofertas {
+    background: white;
+    color: #333;
+    width: 300px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.ofertas h2 {
+    margin-bottom: 10px;
+    color: #f27029;
+}
+
+.ofertas p {
+    margin-bottom: 15px;
+}
+
+.ofertas button {
+    background: #f27029;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ofertas button:hover {
+    background: #d95d1c;
+}
+.restaurantes {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titulo h2 {
+    font-size: 25px;
+}
+
+.titulo a {
+    color: #f27029;
+    text-decoration: none;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    width: 25%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.card:hover {
+    border: 2px solid #f27029;
+}
+
+.foto-comida {
+    position: relative;
+}
+
+.foto-comida img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.promocao {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #f27029;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.info {
+    padding: 15px;
+}
+
+.info h3 {
+    margin-bottom: 5px;
+}
+
+.nota {
+    margin-bottom: 8px;
+}
+
+.nota span {
+    color: #777;
+}
+
+.info p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.entrega {
+    color: #f27029;
+    font-size: 14px;
+}
+.oferta {
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.oferta h2 {
+    margin-bottom: 10px;
+}
+
+.oferta p {
+    margin-bottom: 15px;
+}
+
+.oferta button {
+    background: #f27029;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.oferta button:hover {
+    background: #d95d1c;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer h3 {
+    color: #f27029;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 850px) {
+    .topo {
+        flex-wrap: wrap;
+    }
+
+    .pesquisa {
+        order: 3;
+        flex-basis: 100%;
+        max-width: none;
+    }
+
+    .acoes {
+        margin-left: auto;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 550px) {
+    .cabecalho {
+        padding: 15px 4%;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .endereco {
+        padding: 7px;
+    }
+
+    .acoes {
+        gap: 12px;
+    }
+
+    .opcao {
+        font-size: 0;
+    }
+
+    .menu a {
+        padding: 7px 10px;
+        font-size: 11px;
+    }
+
+    .destaque {
+        flex-direction: column;
+        gap: 25px;
+        padding: 35px 6%;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    .texto h1 {
+        font-size: 27px;
+    }
+
+    .ofertas {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .titulo h2 {
+        font-size: 19px;
+    }
+}
+</style>
 </head>
 
 <body>
+
+<div class="aviso">
+    🧡 Peça agora e receba suas comidas favoritas em casa!
+</div>
 
 <header class="cabecalho">
 
     <div class="topo">
 
         <a href="principal.html">
-           <img src="logo.png" alt="Logo UAIcheguei" width="150">
+            <img src="logo.png" alt="Logo UAIcheguei" class="logo">
         </a>
 
         <div class="endereco">
-
-            📍
+            <span class="local">📍</span>
 
             <div>
-
-                <strong>Entregar em</strong>
-
+                <p>ENTREGAR EM</p>
                 <strong>Minha Casa</strong>
-
                 <p>Rua A</p>
-
             </div>
-
         </div>
 
         <div class="pesquisa">
-
-            🔍
-
-            <input
-                type="text"
-                placeholder="O que você quer comer hoje?"
-            >
-
+            <span>🔍</span>
+            <input type="text" placeholder="O que você quer comer hoje?">
         </div>
 
-        <div class="opcao">
+        <div class="acoes">
 
-            <p>♡ Favoritos</p>
+            <a href="#" class="opcao">
+                <span>♡</span>
+                Favoritos
+            </a>
 
-        </div>
+            <a href="carrinho.html" class="opcao">
+                <span>🛒</span>
+                Carrinho
+            </a>
 
-        <div class="opcao">
-
-            <a href="carrinho.html">🛒 Carrinho</a>
-
-        </div>
-
-        <div class="perfil">
-
-            <div class="foto">
-
-                <a href="Login.html">👤</a>
-
-            </div>
+            <a href="Login.html" class="perfil">
+                👤
+            </a>
 
         </div>
 
     </div>
 
-    <div class="menu">
-
-        <a href="#" class="config">
-            ⚙️
-        </a>
-
-        <a href="Principal.htm">
-            🏠
-            <span>Início</span>
-        </a>
-
-        <a href="#">
-            🏪
-            <span>Restaurantes</span>
-        </a>
-
-        <a href="#">
-            🍔
-            <span>Lanches</span>
-        </a>
-
-        <a href="#">
-            🍕
-            <span>Pizza</span>
-        </a>
-
-        <a href="#">
-            🍣
-            <span>Japonesa</span>
-        </a>
-
-        <a href="#">
-            🥣
-            <span>Açaí</span>
-        </a>
-
-        <a href="#">
-            🧁
-            <span>Doces</span>
-        </a>
-
-        <a href="#">
-            🏷️
-            <span>Promoções</span>
-        </a>
-
-    </div>
+    <nav class="menu">
+        <a href="Principal.html">🏠 Início</a>
+        <a href="#">🏪 Restaurantes</a>
+        <a href="#">🍔 Lanches</a>
+        <a href="#">🍕 Pizza</a>
+        <a href="#">🍣 Japonesa</a>
+        <a href="#">🥣 Açaí</a>
+        <a href="#">🧁 Doces</a>
+        <a href="#">🏷️ Promoções</a>
+    </nav>
 
 </header>
 
 <section class="destaque">
 
     <div class="texto">
-
-        <h1>
-            Comida deliciosa na sua porta 🍔
-        </h1>
-
-        <p>
-            Escolha seu restaurante favorito e peça agora.
-        </p>
-
+        <h1>Comida deliciosa na sua porta 🍔</h1>
+        <p>Escolha seu restaurante favorito e peça agora.</p>
     </div>
 
     <div class="ofertas">
-
-        <h2>
-            🔥 Ofertas de hoje
-        </h2>
-
-        <p>
-            Até 30% OFF em restaurantes selecionados!
-        </p>
-
-        <button>
-            Ver ofertas
-        </button>
-
+        <h2>🔥 Ofertas de hoje</h2>
+        <p>Até 30% OFF em restaurantes selecionados!</p>
+        <button>Ver ofertas</button>
     </div>
 
 </section>
@@ -481,199 +512,80 @@
 <section class="restaurantes">
 
     <div class="titulo">
-
-        <h2>
-            Restaurantes perto de você
-        </h2>
-
-        <a href="#">
-            Ver todos
-        </a>
-
+        <h2>Restaurantes perto de você</h2>
+        <a href="#">Ver todos</a>
     </div>
 
     <div class="cards">
 
         <div class="card">
-
             <div class="foto-comida">
-
-                <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mZNDf2uI5FLlVpe3cggQuv9CbAXMPujZFevreQbGSQ&s=10"
-                    alt="Hambúrguer"
-                >
-
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mZNDf2uI5FLlVpe3cggQuv9CbAXMPujZFevreQbGSQ&s=10" alt="Hambúrguer">
             </div>
 
             <div class="info">
-
-                <h3>
-                    Burger King
-                </h3>
-
-                <div class="nota">
-
-                    ⭐ 4.8
-
-                    <span>
-                        • 25-35 min
-                    </span>
-
-                </div>
-
-                <p>
-                    Hambúrguer • Lanches
-                </p>
-
-                <span class="entrega">
-                    🚴 Entrega grátis
-                </span>
-
+                <h3>Burger King</h3>
+                <div class="nota">⭐ 4.8 <span>• 25-35 min</span></div>
+                <p>Hambúrguer • Lanches</p>
+                <span class="entrega">🚴 Entrega grátis</span>
             </div>
-
         </div>
 
         <div class="card">
-
             <div class="foto-comida">
-
-                <img
-                    src="https://images.unsplash.com/photo-1579751626657-72bc17010498"
-                    alt="Pizza"
-                >
-
-                <span class="promocao">
-                    15% OFF
-                </span>
-
+                <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498" alt="Pizza">
+                <span class="promocao">15% OFF</span>
             </div>
 
             <div class="info">
-
-                <h3>
-                    Pizza House
-                </h3>
-
-                <div class="nota">
-
-                    ⭐ 4.7
-
-                    <span>
-                        • 30-40 min
-                    </span>
-
-                </div>
-
-                <p>
-                    Pizza • Italiana
-                </p>
-
-                <span class="entrega">
-                    🚴 Entrega grátis
-                </span>
-
+                <h3>Pizza House</h3>
+                <div class="nota">⭐ 4.7 <span>• 30-40 min</span></div>
+                <p>Pizza • Italiana</p>
+                <span class="entrega">🚴 Entrega grátis</span>
             </div>
-
         </div>
 
         <div class="card">
-
             <div class="foto-comida">
-
-                <img
-                    src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c"
-                    alt="Sushi"
-                >
-
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Sushi">
             </div>
 
             <div class="info">
-
-                <h3>
-                    Sushi San
-                </h3>
-
-                <div class="nota">
-
-                    ⭐ 4.9
-
-                    <span>
-                        • 20-30 min
-                    </span>
-
-                </div>
-
-                <p>
-                    Japonesa • Sushi
-                </p>
-
-                <span class="entrega">
-                    🚴 Entrega grátis
-                </span>
-
+                <h3>Sushi San</h3>
+                <div class="nota">⭐ 4.9 <span>• 20-30 min</span></div>
+                <p>Japonesa • Sushi</p>
+                <span class="entrega">🚴 Entrega grátis</span>
             </div>
-
         </div>
 
         <div class="card">
-
             <div class="foto-comida">
-
-                <img
-                    src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec"
-                    alt="Frango"
-                >
-
+                <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec" alt="Frango">
             </div>
 
             <div class="info">
-
-                <h3>
-                    Frango Mineiro
-                </h3>
-
-                <div class="nota">
-
-                    ⭐ 4.6
-
-                    <span>
-                        • 25-35 min
-                    </span>
-
-                </div>
-
-                <p>
-                    Frango • Brasileira
-                </p>
-
-                <span class="entrega">
-                    🚴 Entrega grátis
-                </span>
-
+                <h3>Frango Mineiro</h3>
+                <div class="nota">⭐ 4.6 <span>• 25-35 min</span></div>
+                <p>Frango • Brasileira</p>
+                <span class="entrega">🚴 Entrega grátis</span>
             </div>
-
         </div>
 
     </div>
 
 </section>
 
+<section class="oferta">
+    <h2>Não sabe o que pedir?</h2>
+    <p>Confira nossas opções e encontre sua próxima refeição favorita!</p>
+    <button>Explorar restaurantes</button>
+</section>
+
 <footer>
-
-    <h3>
-        Uai Cheguei
-    </h3>
-
-    <p>
-        Comida boa chegando até você.
-    </p>
-
-    <p>
-        © 2026 Uai Cheguei
-    </p>
-
+    <h3>Uai Cheguei</h3>
+    <p>Comida boa chegando até você.</p>
+    <p>© 2026 Uai Cheguei</p>
 </footer>
 
 </body>
-
 </html>
