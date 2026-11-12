@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar pedido - UAIcheguei</title>
+    <link rel="stylesheet" href="finalizar.css">
+</head>
+<body>
+
+    <div class="topo">
+        <div class="topo-cima">
+
+            <div class="logo">
+                <strong>UAI</strong>
+                <span>CHEGUEI</span>
+            </div>
+
+            <div class="entrega">
+                <small>Entregar em</small>
+                <strong>Minha Casa</strong>
+                <span>Rua -------</span>
+            </div>
+
+            <input type="text" placeholder="O que você quer comer hoje?">
+
+            <div class="usuario"></div>
+
+            <div class="links">
+                <a href="principal.html">Início</a>
+                <a href="carrinho.html">Carrinho</a>
+                <a href="favoritos.html">Favoritos</a>
+            </div>
+
+        </div>
+
+        <div class="menu">
+            <a href="principal.html">Início</a>
+            <a href="#">Restaurantes</a>
+            <a href="#">Lanches</a>
+            <a href="#">Pizza</a>
+            <a href="#">Japonesa</a>
+            <a href="#">Açaí</a>
+            <a href="#">Doces</a>
+            <a href="#">Promoções</a>
+        </div>
+    </div>
+
+    <div class="pagina">
+
+        <h1>Finalizar pedido</h1>
+        <p class="subtitulo">Confira seus dados antes de concluir a compra.</p>
+
+        <div class="conteudo">
+
+            <div class="coluna-esquerda">
+
+                <div class="bloco">
+                    <h2>Endereço de entrega</h2>
+
+                    <div class="endereco">
+                        <strong>Minha Casa</strong>
+                        <p>Rua -------, Número 123</p>
+                        <p>Centro</p>
+                    </div>
+
+                    <a href="#" class="alterar">Alterar endereço</a>
+                </div>
+
+                <div class="bloco">
+                    <h2>Forma de pagamento</h2>
+
+                    <label class="opcao">
+                        <input type="radio" name="pagamento" value="Pix" checked>
+                        <span>
+                            <strong>Pix</strong>
+                            <small>Pagamento rápido e prático</small>
+                        </span>
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="pagamento" value="Cartão de crédito">
+                        <span>
+                            <strong>Cartão de crédito</strong>
+                            <small>Pagamento com cartão</small>
+                        </span>
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="pagamento" value="Dinheiro">
+                        <span>
+                            <strong>Dinheiro</strong>
+                            <small>Pagamento na entrega</small>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="bloco">
+                    <h2>Observações do pedido</h2>
+
+                    <textarea placeholder="Alguma observação para o restaurante ou entregador?"></textarea>
+                </div>
+
+            </div>
+
+            <div class="resumo">
+
+                <h2>Resumo do pedido</h2>
+
+                <div class="restaurante">
+                    <strong>Burger King</strong>
+                </div>
+
+                <div class="produto">
+                    <span>1x X-Bacon</span>
+                    <strong>R$ 29,90</strong>
+                </div>
+
+                <div class="produto">
+                    <span>1x Batata frita</span>
+                    <strong>R$ 7,99</strong>
+                </div>
+
+                <hr>
+
+                <div class="linha">
+                    <span>Subtotal</span>
+                    <span>R$ 37,89</span>
+                </div>
+
+                <div class="linha">
+                    <span>Taxa de entrega</span>
+                    <span>R$ 9,99</span>
+                </div>
+
+                <hr>
+
+                <div class="total">
+                    <strong>Total</strong>
+                    <strong>R$ 47,88</strong>
+                </div>
+
+                <div class="entrega-estimada">
+                    <strong>Entrega estimada</strong>
+                    <p>15 a 25 minutos</p>
+                </div>
+
+                <button onclick="finalizarPedido()">Confirmar pedido</button>
+
+                <a href="carrinho.html" class="voltar">← Voltar ao carrinho</a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="rodape">
+        <p>UAIcheguei &copy; 2026 - Projeto escolar FDW1</p>
+    </div>
+
+    <script>
+        function finalizarPedido() {
+            let pagamento = document.querySelector('input[name="pagamento"]:checked');
+
+            if (pagamento == null) {
+                alert("Selecione uma forma de pagamento!");
+                return;
+            }
+
+            alert("Pedido confirmado! Forma de pagamento: " + pagamento.value);
+            window.location.href = "principal.html";
+        }
+    </script>
+
+</body>
+</html>
