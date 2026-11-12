@@ -6,10 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="UAIcheguei, carrinho, delivery">
 <meta name="author" content="Equipe UAIcheguei">
-<meta name="description" content="Carrinho de compras do UAIcheguei.">
+<meta name="description" content="Carrinho de compras do UAIcheguei">
+
 <title>UAIcheguei - Meu carrinho</title>
 
 <style>
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -22,98 +24,135 @@ body {
     color: #4f3011;
 }
 
-#topo {
-    background: white;
-    padding: 15px 5%;
-    border-bottom: 1px solid #eee;
+/* TOPO */
+
+.aviso {
+    background: #e15800;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    font-size: 12px;
 }
 
-#cabecalho {
+.cabecalho {
+    background: white;
+    padding: 20px 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.topo {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 25px;
 }
 
-#logo {
-    width: 140px;
+.logo {
+    width: 115px;
 }
 
-#linha {
-    height: 45px;
-    border-left: 1px solid #ddd;
+.endereco {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 13px;
+    border-radius: 12px;
+    background: #fff8f3;
 }
 
-#endereco p {
-    font-size: 12px;
-    color: #777;
+.local {
+    font-size: 25px;
 }
 
-#endereco strong {
+.endereco p {
+    color: #888;
+    font-size: 11px;
+}
+
+.endereco strong {
+    display: block;
     color: #e15800;
+    font-size: 14px;
 }
 
-#pesquisa {
+.pesquisa {
     display: flex;
     align-items: center;
     background: #fff3ec;
-    padding: 12px;
-    border-radius: 8px;
-    flex: 1;
-    gap: 10px;
+    border: 1px solid #f5d6c5;
+    border-radius: 30px;
+    padding: 0 18px;
+    width: 35%;
 }
 
-#pesquisa input {
+.pesquisa input {
+    width: 100%;
+    padding: 14px 12px;
     border: none;
     outline: none;
     background: transparent;
-    width: 100%;
 }
 
-#acoes {
+.acoes {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 22px;
 }
 
-.acao {
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #444;
     text-decoration: none;
-    color: #4f3011;
-    font-size: 14px;
+    font-size: 12px;
 }
 
-.ativo {
+.opcao span {
+    font-size: 23px;
+}
+
+.opcao.ativo {
     color: #e15800;
 }
 
-.icone {
-    margin-right: 5px;
-}
-
-#perfil img {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-#menu {
-    background: white;
-    padding: 15px 5%;
-}
-
-#menu ul {
+.perfil {
+    width: 43px;
+    height: 43px;
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    gap: 15px;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #fff3ec;
+    border: 1px solid #ffe0cf;
+    border-radius: 50%;
+    font-size: 21px;
+    text-decoration: none;
 }
 
-#menu a {
-    text-decoration: none;
-    color: #4f3011;
-    font-size: 14px;
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid #eee;
 }
+
+.menu a {
+    padding: 9px 16px;
+    border-radius: 25px;
+    background: #fff8f4;
+    color: #4f3011;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.menu a:hover {
+    background: #e15800;
+    color: white;
+}
+
+/* CARRINHO */
 
 #principal {
     display: flex;
@@ -210,6 +249,8 @@ body {
     cursor: pointer;
 }
 
+/* RESUMO */
+
 #resumo {
     flex: 1;
     background: white;
@@ -283,7 +324,10 @@ body {
     background: #c94d00;
 }
 
+/* RESPONSIVIDADE */
+
 @media (max-width: 900px) {
+
     #principal {
         flex-direction: column;
     }
@@ -292,27 +336,27 @@ body {
         width: 100%;
     }
 
-    #cabecalho {
+    .topo {
+        flex-wrap: wrap;
+    }
+
+    .pesquisa {
+        width: 100%;
+    }
+
+    .menu {
         flex-wrap: wrap;
     }
 }
 
 @media (max-width: 600px) {
-    #linha {
-        display: none;
-    }
-
-    #pesquisa {
-        order: 3;
-        flex-basis: 100%;
-    }
-
-    #menu ul {
-        justify-content: center;
-    }
 
     #principal {
         padding: 25px 4%;
+    }
+
+    .menu {
+        justify-content: center;
     }
 
     .produto {
@@ -328,69 +372,106 @@ body {
         gap: 15px;
         flex-wrap: wrap;
     }
+
+    .acoes {
+        gap: 12px;
+    }
 }
+
 </style>
 </head>
 
 <body>
 
-<div id="topo">
-    <div id="cabecalho">
-        <a href="index.html">
-            <img id="logo" src="imagem/logo.png" alt="Logo UAIcheguei">
-        </a>
+<!-- AVISO -->
 
-        <div id="linha"></div>
-
-        <div id="endereco">
-            <p>📍 Entregar em</p>
-            <strong>Minha Casa</strong>
-            <p>Rua -------</p>
-        </div>
-
-        <form id="pesquisa">
-            <span>⌕</span>
-            <input type="search" placeholder="O que você quer comer hoje?">
-        </form>
-
-        <div id="acoes">
-            <a class="acao" href="#">♡ Favoritos</a>
-            <a class="acao ativo" href="#">🛒 Carrinho</a>
-        </div>
-
-        <a id="perfil" href="#">
-            <img src="imagem/perfil.jpg" alt="Perfil">
-        </a>
-    </div>
+<div class="aviso">
+    🧡 Peça agora e receba suas comidas favoritas em casa!
 </div>
 
-<nav id="menu">
-    <ul>
-        <li><a href="#"> Início</a></li>
-        <li><a href="#"> Restaurantes</a></li>
-        <li><a href="#"> Lanches</a></li>
-        <li><a href="#"> Pizza</a></li>
-        <li><a href="#"> Japonesa</a></li>
-        <li><a href="#"> Açaí</a></li>
-        <li><a href="#"> Doces</a></li>
-        <li><a href="#"> Promoções</a></li>
-    </ul>
-</nav>
+<!-- CABEÇALHO -->
+
+<header class="cabecalho">
+
+    <div class="topo">
+
+        <a href="index.html">
+            <img src="logo.png" alt="Logo UAIcheguei" class="logo">
+        </a>
+
+        <div class="endereco">
+
+            <span class="local">📍</span>
+
+            <div>
+                <p>ENTREGAR EM</p>
+                <strong>Minha Casa</strong>
+                <p>Rua A</p>
+            </div>
+
+        </div>
+
+        <div class="pesquisa">
+            <span>🔍</span>
+            <input type="text" placeholder="O que você quer comer hoje?">
+        </div>
+
+        <div class="acoes">
+
+            <a href="#" class="opcao">
+                <span>♡</span>
+                Favoritos
+            </a>
+
+            <a href="carrinho.html" class="opcao ativo">
+                <span>🛒</span>
+                Carrinho
+            </a>
+
+            <a href="Login.html" class="perfil">
+                👤
+            </a>
+
+        </div>
+
+    </div>
+
+    <nav class="menu">
+
+        <a href="Principal.html">🏠 Início</a>
+        <a href="#">🏪 Restaurantes</a>
+        <a href="#">🍔 Lanches</a>
+        <a href="#">🍕 Pizza</a>
+        <a href="#">🍣 Japonesa</a>
+        <a href="#">🥣 Açaí</a>
+        <a href="#">🧁 Doces</a>
+        <a href="#">🏷️ Promoções</a>
+
+    </nav>
+
+</header>
+
+<!-- CONTEÚDO DO CARRINHO -->
 
 <main id="principal">
 
     <section id="produtos">
 
         <div id="titulo">
+
             <div>
                 <h1>Meu carrinho</h1>
                 <p>Revise os itens e continue o pagamento</p>
             </div>
 
-            <a id="adicionar" href="#">＋ Adicionar mais</a>
+            <a id="adicionar" href="Principal.html">
+                <span>＋</span> Adicionar mais
+            </a>
+
         </div>
 
         <article class="produto">
+
             <img class="foto-produto" src="imagem/hamburguer.png" alt="Hambúrguer">
 
             <div class="descricao">
@@ -405,9 +486,11 @@ body {
                 <span>1</span>
                 <button type="button">+</button>
             </div>
+
         </article>
 
         <article class="produto">
+
             <img class="foto-produto batata" src="imagem/batata.png" alt="Batata frita">
 
             <div class="descricao">
@@ -422,16 +505,18 @@ body {
                 <span>1</span>
                 <button type="button">+</button>
             </div>
+
         </article>
 
     </section>
 
     <aside id="resumo">
+
         <h2>Resumo do seu pedido</h2>
 
         <div class="linha-resumo">
             <span>Subtotal</span>
-            <strong>R$ 29,90</strong>
+            <strong>R$ 37,89</strong>
         </div>
 
         <div class="linha-resumo">
@@ -441,18 +526,24 @@ body {
 
         <div id="total">
             <span>Total</span>
-            <strong>R$ 39,89</strong>
+            <strong>R$ 47,88</strong>
         </div>
 
         <div id="entrega">
+
             <img src="imagem/entrega.png" alt="Entrega">
+
             <div>
                 <h3>Entrega estimada</h3>
                 <p>Entre 30 e 45 minutos</p>
             </div>
+
         </div>
 
-        <a id="finalizar" href="#">Finalizar pedido</a>
+        <a id="finalizar" href="#">
+            Finalizar pedido
+        </a>
+
     </aside>
 
 </main>
