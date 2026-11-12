@@ -1,6 +1,8 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +13,17 @@
 <title>UAIcheguei - Meu carrinho</title>
 
 <style>
+  body {
+    background: #fff8f3;
+    color: #4f3011;
+}
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Poppins, Arial, sans-serif;
 }
-
-body {
-    background: #fff8f3;
-    color: #4f3011;
-}
-
-/* TOPO */
 
 .aviso {
     background: #e15800;
@@ -82,7 +81,14 @@ body {
     border: 1px solid #f5d6c5;
     border-radius: 30px;
     padding: 0 18px;
-    width: 35%;
+    flex: 1;
+    max-width: 430px;
+    transition: 0.3s;
+}
+
+.pesquisa:focus-within {
+    border-color: #e15800;
+    background: white;
 }
 
 .pesquisa input {
@@ -91,6 +97,12 @@ body {
     border: none;
     outline: none;
     background: transparent;
+    font-family: Poppins;
+    font-size: 12px;
+}
+
+.pesquisa span {
+    font-size: 20px;
 }
 
 .acoes {
@@ -106,12 +118,14 @@ body {
     color: #444;
     text-decoration: none;
     font-size: 12px;
+    transition: 0.3s;
 }
 
 .opcao span {
     font-size: 23px;
 }
 
+.opcao:hover,
 .opcao.ativo {
     color: #e15800;
 }
@@ -127,6 +141,11 @@ body {
     border-radius: 50%;
     font-size: 21px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.perfil:hover {
+    background: #ffe0cf;
 }
 
 .menu {
@@ -145,6 +164,59 @@ body {
     color: #4f3011;
     text-decoration: none;
     font-size: 13px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #e15800;
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .topo {
+        flex-wrap: wrap;
+    }
+
+    .pesquisa {
+        order: 3;
+        flex-basis: 100%;
+        max-width: none;
+    }
+
+    .acoes {
+        margin-left: auto;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 550px) {
+    .cabecalho {
+        padding: 15px 4%;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .endereco {
+        padding: 7px;
+    }
+
+    .acoes {
+        gap: 12px;
+    }
+
+    .opcao {
+        font-size: 0;
+    }
+
+    .menu a {
+        padding: 7px 10px;
+        font-size: 11px;
+    }
 }
 
 .menu a:hover {
@@ -382,8 +454,8 @@ body {
 </head>
 
 <body>
+  
 
-<!-- AVISO -->
 
 <div class="aviso">
     🧡 Peça agora e receba suas comidas favoritas em casa!
@@ -395,7 +467,7 @@ body {
 
     <div class="topo">
 
-        <a href="index.html">
+        <a href="Principal.html">
             <img src="logo.png" alt="Logo UAIcheguei" class="logo">
         </a>
 
@@ -509,6 +581,8 @@ body {
         </article>
 
     </section>
+
+    <!-- RESUMO DO PEDIDO -->
 
     <aside id="resumo">
 
