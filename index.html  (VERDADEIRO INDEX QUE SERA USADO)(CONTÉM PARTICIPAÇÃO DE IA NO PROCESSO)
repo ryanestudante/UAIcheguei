@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>UAIcheguei - Peça sua comida favorita</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- AVISO SUPERIOR -->
+
+    <div class="aviso">
+        <p>🧡 Peça agora e receba suas comidas favoritas em casa!</p>
+    </div>
+
+    <header class="cabecalho">
+
+        <div class="topo">
+
+            <a href="index.html">
+                <img src="logo.png" alt="Logo UAIcheguei" class="logo">
+            </a>
+
+            <div class="endereco">
+                <span class="local">📍</span>
+
+                <div>
+                    <p>ENTREGAR EM</p>
+                    <strong>Minha Casa</strong>
+                    <p>Rua A</p>
+                </div>
+            </div>
+
+            <div class="pesquisa">
+                <span>🔍</span>
+                <input type="text" id="busca" placeholder="O que você quer comer hoje?">
+            </div>
+
+            <div class="acoes">
+
+                <a href="#" class="opcao">
+                    <span>♡</span>
+                    Favoritos
+                </a>
+
+                <a href="carrinho.html" class="opcao">
+                    <span>🛒</span>
+                    Carrinho
+                </a>
+
+                <a href="Login.html" class="perfil">
+                    👤
+                </a>
+
+            </div>
+
+        </div>
+
+        <nav class="menu">
+
+            <a href="index.html" class="ativo">🏠 Início</a>
+            <a href="#restaurantes">🏪 Restaurantes</a>
+            <a href="#categorias">🍔 Lanches</a>
+            <a href="#categorias">🍕 Pizza</a>
+            <a href="#categorias">🍣 Japonesa</a>
+            <a href="#categorias">🥣 Açaí</a>
+            <a href="#categorias">🧁 Doces</a>
+            <a href="#promocoes">🏷️ Promoções</a>
+
+        </nav>
+
+    </header>
+
+    <section class="banner">
+
+        <div class="banner-texto">
+
+            <span class="etiqueta">SEU DELIVERY FAVORITO</span>
+
+            <h1>
+                A fome chegou?
+                <span>A gente resolve!</span>
+            </h1>
+
+            <p>
+                Seus restaurantes favoritos, pratos deliciosos
+                e ofertas especiais em um só lugar.
+            </p>
+
+            <a href="#restaurantes" class="botao-banner">
+                Encontrar comida
+            </a>
+
+        </div>
+
+        <div class="banner-oferta">
+
+            <span>🔥 OFERTA ESPECIAL</span>
+
+            <h2>Até 30% OFF</h2>
+
+            <p>Em restaurantes selecionados.</p>
+
+            <a href="#promocoes">Aproveitar ofertas →</a>
+
+        </div>
+
+    </section>
+
+    <section class="categorias" id="categorias">
+
+        <div class="titulo-secao">
+
+            <div>
+                <span class="subtitulo">ESCOLHA SEU FAVORITO</span>
+                <h2>O que você está com vontade?</h2>
+            </div>
+
+        </div>
+
+        <div class="lista-categorias">
+
+            <a href="#restaurantes" class="categoria">
+                <div class="categoria-img">🍔</div>
+                <strong>Lanches</strong>
+            </a>
+
+            <a href="#restaurantes" class="categoria">
+                <div class="categoria-img">🍕</div>
+                <strong>Pizza</strong>
+            </a>
+
+            <a href="#restaurantes" class="categoria">
+                <div class="categoria-img">🍣</div>
+                <strong>Japonesa</strong>
+            </a>
+
+            <a href="#restaurantes" class="categoria">
+                <div class="categoria-img">🍗</div>
+                <strong>Brasileira</strong>
+            </a>
+
+            <a href="#pratos" class="categoria">
+                <div class="categoria-img">🥣</div>
+                <strong>Açaí</strong>
+            </a>
+
+            <a href="#pratos" class="categoria">
+                <div class="categoria-img">🍰</div>
+                <strong>Doces</strong>
+            </a>
+
+            <a href="#pratos" class="categoria">
+                <div class="categoria-img">🥤</div>
+                <strong>Bebidas</strong>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="promocoes" id="promocoes">
+
+        <div class="promocao-texto">
+
+            <span>OFERTAS IMPERDÍVEIS</span>
+
+            <h2>Seu pedido favorito com preço especial!</h2>
+
+            <p>
+                Aproveite descontos em pratos selecionados
+                e descubra novos sabores.
+            </p>
+
+            <a href="#pratos">Ver ofertas</a>
+
+        </div>
+
+        <div class="promocao-emoji">
+            
+        </div>
+
+    </section>
+
+    <section class="restaurantes" id="restaurantes">
+
+        <div class="titulo-secao">
+
+            <div>
+                <span class="subtitulo">PERTO DE VOCÊ</span>
+                <h2>Restaurantes em destaque</h2>
+                <p>Encontre seu próximo pedido favorito.</p>
+            </div>
+
+            <span class="ver-mais">Confira nossas opções</span>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card" tabindex="0" data-nome="burger king whopper hamburguer lanche">
+
+                <div class="foto-comida">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mZNDf2uI5FLlVpe3cggQuv9CbAXMPujZFevreQbGSQ&s=10" alt="Hambúrguer do Burger King">
+
+                    <span class="selo">MAIS PEDIDO</span>
+
+                </div>
+
+                <div class="info">
+
+                    <div class="nome-restaurante">
+                        <h3>Burger King</h3>
+                        <span class="nota">⭐ 4.8</span>
+                    </div>
+
+                    <p>Hambúrguer • Lanches</p>
+
+                    <div class="dados">
+                        <span>🕒 25-35 min</span>
+                        <span>🚴 Grátis</span>
+                    </div>
+
+                </div>
+
+                <div class="detalhes">
+
+                    <span class="detalhe-titulo">RESTAURANTE EM DESTAQUE</span>
+
+                    <h3>Burger King</h3>
+
+                    <div class="avaliacao">⭐ 4.8 • Muito bem avaliado</div>
+
+                    <p class="categoria-card">🍔 Hambúrgueres e lanches</p>
+
+                    <div class="prato-destaque">
+
+                        <strong>PRATO EM DESTAQUE</strong>
+
+                        <h4>Whopper</h4>
+
+                        <p>
+                            Pão com gergelim, hambúrguer grelhado,
+                            queijo, salada e molho especial.
+                        </p>
+
+                        <span>R$ 29,90</span>
+
+                    </div>
+
+                    <div class="dados-detalhe">
+                        <p>🕒 Entrega: 25-35 minutos</p>
+                        <p>🚴 Entrega grátis</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card" tabindex="0" data-nome="pizza house pizza calabresa italiana">
+
+                <div class="foto-comida">
+
+                    <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498" alt="Pizza de calabresa">
+
+                    <span class="selo desconto">15% OFF</span>
+
+                </div>
+
+                <div class="info">
+
+                    <div class="nome-restaurante">
+                        <h3>Pizza House</h3>
+                        <span class="nota">⭐ 4.7</span>
+                    </div>
+
+                    <p>Pizza • Italiana</p>
+
+                    <div class="dados">
+                        <span>🕒 30-40 min</span>
+                        <span>🚴 Grátis</span>
+                    </div>
+
+                </div>
+
+                <div class="detalhes">
+
+                    <span class="detalhe-titulo">RESTAURANTE EM DESTAQUE</span>
+
+                    <h3>Pizza House</h3>
+
+                    <div class="avaliacao">⭐ 4.7 • Muito bem avaliado</div>
+
+                    <p class="categoria-card">🍕 Pizzas e massas</p>
+
+                    <div class="prato-destaque">
+
+                        <strong>PRATO EM DESTAQUE</strong>
+
+                        <h4>Pizza de Calabresa</h4>
+
+                        <p>
+                            Massa especial, molho de tomate,
+                            queijo, calabresa e cebola.
+                        </p>
+
+                        <span>R$ 39,90</span>
+
+                    </div>
+
+                    <div class="dados-detalhe">
+                        <p>🕒 Entrega: 30-40 minutos</p>
+                        <p>🚴 Entrega grátis</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card" tabindex="0" data-nome="sushi san japonesa sushi combo">
+
+                <div class="foto-comida">
+
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Combinado de sushi">
+
+                </div>
+
+                <div class="info">
+
+                    <div class="nome-restaurante">
+                        <h3>Sushi San</h3>
+                        <span class="nota">⭐ 4.9</span>
+                    </div>
+
+                    <p>Japonesa • Sushi</p>
+
+                    <div class="dados">
+                        <span>🕒 20-30 min</span>
+                        <span>🚴 Grátis</span>
+                    </div>
+
+                </div>
+
+                <div class="detalhes">
+
+                    <span class="detalhe-titulo">RESTAURANTE EM DESTAQUE</span>
+
+                    <h3>Sushi San</h3>
+
+                    <div class="avaliacao">⭐ 4.9 • Muito bem avaliado</div>
+
+                    <p class="categoria-card">🍣 Comida japonesa</p>
+
+                    <div class="prato-destaque">
+
+                        <strong>PRATO EM DESTAQUE</strong>
+
+                        <h4>Combo de Sushi</h4>
+
+                        <p>
+                            Seleção de peças de sushi
+                            com acompanhamentos tradicionais.
+                        </p>
+
+                        <span>R$ 45,90</span>
+
+                    </div>
+
+                    <div class="dados-detalhe">
+                        <p>🕒 Entrega: 20-30 minutos</p>
+                        <p>🚴 Entrega grátis</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card" tabindex="0" data-nome="frango mineiro frango crocante brasileira">
+
+                <div class="foto-comida">
+
+                    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec" alt="Frango crocante">
+
+                </div>
+
+                <div class="info">
+
+                    <div class="nome-restaurante">
+                        <h3>Frango Mineiro</h3>
+                        <span class="nota">⭐ 4.6</span>
+                    </div>
+
+                    <p>Frango • Brasileira</p>
+
+                    <div class="dados">
+                        <span>🕒 25-35 min</span>
+                        <span>🚴 Grátis</span>
+                    </div>
+
+                </div>
+
+                <div class="detalhes">
+
+                    <span class="detalhe-titulo">RESTAURANTE EM DESTAQUE</span>
+
+                    <h3>Frango Mineiro</h3>
+
+                    <div class="avaliacao">⭐ 4.6 • Bem avaliado</div>
+
+                    <p class="categoria-card">🍗 Comida brasileira</p>
+
+                    <div class="prato-destaque">
+
+                        <strong>PRATO EM DESTAQUE</strong>
+
+                        <h4>Frango Crocante</h4>
+
+                        <p>
+                            Frango empanado e crocante,
+                            acompanhado de batatas fritas.
+                        </p>
+
+                        <span>R$ 32,90</span>
+
+                    </div>
+
+                    <div class="dados-detalhe">
+                        <p>🕒 Entrega: 25-35 minutos</p>
+                        <p>🚴 Entrega grátis</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="sem-resultado" id="semResultado">
+            Nenhum restaurante encontrado.
+        </p>
+
+    </section>
+
+
+    <section class="pratos" id="pratos">
+
+        <div class="titulo-secao">
+
+            <div>
+                <span class="subtitulo">ESCOLHAS POPULARES</span>
+                <h2>Pratos que fazem sucesso</h2>
+                <p>Algumas opções para deixar seu dia mais gostoso.</p>
+            </div>
+
+        </div>
+
+        <div class="lista-pratos">
+
+            <div class="card-prato" data-nome="hamburguer bacon x bacon lanche">
+
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Hambúrguer com bacon">
+
+                <div class="info-prato">
+
+                    <span class="tipo-prato">LANCHES</span>
+
+                    <h3>X-Bacon</h3>
+
+                    <p>Hambúrguer, queijo, bacon e molho especial.</p>
+
+                    <div class="preco-prato">
+                        <strong>R$ 29,90</strong>
+                        <a href="carrinho.html">Ver pedido</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card-prato" data-nome="pizza queijo mussarela">
+
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Pizza de queijo">
+
+                <div class="info-prato">
+
+                    <span class="tipo-prato">PIZZAS</span>
+
+                    <h3>Pizza de Queijo</h3>
+
+                    <p>Massa especial com queijo e molho de tomate.</p>
+
+                    <div class="preco-prato">
+                        <strong>R$ 35,90</strong>
+                        <a href="carrinho.html">Ver pedido</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card-prato" data-nome="sushi combinado japonesa">
+
+                <img src="https://images.unsplash.com/photo-1553621042-f6e147245754" alt="Combinado de sushi">
+
+                <div class="info-prato">
+
+                    <span class="tipo-prato">JAPONESA</span>
+
+                    <h3>Combinado Sushi</h3>
+
+                    <p>Variedade de peças para aproveitar.</p>
+
+                    <div class="preco-prato">
+                        <strong>R$ 45,90</strong>
+                        <a href="carrinho.html">Ver pedido</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card-prato" data-nome="acai morango banana doce">
+
+                <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733" alt="Açaí com frutas">
+
+                <div class="info-prato">
+
+                    <span class="tipo-prato">AÇAÍ</span>
+
+                    <h3>Açaí Especial</h3>
+
+                    <p>Açaí acompanhado de frutas e complementos.</p>
+
+                    <div class="preco-prato">
+                        <strong>R$ 19,90</strong>
+                        <a href="carrinho.html">Ver pedido</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="vantagens">
+
+        <div>
+            <span>🚴</span>
+            <h3>Entrega prática</h3>
+            <p>Receba seu pedido em casa.</p>
+        </div>
+
+        <div>
+            <span>🍔</span>
+            <h3>Variedade</h3>
+            <p>Diferentes restaurantes e sabores.</p>
+        </div>
+
+        <div>
+            <span>💳</span>
+            <h3>Pagamento fácil</h3>
+            <p>Escolha a forma de pagamento.</p>
+        </div>
+
+        <div>
+            <span>🧡</span>
+            <h3>Feito para você</h3>
+            <p>Praticidade em cada pedido.</p>
+        </div>
+
+    </section>
+
+    <section class="chamada">
+
+        <h2>Bateu aquela fome?</h2>
+
+        <p>
+            Explore nossos restaurantes e encontre
+            algo delicioso para hoje!
+        </p>
+
+        <a href="#restaurantes">Explorar restaurantes</a>
+
+    </section>
+
+    <footer>
+
+        <div class="rodape-conteudo">
+
+            <div class="rodape-logo">
+
+                <img src="logo.png" alt="UAIcheguei">
+
+                <p>Comida boa chegando até você.</p>
+
+            </div>
+
+            <div class="rodape-links">
+
+                <h3>Navegação</h3>
+
+                <a href="index.html">Início</a>
+                <a href="#restaurantes">Restaurantes</a>
+                <a href="#categorias">Categorias</a>
+                <a href="#promocoes">Promoções</a>
+
+            </div>
+
+            <div class="rodape-links">
+
+                <h3>Minha conta</h3>
+
+                <a href="Login.html">Entrar</a>
+                <a href="cadastro.html">Cadastrar</a>
+                <a href="carrinho.html">Carrinho</a>
+
+            </div>
+
+            <div class="rodape-links">
+
+                <h3>UAIcheguei</h3>
+
+                <p>Comida boa, pertinho de você!</p>
+                <p>Uberlândia - MG</p>
+
+            </div>
+
+        </div>
+
+        <div class="rodape-final">
+            <p>© 2026 UAIcheguei - Todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+
+    <script>
+
+        let busca = document.getElementById("busca");
+
+        busca.addEventListener("input", function() {
+
+            let texto = busca.value.toLowerCase();
+
+            let restaurantes = document.querySelectorAll(".card");
+            let pratos = document.querySelectorAll(".card-prato");
+
+            let encontrados = 0;
+
+            restaurantes.forEach(function(card) {
+
+                let nome = card.getAttribute("data-nome").toLowerCase();
+
+                if (nome.includes(texto)) {
+                    card.style.display = "block";
+                    encontrados++;
+                } else {
+                    card.style.display = "none";
+                }
+
+            });
+
+            pratos.forEach(function(prato) {
+
+                let nome = prato.getAttribute("data-nome").toLowerCase();
+
+                if (nome.includes(texto)) {
+                    prato.style.display = "block";
+                } else {
+                    prato.style.display = "none";
+                }
+
+            });
+
+            if (texto == "") {
+                document.getElementById("semResultado").style.display = "none";
+            } else if (encontrados == 0) {
+                document.getElementById("semResultado").style.display = "block";
+            } else {
+                document.getElementById("semResultado").style.display = "none";
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
