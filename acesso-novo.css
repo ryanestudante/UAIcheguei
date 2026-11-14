@@ -35,3 +35,16 @@ body:has(.imagem-box) .imagem-box{min-height:620px!important}
 body:has(.imagem-box) .form-box{width:54%!important}
 @media(max-width:850px){body{padding:16px!important}body>.container{max-width:540px!important;min-height:0!important}.caixa-branca,.form-box,body:has(.imagem-box) .form-box{width:100%!important;flex:1 1 100%;padding:44px 34px!important}.uai_imagem,.uai-imagem,.imagem-box{display:none!important}.caixa-branca .voltar-inicio{margin-bottom:28px}}
 @media(max-width:480px){body{padding:10px!important}body>.container{border-radius:19px!important}.caixa-branca,.form-box,body:has(.imagem-box) .form-box{padding:33px 22px!important}.caixa-branca h1,.form-box h1{font-size:28px!important}.campo-form{min-height:47px}.caixa-branca .descricao,.form-box>p{font-size:13px!important}}
+
+
+/* Paleta pessego suave nas tres telas de acesso */
+:root{--uai-laranja:#C96A32;--uai-marrom:#4F3011;--uai-creme:#FFF3E8}
+body{background:#FFF3E8!important;background-image:radial-gradient(circle at 12% 20%,#FFE2C6 0,transparent 35%),radial-gradient(circle at 90% 80%,#FBE5D4 0,transparent 40%)!important}
+.caixa-branca h2{color:#B65B2B!important}
+.campo-form:focus{border-color:#D98255!important;box-shadow:0 0 0 4px #F4A26133!important}
+.buton-entrar,.botao{background:#C96A32!important;box-shadow:0 8px 18px #C96A3226!important}
+.buton-entrar:hover,.botao:hover{background:#AD5726!important}
+.uai_imagem,.uai-imagem,.imagem-box{background:linear-gradient(150deg,#F4A261,#F6AD72 65%,#FFD3A5)!important}
+.caixa-marrom{background:#4F3011!important}
+.laranja{color:#FFD3A5!important}
+.esqueci,.criar-conta span,.voltar-inicio,.voltar{color:#A64E22!important}
