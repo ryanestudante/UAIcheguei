@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="responsivo.css">
 <link rel="stylesheet" href="tema-escuro.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="acesso-novo.css">
 </head>
 
 <body>
@@ -20,15 +22,16 @@
 <div class="container">
 
     <main class="form-box">
+        <a href="index.html" class="voltar">← Voltar ao início</a>
 
-        <h1>Crie sua conta!</h1>
+        <h1>Faça parte do UAIcheguei</h1>
 
         <p>
             Faça parte do UAIcheguei e descubra
             o melhor da comida de Minas Gerais.
         </p>
 
-        <form>
+        <form onsubmit="entrar(); return false;">
 
             <input
                 class="campo-form"
@@ -83,13 +86,12 @@
 
             <button
                 class="botao"
-                type="button"
-                onclick="entrar()"
+                type="submit"
             >
                 Criar conta
             </button>
 
-            <div id="mensagem"></div>
+            <div id="mensagem" role="status" aria-live="polite"></div>
 
             <a href="login.html" class="voltar">
                 ← Voltar para o login
