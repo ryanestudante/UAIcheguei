@@ -1,198 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Área do Cliente - UAIcheguei</title>
-
-    <link rel="stylesheet" href="intranet_cliente.css">
+    <title>Início do cliente | UAIcheguei</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cliente-topo.css">
+    <link rel="stylesheet" href="Intranet_cliente.css">
     <link rel="stylesheet" href="rodape.css">
-
 </head>
-
 <body>
-
-    <header class="cabecalho">
-
-        <div class="topo">
-
-            <a href="index.html">
-                <img src="img/LOGOUAICHEGUEI.png" class="logo">
-            </a>
-
-            <div class="pesquisa">
-                🔍
-                <input type="text" placeholder="Buscar">
-            </div>
-
-            <div class="opcoes">
-
-                <a href="index.html">🏠 Início</a>
-
-                <a href="carrinho.html">🛒 Carrinho</a>
-
-                <a href="#">♡ Favoritos</a>
-
-            </div>
-
-        </div>
-
-
-        <div class="menu">
-
-            <a href="config.html" class="config">⚙️</a>
-
-            <a href="index.html">
-                🏠
-                <span>Início</span>
-            </a>
-
-            <a href="#">
-                🏪
-                <span>Restaurantes</span>
-            </a>
-
-            <a href="#">
-                🍔
-                <span>Lanches</span>
-            </a>
-
-            <a href="#">
-                🍕
-                <span>Pizza</span>
-            </a>
-
-            <a href="#">
-                🍣
-                <span>Japonesa</span>
-            </a>
-
-            <a href="#">
-                🥣
-                <span>Açaí</span>
-            </a>
-
-            <a href="#">
-                🧁
-                <span>Doces</span>
-            </a>
-
-            <a href="#">
-                🏷️
-                <span>Promoções</span>
-            </a>
-
-        </div>
-
-    </header>
-
-
-    <div class="titulo">
-
-        <h1>👤 Área do Cliente</h1>
-
-        <p>Bem-vindo ao seu espaço no UAIcheguei!</p>
-
+<header class="cliente-cabecalho">
+    <div class="cliente-topo">
+        <a class="cliente-marca" href="Intranet_cliente.html"><img src="logo.png" alt="Logo UAIcheguei"><span>UAIcheguei</span></a>
+        <form class="cliente-busca" action="Intranet_cliente.html" method="get">
+            <label for="busca-cliente">⌕</label>
+            <input id="busca-cliente" type="search" name="busca" placeholder="O que você quer comer hoje?">
+        </form>
+        <nav class="cliente-acoes" aria-label="Área do cliente">
+            <a href="Intranet_cliente.html">⌂ <span>Início</span></a>
+            <a href="carrinho.html">🛒 <span>Carrinho</span></a>
+            <a href="Intranet_cliente.html#minha-conta">👤 <span>Minha conta</span></a>
+        </nav>
     </div>
-
-
-    <div class="conteudo">
-
-        <div class="menu-lateral">
-
-            <h2>Minha conta</h2>
-
-            <a href="#">👤 Meus dados</a>
-
-            <a href="#">📦 Meus pedidos</a>
-
-            <a href="#">📍 Meus endereços</a>
-
-            <a href="#">❤️ Favoritos</a>
-
-            <a href="#">🎟️ Meus cupons</a>
-
-            <a href="index.html">🏠 Voltar para o início</a>
-
-            <a href="index.html" class="sair">🚪 Sair</a>
-
+    <nav class="cliente-menu" aria-label="Categorias">
+        <a href="Intranet_cliente.html">Início</a>
+        <a href="Intranet_cliente.html#categorias">Categorias</a>
+        <a href="Intranet_cliente.html#destaques">Destaques</a>
+        <a href="Intranet_cliente.html#minha-conta">Meus pedidos</a>
+        <a href="carrinho.html">Meu carrinho</a>
+    </nav>
+</header>
+<main class="pagina-cliente">
+    <section class="boas-vindas">
+        <div>
+            <span class="etiqueta">🧡 Bem-vindo ao UAIcheguei</span>
+            <h1>Uai, bateu aquela <span>fome?</span></h1>
+            <p>Seu próximo pedido favorito está a poucos cliques. Explore sabores e aproveite!</p>
+            <a class="botao-principal" href="#categorias">Explorar comidas →</a>
         </div>
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=750&auto=format&fit=crop&q=85" alt="Hambúrguer apetitoso">
+    </section>
 
-
-        <div class="area">
-
-            <h2>Olá, cliente!</h2>
-
-            <p class="texto">
-                Aqui você pode acompanhar seus pedidos,
-                consultar seus dados e acessar seus benefícios.
-            </p>
-
-
-            <div class="cartoes">
-
-                <div class="cartao">
-
-                    <div class="icone">📦</div>
-
-                    <h3>Meus pedidos</h3>
-
-                    <p>Veja seus pedidos recentes.</p>
-
-                    <a href="#">Ver pedidos</a>
-
-                </div>
-
-
-                <div class="cartao">
-
-                    <div class="icone">📍</div>
-
-                    <h3>Meus endereços</h3>
-
-                    <p>Confira seus endereços cadastrados.</p>
-
-                    <a href="#">Ver endereços</a>
-
-                </div>
-
-
-                <div class="cartao">
-
-                    <div class="icone">🎟️</div>
-
-                    <h3>Meus cupons</h3>
-
-                    <p>Veja seus cupons disponíveis.</p>
-
-                    <a href="#">Ver cupons</a>
-
-                </div>
-
-
-                <div class="cartao">
-
-                    <div class="icone">❤️</div>
-
-                    <h3>Favoritos</h3>
-
-                    <p>Confira seus restaurantes favoritos.</p>
-
-                    <a href="#">Ver favoritos</a>
-
-                </div>
-
-            </div>
-
+    <section class="secao-cliente" id="categorias">
+        <div class="secao-titulo"><div><span>Escolha seu favorito</span><h2>O que vamos pedir hoje?</h2></div></div>
+        <div class="categorias-cliente">
+            <a href="#destaques"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=320&auto=format&fit=crop&q=80" alt="Hambúrguer"><strong>Lanches</strong></a>
+            <a href="#destaques"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=320&auto=format&fit=crop&q=80" alt="Pizza"><strong>Pizzas</strong></a>
+            <a href="#destaques"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=320&auto=format&fit=crop&q=80" alt="Macarrão"><strong>Massas</strong></a>
+            <a href="#destaques"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=320&auto=format&fit=crop&q=80" alt="Bolo"><strong>Doces</strong></a>
         </div>
+    </section>
 
-    </div>
+    <section class="secao-cliente" id="destaques">
+        <div class="secao-titulo"><div><span>De dar água na boca</span><h2>Pratos em destaque</h2></div><a href="carrinho.html">Ver carrinho →</a></div>
+        <div class="destaques-cliente">
+            <article class="prato"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=650&auto=format&fit=crop&q=85" alt="Hambúrguer"><div><span>🍔 Lanches</span><h3>Hambúrguer especial</h3><p>Uma opção deliciosa para matar a fome.</p><a href="carrinho.html">Ver carrinho →</a></div></article>
+            <article class="prato"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=650&auto=format&fit=crop&q=85" alt="Pizza"><div><span>🍕 Pizzas</span><h3>Pizza caprichada</h3><p>O sabor que combina com qualquer momento.</p><a href="carrinho.html">Ver carrinho →</a></div></article>
+            <article class="prato"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=650&auto=format&fit=crop&q=85" alt="Macarrão"><div><span>🍝 Massas</span><h3>Massa especial</h3><p>Uma refeição saborosa para o seu dia.</p><a href="carrinho.html">Ver carrinho →</a></div></article>
+        </div>
+    </section>
 
-
-    <footer class="rodape-uai">
+    <section class="secao-cliente" id="minha-conta">
+        <div class="secao-titulo"><div><span>Seu espaço</span><h2>Minha conta</h2></div></div>
+        <div class="atalhos-cliente">
+            <div><span>📦</span><h3>Meus pedidos</h3><p>Em breve você poderá acompanhar seus pedidos aqui.</p></div>
+            <div><span>📍</span><h3>Meus endereços</h3><p>Em breve você poderá gerenciar seus endereços.</p></div>
+            <div><span>❤️</span><h3>Favoritos</h3><p>Seus restaurantes favoritos ficarão aqui.</p></div>
+            <a href="carrinho.html"><span>🛒</span><h3>Meu carrinho</h3><p>Confira os itens do seu pedido. →</p></a>
+        </div>
+    </section>
+</main>
+<footer class="rodape-uai">
     <div class="rodape-conteudo">
         <div class="rodape-marca">
             <a href="index.html" class="rodape-logo">
@@ -223,7 +102,5 @@
         <a href="index.html">Voltar ao início ↑</a>
     </div>
 </footer>
-
 </body>
-
 </html>
