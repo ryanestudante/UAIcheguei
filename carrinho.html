@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<head>
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="UAIcheguei, carrinho, delivery">
@@ -12,6 +12,7 @@
 
 <title>UAIcheguei - Meu carrinho</title>
 
+<link rel="stylesheet" href="cliente-topo.css">
 <link rel="stylesheet" href="carrinho.css">
     <link rel="stylesheet" href="rodape.css">
 </head>
@@ -19,70 +20,26 @@
 <body>
 
 
-<div class="aviso">
-    🧡 Peça agora e receba suas comidas favoritas em casa!
-</div>
-
-<!-- CABEÇALHO -->
-
-<header class="cabecalho">
-
-    <div class="topo">
-
-        <a href="index.html">
-            <img src="logo.png" alt="Logo UAIcheguei" class="logo">
-        </a>
-
-        <div class="endereco">
-
-            <span class="local">📍</span>
-
-            <div>
-                <p>ENTREGAR EM</p>
-                <strong>Minha Casa</strong>
-                <p>Rua A</p>
-            </div>
-
-        </div>
-
-        <div class="pesquisa">
-            <span>🔍</span>
-            <input type="text" placeholder="O que você quer comer hoje?">
-        </div>
-
-        <div class="acoes">
-
-            <a href="#" class="opcao">
-                <span>♡</span>
-                Favoritos
-            </a>
-
-            <a href="carrinho.html" class="opcao ativo">
-                <span>🛒</span>
-                Carrinho
-            </a>
-
-            <a href="login.html" class="perfil">
-                👤
-            </a>
-
-        </div>
-
+<header class="cliente-cabecalho">
+    <div class="cliente-topo">
+        <a class="cliente-marca" href="Intranet_cliente.html"><img src="logo.png" alt="Logo UAIcheguei"><span>UAIcheguei</span></a>
+        <form class="cliente-busca" action="Intranet_cliente.html" method="get">
+            <label for="busca-cliente">⌕</label>
+            <input id="busca-cliente" type="search" name="busca" placeholder="O que você quer comer hoje?">
+        </form>
+        <nav class="cliente-acoes" aria-label="Área do cliente">
+            <a href="Intranet_cliente.html">⌂ <span>Início</span></a>
+            <a href="carrinho.html">🛒 <span>Carrinho</span></a>
+            <a href="Intranet_cliente.html#minha-conta">👤 <span>Minha conta</span></a>
+        </nav>
     </div>
-
-    <nav class="menu">
-
-        <a href="index.html">🏠 Início</a>
-        <a href="#">🏪 Restaurantes</a>
-        <a href="#">🍔 Lanches</a>
-        <a href="#">🍕 Pizza</a>
-        <a href="#">🍣 Japonesa</a>
-        <a href="#">🥣 Açaí</a>
-        <a href="#">🧁 Doces</a>
-        <a href="#">🏷️ Promoções</a>
-
+    <nav class="cliente-menu" aria-label="Categorias">
+        <a href="Intranet_cliente.html">Início</a>
+        <a href="Intranet_cliente.html#categorias">Categorias</a>
+        <a href="Intranet_cliente.html#destaques">Destaques</a>
+        <a href="Intranet_cliente.html#minha-conta">Meus pedidos</a>
+        <a href="carrinho.html">Meu carrinho</a>
     </nav>
-
 </header>
 
 <!-- CONTEÚDO DO CARRINHO -->
