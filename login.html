@@ -10,6 +10,8 @@
 
 <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="responsivo.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="acesso-novo.css">
 </head>
 
 <body>
@@ -19,19 +21,21 @@
     <div class="caixa-branca">
         <a class="voltar-inicio" href="index.html">← Voltar para o início</a>
 
-        <h1>Bem-vindo(a)!</h1>
-        <h2>Entre na sua conta</h2>
+        <h1>Que bom ter você aqui!</h1>
+        <h2>Entre e aproveite os sabores de Minas</h2>
 
         <p class="descricao">
             Faça seu login no UAIcheguei e descubra
             o melhor da comida de Minas Gerais!
         </p>
 
-        <form>
+        <form onsubmit="entrar(); return false;">
 
             <input
                 type="text"
                 id="CPF"
+                autocomplete="off"
+                aria-label="CPF de demonstração"
                 class="campo-form"
                 placeholder="CPF"
             >
@@ -39,6 +43,7 @@
             <input
                 type="email"
                 id="Email"
+                autocomplete="username"
                 class="campo-form"
                 placeholder="E-mail"
             >
@@ -46,19 +51,19 @@
             <input
                 type="password"
                 id="Senha"
+                autocomplete="current-password"
                 class="campo-form"
                 placeholder="Senha"
             >
 
             <button
-                type="button"
-                onclick="entrar()"
+                type="submit"
                 class="buton-entrar"
             >
                 Entrar
             </button>
 
-            <div id="mensagem"></div>
+            <div id="mensagem" role="status" aria-live="polite"></div>
 
             <a href="redefinir_senha.html" class="esqueci">
                 Esqueci minha senha
