@@ -41,3 +41,5 @@ if (!produto) {
         corpo.append(tipo,nome,preco,ver); link.append(img,corpo); lista.append(link);
     });
 }
+
+const botaoAdicionar=document.getElementById("adicionar-carrinho");if(botaoAdicionar&&produto){botaoAdicionar.addEventListener("click",()=>{if(UAI.add(produto.id))window.location.href="carrinho.html"})}
