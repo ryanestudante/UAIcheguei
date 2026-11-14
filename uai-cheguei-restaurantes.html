@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurantes no UAIcheguei.">
+    <title>Restaurantes | UAIcheguei</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cliente-topo.css">
+    <link rel="stylesheet" href="explorar_comidas.css">
+    <link rel="stylesheet" href="rodape.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="stylesheet" href="carrossel.css">
+<link rel="stylesheet" href="tema-escuro.css">
+
+</head>
+<body>
+<header class="cliente-cabecalho">
+    <div class="cliente-topo">
+        <a class="cliente-marca" href="uai-cheguei-cliente.html"><img src="logo.png" alt="Logo UAIcheguei"><span>UAIcheguei</span></a>
+        <form class="cliente-busca" action="uai-cheguei-cliente.html" method="get">
+            <label for="busca-cliente">⌕</label>
+            <input id="busca-cliente" type="search" name="busca" placeholder="O que você quer comer hoje?">
+        </form>
+        <nav class="cliente-acoes" aria-label="Área do cliente">
+            <a href="uai-cheguei-cliente.html">⌂ <span>Início</span></a>
+            <a href="uai-cheguei-carrinho.html">🛒 <span>Carrinho</span></a>
+            <a href="uai-cheguei-minha-conta.html">👤 <span>Minha conta</span></a>
+        </nav>
+    </div>
+    <nav class="cliente-menu" aria-label="Categorias">
+        <a href="uai-cheguei-cliente.html">Início</a>
+        <a href="uai-cheguei-cliente.html#categorias">Categorias</a>
+        <a href="uai-cheguei-ofertas.html">Ofertas</a>
+        <a href="uai-cheguei-restaurantes.html">Restaurantes</a>
+        <a href="uai-cheguei-meus-pedidos.html">Meus pedidos</a>
+        <a href="uai-cheguei-carrinho.html">Meu carrinho</a>
+    </nav>
+</header>
+<main class="explorar-novo">
+    <nav class="trilha" aria-label="Caminho"><a href="uai-cheguei-cliente.html">Início</a><span>›</span><a href="uai-cheguei-explorar-comidas.html">Explorar comidas</a><span>›</span>Restaurantes</nav>
+    <section class="hero-interno"><div><span class="sobretitulo">🏪 RESTAURANTES</span><h1>Descubra seu próximo <em>lugar favorito.</em></h1><p>Explore estilos de comida e encontre uma opção para cada momento.</p><a class="botao-primario" href="#lista-restaurantes">Ver restaurantes <span>→</span></a></div><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000&auto=format&fit=crop&q=85" alt="Interior aconchegante de restaurante"></section>
+    <section class="secao" id="lista-restaurantes"><div class="cabeca-secao"><div><span class="sobretitulo">ESCOLHA PELO SABOR</span><h2>Restaurantes para conhecer</h2><p>Uma vitrine organizada por tipos de comida.</p></div></div><div class="grade-cards grade-tres" data-carrossel>            <article class="card-restaurante"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=800&auto=format&fit=crop&q=85" alt="Comida do restaurante fictício Cantinho Mineiro" loading="lazy"><div class="card-corpo"><span class="mini-label">COMIDA CASEIRA</span><h3>Cantinho Mineiro</h3><p>Conheça nossas sugestões de comida caseira.</p><a href="uai-cheguei-explorar-comidas.html">Explorar comidas <span>→</span></a></div></article>
+            <article class="card-restaurante"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop&q=85" alt="Comida do restaurante fictício Pizzaria da Vila" loading="lazy"><div class="card-corpo"><span class="mini-label">PIZZAS</span><h3>Pizzaria da Vila</h3><p>Conheça nossas sugestões de pizzas.</p><a href="uai-cheguei-explorar-comidas.html">Explorar comidas <span>→</span></a></div></article>
+            <article class="card-restaurante"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&auto=format&fit=crop&q=85" alt="Comida do restaurante fictício Estação do Hambúrguer" loading="lazy"><div class="card-corpo"><span class="mini-label">LANCHES</span><h3>Estação do Hambúrguer</h3><p>Conheça nossas sugestões de lanches.</p><a href="uai-cheguei-explorar-comidas.html">Explorar comidas <span>→</span></a></div></article>
+            <article class="card-restaurante"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&auto=format&fit=crop&q=85" alt="Comida do restaurante fictício Sabor da Massa" loading="lazy"><div class="card-corpo"><span class="mini-label">MASSAS</span><h3>Sabor da Massa</h3><p>Conheça nossas sugestões de massas.</p><a href="uai-cheguei-explorar-comidas.html">Explorar comidas <span>→</span></a></div></article>
+            <article class="card-restaurante"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&auto=format&fit=crop&q=85" alt="Comida do restaurante fictício Doce Trem" loading="lazy"><div class="card-corpo"><span class="mini-label">SOBREMESAS</span><h3>Doce Trem</h3><p>Conheça nossas sugestões de sobremesas.</p><a href="uai-cheguei-explorar-comidas.html">Explorar comidas <span>→</span></a></div></article>
+            <article class="card-restaurante"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=800&auto=format&fit=crop&q=85" alt="Comida do restaurante fictício Tempero da Casa" loading="lazy"><div class="card-corpo"><span class="mini-label">REFEIÇÕES</span><h3>Tempero da Casa</h3><p>Conheça nossas sugestões de refeições.</p><a href="uai-cheguei-explorar-comidas.html">Explorar comidas <span>→</span></a></div></article></div></section>
+    <div class="faixa-navegacao"><div><h2>Procurando uma promoção?</h2><p>Veja as ofertas demonstrativas do UAIcheguei.</p></div><a class="botao-primario" href="uai-cheguei-ofertas.html">Ver ofertas →</a></div>
+    <p class="aviso-demo">Os restaurantes apresentados são fictícios e ainda não possuem cardápios individuais.</p>
+</main>
+<footer class="rodape-uai">
+    <div class="rodape-conteudo">
+        <div class="rodape-marca">
+            <a href="uai-cheguei-principal.html" class="rodape-logo">
+                <img src="logo.png" alt="Logo UAIcheguei">
+                <span>UAIcheguei</span>
+            </a>
+            <p>Comida boa, pertinho de você. O sabor de Minas chegando à sua casa!</p>
+        </div>
+        <div class="rodape-coluna">
+            <h3>Explore</h3>
+            <a href="uai-cheguei-principal.html">Início</a>
+            <a href="uai-cheguei-principal.html#restaurantes">Categorias</a>
+            <a href="uai-cheguei-carrinho.html">Meu carrinho</a>
+        </div>
+        <div class="rodape-coluna">
+            <h3>Sua conta</h3>
+            <a href="uai-cheguei-login.html">Entrar</a>
+            <a href="uai-cheguei-cadastro.html">Criar conta</a>
+            <a href="uai-cheguei-recuperar-senha.html">Recuperar senha</a>
+        </div>
+        <div class="rodape-coluna">
+            <h3>Uai, que delícia!</h3>
+            <p>Seu cantinho para descobrir novos sabores e pedir suas comidas favoritas.</p>
+        </div>
+    </div>
+    <div class="rodape-final">
+        <span>© 2026 UAIcheguei. Feito com carinho em Minas Gerais.</span>
+        <a href="uai-cheguei-principal.html">Voltar ao início ↑</a>
+    </div>
+</footer>
+
+</body>
+</html>
