@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="cliente-vitrine.css">
         <link rel="stylesheet" href="tema-escuro.css">
         <link rel="stylesheet" href="header-cores.css">
+        <link rel="stylesheet" href="sabores-mineiros.css">
     </head>
     <body>
         <header class="cliente-cabecalho">
@@ -49,10 +50,10 @@
                     <span class="etiqueta">🧡 Bem-vindo ao UAIcheguei</span>
                     <h1>Uai, bateu aquela <span>fome?</span>
                     </h1>
-                    <p>Seu próximo pedido favorito está a poucos cliques. Explore sabores e aproveite!</p>
+                    <p>Frango com quiabo, feijão-tropeiro, pão de queijo e muito mais. O gostinho de Minas está aqui!</p>
                     <a class="botao-principal" href="explorar-comidas.html">Explorar comidas →</a>
                 </div>
-                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=750&auto=format&fit=crop&q=85" alt="Hambúrguer apetitoso">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=750&auto=format&fit=crop&q=85" alt="Comida caseira ilustrativa">
             </section>
             <section class="secao-cliente" id="categorias">
                 <div class="cabecalho-vitrine">
@@ -68,32 +69,22 @@
                     </div>
                 </div>
                 <div class="categorias-cliente" data-carrossel>
-                    <a href="restaurantes.html#lanches">
-                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=320&auto=format&fit=crop&q=80" alt="Hambúrguer">
-                        <strong>Lanches</strong>
-                    </a>
-                    <a href="restaurantes.html#pizzas">
-                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=320&auto=format&fit=crop&q=80" alt="Pizza">
-                        <strong>Pizzas</strong>
-                    </a>
-                    <a href="restaurantes.html#massas">
-                        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=320&auto=format&fit=crop&q=80" alt="Macarrão">
-                        <strong>Massas</strong>
-                    </a>
-                    <a href="restaurantes.html#sobremesas">
-                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=320&auto=format&fit=crop&q=80" alt="Bolo">
-                        <strong>Doces</strong>
-                    </a>
+                    <a href="#destaques" class="categoria-mineira"><span aria-hidden="true">🍲</span><strong>Pratos mineiros</strong></a>
+                    <a href="#destaques" class="categoria-mineira"><span aria-hidden="true">🧀</span><strong>Quitandas</strong></a>
+                    <a href="#destaques" class="categoria-mineira"><span aria-hidden="true">🍮</span><strong>Doces de Minas</strong></a>
+                    <a href="#destaques" class="categoria-mineira"><span aria-hidden="true">🍗</span><strong>Comida caseira</strong></a>
+                    <a href="restaurantes.html#pizzas" class="categoria-mineira"><span aria-hidden="true">🍕</span><strong>Pizzas</strong></a>
+                    <a href="restaurantes.html#lanches" class="categoria-mineira"><span aria-hidden="true">🍔</span><strong>Lanches</strong></a>
                 </div>
             </section>
             <section class="secao-cliente" id="destaques">
                 <div class="cabecalho-vitrine">
                     <div class="secao-titulo">
                         <div>
-                            <span>DE DAR ÁGUA NA BOCA</span>
-                            <h2>Pratos em destaque</h2>
+                            <span>DIRETO DA COZINHA MINEIRA</span>
+                            <h2>Sabores de Minas e muito mais</h2>
                         </div>
-                        <a href="ofertas.html">Ver todas as ofertas →</a>
+                        <a href="ofertas.html">Ver ofertas →</a>
                     </div>
                     <div class="controles-carrossel">
                         <button type="button" data-anterior aria-label="Anterior">‹</button>
@@ -101,34 +92,128 @@
                     </div>
                 </div>
                 <div class="destaques-cliente" data-carrossel>
-                    <article class="prato">
-                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=650&auto=format&fit=crop&q=85" alt="Hambúrguer">
+                    <article class="prato prato-mineiro">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=650&auto=format&fit=crop&q=85" alt="Imagem ilustrativa de Frango com quiabo" loading="lazy">
                         <div>
-                            <span>🍔 Lanches</span>
-                            <h3>Hambúrguer especial</h3>
-                            <p>Uma opção deliciosa para matar a fome.</p>
-                            <a href="ofertas.html">Ver promoções →</a>
+                            <span>TRADIÇÃO MINEIRA</span>
+                            <h3>Frango com quiabo</h3>
+                            <p>Frango ao molho com quiabo e arroz.</p>
+                            <strong class="preco-mineiro">R$ 32,90</strong>
+                            <a href="detalhes-comida.html?id=1">Ver opções →</a>
                         </div>
                     </article>
-                    <article class="prato">
-                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=650&auto=format&fit=crop&q=85" alt="Pizza">
+                    <article class="prato prato-mineiro">
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=650&auto=format&fit=crop&q=85" alt="Imagem ilustrativa de Feijão-tropeiro" loading="lazy">
                         <div>
-                            <span>🍕 Pizzas</span>
-                            <h3>Pizza caprichada</h3>
-                            <p>O sabor que combina com qualquer momento.</p>
-                            <a href="ofertas.html">Ver promoções →</a>
+                            <span>COMIDA MINEIRA</span>
+                            <h3>Feijão-tropeiro</h3>
+                            <p>Feijão, farinha, ovos e couve.</p>
+                            <strong class="preco-mineiro">R$ 28,90</strong>
+                            <a href="detalhes-comida.html?id=2">Ver opções →</a>
                         </div>
                     </article>
-                    <article class="prato">
-                        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=650&auto=format&fit=crop&q=85" alt="Macarrão">
+                    <article class="prato prato-mineiro">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=650&auto=format&fit=crop&q=85" alt="Imagem ilustrativa de Tutu de feijão" loading="lazy">
                         <div>
-                            <span>🍝 Massas</span>
-                            <h3>Massa especial</h3>
-                            <p>Uma refeição saborosa para o seu dia.</p>
-                            <a href="ofertas.html">Ver promoções →</a>
+                            <span>SABOR DE MINAS</span>
+                            <h3>Tutu de feijão</h3>
+                            <p>Tutu cremoso com acompanhamentos.</p>
+                            <strong class="preco-mineiro">R$ 27,90</strong>
+                            <a href="detalhes-comida.html?id=3">Ver opções →</a>
+                        </div>
+                    </article>
+                    <article class="prato prato-mineiro">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=650&auto=format&fit=crop&q=85" alt="Imagem ilustrativa de Vaca atolada" loading="lazy">
+                        <div>
+                            <span>RECEITA CASEIRA</span>
+                            <h3>Vaca atolada</h3>
+                            <p>Carne cozida com mandioca.</p>
+                            <strong class="preco-mineiro">R$ 38,90</strong>
+                            <a href="detalhes-comida.html?id=4">Ver opções →</a>
+                        </div>
+                    </article>
+                    <article class="prato prato-mineiro">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=650&auto=format&fit=crop&q=85" alt="Imagem ilustrativa de Pão de queijo" loading="lazy">
+                        <div>
+                            <span>QUITANDA MINEIRA</span>
+                            <h3>Pão de queijo</h3>
+                            <p>Porção de pães de queijo quentinhos.</p>
+                            <strong class="preco-mineiro">R$ 14,90</strong>
+                            <a href="detalhes-comida.html?id=5">Ver opções →</a>
+                        </div>
+                    </article>
+                    <article class="prato prato-mineiro">
+                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=650&auto=format&fit=crop&q=85" alt="Imagem ilustrativa de Torresmo com mandioca" loading="lazy">
+                        <div>
+                            <span>PETISCOS</span>
+                            <h3>Torresmo com mandioca</h3>
+                            <p>Porção para compartilhar.</p>
+                            <strong class="preco-mineiro">R$ 26,90</strong>
+                            <a href="detalhes-comida.html?id=6">Ver opções →</a>
+                        </div>
+                    </article>
+                    <article class="prato prato-mineiro">
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=650&auto=format&fit=crop&q=85" alt="Imagem ilustrativa de Costelinha com canjiquinha" loading="lazy">
+                        <div>
+                            <span>COMIDA DE FAZENDA</span>
+                            <h3>Costelinha com canjiquinha</h3>
+                            <p>Costelinha suína com canjiquinha.</p>
+                            <strong class="preco-mineiro">R$ 36,90</strong>
+                            <a href="detalhes-comida.html?id=7">Ver opções →</a>
+                        </div>
+                    </article>
+                    <article class="prato prato-mineiro">
+                        <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=650&auto=format&fit=crop&q=85" alt="Imagem ilustrativa de Galinhada mineira" loading="lazy">
+                        <div>
+                            <span>ALMOÇO CASEIRO</span>
+                            <h3>Galinhada mineira</h3>
+                            <p>Arroz temperado com frango.</p>
+                            <strong class="preco-mineiro">R$ 29,90</strong>
+                            <a href="detalhes-comida.html?id=8">Ver opções →</a>
+                        </div>
+                    </article>
+                    <article class="prato prato-mineiro">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=650&auto=format&fit=crop&q=85" alt="Imagem ilustrativa de Doce de leite" loading="lazy">
+                        <div>
+                            <span>DOCES DE MINAS</span>
+                            <h3>Doce de leite</h3>
+                            <p>Doce de leite cremoso da casa.</p>
+                            <strong class="preco-mineiro">R$ 12,90</strong>
+                            <a href="detalhes-comida.html?id=9">Ver opções →</a>
+                        </div>
+                    </article>
+                    <article class="prato prato-mineiro">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=650&auto=format&fit=crop&q=85" alt="Imagem ilustrativa de Bolo de fubá" loading="lazy">
+                        <div>
+                            <span>CAFÉ DA TARDE</span>
+                            <h3>Bolo de fubá</h3>
+                            <p>Fatia de bolo macio e caseiro.</p>
+                            <strong class="preco-mineiro">R$ 11,90</strong>
+                            <a href="detalhes-comida.html?id=10">Ver opções →</a>
+                        </div>
+                    </article>
+                    <article class="prato prato-mineiro">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=650&auto=format&fit=crop&q=85" alt="Imagem ilustrativa de Pizza de calabresa" loading="lazy">
+                        <div>
+                            <span>PIZZAS</span>
+                            <h3>Pizza de calabresa</h3>
+                            <p>Pizza caprichada para compartilhar.</p>
+                            <strong class="preco-mineiro">R$ 39,90</strong>
+                            <a href="detalhes-comida.html?id=11">Ver opções →</a>
+                        </div>
+                    </article>
+                    <article class="prato prato-mineiro">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=650&auto=format&fit=crop&q=85" alt="Imagem ilustrativa de Hambúrguer artesanal" loading="lazy">
+                        <div>
+                            <span>LANCHES</span>
+                            <h3>Hambúrguer artesanal</h3>
+                            <p>Hambúrguer com queijo e molho especial.</p>
+                            <strong class="preco-mineiro">R$ 30,90</strong>
+                            <a href="detalhes-comida.html?id=12">Ver opções →</a>
                         </div>
                     </article>
                 </div>
+                <p class="aviso-mineiro">Cardápio demonstrativo: preços e imagens ilustrativos.</p>
             </section>
             <section class="secao-cliente" id="minha-conta">
                 <div class="secao-titulo">
