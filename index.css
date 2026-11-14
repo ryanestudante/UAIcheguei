@@ -77,23 +77,3 @@ footer strong { color: var(--laranja); font-size: 20px; }
     footer { display: block; }
     footer p { margin: 8px 0; }
 }
-
-/* Janela de login */
-.fundo-login[hidden] { display: none; }
-.fundo-login { position: fixed; inset: 0; background: rgba(35, 19, 12, .65); display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 1000; overflow-y: auto; }
-.janela-login { background: white; width: 100%; max-width: 430px; border-radius: 22px; padding: 32px; position: relative; box-shadow: 0 20px 65px #0003; }
-.fechar-login { position: absolute; top: 13px; right: 17px; border: 0; background: transparent; font-size: 30px; color: #6b5a53; cursor: pointer; }
-.logo-login { width: 70px; height: 70px; object-fit: contain; display: block; margin: 0 auto 12px; }
-.janela-login h2 { font-size: 23px; text-align: center; }
-.janela-login > p { text-align: center; color: #796b65; font-size: 14px; margin: 8px 0 20px; }
-#form-login { display: flex; flex-direction: column; }
-#form-login label { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
-#form-login input { width: 100%; border: 1px solid #e8d6cb; border-radius: 10px; padding: 11px 13px; margin-bottom: 14px; outline-color: var(--laranja); }
-.entrar-login { background: var(--laranja); border: 0; color: white; border-radius: 11px; padding: 13px; font-weight: 700; cursor: pointer; }
-.erro-login { color: #b3261e; font-size: 13px; margin-bottom: 10px; }
-.link-login { display: block; text-align: right; color: var(--laranja); font-size: 13px; margin-top: 13px; }
-.janela-login .criar-login { margin: 20px 0 12px; text-align: center; }
-.criar-login a { color: var(--laranja); font-weight: 700; }
-.janela-login small { display: block; text-align: center; color: #81746f; font-size: 11px; }
-body.login-aberto { overflow: hidden; }
-@media (max-width: 480px) { .janela-login { padding: 26px 20px; } }
