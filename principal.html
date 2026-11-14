@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="tema-escuro.css">
         <link rel="stylesheet" href="header-cores.css">
         <link rel="stylesheet" href="vitrine-publica.css">
-    <link rel="stylesheet" href="logo-global.css"><link rel="stylesheet" href="categorias-publicas-fixas.css"><link rel="stylesheet" href="modal-acesso.css">
+    <link rel="stylesheet" href="logo-global.css"><link rel="stylesheet" href="categorias-publicas-fixas.css?v=3"><link rel="stylesheet" href="modal-acesso.css?v=3">
 </head>
     <body>
         <header class="cabecalho">
@@ -26,7 +26,7 @@
                 </a>
                 <nav class="menu" aria-label="Menu principal">
                     <a href="principal.html">Início</a>
-                    <a href="restaurantes.html">Restaurantes</a>
+                    <a href="#restaurantes" data-categoria-acesso="restaurantes">Restaurantes</a>
                     <a href="#ofertas">Ofertas</a>
                     <a href="#ajuda">Ajuda</a>
                 </nav>
@@ -52,15 +52,15 @@
             <section class="categorias" id="restaurantes">
                 <div class="titulo-secao">
                     <h2>Explore por categoria</h2>
-                    <a href="restaurantes.html">Ver todas <span aria-hidden="true">→</span>
+                    <a href="#restaurantes" data-categoria-acesso="todas as categorias">Ver todas <span aria-hidden="true">→</span>
                     </a>
                 </div>
                 <div class="grade-categorias grade-categorias-fixa">
-                    <a class="categoria" href="login.html" data-categoria-acesso="Lanches">
+                    <a class="categoria" href="#acesso" data-categoria-acesso="Lanches">
                         <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=450&auto=format&fit=crop&q=85" alt="Hambúrguer" loading="lazy">
                         <strong>Lanches</strong>
                     </a>
-                    <a class="categoria" href="login.html" data-categoria-acesso="Pizzas">
+                    <a class="categoria" href="#acesso" data-categoria-acesso="Pizzas">
                         <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=450&auto=format&fit=crop&q=85" alt="Pizza" loading="lazy">
                         <strong>Pizzas</strong>
                     </a>
@@ -90,7 +90,7 @@
                         <h2>Sabores de Minas, pizzas e lanches</h2>
                         <p>Conheça os sabores de Minas. Entre na sua conta quando quiser comprar.</p>
                     </div>
-                    <a class="vitrine-ver-todas" href="ofertas.html">Ver outras ofertas →</a>
+                    <a class="vitrine-ver-todas" href="#ofertas" data-categoria-acesso="ofertas">Ver outras ofertas →</a>
                 </div>
                 <div class="vitrine-grade">
 <a class="vitrine-card" href="login.html">
@@ -171,5 +171,5 @@
                 <a href="principal.html">Voltar ao início ↑</a>
             </div>
         </footer>
-    <div class="ua-modal-fundo" id="ua-modal" hidden><div class="ua-modal" role="dialog" aria-modal="true" aria-labelledby="ua-modal-titulo"><section class="ua-modal-lado"><div class="ua-modal-marca"><img src="logo.png" alt="Logo UAIcheguei"><strong>UAIcheguei</strong></div><div class="ua-modal-intro"><small>SEU DELIVERY MINEIRO</small><h2>Bem-vindo<br><em>ao UAIcheguei.</em></h2><p>Comida boa, pertinho de você. Entre para descobrir seus pratos favoritos e fazer seus pedidos.</p></div><div class="ua-modal-rodape">Ainda não tem uma conta?<br><a href="cadastro.html">Realizar cadastro ↗</a></div></section><section class="ua-modal-direito"><button type="button" class="ua-modal-fechar" id="ua-modal-fechar" aria-label="Fechar">×</button><small>ACESSO À PLATAFORMA</small><h2 id="ua-modal-titulo">Como deseja continuar?</h2><p>Para explorar <strong id="ua-modal-categoria">nossas categorias</strong>, escolha uma opção.</p><div class="ua-modal-botoes"><a href="login.html" class="ua-modal-entrar">Entrar na minha conta →</a><a href="cadastro.html" class="ua-modal-criar">Criar uma conta ↗</a></div><div class="ua-modal-nota"><strong>Descubra os sabores do UAIcheguei</strong><br>Entre ou crie sua conta para conhecer os restaurantes e fazer pedidos.</div></section></div></div><script src="modal-acesso.js" defer></script></body>
+    <div class="ua-modal-fundo" id="ua-modal" hidden><div class="ua-modal" role="dialog" aria-modal="true" aria-labelledby="ua-modal-titulo"><section class="ua-modal-lado"><div class="ua-modal-marca"><img src="logo.png" alt="Logo UAIcheguei"><strong>UAIcheguei</strong></div><div class="ua-modal-intro"><small>SEU DELIVERY MINEIRO</small><h2>Bem-vindo<br><em>ao UAIcheguei.</em></h2><p>Comida boa, pertinho de você. Entre para descobrir seus pratos favoritos e fazer seus pedidos.</p></div><div class="ua-modal-rodape">Ainda não tem uma conta?<br><a href="cadastro.html">Realizar cadastro ↗</a></div></section><section class="ua-modal-direito"><button type="button" class="ua-modal-fechar" id="ua-modal-fechar" aria-label="Fechar">×</button><small>ACESSO À PLATAFORMA</small><h2 id="ua-modal-titulo">Como deseja continuar?</h2><p>Para explorar <strong id="ua-modal-categoria">nossas categorias</strong>, escolha uma opção.</p><div class="ua-modal-botoes"><a href="login.html" class="ua-modal-entrar">Entrar na minha conta →</a><a href="cadastro.html" class="ua-modal-criar">Criar uma conta ↗</a></div><div class="ua-modal-nota"><strong>Descubra os sabores do UAIcheguei</strong><br>Entre ou crie sua conta para conhecer os restaurantes e fazer pedidos.</div></section></div></div><script src="modal-acesso.js?v=3" defer></script></body>
 </html>
