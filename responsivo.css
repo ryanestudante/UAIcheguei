@@ -1,0 +1,92 @@
+/* UAIcheguei - acabamento visual e responsividade global */
+:root{--uai-laranja:#e15800;--uai-texto:#40291c;--uai-claro:#fff8f2}
+html{scroll-behavior:smooth}
+body{max-width:100%;overflow-x:hidden}
+img,video,svg{max-width:100%}
+input,textarea,select,button{max-width:100%}
+a,button,input{touch-action:manipulation}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #f27029;outline-offset:3px}
+.cliente-cabecalho{position:relative;z-index:5}
+.cliente-topo{width:100%;max-width:1320px}
+.cliente-menu{max-width:1320px;margin:auto}
+.cliente-menu a{transition:background .2s,color .2s}
+.cliente-menu a[href="explorar_comidas.html"],.cliente-menu a[href="ofertas.html"],.cliente-menu a[href="restaurantes.html"]{background:#fff0e3}
+.cliente-menu a:hover{background:#e15800;color:white}
+.explorar-novo .hero-explorar,.explorar-novo .hero-interno,.pagina-cliente .boas-vindas{box-shadow:0 14px 40px rgba(93,48,17,.06)}
+.explorar-novo .card-produto,.explorar-novo .card-restaurante,.pagina-cliente .prato{transition:transform .2s,box-shadow .2s}
+.explorar-novo .card-produto:hover,.explorar-novo .card-restaurante:hover,.pagina-cliente .prato:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(93,48,17,.12)}
+.rodape-uai{margin-top:45px}
+body:has(.cabecalho + .titulo) .cabecalho{box-shadow:0 4px 22px rgba(93,48,17,.06)}
+body:has(.cabecalho + .titulo) .menu-lateral{border:1px solid #f3e2d7}
+body:has(.cabecalho + .titulo) .titulo{background:linear-gradient(110deg,#fff5ed,#ffe8d7)}
+body:has(.cabecalho + .titulo) .titulo h1{color:#e15800}
+body:has(.cabecalho + .titulo) .frase h1{font-size:clamp(19px,2.6vw,32px)}
+body:has(.cabecalho + .titulo) .conteudo{max-width:1320px}
+@media(max-width:1000px){
+ .cliente-topo{gap:14px;padding:14px 4%}
+ .cliente-menu{gap:8px}
+ .cliente-menu a{padding:9px 12px}
+ .topo{max-width:100%}
+ .rodape-uai .rodape-conteudo{grid-template-columns:repeat(2,minmax(0,1fr))}
+ body:has(.cabecalho + .titulo) .conteudo{width:94%;gap:18px}
+ body:has(.cabecalho + .titulo) .menu-lateral{flex:0 0 210px;width:210px}
+}
+@media(max-width:720px){
+ .cliente-topo{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px;padding:12px 5%}
+ .cliente-marca{font-size:19px;min-width:0}
+ .cliente-marca img{width:44px;height:44px}
+ .cliente-acoes{gap:12px;justify-content:flex-end}
+ .cliente-acoes a{font-size:19px}
+ .cliente-acoes span{display:none}
+ .cliente-busca{grid-column:1/-1;order:unset;max-width:none;width:100%;margin-top:2px}
+ .cliente-busca input{min-width:0;font-size:14px}
+ .cliente-menu{display:flex;flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;scrollbar-width:thin;gap:8px;padding:9px 5% 13px}
+ .cliente-menu a{flex-shrink:0;white-space:nowrap;font-size:12px}
+ .pagina-cliente,.explorar-novo,.pagina-conta{width:100%;max-width:100%}
+ .pagina-cliente .boas-vindas{grid-template-columns:1fr}
+ .pagina-cliente .boas-vindas img{width:100%;height:220px}
+ .pagina-cliente .destaques-cliente{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .explorar-novo .escolhas{grid-template-columns:1fr}
+ .explorar-novo .escolha{grid-template-columns:1fr 160px}
+ .explorar-novo .escolha img{order:0;height:170px}
+ .explorar-novo .grade-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .rodape-uai{padding:35px 5% 22px}
+ body:has(.cabecalho + .titulo) .conteudo{display:block;width:92%;margin:20px auto}
+ body:has(.cabecalho + .titulo) .menu-lateral{width:100%;margin-bottom:20px;padding:15px;display:flex;flex-wrap:wrap;gap:7px}
+ body:has(.cabecalho + .titulo) .menu-lateral h2{width:100%;margin-bottom:8px}
+ body:has(.cabecalho + .titulo) .menu-lateral a{margin:0;padding:10px}
+ body:has(.cabecalho + .titulo) .topo{flex-wrap:wrap;justify-content:center;text-align:center}
+ body:has(.cabecalho + .titulo) .logo{max-width:90px}
+ body:has(.cabecalho + .titulo) .titulo{padding:24px 5%}
+ body:has(.cabecalho + .titulo) .titulo h1{font-size:24px}
+ .container{max-width:100%}
+ .caixa-branca,.form-box{max-width:min(100%,520px)}
+}
+@media(max-width:480px){
+ body{font-size:14px}
+ .cliente-topo{gap:8px}
+ .cliente-marca{font-size:17px;gap:5px}
+ .cliente-marca img{width:39px;height:39px}
+ .cliente-acoes{gap:9px}
+ .cliente-acoes a{font-size:17px}
+ .cliente-menu{padding:8px 4% 12px}
+ .cliente-menu a{padding:8px 11px}
+ .pagina-cliente .destaques-cliente,.explorar-novo .grade-cards,.explorar-novo .grade-quatro{grid-template-columns:1fr}
+ .explorar-novo .escolha{grid-template-columns:1fr}
+ .explorar-novo .escolha img{order:-1;width:100%;height:175px}
+ .explorar-novo .hero-explorar,.explorar-novo .hero-interno{padding:22px}
+ .explorar-novo .hero-explorar img,.explorar-novo .hero-interno img{height:180px}
+ .explorar-novo .cabeca-secao{align-items:flex-start;flex-wrap:wrap}
+ .explorar-novo .faixa-navegacao{align-items:stretch}
+ .explorar-novo .botao-primario{text-align:center}
+ .rodape-uai .rodape-conteudo{grid-template-columns:1fr 1fr;gap:20px}
+ .rodape-uai .rodape-marca{grid-column:1/-1}
+ .rodape-uai .rodape-final{flex-direction:column}
+ .pagina-conta .grade-campos{grid-template-columns:1fr}
+ .pagina-conta .acoes-formulario{flex-direction:column;align-items:stretch}
+ .pagina-conta .acoes-formulario>div{justify-content:space-between}
+ .container{width:100%;padding:15px}
+ .caixa-branca,.form-box{width:100%;max-width:100%;padding:22px 18px}
+ body:has(.cabecalho + .titulo) .menu-lateral a{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
