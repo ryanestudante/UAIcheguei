@@ -1,0 +1,13 @@
+/* Vitrine fixa e alinhada: sem controles de carrossel */
+.grade-destaques-fixa,.grade-restaurantes-fixa{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:20px!important;overflow:visible!important;scroll-snap-type:none!important}
+.grade-destaques-fixa .card-produto,.grade-restaurantes-fixa .card-restaurante{min-width:0;width:100%;height:100%;display:flex;flex-direction:column;scroll-snap-align:none}
+.grade-destaques-fixa .card-corpo,.grade-restaurantes-fixa .card-corpo{display:flex;flex:1;flex-direction:column;align-items:flex-start}
+.grade-destaques-fixa .card-corpo p,.grade-restaurantes-fixa .card-corpo p{flex:1;min-height:0}
+.grade-destaques-fixa .card-corpo>a{margin-top:auto}
+.grade-restaurantes-fixa .card-restaurante{color:#40291c;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.grade-restaurantes-fixa .card-restaurante:hover{transform:translateY(-4px);box-shadow:0 12px 28px #56300c20}
+.grade-restaurantes-fixa .acao-card{display:flex;align-items:center;justify-content:space-between;width:100%;margin-top:auto;padding:12px 14px;border-radius:10px;background:#fff0e5;color:#e15800;font-size:12px;font-weight:700}
+.grade-restaurantes-fixa .card-restaurante:hover .acao-card{background:#e15800;color:#fff}
+.grade-restaurantes-fixa .card-restaurante>img{width:100%;height:190px;object-fit:cover}
+@media(max-width:800px){.grade-destaques-fixa,.grade-restaurantes-fixa{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:560px){.grade-destaques-fixa,.grade-restaurantes-fixa{grid-template-columns:1fr!important}}
