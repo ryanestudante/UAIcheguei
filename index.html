@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="rodape.css">
     <link rel="stylesheet" href="responsivo.css">
+    <link rel="stylesheet" href="carrossel.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -38,7 +39,7 @@
                 <p>Peça seus pratos favoritos nos melhores restaurantes da região.</p>
                 <form class="busca" action="login.html" method="get">
                     <label class="sr-only" for="endereco">Endereço de entrega</label>
-                    <span aria-hidden="true">📍</span>
+                    
                     <input id="endereco" name="endereco" type="text" placeholder="Digite seu endereço" required>
                     <button type="submit" aria-label="Continuar para entrar">⌕</button>
                 </form>
@@ -51,8 +52,8 @@
             <div class="titulo-secao">
                 <h2>Explore por categoria</h2>
                 <a href="login.html">Ver todas <span aria-hidden="true">→</span></a>
-            </div>
-            <div class="grade-categorias">
+            </div><div class="controles-carrossel"><button type="button" data-anterior aria-label="Anterior">‹</button><button type="button" data-proximo aria-label="Próximo">›</button></div>
+            <div class="grade-categorias" data-carrossel>
                 <a class="categoria" href="login.html">
                     <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=450&auto=format&fit=crop&q=85" alt="Hambúrguer" loading="lazy">
                     <strong>Lanches</strong>
@@ -120,5 +121,6 @@
         <a href="index.html">Voltar ao início ↑</a>
     </div>
 </footer>
+<script src="carrossel.js" defer></script>
 </body>
 </html>
