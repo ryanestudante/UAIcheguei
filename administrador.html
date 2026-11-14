@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="fluxo-uai.css">
         <link rel="stylesheet" href="tema-escuro.css">
         <link rel="stylesheet" href="admin-novo.css">
-    <link rel="stylesheet" href="logo-global.css"><link rel="stylesheet" href="dados-demo.css"></head>
+    <link rel="stylesheet" href="logo-global.css"><link rel="stylesheet" href="dados-demo.css"><link rel="stylesheet" href="admin-controles.css"></head>
     <body>
         <main class="adm-layout">
             <aside class="adm-sidebar">
@@ -24,10 +24,11 @@
                     <a class="ativo" href="#dashboard" data-aba="dashboard"> Visão geral</a>
                     <a href="#pedidos" data-aba="pedidos"> Pedidos</a>
                     <a href="#clientes" data-aba="clientes"> Clientes</a>
-                    <a href="#restaurantes" data-aba="restaurantes"> Restaurantes</a>
+                    <a href="#restaurantes" data-aba="restaurantes"> Aprovar restaurantes</a>
                     <a href="#produtos" data-aba="produtos"> Produtos</a>
                     <a href="#cupons" data-aba="cupons"> Cupons</a>
                     <a href="#relatorios" data-aba="relatorios"> Relatórios</a>
+                    <a href="#permissoes" data-aba="permissoes"> Permissões</a>
                 </nav>
                 <a class="adm-sair" href="principal.html">← Voltar ao site</a>
             </aside>
@@ -35,12 +36,12 @@
                 <div class="adm-topbar">
                     <div>
                         <span class="adm-eyebrow">ÁREA ADMINISTRATIVA</span>
-                        <h1>Painel do administrador</h1>
-                        <p>Gerencie seu delivery em um só lugar.</p>
+                        <h1>Central de administração</h1>
+                        <p>Controle restaurantes, pedidos, usuários, produtos e permissões em um só lugar.</p>
                     </div>
                     <div class="adm-avatar" aria-label="Administrador">AD</div>
                 </div>
-                <p class="uai-nota">Painel visual em HTML e CSS, sem gerenciamento automático, banco de dados ou pagamentos reais.</p>
+                <p class="uai-nota">Modo demonstração: as ações abaixo funcionam apenas neste navegador. Não concedem acesso real, não alteram outras contas e não usam banco de dados.</p>
                 <section class="adm-secao" id="dashboard">
                     <div class="adm-secao-titulo">
                         <div>
@@ -54,8 +55,8 @@
                             <strong>48</strong>
                         </div>
                         <div class="uai-card">
-                            <small>Restaurantes</small>
-                            <strong>6</strong>
+                            <small>Restaurantes aprovados (demo)</small>
+                            <strong id="total-aprovados">6</strong>
                         </div>
                         <div class="uai-card">
                             <small>Produtos em destaque</small>
@@ -91,7 +92,7 @@
                                 <option>Cancelado</option>
                             </select>
                         </div>
-                        <table class="demo-tabela"><thead><tr><th>Número</th><th>Cliente</th><th>Itens</th><th>Total</th><th>Status</th></tr></thead><tbody><tr><td>#1048</td><td>Ana Souza</td><td>Feijão-tropeiro + suco</td><td>R$ 42,90</td><td>Em preparo</td></tr><tr><td>#1047</td><td>Bruno Lima</td><td>Pizza de calabresa</td><td>R$ 58,90</td><td>Saiu para entrega</td></tr><tr><td>#1046</td><td>Camila Rocha</td><td>Hambúrguer artesanal</td><td>R$ 35,90</td><td>Entregue</td></tr><tr><td>#1045</td><td>Lucas Martins</td><td>Açaí com frutas</td><td>R$ 23,90</td><td>Entregue</td></tr></tbody></table><p class="uai-nota">Exemplos estáticos: filtros e atualização de status não alteram os registros.</p>
+                        <table class="demo-tabela"><thead><tr><th>Número</th><th>Cliente</th><th>Itens</th><th>Total</th><th>Status</th></tr></thead><tbody><tr><td>#1048</td><td>Ana Souza</td><td>Feijão-tropeiro + suco</td><td>R$ 42,90</td><td>Em preparo</td></tr><tr><td>#1047</td><td>Bruno Lima</td><td>Pizza de calabresa</td><td>R$ 58,90</td><td>Saiu para entrega</td></tr><tr><td>#1046</td><td>Camila Rocha</td><td>Hambúrguer artesanal</td><td>R$ 35,90</td><td>Entregue</td></tr><tr><td>#1045</td><td>Lucas Martins</td><td>Açaí com frutas</td><td>R$ 23,90</td><td>Entregue</td></tr></tbody></table><p class="uai-nota">Pedidos fictícios para visualização. Filtros de pedidos são ilustrativos.</p>
                     </div>
                 </section>
                 <section class="adm-secao" id="clientes">
@@ -112,10 +113,7 @@
                             <h2>Restaurantes</h2>
                         </div>
                     </div>
-                    <div class="adm-box">
-                        <p>Cantinho Mineiro · Pizzaria da Vila · Estação do Hambúrguer · Sabor da Massa · Doce Trem · Tempero da Casa</p>
-                        <p class="uai-nota">Cadastro ilustrativo. Para adicionar registros é necessário implementar um sistema de dados.</p>
-                    </div>
+                    <div class="adm-box"><div class="adm-gerencia-topo"><div><h3>Solicitações de restaurantes</h3><p>Aprove, recuse ou suspenda restaurantes fictícios. O status fica salvo somente neste navegador.</p></div><span class="adm-demo-selo">Controle demonstrativo</span></div><div class="adm-mini-indicadores"><div><small>Pendentes</small><strong id="total-pendentes">0</strong></div><div><small>Aprovados</small><strong id="total-restaurantes">0</strong></div><div><small>Suspensos</small><strong id="total-suspensos">0</strong></div></div><div class="adm-filtros"><input id="busca-restaurantes" type="search" placeholder="Buscar restaurante ou responsável" aria-label="Buscar restaurante"><select id="filtro-restaurantes" aria-label="Filtrar restaurantes"><option value="">Todos</option><option value="Pendente">Pendentes</option><option value="Aprovado">Aprovados</option><option value="Recusado">Recusados</option><option value="Suspenso">Suspensos</option></select></div><div class="adm-tabela-rolagem"><table class="demo-tabela adm-tabela-acoes"><thead><tr><th>Restaurante</th><th>Responsável fictício</th><th>Categoria</th><th>Situação</th><th>Ações</th></tr></thead><tbody id="lista-restaurantes"></tbody></table></div><form class="adm-form" id="form-restaurante"><label>Nome do restaurante<input name="nome" maxlength="70" placeholder="Ex.: Sabor da Serra" required></label><label>Responsável fictício<input name="responsavel" maxlength="70" placeholder="Ex.: Maria Oliveira" required></label><label>Categoria<input name="categoria" maxlength="50" placeholder="Ex.: Comida mineira" required></label><button class="adm-acao primaria" type="submit">Criar solicitação</button></form><p id="aviso-restaurantes" class="adm-feedback" role="status" aria-live="polite"></p></div>
                 </section>
                 <section class="adm-secao" id="produtos">
                     <div class="adm-secao-titulo">
@@ -152,6 +150,7 @@
                         <div class="demo-metricas"><div><small>Pedidos fictícios no mês</small><strong>48</strong></div><div><small>Ticket médio fictício</small><strong>R$ 38,47</strong></div><div><small>Pedidos entregues</small><strong>39</strong></div><div><small>Faturamento fictício</small><strong>R$ 1.846,70</strong></div></div>
                     </div>
                 </section>
+<section class="adm-secao" id="permissoes"><div class="adm-secao-titulo"><div><span>CONTROLE DE ACESSO</span><h2>Permissões e usuários</h2></div></div><div class="adm-box"><h3>Quem pode fazer o quê?</h3><p>O administrador geral é o responsável pelas aprovações e pelas regras de acesso. Esta matriz é ilustrativa: permissões reais exigem login seguro e verificação no servidor.</p><div class="adm-tabela-rolagem"><table class="demo-tabela"><thead><tr><th>Recurso</th><th>Administrador</th><th>Restaurante aprovado</th><th>Entregador</th><th>Cliente</th></tr></thead><tbody><tr><td>Aprovar ou suspender restaurantes</td><td>Controle total</td><td>Não</td><td>Não</td><td>Não</td></tr><tr><td>Gerenciar catálogo</td><td>Todos</td><td>Próprio catálogo</td><td>Não</td><td>Não</td></tr><tr><td>Visualizar pedidos</td><td>Todos</td><td>Do restaurante</td><td>Da entrega</td><td>Próprios</td></tr><tr><td>Gerenciar usuários e cupons</td><td>Controle total</td><td>Não</td><td>Não</td><td>Não</td></tr><tr><td>Consultar relatórios</td><td>Todos</td><td>Próprios</td><td>Próprios ganhos</td><td>Não</td></tr></tbody></table></div></div><div class="adm-box"><h3>Configurações do administrador (simulação)</h3><div class="adm-config"><label><input type="checkbox" id="config-aprovacao" checked> Exigir aprovação antes de cadastrar restaurante</label><label><input type="checkbox" id="config-cupom" checked> Permitir cupons demonstrativos</label><label><input type="checkbox" id="config-novo" checked> Aceitar novas solicitações fictícias</label></div><p id="aviso-config" class="adm-feedback" role="status"></p></div></section>
             </div>
         </main>
         <footer class="rodape-uai">
@@ -185,5 +184,5 @@
                 <a href="principal.html">Voltar ao início ↑</a>
             </div>
         </footer>
-    </body>
+    <script src="admin-controles.js" defer></script></body>
 </html>
