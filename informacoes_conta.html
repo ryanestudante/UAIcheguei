@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações da conta | UAIcheguei</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cliente-topo.css">
+    <link rel="stylesheet" href="informacoes_conta.css">
+    <link rel="stylesheet" href="rodape.css">
+</head>
+<body>
+<header class="cliente-cabecalho">
+    <div class="cliente-topo">
+        <a class="cliente-marca" href="Intranet_cliente.html"><img src="logo.png" alt="Logo UAIcheguei"><span>UAIcheguei</span></a>
+        <form class="cliente-busca" action="Intranet_cliente.html" method="get">
+            <label for="busca-cliente">⌕</label>
+            <input id="busca-cliente" type="search" name="busca" placeholder="O que você quer comer hoje?">
+        </form>
+        <nav class="cliente-acoes" aria-label="Área do cliente">
+            <a href="Intranet_cliente.html">⌂ <span>Início</span></a>
+            <a href="carrinho.html">🛒 <span>Carrinho</span></a>
+            <a href="informacoes_conta.html">👤 <span>Minha conta</span></a>
+        </nav>
+    </div>
+    <nav class="cliente-menu" aria-label="Categorias">
+        <a href="Intranet_cliente.html">Início</a>
+        <a href="Intranet_cliente.html#categorias">Categorias</a>
+        <a href="Intranet_cliente.html#destaques">Destaques</a>
+        <a href="Intranet_cliente.html#minha-conta">Meus pedidos</a>
+        <a href="carrinho.html">Meu carrinho</a>
+    </nav>
+</header>
+<main class="pagina-conta">
+    <div class="caminho"><a href="Intranet_cliente.html">Início</a> / Minha conta</div>
+    <section class="apresentacao">
+        <div class="avatar">👤</div>
+        <div><span class="etiqueta">MEU PERFIL</span><h1>Informações da conta</h1><p>Deixe seus dados organizados para facilitar seus pedidos.</p></div>
+    </section>
+    <div class="layout-conta">
+        <aside class="menu-conta">
+            <h2>Minha conta</h2>
+            <a class="selecionado" href="informacoes_conta.html">👤 Dados pessoais</a>
+            <a href="carrinho.html">🛒 Meu carrinho</a>
+            <a href="Intranet_cliente.html#minha-conta">📦 Meus pedidos</a>
+            <a href="Intranet_cliente.html">🏠 Voltar ao início</a>
+        </aside>
+        <div class="cartao-formulario">
+            <form id="form-conta">
+                <div class="cabeca-secao"><span>👤</span><div><h2>Dados pessoais</h2><p>Informações básicas do seu perfil.</p></div></div>
+                <div class="grade-campos">
+                    <div class="campo campo-grande"><label for="nome">Nome completo</label><input id="nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome completo" required></div>
+                    <div class="campo"><label for="nascimento">Data de nascimento</label><input id="nascimento" name="nascimento" type="date" required></div>
+                    <div class="campo"><label for="cpf">CPF fictício (demonstração)</label><input id="cpf" name="cpf" type="text" inputmode="numeric" maxlength="14" placeholder="000.000.000-00"></div>
+                    <div class="campo"><label for="usuario">Nome de usuário</label><input id="usuario" name="usuario" type="text" placeholder="Como podemos te chamar?" required></div>
+                </div>
+                <div class="cabeca-secao entrega"><span>📍</span><div><h2>Entrega e contato</h2><p>Onde encontrar você e como entrar em contato.</p></div></div>
+                <div class="grade-campos">
+                    <div class="campo campo-grande"><label for="endereco">Endereço de entrega</label><input id="endereco" name="endereco" type="text" autocomplete="street-address" placeholder="Rua, número, bairro e cidade" required></div>
+                    <div class="campo"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="exemplo@email.com" required></div>
+                    <div class="campo"><label for="telefone">Telefone</label><input id="telefone" name="telefone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000" required></div>
+                    <div class="campo"><label for="complemento">Complemento (opcional)</label><input id="complemento" name="complemento" type="text" placeholder="Apartamento, bloco, referência..."></div>
+                </div>
+                <div class="acoes-formulario">
+                    <p>Esta é uma tela demonstrativa. Não informe dados pessoais reais; os dados não são enviados nem salvos.</p>
+                    <div><a href="Intranet_cliente.html" class="cancelar">Voltar</a><button type="submit">Salvar alterações</button></div>
+                </div>
+                <p id="aviso-conta" role="status"></p>
+            </form>
+        </div>
+    </div>
+</main>
+<footer class="rodape-uai">
+    <div class="rodape-conteudo">
+        <div class="rodape-marca">
+            <a href="index.html" class="rodape-logo">
+                <img src="logo.png" alt="Logo UAIcheguei">
+                <span>UAIcheguei</span>
+            </a>
+            <p>Comida boa, pertinho de você. O sabor de Minas chegando à sua casa!</p>
+        </div>
+        <div class="rodape-coluna">
+            <h3>Explore</h3>
+            <a href="index.html">Início</a>
+            <a href="index.html#restaurantes">Categorias</a>
+            <a href="carrinho.html">Meu carrinho</a>
+        </div>
+        <div class="rodape-coluna">
+            <h3>Sua conta</h3>
+            <a href="login.html">Entrar</a>
+            <a href="cria.html">Criar conta</a>
+            <a href="redefinir_senha.html">Recuperar senha</a>
+        </div>
+        <div class="rodape-coluna">
+            <h3>Uai, que delícia!</h3>
+            <p>Seu cantinho para descobrir novos sabores e pedir suas comidas favoritas.</p>
+        </div>
+    </div>
+    <div class="rodape-final">
+        <span>© 2026 UAIcheguei. Feito com carinho em Minas Gerais.</span>
+        <a href="index.html">Voltar ao início ↑</a>
+    </div>
+</footer>
+<script>
+document.getElementById("form-conta").addEventListener("submit", function(evento) {
+    evento.preventDefault();
+    document.getElementById("aviso-conta").textContent = "Demonstração: formulário preenchido! Nenhuma informação foi armazenada.";
+});
+</script>
+</body>
+</html>
