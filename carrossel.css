@@ -1,0 +1,13 @@
+/* Carrossel horizontal de produtos e categorias */
+[data-carrossel]{display:flex!important;flex-wrap:nowrap!important;gap:18px!important;overflow-x:auto!important;overflow-y:hidden!important;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-inline:contain;padding:8px 3px 18px}
+[data-carrossel]::-webkit-scrollbar{display:none}
+[data-carrossel]>*{flex:0 0 clamp(220px,26%,310px)!important;min-width:0;scroll-snap-align:start}
+.grade-categorias[data-carrossel]>*{flex-basis:clamp(155px,18%,215px)!important}
+.categorias-cliente[data-carrossel]>*{flex-basis:clamp(180px,24%,270px)!important}
+.grade-cards[data-carrossel]>*{flex-basis:clamp(225px,29%,315px)!important}
+.restaurante-grid[data-carrossel]>*{flex-basis:clamp(225px,29%,315px)!important}
+.controles-carrossel{display:flex;gap:9px;align-items:center;margin-left:auto}
+.controles-carrossel button{display:grid;place-items:center;width:39px;height:39px;border-radius:50%;background:white;border:1px solid #f0d9c8;color:#d85b08;font-size:22px;cursor:pointer;box-shadow:0 3px 12px #5c2a0d10}
+.controles-carrossel button:hover{background:#e15800;color:white}
+@media(max-width:650px){[data-carrossel]>*{flex-basis:76vw!important;max-width:310px}.grade-categorias[data-carrossel]>*{flex-basis:42vw!important;max-width:210px}.categorias-cliente[data-carrossel]>*{flex-basis:60vw!important}.controles-carrossel button{width:36px;height:36px}}
+@media(prefers-reduced-motion:reduce){[data-carrossel]{scroll-behavior:auto}}
