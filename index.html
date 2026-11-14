@@ -1,171 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<title>UAIcheguei</title>
-
-<link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UAIcheguei: descubra comidas e restaurantes com um jeitinho mineiro.">
+    <title>UAIcheguei | Seu delivery mineiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
+    <header class="cabecalho">
+        <div class="topo">
+            <a class="marca" href="index.html" aria-label="UAIcheguei - início">
+                <img src="logo.png" alt="Logo do UAIcheguei">
+                <span>UAIcheguei</span>
+            </a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="#restaurantes">Restaurantes</a>
+                <a href="#ajuda">Ajuda</a>
+            </nav>
+            <div class="conta">
+                <a class="botao botao-claro" href="login.html">Entrar</a>
+                <a class="botao botao-laranja" href="cria.html">Criar conta</a>
+            </div>
+        </div>
+    </header>
 
-<div class="aviso">
-    🧡 Peça agora e receba suas comidas favoritas em casa!
-</div>
+    <main>
+        <section class="destaque">
+            <div class="destaque-conteudo">
+                <h1>Seu delivery<br><span>mineiro tá aqui!</span></h1>
+                <p>Peça seus pratos favoritos nos melhores restaurantes da região.</p>
+                <form class="busca" action="login.html" method="get">
+                    <label class="sr-only" for="endereco">Endereço de entrega</label>
+                    <span aria-hidden="true">📍</span>
+                    <input id="endereco" name="endereco" type="text" placeholder="Digite seu endereço" required>
+                    <button type="submit" aria-label="Continuar para entrar">⌕</button>
+                </form>
+                <small>Entre na sua conta para continuar o pedido.</small>
+            </div>
+            <div class="destaque-imagem" role="img" aria-label="Feijoada com acompanhamentos"></div>
+        </section>
 
-<header class="cabecalho">
+        <section class="categorias" id="restaurantes">
+            <div class="titulo-secao">
+                <h2>Explore por categoria</h2>
+                <a href="login.html">Ver todas <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="grade-categorias">
+                <a class="categoria" href="login.html">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=450&auto=format&fit=crop&q=85" alt="Hambúrguer" loading="lazy">
+                    <strong>Lanches</strong>
+                </a>
+                <a class="categoria" href="login.html">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=450&auto=format&fit=crop&q=85" alt="Pizza" loading="lazy">
+                    <strong>Pizzas</strong>
+                </a>
+                <a class="categoria" href="login.html">
+                    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=450&auto=format&fit=crop&q=85" alt="Macarrão" loading="lazy">
+                    <strong>Massas</strong>
+                </a>
+                <a class="categoria" href="login.html">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=450&auto=format&fit=crop&q=85" alt="Refeição" loading="lazy">
+                    <strong>Refeições</strong>
+                </a>
+                <a class="categoria" href="login.html">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=450&auto=format&fit=crop&q=85" alt="Bolo de chocolate" loading="lazy">
+                    <strong>Sobremesas</strong>
+                </a>
+                <a class="categoria" href="login.html">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=450&auto=format&fit=crop&q=85" alt="Bebida gelada" loading="lazy">
+                    <strong>Bebidas</strong>
+                </a>
+            </div>
+        </section>
 
-    <div class="topo">
-
-        <a href="index.html">
-            <img src="logo.png" alt="Logo UAIcheguei" class="logo">
-        </a>
-
-        <div class="endereco">
-            <span class="local">📍</span>
-
+        <section class="chamada" id="ajuda">
             <div>
-                <p>ENTREGAR EM</p>
-                <strong>Minha Casa</strong>
-                <p>Rua A</p>
+                <h2>Bateu aquela fome?</h2>
+                <p>Crie sua conta e encontre sua próxima comida favorita.</p>
             </div>
-        </div>
+            <a class="botao botao-laranja" href="cria.html">Começar agora</a>
+        </section>
+    </main>
 
-        <div class="pesquisa">
-            <span>🔍</span>
-            <input type="text" placeholder="O que você quer comer hoje?">
-        </div>
-
-        <div class="acoes">
-
-            <a href="#" class="opcao">
-                <span>♡</span>
-                Favoritos
-            </a>
-
-            <a href="carrinho.html" class="opcao">
-                <span>🛒</span>
-                Carrinho
-            </a>
-
-            <a href="login.html" class="perfil">
-                👤
-            </a>
-
-        </div>
-
-    </div>
-
-    <nav class="menu">
-        <a href="index.html">🏠 Início</a>
-        <a href="#">🏪 Restaurantes</a>
-        <a href="#">🍔 Lanches</a>
-        <a href="#">🍕 Pizza</a>
-        <a href="#">🍣 Japonesa</a>
-        <a href="#">🥣 Açaí</a>
-        <a href="#">🧁 Doces</a>
-        <a href="#">🏷️ Promoções</a>
-    </nav>
-
-</header>
-
-<section class="destaque">
-
-    <div class="texto">
-        <h1>Comida deliciosa na sua porta 🍔</h1>
-        <p>Escolha seu restaurante favorito e peça agora.</p>
-    </div>
-
-    <div class="ofertas">
-        <h2>🔥 Ofertas de hoje</h2>
-        <p>Até 30% OFF em restaurantes selecionados!</p>
-        <button>Ver ofertas</button>
-    </div>
-
-</section>
-
-<section class="restaurantes">
-
-    <div class="titulo">
-        <h2>Restaurantes perto de você</h2>
-        <a href="#">Ver todos</a>
-    </div>
-
-    <div class="cards">
-
-        <div class="card">
-            <div class="foto-comida">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mZNDf2uI5FLlVpe3cggQuv9CbAXMPujZFevreQbGSQ&s=10" alt="Hambúrguer">
-            </div>
-
-            <div class="info">
-                <h3>Burger King</h3>
-                <div class="nota">⭐ 4.8 <span>• 25-35 min</span></div>
-                <p>Hambúrguer • Lanches</p>
-                <span class="entrega">🚴 Entrega grátis</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="foto-comida">
-                <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498" alt="Pizza">
-                <span class="promocao">15% OFF</span>
-            </div>
-
-            <div class="info">
-                <h3>Pizza House</h3>
-                <div class="nota">⭐ 4.7 <span>• 30-40 min</span></div>
-                <p>Pizza • Italiana</p>
-                <span class="entrega">🚴 Entrega grátis</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="foto-comida">
-                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Sushi">
-            </div>
-
-            <div class="info">
-                <h3>Sushi San</h3>
-                <div class="nota">⭐ 4.9 <span>• 20-30 min</span></div>
-                <p>Japonesa • Sushi</p>
-                <span class="entrega">🚴 Entrega grátis</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="foto-comida">
-                <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec" alt="Frango">
-            </div>
-
-            <div class="info">
-                <h3>Frango Mineiro</h3>
-                <div class="nota">⭐ 4.6 <span>• 25-35 min</span></div>
-                <p>Frango • Brasileira</p>
-                <span class="entrega">🚴 Entrega grátis</span>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<section class="oferta">
-    <h2>Não sabe o que pedir?</h2>
-    <p>Confira nossas opções e encontre sua próxima refeição favorita!</p>
-    <button>Explorar restaurantes</button>
-</section>
-
-<footer>
-    <h3>Uai Cheguei</h3>
-    <p>Comida boa chegando até você.</p>
-    <p>© 2026 Uai Cheguei</p>
-</footer>
-
+    <footer>
+        <strong>UAIcheguei</strong>
+        <p>Comida boa chegando até você. © 2026 UAIcheguei.</p>
+        <a href="login.html">Acessar minha conta</a>
+    </footer>
 </body>
 </html>
