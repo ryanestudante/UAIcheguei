@@ -1,29 +1,4 @@
-
-<!DOCTYPE html>
-<html lang="pt-br">
-
-  <head>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="UAIcheguei, carrinho, delivery">
-<meta name="author" content="Equipe UAIcheguei">
-<meta name="description" content="Carrinho de compras do UAIcheguei">
-
-<title>UAIcheguei - Meu carrinho</title>
-
-<link rel="stylesheet" href="cliente-topo.css">
-<link rel="stylesheet" href="carrinho.css">
-    <link rel="stylesheet" href="rodape.css">
-    <link rel="stylesheet" href="responsivo.css">
-<link rel="stylesheet" href="tema-escuro.css">
-<script src="tema-escuro.js"></script>
-</head>
-
-<body>
-
-
-<header class="cliente-cabecalho">
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Meu carrinho | UAIcheguei</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="cliente-topo.css"><link rel="stylesheet" href="rodape.css"><link rel="stylesheet" href="responsivo.css"><link rel="stylesheet" href="fluxo-uai.css"><link rel="stylesheet" href="tema-escuro.css"><script src="tema-escuro.js"></script></head><body><header class="cliente-cabecalho">
     <div class="cliente-topo">
         <a class="cliente-marca" href="Intranet_cliente.html"><img src="logo.png" alt="Logo UAIcheguei"><span>UAIcheguei</span></a>
         <form class="cliente-busca" action="Intranet_cliente.html" method="get">
@@ -44,108 +19,7 @@
         <a href="Intranet_cliente.html#minha-conta">Meus pedidos</a>
         <a href="carrinho.html">Meu carrinho</a>
     </nav>
-</header>
-
-<!-- CONTEÚDO DO CARRINHO -->
-
-<main id="principal">
-
-    <section id="produtos">
-
-        <div id="titulo">
-
-            <div>
-                <h1>Meu carrinho</h1>
-                <p>Revise os itens e continue o pagamento</p>
-            </div>
-
-            <a id="adicionar" href="Intranet_cliente.html">
-                <span>＋</span> Adicionar mais
-            </a>
-
-        </div>
-
-        <article class="produto">
-
-            <img class="foto-produto" src="imagem/hamburguer.png" alt="Hambúrguer">
-
-            <div class="descricao">
-                <h2>X-Bacon</h2>
-                <p>Acompanha batatas fritas</p>
-                <strong class="preco">R$ 29,90</strong>
-            </div>
-
-            <div class="quantidade">
-                <button type="button">▤</button>
-                <button type="button">−</button>
-                <span>1</span>
-                <button type="button">+</button>
-            </div>
-
-        </article>
-
-        <article class="produto">
-
-            <img class="foto-produto batata" src="imagem/batata.png" alt="Batata frita">
-
-            <div class="descricao">
-                <h2>Batata frita</h2>
-                <p>Batata frita, tamanho P</p>
-                <strong class="preco">R$ 7,99</strong>
-            </div>
-
-            <div class="quantidade">
-                <button type="button">▤</button>
-                <button type="button">−</button>
-                <span>1</span>
-                <button type="button">+</button>
-            </div>
-
-        </article>
-
-    </section>
-
-    <!-- RESUMO DO PEDIDO -->
-
-    <aside id="resumo">
-
-        <h2>Resumo do seu pedido</h2>
-
-        <div class="linha-resumo">
-            <span>Subtotal</span>
-            <strong>R$ 37,89</strong>
-        </div>
-
-        <div class="linha-resumo">
-            <span>Taxa de entrega</span>
-            <strong>R$ 9,99</strong>
-        </div>
-
-        <div id="total">
-            <span>Total</span>
-            <strong>R$ 47,88</strong>
-        </div>
-
-        <div id="entrega">
-
-            <img src="imagem/entrega.png" alt="Entrega">
-
-            <div>
-                <h3>Entrega estimada</h3>
-                <p>Entre 30 e 45 minutos</p>
-            </div>
-
-        </div>
-
-        <a id="finalizar" href="#">
-            Finalizar pedido
-        </a>
-
-    </aside>
-
-</main>
-
-<footer class="rodape-uai">
+</header><main class="uai-app"><h1>Meu carrinho</h1><p>Confira seus produtos antes de finalizar.</p><div class="uai-grade"><section class="uai-card"><h2>Seus produtos</h2><div id="itens-carrinho"></div><a class="uai-botao secundario" href="ofertas.html">+ Adicionar mais comidas</a></section><aside class="uai-card"><h2>Resumo do pedido</h2><div id="resumo-carrinho"></div><a class="uai-botao" id="ir-pagamento" href="pagamento.html">Continuar para pagamento →</a><p class="uai-nota">Demonstração: nenhuma compra ou cobrança real.</p></aside></div></main><footer class="rodape-uai">
     <div class="rodape-conteudo">
         <div class="rodape-marca">
             <a href="index.html" class="rodape-logo">
@@ -175,6 +49,4 @@
         <span>© 2026 UAIcheguei. Feito com carinho em Minas Gerais.</span>
         <a href="index.html">Voltar ao início ↑</a>
     </div>
-</footer>
-</body>
-</html>
+</footer><script src="fluxo-uai.js"></script><script src="carrinho-funcional.js"></script></body></html>
