@@ -32,3 +32,41 @@
 .detalhe-erro{grid-column:1/-1;text-align:center;padding:55px 20px}
 @media(max-width:750px){.detalhe-produto{grid-template-columns:1fr;gap:18px;padding:17px}.detalhe-foto img{height:300px}.detalhe-info{padding:8px}}
 @media(max-width:480px){.detalhe-foto img{height:240px}.detalhe-botoes a{width:100%;justify-content:center}}
+
+/* Detalhes de produtos: visual renovado */
+.pagina-detalhes{padding-bottom:55px}
+.voltar-detalhes{display:inline-flex;align-items:center;gap:8px;margin:0 0 18px;padding:11px 17px;border:1px solid #f0d8c7;border-radius:12px;background:#fff;color:#c65104;text-decoration:none;font-size:13px;font-weight:700;transition:background .2s}
+.voltar-detalhes:hover{background:#fff0e5}
+.pagina-detalhes .detalhe-produto{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:35px;border:1px solid #f0e0d3;border-radius:24px;padding:26px;box-shadow:0 12px 40px #6b39100d}
+.pagina-detalhes .detalhe-foto{position:relative;align-self:stretch}
+.pagina-detalhes .detalhe-foto img{height:100%;min-height:480px;max-height:700px;object-fit:cover;border-radius:18px}
+.selo-foto{position:absolute;top:18px;left:18px;background:#fff;color:#e15800;padding:10px 14px;border-radius:12px;font-size:11px;font-weight:800;box-shadow:0 5px 15px #0002}
+.pagina-detalhes .detalhe-info{padding:6px 4px}
+.linha-etiquetas{display:flex;align-items:center;flex-wrap:wrap;gap:9px}
+.etiqueta-categoria{background:#fff0e4;color:#d45100;padding:8px 12px;border-radius:20px;font-size:11px;font-weight:800}
+.etiqueta-desconto{background:#e15800;color:#fff;padding:8px 12px;border-radius:20px;font-size:11px;font-weight:800}
+.pagina-detalhes .detalhe-info h1{margin:18px 0 8px;font-size:clamp(28px,3.1vw,43px)}
+.pagina-detalhes .detalhe-resumo{margin:0 0 18px;font-size:15px}
+.preco-painel{background:#fff5ed;border:1px solid #ffe3ce;border-radius:17px;padding:18px 20px;margin:22px 0}
+.preco-legenda{font-size:12px;font-weight:700;color:#8b6c59}
+.pagina-detalhes .detalhe-precos{margin:5px 0 4px;gap:14px}
+.pagina-detalhes .detalhe-precos strong{font-size:34px}
+.economia{color:#c45007;font-size:12px;font-weight:700}
+.infos-rapidas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
+.infos-rapidas>div{display:flex;align-items:center;gap:10px;background:#fffbf8;border:1px solid #f0e6df;padding:13px;border-radius:13px}
+.info-icone{font-size:24px}
+.infos-rapidas strong,.infos-rapidas small{display:block}
+.infos-rapidas strong{font-size:12px}
+.infos-rapidas small{font-size:10px;color:#9a8476;margin-top:4px}
+.pagina-detalhes .detalhe-info h2{font-size:18px;margin:23px 0 5px}
+.observacao-detalhe{background:#fffaf4;border-left:3px solid #e15800;padding:13px 16px;margin-top:21px;border-radius:0 12px 12px 0}
+.observacao-detalhe strong{font-size:12px;color:#7c4a2d}
+.observacao-detalhe p{font-size:11px;margin:6px 0 0;line-height:1.7}
+.pagina-detalhes .detalhe-botoes{margin-top:24px}
+.pagina-detalhes .aviso-demo{font-size:11px;margin-top:14px}
+.mais-opcoes .sugestao-link{text-decoration:none;color:inherit;transition:transform .2s}
+.mais-opcoes .sugestao-link:hover{transform:translateY(-4px)}
+.mais-opcoes .sugestao-preco{display:block;font-size:19px;color:#e15800;margin:8px 0}
+.mais-opcoes .sugestao-ver{font-size:12px;font-weight:700;color:#d65800}
+@media(max-width:900px){.pagina-detalhes .detalhe-produto{grid-template-columns:1fr}.pagina-detalhes .detalhe-foto img{height:330px;min-height:0;max-height:none}.pagina-detalhes .detalhe-info{padding:6px}}
+@media(max-width:550px){.pagina-detalhes .detalhe-produto{padding:13px;gap:15px}.pagina-detalhes .detalhe-foto img{height:245px}.pagina-detalhes .detalhe-info h1{font-size:27px}.infos-rapidas{grid-template-columns:1fr}.pagina-detalhes .detalhe-precos strong{font-size:29px}.pagina-detalhes .detalhe-botoes a{width:100%;justify-content:center}.mais-opcoes .grade-cards{grid-template-columns:1fr}}
