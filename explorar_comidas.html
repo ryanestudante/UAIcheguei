@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="explorar_comidas.css">
     <link rel="stylesheet" href="rodape.css">
     <link rel="stylesheet" href="responsivo.css">
+    <link rel="stylesheet" href="carrossel.css">
 </head>
 <body>
 <header class="cliente-cabecalho">
@@ -59,8 +60,8 @@
         </div>
     </section>
     <section class="secao">
-        <div class="cabeca-secao"><div><span class="sobretitulo">🍔 FAVORITOS DA CASA</span><h2>Comidas em destaque</h2><p>Algumas ideias para abrir o apetite.</p></div><a class="link-secao" href="ofertas.html">Ver ofertas →</a></div>
-        <div class="grade-cards">
+        <div class="cabeca-secao"><div><span class="sobretitulo">🍔 FAVORITOS DA CASA</span><h2>Comidas em destaque</h2><p>Algumas ideias para abrir o apetite.</p></div><a class="link-secao" href="ofertas.html">Ver ofertas →</a></div><div class="controles-carrossel"><button type="button" data-anterior aria-label="Anterior">‹</button><button type="button" data-proximo aria-label="Próximo">›</button></div>
+        <div class="grade-cards" data-carrossel>
             <article class="card-produto"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop&q=85" alt="Hambúrguer"><div class="card-corpo"><span class="mini-label">LANCHES</span><h3>Hambúrguer especial</h3><p>Uma opção caprichada para matar a fome.</p><a href="ofertas.html">Conhecer ofertas →</a></div></article>
             <article class="card-produto"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop&q=85" alt="Pizza"><div class="card-corpo"><span class="mini-label">PIZZAS</span><h3>Pizza da casa</h3><p>O sabor perfeito para compartilhar.</p><a href="ofertas.html">Conhecer ofertas →</a></div></article>
             <article class="card-produto"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&auto=format&fit=crop&q=85" alt="Macarrão"><div class="card-corpo"><span class="mini-label">MASSAS</span><h3>Massa especial</h3><p>Uma refeição para qualquer ocasião.</p><a href="restaurantes.html">Ver restaurantes →</a></div></article>
@@ -99,5 +100,6 @@
         <a href="index.html">Voltar ao início ↑</a>
     </div>
 </footer>
+<script src="carrossel.js" defer></script>
 </body>
 </html>
