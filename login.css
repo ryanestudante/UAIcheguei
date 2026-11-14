@@ -211,3 +211,9 @@ background-image: url(https://uploads.onecompiler.io/44g7ujbgc/1787313298296/Cha
         font-size: 21px;
     }
 }
+
+/* Link para retornar à página pública */
+.voltar-inicio{display:inline-flex;align-items:center;gap:7px;color:#d65a08;text-decoration:none;font-size:13px;font-weight:700;margin:0 0 22px;align-self:flex-start}
+.voltar-inicio:hover{text-decoration:underline}
+.caixa-branca{text-align:center}
+.caixa-branca .voltar-inicio{display:flex;text-align:left}
