@@ -1,38 +1,170 @@
 /* UAIcheguei — tema cafe e chocolate */
-html[data-tema="escuro"]{
- color-scheme:dark;
- --cafe-fundo:#1b1411;
- --cafe-topo:#241a16;
- --cafe-card:#30231d;
- --cafe-elevado:#3b2b23;
- --cafe-borda:#574033;
- --cafe-texto:#f8ecdf;
- --cafe-suave:#d5bfb0;
- --cafe-acento:#ffad72;
+html[data-tema="escuro"] {
+    color-scheme:dark;
+    --cafe-fundo:#1b1411;
+    --cafe-topo:#241a16;
+    --cafe-card:#30231d;
+    --cafe-elevado:#3b2b23;
+    --cafe-borda:#574033;
+    --cafe-texto:#f8ecdf;
+    --cafe-suave:#d5bfb0;
+    --cafe-acento:#ffad72;
 }
-html[data-tema="escuro"] body{background:var(--cafe-fundo)!important;color:var(--cafe-texto)!important}
-html[data-tema="escuro"] :is(.cliente-cabecalho,.cliente-topo,.cliente-menu,.cabecalho,.topo,.header,.navbar,.sidebar,.menu-lateral){background:var(--cafe-topo)!important;color:var(--cafe-texto)!important;border-color:var(--cafe-borda)!important}
-html[data-tema="escuro"] :is(.pagina-cliente,.explorar-novo,.pagina-conta,.conteudo,.container,.principal,main){color:var(--cafe-texto)}
-html[data-tema="escuro"] :is(.boas-vindas,.hero-explorar,.hero-interno,.banner-ofertas,.titulo,.faixa-navegacao,.faixa,.escolha,.escolha-ofertas,.escolha-restaurantes){background:linear-gradient(115deg,#38251b,#4a3022)!important;color:var(--cafe-texto)!important;border-color:var(--cafe-borda)!important}
-html[data-tema="escuro"] :is(.prato,.card-produto,.card-restaurante,.categorias-cliente a,.atalhos-cliente>*,.detalhe-produto,.restaurante-card,.comida-card,.caixa-branca,.form-box,.caixa,.card,.painel,.informacoes,.formulario,.dados,.secao-conta,.pedido,.item-carrinho,.restaurante-grid article){background:var(--cafe-card)!important;color:var(--cafe-texto)!important;border-color:var(--cafe-borda)!important;box-shadow:0 10px 30px #0002!important}
-html[data-tema="escuro"] :is(.preco-painel,.infos-rapidas>div,.observacao-detalhe,.card-corpo .acao-card,.pedir,.botao-secundario,.etiqueta,.tag,.selo,.voltar-detalhes,.controles-carrossel button,.cliente-menu a){background:var(--cafe-elevado)!important;color:var(--cafe-acento)!important;border-color:var(--cafe-borda)!important}
-html[data-tema="escuro"] :is(h1,h2,h3,h4,h5,h6,.cliente-marca,.cliente-acoes a,.rodape-coluna a,.card-corpo h3,.prato h3,.categorias-cliente strong){color:var(--cafe-texto)!important}
-html[data-tema="escuro"] :is(p,small,.detalhe-info p,.card-corpo p,.cabeca-secao p,.prato p,.atalhos-cliente p,.boas-vindas p,.hero-explorar p,.hero-interno p,.escolha p,.nota,.aviso-demo){color:var(--cafe-suave)!important}
-html[data-tema="escuro"] :is(input,textarea,select){background:#241a16!important;color:var(--cafe-texto)!important;border:1px solid #6b4c3a!important}
-html[data-tema="escuro"] :is(input,textarea)::placeholder{color:#bca99a!important}
-html[data-tema="escuro"] :is(.cliente-busca,.cliente-busca label){background:var(--cafe-elevado)!important;color:var(--cafe-acento)!important;border-color:var(--cafe-borda)!important}
-html[data-tema="escuro"] .cliente-busca input{background:transparent!important;border:0!important}
-html[data-tema="escuro"] :is(.rodape-uai,.rodape-conteudo,.rodape-final){background:#201713!important;color:var(--cafe-texto)!important;border-color:var(--cafe-borda)!important}
-html[data-tema="escuro"] :is(.rodape-uai p,.rodape-final span){color:var(--cafe-suave)!important}
-html[data-tema="escuro"] :is(.sobretitulo,.mini-label,.secao-titulo span,.cabeca-secao span,.link-secao,.card-corpo>a,.trilha a,.voltar-inicio,.valores strong,.detalhe-precos strong,.economia,.preco-legenda,.etiqueta-categoria){color:var(--cafe-acento)!important}
-html[data-tema="escuro"] :is(.botao-principal,.botao-primario,.desconto,.etiqueta-desconto){background:#d65a13!important;color:#fff!important}
-html[data-tema="escuro"] :is(.botao-principal,.botao-primario,.cliente-menu a):hover{background:#f07830!important;color:#fff!important}
-html[data-tema="escuro"] :is(.card-produto,.card-restaurante,.prato,.escolha):hover{border-color:#b37a56!important}
-html[data-tema="escuro"] .selo-foto{background:#f6dfc8!important;color:#713b1c!important}
-html[data-tema="escuro"] :is(a,button,input):focus-visible{outline:3px solid #ffc08b;outline-offset:3px}
-.botao-tema-uai{position:fixed;right:20px;bottom:20px;z-index:9999;display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 17px;min-height:46px;border-radius:50px;background:#392820;color:#fff3e7;border:1px solid #8a624c;box-shadow:0 8px 24px #0004;font-family:Poppins,Arial,sans-serif;font-size:13px;font-weight:700;cursor:pointer;transition:background .2s,transform .2s}
-.botao-tema-uai:hover{background:#d65a13;color:white;transform:translateY(-2px)}
-html[data-tema="escuro"] .botao-tema-uai{background:#e9c8a8;color:#382318;border-color:#e7b98e}
-html[data-tema="escuro"] .botao-tema-uai:hover{background:#ffdbb6;color:#382318}
-@media(max-width:600px){.botao-tema-uai{right:12px;bottom:12px;padding:11px 13px;font-size:12px}}
-@media(prefers-reduced-motion:reduce){.botao-tema-uai{transition:none}}
+
+html[data-tema="escuro"] body {
+    background:var(--cafe-fundo)!important;
+    color:var(--cafe-texto)!important
+}
+
+html[data-tema="escuro"] :is(.cliente-cabecalho,.cliente-topo,.cliente-menu,.cabecalho,.topo,.header,.navbar,.sidebar,.menu-lateral) {
+    background:var(--cafe-topo)!important;
+    color:var(--cafe-texto)!important;
+    border-color:var(--cafe-borda)!important
+}
+
+html[data-tema="escuro"] :is(.pagina-cliente,.explorar-novo,.pagina-conta,.conteudo,.container,.principal,main) {
+    color:var(--cafe-texto)
+}
+
+html[data-tema="escuro"] :is(.boas-vindas,.hero-explorar,.hero-interno,.banner-ofertas,.titulo,.faixa-navegacao,.faixa,.escolha,.escolha-ofertas,.escolha-restaurantes) {
+    background:linear-gradient(115deg,#38251b,#4a3022)!important;
+    color:var(--cafe-texto)!important;
+    border-color:var(--cafe-borda)!important
+}
+
+html[data-tema="escuro"] :is(.prato,.card-produto,.card-restaurante,.categorias-cliente a,.atalhos-cliente>*,.detalhe-produto,.restaurante-card,.comida-card,.caixa-branca,.form-box,.caixa,.card,.painel,.informacoes,.formulario,.dados,.secao-conta,.pedido,.item-carrinho,.restaurante-grid article) {
+    background:var(--cafe-card)!important;
+    color:var(--cafe-texto)!important;
+    border-color:var(--cafe-borda)!important;
+    box-shadow:0 10px 30px #0002!important
+}
+
+html[data-tema="escuro"] :is(.preco-painel,.infos-rapidas>div,.observacao-detalhe,.card-corpo .acao-card,.pedir,.botao-secundario,.etiqueta,.tag,.selo,.voltar-detalhes,.controles-carrossel button,.cliente-menu a) {
+    background:var(--cafe-elevado)!important;
+    color:var(--cafe-acento)!important;
+    border-color:var(--cafe-borda)!important
+}
+
+html[data-tema="escuro"] :is(h1,h2,h3,h4,h5,h6,.cliente-marca,.cliente-acoes a,.rodape-coluna a,.card-corpo h3,.prato h3,.categorias-cliente strong) {
+    color:var(--cafe-texto)!important
+}
+
+html[data-tema="escuro"] :is(p,small,.detalhe-info p,.card-corpo p,.cabeca-secao p,.prato p,.atalhos-cliente p,.boas-vindas p,.hero-explorar p,.hero-interno p,.escolha p,.nota,.aviso-demo) {
+    color:var(--cafe-suave)!important
+}
+
+html[data-tema="escuro"] :is(input,textarea,select) {
+    background:#241a16!important;
+    color:var(--cafe-texto)!important;
+    border:1px solid #6b4c3a!important
+}
+
+html[data-tema="escuro"] :is(input,textarea)::placeholder {
+    color:#bca99a!important
+}
+
+html[data-tema="escuro"] :is(.cliente-busca,.cliente-busca label) {
+    background:var(--cafe-elevado)!important;
+    color:var(--cafe-acento)!important;
+    border-color:var(--cafe-borda)!important
+}
+
+html[data-tema="escuro"] .cliente-busca input {
+    background:transparent!important;
+    border:0!important
+}
+
+html[data-tema="escuro"] :is(.rodape-uai,.rodape-conteudo,.rodape-final) {
+    background:#201713!important;
+    color:var(--cafe-texto)!important;
+    border-color:var(--cafe-borda)!important
+}
+
+html[data-tema="escuro"] :is(.rodape-uai p,.rodape-final span) {
+    color:var(--cafe-suave)!important
+}
+
+html[data-tema="escuro"] :is(.sobretitulo,.mini-label,.secao-titulo span,.cabeca-secao span,.link-secao,.card-corpo>a,.trilha a,.voltar-inicio,.valores strong,.detalhe-precos strong,.economia,.preco-legenda,.etiqueta-categoria) {
+    color:var(--cafe-acento)!important
+}
+
+html[data-tema="escuro"] :is(.botao-principal,.botao-primario,.desconto,.etiqueta-desconto) {
+    background:#d65a13!important;
+    color:#fff!important
+}
+
+html[data-tema="escuro"] :is(.botao-principal,.botao-primario,.cliente-menu a):hover {
+    background:#f07830!important;
+    color:#fff!important
+}
+
+html[data-tema="escuro"] :is(.card-produto,.card-restaurante,.prato,.escolha):hover {
+    border-color:#b37a56!important
+}
+
+html[data-tema="escuro"] .selo-foto {
+    background:#f6dfc8!important;
+    color:#713b1c!important
+}
+
+html[data-tema="escuro"] :is(a,button,input):focus-visible {
+    outline:3px solid #ffc08b;
+    outline-offset:3px
+}
+
+.botao-tema-uai {
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:9999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:12px 17px;
+    min-height:46px;
+    border-radius:50px;
+    background:#392820;
+    color:#fff3e7;
+    border:1px solid #8a624c;
+    box-shadow:0 8px 24px #0004;
+    font-family:Poppins,Arial,sans-serif;
+    font-size:13px;
+    font-weight:700;
+    cursor:pointer;
+    transition:background .2s,transform .2s
+}
+
+.botao-tema-uai:hover {
+    background:#d65a13;
+    color:white;
+    transform:translateY(-2px)
+}
+
+html[data-tema="escuro"] .botao-tema-uai {
+    background:#e9c8a8;
+    color:#382318;
+    border-color:#e7b98e
+}
+
+html[data-tema="escuro"] .botao-tema-uai:hover {
+    background:#ffdbb6;
+    color:#382318
+}
+
+@media(max-width:600px) {
+    .botao-tema-uai {
+        right:12px;
+        bottom:12px;
+        padding:11px 13px;
+        font-size:12px
+    }
+
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .botao-tema-uai {
+        transition:none
+    }
+
+}

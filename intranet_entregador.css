@@ -1,33 +1,33 @@
-* {
+*  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body  {
     font-family: Poppins, Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
 }
 
-.cabecalho {
+.cabecalho  {
     background-color: white;
     padding: 15px 5%;
     border-bottom: 1px solid #eee;
 }
 
-.topo {
+.topo  {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
 }
 
-.logo {
+.logo  {
     width: 100px;
 }
 
-.pesquisa {
+.pesquisa  {
     display: flex;
     align-items: center;
     background-color: #f5f5f5;
@@ -36,7 +36,7 @@ body {
     padding: 0 10px;
 }
 
-.pesquisa input {
+.pesquisa input  {
     width: 350px;
     padding: 12px;
     border: none;
@@ -44,22 +44,22 @@ body {
     outline: none;
 }
 
-.opcoes {
+.opcoes  {
     display: flex;
     gap: 20px;
 }
 
-.opcoes a {
+.opcoes a  {
     color: #333;
     text-decoration: none;
     font-size: 14px;
 }
 
-.opcoes a:hover {
+.opcoes a:hover  {
     color: #f27029;
 }
 
-.menu {
+.menu  {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -68,55 +68,51 @@ body {
     border-top: 1px solid #eee;
 }
 
-.menu a {
+.menu a  {
     color: #333;
     text-decoration: none;
     font-size: 14px;
 }
 
-.menu a:hover {
+.menu a:hover  {
     color: #f27029;
 }
 
-.menu span {
+.menu span  {
     margin-left: 4px;
 }
 
-.config {
+.config  {
     font-size: 18px !important;
 }
 
-
 /* FAIXA */
-
-.titulo {
+.titulo  {
     background-color: #fff3ec;
     padding: 30px 8%;
     border-bottom: 1px solid #f0dfd5;
 }
 
-.titulo h1 {
+.titulo h1  {
     color: #f27029;
     font-size: 30px;
     margin-bottom: 8px;
 }
 
-.titulo p {
+.titulo p  {
     color: #777;
     font-size: 16px;
 }
 
-
 /* CONTEÚDO */
-
-.conteudo {
+.conteudo  {
     width: 90%;
     margin: 35px auto;
     display: flex;
     gap: 30px;
 }
 
-.menu-lateral {
+.menu-lateral  {
     background-color: white;
     width: 250px;
     padding: 25px;
@@ -124,12 +120,12 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.menu-lateral h2 {
+.menu-lateral h2  {
     margin-bottom: 20px;
     color: #f27029;
 }
 
-.menu-lateral a {
+.menu-lateral a  {
     display: block;
     color: #333;
     text-decoration: none;
@@ -138,17 +134,17 @@ body {
     margin-bottom: 5px;
 }
 
-.menu-lateral a:hover {
+.menu-lateral a:hover  {
     background-color: #f27029;
     color: white;
 }
 
-.menu-lateral .sair {
+.menu-lateral .sair  {
     margin-top: 20px;
     color: #e15800;
 }
 
-.area {
+.area  {
     background-color: white;
     flex: 1;
     padding: 30px;
@@ -156,25 +152,23 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.area h2 {
+.area h2  {
     color: #f27029;
     margin-bottom: 10px;
 }
 
-.texto {
+.texto  {
     color: #777;
     margin-bottom: 30px;
 }
 
-
 /* NÚMEROS */
-
-.numeros {
+.numeros  {
     display: flex;
     gap: 20px;
 }
 
-.numero {
+.numero  {
     flex: 1;
     border: 1px solid #eee;
     border-radius: 12px;
@@ -182,72 +176,68 @@ body {
     text-align: center;
 }
 
-.numero:hover {
+.numero:hover  {
     border: 1px solid #f27029;
 }
 
-.numero .icone {
+.numero .icone  {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.numero h3 {
+.numero h3  {
     color: #f27029;
     margin-bottom: 8px;
     font-size: 22px;
 }
 
-.numero p {
+.numero p  {
     color: #777;
 }
 
-
 /* CARTÕES */
-
-.titulo-menu {
+.titulo-menu  {
     margin-top: 30px;
 }
 
-.cartoes {
+.cartoes  {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.cartao {
+.cartao  {
     border: 1px solid #eee;
     border-radius: 12px;
     padding: 25px;
 }
 
-.cartao:hover {
+.cartao:hover  {
     border: 1px solid #f27029;
 }
 
-.icone {
+.icone  {
     font-size: 35px;
     margin-bottom: 10px;
 }
 
-.cartao h3 {
+.cartao h3  {
     margin-bottom: 8px;
 }
 
-.cartao p {
+.cartao p  {
     color: #777;
     margin-bottom: 15px;
 }
 
-.cartao a {
+.cartao a  {
     color: #f27029;
     text-decoration: none;
     font-weight: bold;
 }
 
-
 /* RODAPÉ */
-
-footer {
+footer  {
     background-color: #222;
     color: white;
     text-align: center;
@@ -255,11 +245,11 @@ footer {
     margin-top: 50px;
 }
 
-footer h3 {
+footer h3  {
     color: #f27029;
     margin-bottom: 10px;
 }
 
-footer p {
+footer p  {
     margin-bottom: 5px;
 }
