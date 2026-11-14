@@ -54,7 +54,7 @@
             <a class="voltar-detalhes" href="ofertas.html">← Voltar para ofertas</a>
             <section class="detalhe-produto" id="detalhe-produto">
                 <div class="detalhe-foto">
-                    <img id="detalhe-imagem" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900&auto=format&fit=crop&q=85" alt="Hambúrguer ilustrativo">
+                    <img id="detalhe-imagem" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900&auto=format&fit=crop&q=85" alt="Foto ilustrativa de comida">
                     <div class="selo-foto">OFERTA DO DIA</div>
                 </div>
                 <div class="detalhe-info">
@@ -63,12 +63,12 @@
                         <span class="etiqueta-desconto" id="detalhe-desconto">
                         </span>
                     </div>
-                    <h1 id="detalhe-nome">X-Bacon especial</h1>
-                    <p class="detalhe-resumo" id="detalhe-resumo">Hambúrguer com bacon e queijo, exemplo de oferta.</p>
+                    <h1 id="detalhe-nome">Prato em destaque</h1>
+                    <p class="detalhe-resumo" id="detalhe-resumo">Conheça os pratos disponíveis no UAIcheguei.</p>
                     <div class="preco-painel">
                         <span class="preco-legenda">Preço promocional</span>
                         <div class="detalhe-precos">
-                            <strong id="detalhe-preco">R$ 29,90</strong>
+                            <strong id="detalhe-preco">Consulte ofertas</strong>
                             <del id="detalhe-anterior">
                             </del>
                         </div>
@@ -92,9 +92,9 @@
                         </div>
                     </div>
                     <h2>Sobre este prato</h2>
-                    <p id="detalhe-descricao">Exemplo ilustrativo de lanche do UAIcheguei.</p>
+                    <p id="detalhe-descricao">Esta página é ilustrativa. Consulte o cardápio para ver as informações de cada prato.</p>
                     <h2>Ingredientes principais</h2>
-                    <p id="detalhe-ingredientes">Pão, carne, queijo e bacon (exemplo).</p>
+                    <p id="detalhe-ingredientes">Os ingredientes variam conforme o produto escolhido.</p>
                     <div class="observacao-detalhe">
                         <strong>Informação importante</strong>
                         <p>Os ingredientes e as porções são exemplos. Consulte o restaurante sobre alergênicos, alterações e disponibilidade antes de pedir.</p>
@@ -151,19 +151,5 @@
                 <a href="principal.html">Voltar ao início ↑</a>
             </div>
         </footer>
-    <script>
-(function(){
-const p=new URLSearchParams(location.search),n=p.get('nome'),v=p.get('preco'),i=p.get('imagem');
-if(!n||!v||!i)return;
-const el=id=>document.getElementById(id);
-el('detalhe-nome').textContent=n;el('nome-trilha').textContent=n;el('detalhe-preco').textContent=v;
-el('detalhe-imagem').src=i;el('detalhe-imagem').alt=n;
-el('detalhe-resumo').textContent='Conheça '+n+' na vitrine do UAIcheguei.';
-el('detalhe-descricao').textContent='Produto demonstrativo. Preço e informações ilustrativos.';
-el('detalhe-ingredientes').textContent='Consulte o restaurante para saber ingredientes e alergênicos.';
-el('detalhe-categoria').textContent=(p.get('categoria')||'comida').replaceAll('-',' ').toUpperCase();
-el('detalhe-desconto').textContent='';el('detalhe-anterior').textContent='';el('detalhe-economia').textContent='';
-document.title=n+' | UAIcheguei';
-})();
-</script></body>
+    </body>
 </html>
