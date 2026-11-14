@@ -16,18 +16,23 @@
         <link rel="stylesheet" href="vitrine-ajustes.css">
     <link rel="stylesheet" href="logo-global.css">
 <style>
-.hero-novo{background:linear-gradient(120deg,#fff3e9 0%,#ffe0c7 100%);overflow:hidden;gap:35px;align-items:center}
-.hero-novo .hero-texto h1{max-width:600px;line-height:1.14}
-.hero-novo-acoes{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:24px}
-.hero-novo-secundario{color:#b74c10;font-weight:700;text-decoration:none}
-.hero-novo-secundario:hover{text-decoration:underline}
-.hero-novo-destaques{display:flex;flex-wrap:wrap;gap:9px;margin-top:25px}
-.hero-novo-destaques span{font-size:12px;font-weight:700;color:#743e21;background:#fff;border:1px solid #f2d1b8;padding:8px 12px;border-radius:30px}
-.hero-novo-imagens{position:relative;flex:1;min-width:0;max-width:470px;height:310px;display:flex;align-items:center;justify-content:center}
-.hero-novo-imagens .hero-novo-principal{width:85%;height:270px;object-fit:cover;border-radius:25px;transform:rotate(3deg);box-shadow:0 15px 32px #6733132b}
-.hero-novo-imagens .hero-novo-mini{position:absolute;left:-5px;bottom:-2px;width:145px;height:120px;object-fit:cover;border:6px solid #fff;border-radius:20px;transform:rotate(-9deg);box-shadow:0 10px 24px #67331324}
-.hero-novo-selo{position:absolute;right:-2px;top:5px;padding:12px 16px;border-radius:16px;background:#fff;color:#dc5c0c;font-size:13px;font-weight:800;box-shadow:0 6px 22px #6733131c;transform:rotate(7deg)}
-@media(max-width:750px){.hero-novo{flex-direction:column;align-items:stretch}.hero-novo-imagens{width:100%;max-width:none;height:250px}.hero-novo-imagens .hero-novo-principal{height:220px}.hero-novo-imagens .hero-novo-mini{width:110px;height:95px;left:6px}.hero-novo-selo{right:8px}}
+.inicio-catalogo{padding:38px 0 8px}
+.inicio-catalogo-topo{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}
+.inicio-catalogo-topo h1{font-size:clamp(28px,4vw,45px);line-height:1.2;color:#4f3011;margin:8px 0}
+.inicio-catalogo-topo p{color:#886b5b;margin:0}
+.inicio-catalogo-link{color:#d95d10;font-weight:700;text-decoration:none;white-space:nowrap}
+.inicio-mosaico{display:grid;grid-template-columns:1.5fr 1fr 1fr;grid-template-rows:190px 190px;gap:15px}
+.inicio-mosaico a{position:relative;display:block;overflow:hidden;border-radius:20px;text-decoration:none;background:#e9d5c7}
+.inicio-mosaico a:first-child{grid-row:span 2}
+.inicio-mosaico img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.inicio-mosaico a:hover img{transform:scale(1.06)}
+.inicio-mosaico a:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#1c110cc9)}
+.inicio-mosaico span{position:absolute;bottom:17px;left:19px;z-index:1;color:#fff;font-size:19px;font-weight:800}
+.inicio-mosaico a:first-child span{font-size:27px}
+.inicio-atalhos{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.inicio-atalhos a{background:#fff;border:1px solid #f0d8c6;border-radius:30px;padding:11px 18px;color:#693c23;text-decoration:none;font-size:13px;font-weight:700}
+.inicio-atalhos a:hover{background:#fff0e5}
+@media(max-width:750px){.inicio-catalogo-topo{align-items:start;flex-direction:column}.inicio-mosaico{grid-template-columns:1fr 1fr;grid-template-rows:180px 150px 150px}.inicio-mosaico a:first-child{grid-column:span 2;grid-row:span 1}.inicio-mosaico span{font-size:15px}.inicio-mosaico a:first-child span{font-size:22px}}
 </style></head>
     <body>
         <header class="cliente-cabecalho">
@@ -60,54 +65,26 @@
         </header>
         <main class="explorar-novo">
             
-                <section class="hero-explorar hero-novo">
-                    <div class="hero-texto">
-                        <span class="sobretitulo">BEM-VINDO AO UAIcheguei</span>
-                        <h1>Seu próximo sabor está <em>a um clique!</em></h1>
-                        <p>De um pão de queijo quentinho àquela pizza caprichada. Descubra o que combina com sua fome hoje.</p>
-                        <div class="hero-novo-acoes">
-                            <a class="botao-primario" href="categorias.html">Ver cardápio <span>→</span></a>
-                            <a class="hero-novo-secundario" href="ofertas.html">Ofertas do dia <span>→</span></a>
-                        </div>
-                        <div class="hero-novo-destaques"><span>🍕 Pizzas</span><span>🍔 Hambúrgueres</span><span>🧀 Quitandas</span></div>
-                    </div>
-                    <div class="hero-novo-imagens">
-                        <img class="hero-novo-principal" src="hamburguer.jpg" alt="Hambúrguer artesanal">
-                        <img class="hero-novo-mini" src="pao-de-queijo.jpg" alt="Pão de queijo mineiro">
-                        <span class="hero-novo-selo">Uai, que delícia!</span>
-                    </div>
-                </section>
-                <section class="secao" id="escolher">
-                    <div class="cabeca-secao">
-                        <div>
-                            <span class="sobretitulo">ESCOLHA SEU CAMINHO</span>
-                            <h2>O que você procura?</h2>
-                        </div>
-                    </div>
-                    <div class="escolhas">
-                        <a href="ofertas.html" class="escolha escolha-ofertas">
-                            <div class="escolha-texto">
-                                <span class="tag"> PREÇOS ESPECIAIS</span>
-                                <h3>Ver ofertas</h3>
-                                <p>Promoções e comidas deliciosas para aproveitar.</p>
-                                <strong>Conferir ofertas <span>→</span>
-                                </strong>
-                            </div>
-                            <img src="hamburguer.jpg" alt="Hambúrguer artesanal">
-                        </a>
-                        <a href="restaurantes.html" class="escolha escolha-restaurantes">
-                            <div class="escolha-texto">
-                                <span class="tag"> NOVOS SABORES</span>
-                                <h3>Ver restaurantes</h3>
-                                <p>Conheça lugares e descubra o que pedir.</p>
-                                <strong>Explorar restaurantes <span>→</span>
-                                </strong>
-                            </div>
-                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=650&auto=format&fit=crop&q=85" alt="Ambiente de restaurante">
-                        </a>
-                    </div>
-                </section>
-                <section class="secao">
+                <section class="inicio-catalogo">
+  <div class="inicio-catalogo-topo">
+    <div><span class="sobretitulo">DESCUBRA SEU PRÓXIMO PEDIDO</span><h1>O que vai querer hoje?</h1><p>Escolha um sabor e encontre sua próxima refeição.</p></div>
+    <a class="inicio-catalogo-link" href="categorias.html">Todas as categorias →</a>
+  </div>
+  <div class="inicio-mosaico">
+    <a href="categoria-mineiras.html"><img src="feijao-tropeiro.jpg" alt="Feijão tropeiro"><span>Comida mineira →</span></a>
+    <a href="categoria-pizzas.html"><img src="pizza-calabresa.jpg" alt="Pizza"><span>Pizzas →</span></a>
+    <a href="categoria-hamburgueres.html"><img src="hamburguer.jpg" alt="Hambúrguer"><span>Hambúrgueres →</span></a>
+    <a href="categoria-pao-de-queijo.html"><img src="pao-de-queijo.jpg" alt="Pão de queijo"><span>Quitandas →</span></a>
+    <a href="categoria-acai.html"><img src="acai.jpg" alt="Açaí"><span>Açaí →</span></a>
+  </div>
+  <nav class="inicio-atalhos" aria-label="Acessos rápidos">
+    <a href="ofertas.html">🔥 Ofertas</a>
+    <a href="restaurantes.html">🍽️ Restaurantes</a>
+    <a href="categoria-bebidas.html">🥤 Bebidas</a>
+    <a href="categoria-doces.html">🍰 Doces</a>
+  </nav>
+</section>
+<section class="secao">
                     <div class="cabeca-secao">
                         <div>
                             <span class="sobretitulo"> FAVORITOS DA CASA</span>
