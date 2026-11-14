@@ -1,0 +1,22 @@
+/* Fluxo de pedidos UAIcheguei */
+.uai-app{max-width:1220px;margin:30px auto 70px;padding:0 5%;font-family:Poppins,Arial,sans-serif;color:#442c1f}
+.uai-app h1{font-size:clamp(25px,3vw,36px);margin:0 0 8px}.uai-app h2{font-size:20px;margin:0 0 16px}.uai-app p{color:#806a5e;line-height:1.6}
+.uai-nota{font-size:12px;background:#fff1e4;color:#8a4a21;padding:12px 16px;border-radius:12px;margin:20px 0}
+.uai-grade{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(260px,1fr);gap:24px;align-items:start}
+.uai-card{background:#fff;border:1px solid #efdfd2;border-radius:19px;padding:24px;margin-bottom:20px;box-shadow:0 6px 22px #63310e0a}
+.uai-item{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid #f1e5dc}.uai-item:last-child{border:0}.uai-item img{width:90px;height:80px;object-fit:cover;border-radius:12px}.uai-item-info{flex:1;min-width:0}.uai-item-info strong{display:block}.uai-item-info small{display:block;color:#806a5e}
+.uai-controles{display:flex;gap:7px;align-items:center}.uai-controles button{border:1px solid #ebd3c0;background:#fff4eb;border-radius:8px;padding:7px 10px;cursor:pointer;color:#b9500b}
+.uai-botao{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:11px;background:#e15800;color:white!important;text-decoration:none;font:700 13px Poppins,Arial,sans-serif;padding:13px 19px;cursor:pointer}.uai-botao:hover{background:#b94600}
+.uai-botao.secundario{background:#fff1e6;color:#bd4f07!important}.uai-botao:disabled{opacity:.55;cursor:not-allowed}
+.uai-linha{display:flex;justify-content:space-between;gap:12px;margin:13px 0}.uai-linha.total{border-top:1px solid #ead9ca;padding-top:15px;font-size:20px}
+.uai-campo{display:flex;flex-direction:column;gap:6px;margin-bottom:16px;font-size:13px;font-weight:600}.uai-campo input,.uai-campo select,.uai-campo textarea{width:100%;border:1px solid #e4cdbd;border-radius:10px;padding:12px;font:inherit;background:#fff}
+.uai-opcoes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}.uai-opcoes label{border:1px solid #ead6c6;padding:12px;border-radius:12px;cursor:pointer;font-size:13px}.uai-opcoes label:has(input:checked){border-color:#e15800;background:#fff1e6}
+.uai-menu{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}.uai-menu a{padding:10px 13px;background:#fff2e9;color:#a84b10;text-decoration:none;border-radius:10px;font-size:12px;font-weight:700}
+.uai-painel{scroll-margin-top:20px}.uai-tabela{width:100%;border-collapse:collapse;font-size:13px}.uai-tabela th,.uai-tabela td{padding:12px 8px;border-bottom:1px solid #f0e0d6;text-align:left;vertical-align:middle}.uai-tabela th{color:#a34c1c}
+.uai-status{display:inline-block;border-radius:20px;background:#fff0e5;color:#a74c16;padding:6px 10px;font-size:11px;font-weight:700}
+.uai-acoes{display:flex;gap:8px;flex-wrap:wrap}.uai-acoes button,.uai-acoes select{padding:8px;border:1px solid #e9d1be;border-radius:8px;background:#fff8f3;font:inherit;font-size:12px;cursor:pointer}
+.uai-estatisticas{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.uai-estatisticas .uai-card{margin:0}.uai-estatisticas strong{display:block;font-size:25px;color:#d65b0c}
+.uai-vazio{padding:24px;text-align:center;color:#8c7566}
+html[data-tema="escuro"] .uai-app{color:#f8ecdf}html[data-tema="escuro"] .uai-card{background:#30231d;border-color:#574033}html[data-tema="escuro"] .uai-card p,html[data-tema="escuro"] .uai-item small{color:#d5bfb0}html[data-tema="escuro"] .uai-nota,html[data-tema="escuro"] .uai-menu a,html[data-tema="escuro"] .uai-opcoes label:has(input:checked){background:#453024;color:#ffc193}html[data-tema="escuro"] .uai-tabela td,html[data-tema="escuro"] .uai-tabela th{border-color:#574033}
+@media(max-width:800px){.uai-grade{grid-template-columns:1fr}.uai-estatisticas{grid-template-columns:repeat(2,1fr)}.uai-tabela{display:block;overflow-x:auto;white-space:nowrap}}
+@media(max-width:520px){.uai-app{padding:0 4%}.uai-card{padding:16px}.uai-opcoes{grid-template-columns:1fr}.uai-item img{width:65px;height:65px}.uai-item{flex-wrap:wrap}.uai-estatisticas{gap:8px}.uai-estatisticas strong{font-size:20px}}
