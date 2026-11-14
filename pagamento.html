@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pagamento | UAIcheguei</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="cliente-topo.css"><link rel="stylesheet" href="rodape.css"><link rel="stylesheet" href="responsivo.css"><link rel="stylesheet" href="fluxo-uai.css"><link rel="stylesheet" href="tema-escuro.css"><script src="tema-escuro.js"></script></head><body><header class="cliente-cabecalho">
+    <div class="cliente-topo">
+        <a class="cliente-marca" href="Intranet_cliente.html"><img src="logo.png" alt="Logo UAIcheguei"><span>UAIcheguei</span></a>
+        <form class="cliente-busca" action="Intranet_cliente.html" method="get">
+            <label for="busca-cliente">⌕</label>
+            <input id="busca-cliente" type="search" name="busca" placeholder="O que você quer comer hoje?">
+        </form>
+        <nav class="cliente-acoes" aria-label="Área do cliente">
+            <a href="Intranet_cliente.html">⌂ <span>Início</span></a>
+            <a href="carrinho.html">🛒 <span>Carrinho</span></a>
+            <a href="informacoes_conta.html">👤 <span>Minha conta</span></a>
+        </nav>
+    </div>
+    <nav class="cliente-menu" aria-label="Categorias">
+        <a href="Intranet_cliente.html">Início</a>
+        <a href="Intranet_cliente.html#categorias">Categorias</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="restaurantes.html">Restaurantes</a>
+        <a href="Intranet_cliente.html#minha-conta">Meus pedidos</a>
+        <a href="carrinho.html">Meu carrinho</a>
+    </nav>
+</header><main class="uai-app"><a class="uai-botao secundario" href="carrinho.html">← Voltar ao carrinho</a><h1 style="margin-top:22px">Finalizar pedido</h1><p>Confira os dados de entrega e escolha uma forma de pagamento.</p><p class="uai-nota">Simulação escolar: não informe CPF, número de cartão, dados bancários ou endereço real. Nenhum pagamento será processado.</p><form id="form-pagamento" class="uai-grade"><section><div class="uai-card"><h2>1. Entrega</h2><label class="uai-campo">Nome fictício para identificação<input name="nome" required maxlength="50" placeholder="Ex.: Cliente exemplo"></label><label class="uai-campo">Endereço fictício de entrega<input name="endereco" required maxlength="100" placeholder="Ex.: Rua Exemplo, 100"></label><label class="uai-campo">Observações (opcional)<textarea name="observacoes" rows="3" maxlength="200" placeholder="Ex.: Entregar na portaria"></textarea></label></div><div class="uai-card"><h2>2. Forma de pagamento</h2><div class="uai-opcoes"><label><input type="radio" name="metodo" value="Pix (simulado)" required> Pix</label><label><input type="radio" name="metodo" value="Cartão (simulado)"> Cartão</label><label><input type="radio" name="metodo" value="Dinheiro (simulado)"> Dinheiro</label></div><p id="info-metodo">Selecione uma forma de pagamento. Não pedimos dados financeiros.</p></div></section><aside class="uai-card"><h2>3. Resumo</h2><div id="resumo-pagamento"></div><button class="uai-botao" type="submit" id="confirmar-pedido">Confirmar pedido de demonstração</button></aside></form></main><footer class="rodape-uai">
+    <div class="rodape-conteudo">
+        <div class="rodape-marca">
+            <a href="index.html" class="rodape-logo">
+                <img src="logo.png" alt="Logo UAIcheguei">
+                <span>UAIcheguei</span>
+            </a>
+            <p>Comida boa, pertinho de você. O sabor de Minas chegando à sua casa!</p>
+        </div>
+        <div class="rodape-coluna">
+            <h3>Explore</h3>
+            <a href="index.html">Início</a>
+            <a href="index.html#restaurantes">Categorias</a>
+            <a href="carrinho.html">Meu carrinho</a>
+        </div>
+        <div class="rodape-coluna">
+            <h3>Sua conta</h3>
+            <a href="login.html">Entrar</a>
+            <a href="cria.html">Criar conta</a>
+            <a href="redefinir_senha.html">Recuperar senha</a>
+        </div>
+        <div class="rodape-coluna">
+            <h3>Uai, que delícia!</h3>
+            <p>Seu cantinho para descobrir novos sabores e pedir suas comidas favoritas.</p>
+        </div>
+    </div>
+    <div class="rodape-final">
+        <span>© 2026 UAIcheguei. Feito com carinho em Minas Gerais.</span>
+        <a href="index.html">Voltar ao início ↑</a>
+    </div>
+</footer><script src="fluxo-uai.js"></script><script src="pagamento.js"></script></body></html>
