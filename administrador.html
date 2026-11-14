@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Administrador | UAIcheguei</title>
+        <title>Funcionário administrativo | UAIcheguei</title>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="cliente-topo.css">
         <link rel="stylesheet" href="rodape.css">
@@ -19,11 +19,12 @@
                     <img src="logo.png" alt="">
                     <strong>UAIcheguei</strong>
                 </a>
-                <span class="adm-sidebar-label">PAINEL DE CONTROLE</span>
+                <span class="adm-sidebar-label">FUNCIONÁRIO DO APLICATIVO</span>
                 <nav class="adm-nav" aria-label="Administração">
                     <a class="ativo" href="#dashboard" data-aba="dashboard"> Visão geral</a>
                     <a href="#pedidos" data-aba="pedidos"> Pedidos</a>
                     <a href="#clientes" data-aba="clientes"> Clientes</a>
+                    <a href="#entregadores" data-aba="entregadores"> Entregadores</a>
                     <a href="#restaurantes" data-aba="restaurantes"> Aprovar restaurantes</a>
                     <a href="#produtos" data-aba="produtos"> Produtos</a>
                     <a href="#cupons" data-aba="cupons"> Cupons</a>
@@ -35,11 +36,11 @@
             <div class="adm-main">
                 <div class="adm-topbar">
                     <div>
-                        <span class="adm-eyebrow">ÁREA ADMINISTRATIVA</span>
-                        <h1>Central de administração</h1>
-                        <p>Controle restaurantes, pedidos, usuários, produtos e permissões em um só lugar.</p>
+                        <span class="adm-eyebrow">EQUIPE UAIcheguei</span>
+                        <h1>Intranet do funcionário</h1>
+                        <p>Administre os parceiros, entregadores, clientes e operações do UAIcheguei.</p>
                     </div>
-                    <div class="adm-avatar" aria-label="Administrador">AD</div>
+                    <div class="adm-avatar" aria-label="Funcionário administrativo">FU</div>
                 </div>
                 <p class="uai-nota">Modo demonstração: as ações abaixo funcionam apenas neste navegador. Não concedem acesso real, não alteram outras contas e não usam banco de dados.</p>
                 <section class="adm-secao" id="dashboard">
@@ -106,7 +107,7 @@
                         <table class="demo-tabela"><thead><tr><th>Cliente fictício</th><th>Pedidos</th><th>Último pedido</th></tr></thead><tbody><tr><td>Ana Souza</td><td>8</td><td>#1048</td></tr><tr><td>Bruno Lima</td><td>5</td><td>#1047</td></tr><tr><td>Camila Rocha</td><td>11</td><td>#1046</td></tr><tr><td>Lucas Martins</td><td>3</td><td>#1045</td></tr></tbody></table>
                     </div>
                 </section>
-                <section class="adm-secao" id="restaurantes">
+                <section class="adm-secao" id="entregadores"><div class="adm-secao-titulo"><div><span>EQUIPE DE ENTREGAS</span><h2>Entregadores</h2></div></div><div class="adm-box"><h3>Controle de entregadores fictícios</h3><p>Consulte e altere o status dos entregadores nesta demonstração.</p><div class="adm-tabela-rolagem"><table class="demo-tabela"><thead><tr><th>Entregador</th><th>Veículo</th><th>Entregas</th><th>Status</th><th>Ação</th></tr></thead><tbody id="lista-entregadores"></tbody></table></div><p class="adm-feedback" id="aviso-entregadores" role="status"></p></div></section><section class="adm-secao" id="restaurantes">
                     <div class="adm-secao-titulo">
                         <div>
                             <span>PARCEIROS</span>
@@ -124,7 +125,7 @@
                     </div>
                     <div class="adm-box">
                         <p>X-Bacon especial · Pizza de calabresa · Massa especial · Bolo de chocolate · Hambúrguer artesanal · Pizza marguerita</p>
-                        <p class="uai-nota">Cadastro ilustrativo. Para adicionar registros é necessário implementar um sistema de dados.</p>
+                        <p class="uai-nota">Produtos fictícios. O funcionário pode supervisionar o catálogo, mas alterações reais dependem de um sistema conectado.</p>
                     </div>
                 </section>
                 <section class="adm-secao" id="cupons">
@@ -150,7 +151,7 @@
                         <div class="demo-metricas"><div><small>Pedidos fictícios no mês</small><strong>48</strong></div><div><small>Ticket médio fictício</small><strong>R$ 38,47</strong></div><div><small>Pedidos entregues</small><strong>39</strong></div><div><small>Faturamento fictício</small><strong>R$ 1.846,70</strong></div></div>
                     </div>
                 </section>
-<section class="adm-secao" id="permissoes"><div class="adm-secao-titulo"><div><span>CONTROLE DE ACESSO</span><h2>Permissões e usuários</h2></div></div><div class="adm-box"><h3>Quem pode fazer o quê?</h3><p>O administrador geral é o responsável pelas aprovações e pelas regras de acesso. Esta matriz é ilustrativa: permissões reais exigem login seguro e verificação no servidor.</p><div class="adm-tabela-rolagem"><table class="demo-tabela"><thead><tr><th>Recurso</th><th>Administrador</th><th>Restaurante aprovado</th><th>Entregador</th><th>Cliente</th></tr></thead><tbody><tr><td>Aprovar ou suspender restaurantes</td><td>Controle total</td><td>Não</td><td>Não</td><td>Não</td></tr><tr><td>Gerenciar catálogo</td><td>Todos</td><td>Próprio catálogo</td><td>Não</td><td>Não</td></tr><tr><td>Visualizar pedidos</td><td>Todos</td><td>Do restaurante</td><td>Da entrega</td><td>Próprios</td></tr><tr><td>Gerenciar usuários e cupons</td><td>Controle total</td><td>Não</td><td>Não</td><td>Não</td></tr><tr><td>Consultar relatórios</td><td>Todos</td><td>Próprios</td><td>Próprios ganhos</td><td>Não</td></tr></tbody></table></div></div><div class="adm-box"><h3>Configurações do administrador (simulação)</h3><div class="adm-config"><label><input type="checkbox" id="config-aprovacao" checked> Exigir aprovação antes de cadastrar restaurante</label><label><input type="checkbox" id="config-cupom" checked> Permitir cupons demonstrativos</label><label><input type="checkbox" id="config-novo" checked> Aceitar novas solicitações fictícias</label></div><p id="aviso-config" class="adm-feedback" role="status"></p></div></section>
+<section class="adm-secao" id="permissoes"><div class="adm-secao-titulo"><div><span>CONTROLE DE ACESSO</span><h2>Permissões e usuários</h2></div></div><div class="adm-box"><h3>Quem pode fazer o quê?</h3><p>O funcionário administrativo do aplicativo é responsável por aprovações e regras de acesso. Esta matriz é ilustrativa: permissões reais exigem login seguro e verificação no servidor.</p><div class="adm-tabela-rolagem"><table class="demo-tabela"><thead><tr><th>Recurso</th><th>Funcionário do aplicativo</th><th>Restaurante aprovado</th><th>Entregador</th><th>Cliente</th></tr></thead><tbody><tr><td>Aprovar ou suspender restaurantes</td><td>Equipe administrativa</td><td>Não</td><td>Não</td><td>Não</td></tr><tr><td>Gerenciar catálogo</td><td>Todos</td><td>Próprio catálogo</td><td>Não</td><td>Não</td></tr><tr><td>Visualizar pedidos</td><td>Todos</td><td>Do restaurante</td><td>Da entrega</td><td>Próprios</td></tr><tr><td>Gerenciar usuários e cupons</td><td>Controle total</td><td>Não</td><td>Não</td><td>Não</td></tr><tr><td>Consultar relatórios</td><td>Todos</td><td>Próprios</td><td>Próprios ganhos</td><td>Não</td></tr></tbody></table></div></div><div class="adm-box"><h3>Configurações do aplicativo (simulação)</h3><div class="adm-config"><label><input type="checkbox" id="config-aprovacao" checked> Exigir aprovação antes de cadastrar restaurante</label><label><input type="checkbox" id="config-cupom" checked> Permitir cupons demonstrativos</label><label><input type="checkbox" id="config-novo" checked> Aceitar novas solicitações fictícias</label></div><p id="aviso-config" class="adm-feedback" role="status"></p></div></section>
             </div>
         </main>
         <footer class="rodape-uai">
@@ -184,5 +185,5 @@
                 <a href="principal.html">Voltar ao início ↑</a>
             </div>
         </footer>
-    <script src="admin-controles.js" defer></script></body>
+    <script src="admin-controles.js" defer></script><script src="entregadores-demo.js" defer></script></body>
 </html>
