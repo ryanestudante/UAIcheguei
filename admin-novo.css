@@ -60,3 +60,17 @@ html[data-tema="escuro"] .adm-layout .uai-estatisticas strong{color:#ffad72}
 html[data-tema="escuro"] .adm-layout .uai-tabela button{background:#4c3428;color:#ffc193;border-color:#76513e}
 @media(max-width:850px){.adm-layout{grid-template-columns:1fr}.adm-sidebar{position:relative;top:auto;height:auto;padding:14px 5%;gap:8px}.adm-brand{padding:0 0 10px;border-bottom:0}.adm-nav{gap:7px}.adm-nav a{padding:10px 12px}.adm-main{padding:24px 5% 55px}}
 @media(max-width:550px){.adm-main{padding:18px 4% 50px}.adm-box{padding:16px}.adm-layout .uai-estatisticas{gap:10px}.adm-layout .uai-estatisticas .uai-card{min-height:110px;padding:16px}.adm-layout .uai-estatisticas strong{font-size:22px}.adm-topbar{align-items:flex-start}.adm-topbar h1{font-size:26px}.adm-secao-titulo{align-items:flex-start}.adm-secao-titulo h2{font-size:22px}}
+
+
+/* Painel administrativo na mesma paleta suave do site */
+body:has(.adm-layout){background:#FFF9F4!important}
+.adm-layout{color:#4F3011}
+.adm-main{background:#FFF9F4}
+.adm-sidebar{background:#4F3011!important}
+.adm-brand{color:#FFD3A5!important}
+.adm-nav a:hover,.adm-nav a.ativo{background:#F4A261!important;color:#4F3011!important}
+.adm-eyebrow,.adm-secao-titulo span{color:#B65B2B!important}
+.adm-avatar{background:#C96A32!important}
+.adm-btn{background:#FFF3E8!important;color:#91461F!important;border-color:#F4D4BA!important}
+.adm-layout .uai-estatisticas strong{color:#B65B2B!important}
+.adm-box,.adm-layout .uai-estatisticas .uai-card{border-color:#F0E0D2!important}
