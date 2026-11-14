@@ -59,3 +59,11 @@
         gap: 12px;
     }
 }
+
+/* Topo branco nas páginas do cliente e de categorias */
+.cliente-cabecalho{background:#fff !important;border-bottom:1px solid #efdfd1 !important;box-shadow:0 3px 12px rgba(79,48,17,.06) !important}
+.cliente-cabecalho .cliente-marca,.cliente-cabecalho .cliente-acoes a{color:#4f3011 !important}
+.cliente-cabecalho .cliente-acoes a:hover{color:#c96a32 !important}
+.cliente-cabecalho .cliente-menu a{background:#fff3e9 !important;color:#4f3011 !important}
+.cliente-cabecalho .cliente-menu a:hover{background:#f5d5bd !important;color:#9f481d !important}
+.cliente-cabecalho .cliente-busca{background:#fffaf6 !important;border-color:#e9d6c8 !important}
