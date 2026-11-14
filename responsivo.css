@@ -90,3 +90,27 @@ body:has(.cabecalho + .titulo) .conteudo{max-width:1320px}
  body:has(.cabecalho + .titulo) .menu-lateral a{font-size:12px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* Paleta suave UAIcheguei: pessego, creme e terracota */
+:root{--laranja:#C96A32;--laranja-claro:#F4A261;--marrom:#4F3011;--creme:#FFF3E8;--uai-laranja:#C96A32;--uai-texto:#4F3011;--uai-claro:#FFF3E8}
+body:not(:has(>.container)){background-color:#FFF9F4;color:#4F3011}
+.cliente-cabecalho,.cabecalho{background:#fffdfb!important;border-bottom-color:#f1dfd1!important}
+.cliente-marca,.marca{color:#C96A32!important}
+.cliente-busca{background:#FFF3E8!important;border-color:#f0d6c1!important}
+.cliente-busca label{color:#C96A32!important}
+.cliente-menu a{background:#FFF3E8!important;color:#634633!important}
+.cliente-menu a:hover,.cliente-menu a:focus-visible{background:#C96A32!important;color:#fff!important}
+.cliente-menu a[href="explorar_comidas.html"],.cliente-menu a[href="ofertas.html"],.cliente-menu a[href="restaurantes.html"]{background:#FFE5CC!important}
+.cliente-acoes a:hover,.menu a:hover{color:#C96A32!important}
+.botao-laranja,.busca button,.uai-botao:not(.secundario),.botao-primario,.acao-primaria{background:#C96A32!important;color:#fff!important;border-color:#C96A32!important}
+.botao-laranja:hover,.busca button:hover,.uai-botao:not(.secundario):hover,.botao-primario:hover{background:#AD5726!important}
+.botao-claro{border-color:#C96A32!important;color:#A94F24!important}
+.uai-botao.secundario,.uai-menu a,.uai-nota,.adm-btn{background:#FFF3E8!important;color:#91461F!important}
+.uai-card,.adm-box{border-color:#f1e0d3!important}
+.uai-estatisticas strong,.uai-status,.preco-painel strong,.card-produto .valores strong{color:#B65B2B!important}
+.uai-campo input:focus,.uai-campo textarea:focus,.uai-campo select:focus{outline:2px solid #F4A261;outline-offset:1px}
+.destaque{background:linear-gradient(110deg,#FFF9F4,#FFE9D5)!important}
+.destaque h1 span,.titulo-secao a{color:#C96A32!important}
+.chamada{background:linear-gradient(115deg,#F4A261,#D98255)!important}
+a:focus-visible,button:focus-visible,input:focus-visible{outline-color:#C96A32}
