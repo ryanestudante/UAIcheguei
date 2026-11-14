@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="responsivo.css">
         <link rel="stylesheet" href="tema-escuro.css">
     <link rel="stylesheet" href="logo-global.css">
-</head>
+<link rel="stylesheet" href="dados-demo.css"></head>
     <body>
         <header class="cliente-cabecalho">
             <div class="cliente-topo">
@@ -49,7 +49,7 @@
                     <div>
                         <span class="etiqueta">MEU PERFIL</span>
                         <h1>Informações da conta</h1>
-                        <p>Deixe seus dados organizados para facilitar seus pedidos.</p>
+                        <p>Perfil fictício preenchido para demonstrar o sistema.</p>
                     </div>
                 </section>
                 <div class="layout-conta">
@@ -57,7 +57,7 @@
                         <h2>Minha conta</h2>
                         <a class="selecionado" href="minha-conta.html"> Dados pessoais</a>
                         <a href="carrinho.html"> Meu carrinho</a>
-                        <a href="cliente.html#minha-conta"> Meus pedidos</a>
+                        <a href="meus-pedidos.html"> Meus pedidos</a>
                         <a href="cliente.html"> Voltar ao início</a>
                     </aside>
                     <div class="cartao-formulario">
@@ -72,19 +72,19 @@
                             <div class="grade-campos">
                                 <div class="campo campo-grande">
                                     <label for="nome">Nome completo</label>
-                                    <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome completo" required>
+                                    <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome completo" required value="Ana Souza">
                                 </div>
                                 <div class="campo">
                                     <label for="nascimento">Data de nascimento</label>
-                                    <input id="nascimento" name="nascimento" type="date" required>
+                                    <input id="nascimento" name="nascimento" type="date" required value="2004-05-18">
                                 </div>
                                 <div class="campo">
                                     <label for="cpf">CPF fictício (demonstração)</label>
-                                    <input id="cpf" name="cpf" type="text" inputmode="numeric" maxlength="14" placeholder="000.000.000-00">
+                                    <input id="cpf" name="cpf" type="text" inputmode="numeric" maxlength="14" placeholder="000.000.000-00" value="000.000.000-00">
                                 </div>
                                 <div class="campo">
                                     <label for="usuario">Nome de usuário</label>
-                                    <input id="usuario" name="usuario" type="text" placeholder="Como podemos te chamar?" required>
+                                    <input id="usuario" name="usuario" type="text" placeholder="Como podemos te chamar?" required value="anasouza">
                                 </div>
                             </div>
                             <div class="cabeca-secao entrega">
@@ -97,23 +97,23 @@
                             <div class="grade-campos">
                                 <div class="campo campo-grande">
                                     <label for="endereco">Endereço de entrega</label>
-                                    <input id="endereco" name="endereco" type="text" autocomplete="street-address" placeholder="Rua, número, bairro e cidade" required>
+                                    <input id="endereco" name="endereco" type="text" autocomplete="street-address" placeholder="Rua, número, bairro e cidade" required value="Rua Exemplo, 120 - Centro, Uberlândia/MG">
                                 </div>
                                 <div class="campo">
                                     <label for="email">E-mail</label>
-                                    <input id="email" name="email" type="email" autocomplete="email" placeholder="exemplo@email.com" required>
+                                    <input id="email" name="email" type="email" autocomplete="email" placeholder="exemplo@email.com" required value="ana.souza@example.com">
                                 </div>
                                 <div class="campo">
                                     <label for="telefone">Telefone</label>
-                                    <input id="telefone" name="telefone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000" required>
+                                    <input id="telefone" name="telefone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000" required value="(00) 00000-0000">
                                 </div>
                                 <div class="campo">
                                     <label for="complemento">Complemento (opcional)</label>
-                                    <input id="complemento" name="complemento" type="text" placeholder="Apartamento, bloco, referência...">
+                                    <input id="complemento" name="complemento" type="text" placeholder="Apartamento, bloco, referência..." value="Casa 2">
                                 </div>
                             </div>
                             <div class="acoes-formulario">
-                                <p>Esta é uma tela demonstrativa. Não informe dados pessoais reais; os dados não são enviados nem salvos.</p>
+                                <p>Esta é uma tela demonstrativa. Dados inteiramente fictícios para demonstração. Não informe dados pessoais reais; alterações não são armazenadas.</p>
                                 <div>
                                     <a href="cliente.html" class="cancelar">Voltar</a>
                                     <button type="submit">Salvar alterações</button>
