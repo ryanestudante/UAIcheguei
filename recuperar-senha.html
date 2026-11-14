@@ -1,109 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redefinir Senha - UAIcheguei</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="redefinir_senha.css">
-    <link rel="stylesheet" href="responsivo.css">
-<link rel="stylesheet" href="tema-escuro.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="acesso-novo.css">
-</head>
-
-<body>
-
-    <div class="container">
-
-        <div class="form-box">
-
-            <a href="login.html" class="voltar">← Voltar</a>
-
-            <h1>Recupere seu acesso</h1>
-
-            <p class="subtitulo">
-                Recupere seu acesso ao UAIcheguei!
-            </p>
-            <div id="etapaEmail" class="etapa ativa">
-
-                <p class="descricao">Digite seu e-mail:</p>
-
-                <input
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Redefinir Senha - UAIcheguei</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="redefinir_senha.css">
+        <link rel="stylesheet" href="responsivo.css">
+        <link rel="stylesheet" href="tema-escuro.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="acesso-novo.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-box">
+                <a href="login.html" class="voltar">← Voltar</a>
+                <h1>Recupere seu acesso</h1>
+                <p class="subtitulo">
+                    Recupere seu acesso ao UAIcheguei!
+                </p>
+                <div id="etapaEmail" class="etapa ativa">
+                    <p class="descricao">Digite seu e-mail:</p>
+                    <input
                     type="email"
                     id="email"
                     class="campo-form"
                     placeholder="Digite seu e-mail"
-                >
-
-                <button class="buton-entrar" onclick="continuarEmail()">
-                    Continuar
-                </button>
-
-            </div>
-
-
-            <div id="etapaCodigo" class="etapa">
-
-                <p class="descricao">
-                    Digite o código enviado para seu e-mail:
-                </p>
-
-                <input
+                    >
+                    <button class="buton-entrar" onclick="continuarEmail()">
+                        Continuar
+                    </button>
+                </div>
+                <div id="etapaCodigo" class="etapa">
+                    <p class="descricao">
+                        Digite o código enviado para seu e-mail:
+                    </p>
+                    <input
                     type="text"
                     id="codigo"
                     class="campo-form"
                     placeholder="Digite o código"
-                >
-
-                <button class="buton-entrar" onclick="continuarCodigo()">
-                    Confirmar código
-                </button>
-
-            </div>
-            <div id="etapaSenha" class="etapa">
-
-                <p class="descricao">Digite sua nova senha:</p>
-
-                <input
+                    >
+                    <button class="buton-entrar" onclick="continuarCodigo()">
+                        Confirmar código
+                    </button>
+                </div>
+                <div id="etapaSenha" class="etapa">
+                    <p class="descricao">Digite sua nova senha:</p>
+                    <input
                     type="password"
                     id="senha"
                     class="campo-form"
                     placeholder="Digite sua nova senha"
-                >
-
-                <input
+                    >
+                    <input
                     type="password"
                     id="confirmarSenha"
                     class="campo-form"
                     placeholder="Confirme sua nova senha"
-                >
-
-                <button class="buton-entrar" onclick="redefinirSenha()">
-                    Redefinir senha
-                </button>
-
+                    >
+                    <button class="buton-entrar" onclick="redefinirSenha()">
+                        Redefinir senha
+                    </button>
+                </div>
+                <p id="mensagem" role="status" aria-live="polite">
+                </p>
             </div>
-
-            <p id="mensagem" role="status" aria-live="polite"></p>
-
-        </div>
-
-        <div class="imagem-box">
-            <img
+            <div class="imagem-box">
+                <img
                 src="https://uploads.onecompiler.io/44g7ujbgc/1787314084228/C%C3%B3pia_de_UAIcheguei__2_-removebg-preview.png"
                 alt="Ilustração UAIcheguei"
-            >
-        <div class="caixa-marrom">Seu cantinho de sabores <span class="laranja">mineiros!</span></div>
+                >
+                <div class="caixa-marrom">Seu cantinho de sabores <span class="laranja">mineiros!</span>
+                </div>
+            </div>
         </div>
-
-    </div>
-
-    <script>
+        <script>
 
         function continuarEmail() {
             let email = document.getElementById("email").value;
@@ -165,6 +137,5 @@
         }
 
     </script>
-
-</body>
+    </body>
 </html>
