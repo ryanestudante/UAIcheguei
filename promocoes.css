@@ -10,3 +10,25 @@
 .secao-promocoes .acao-card{margin-top:8px}
 @media(max-width:1000px){.secao-promocoes .grade-promocoes{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.secao-promocoes .grade-promocoes{grid-template-columns:1fr;gap:16px}.secao-promocoes .foto-produto img{height:220px}.secao-promocoes .cabeca-secao h2{font-size:25px}}
+
+/* Cards inteiros clicaveis */
+.secao-promocoes .card-link{color:inherit;text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.secao-promocoes .card-link:hover{transform:translateY(-5px);box-shadow:0 15px 32px #64300e20}
+.secao-promocoes .card-link:focus-visible{outline:3px solid #e15800;outline-offset:3px}
+.secao-promocoes .card-link .acao-card{display:flex;justify-content:space-between;background:#fff0e5;color:#e15800;padding:12px 14px;border-radius:10px;font-size:12px;font-weight:700}
+.secao-promocoes .card-link:hover .acao-card{background:#e15800;color:#fff}
+.detalhe-produto{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:start;background:white;border:1px solid #f1e5dc;border-radius:24px;padding:28px;margin-top:20px}
+.detalhe-foto img{width:100%;height:430px;object-fit:cover;border-radius:18px;display:block}
+.detalhe-info{padding:14px 8px}
+.detalhe-info h1{font-size:clamp(26px,3vw,40px);line-height:1.2;margin:14px 0}
+.detalhe-info p{font-size:14px;line-height:1.8;color:#816b5f}
+.detalhe-info h2{font-size:19px;margin:25px 0 5px}
+.detalhe-precos{display:flex;gap:13px;align-items:center;flex-wrap:wrap;margin:24px 0}
+.detalhe-precos del{color:#9c8980;font-size:14px}
+.detalhe-precos strong{color:#e15800;font-size:29px}
+.detalhe-desconto{background:#e15800;color:#fff;font-size:12px;font-weight:800;border-radius:9px;padding:7px 10px}
+.detalhe-botoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.botao-secundario{display:inline-flex;align-items:center;padding:13px 21px;border-radius:12px;background:#fff0e5;color:#e15800;font-size:13px;font-weight:700;text-decoration:none}
+.detalhe-erro{grid-column:1/-1;text-align:center;padding:55px 20px}
+@media(max-width:750px){.detalhe-produto{grid-template-columns:1fr;gap:18px;padding:17px}.detalhe-foto img{height:300px}.detalhe-info{padding:8px}}
+@media(max-width:480px){.detalhe-foto img{height:240px}.detalhe-botoes a{width:100%;justify-content:center}}
