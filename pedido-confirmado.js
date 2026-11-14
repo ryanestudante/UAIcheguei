@@ -1,0 +1,1 @@
+const id=new URLSearchParams(location.search).get("id");const p=UAI.pedidos().find(x=>x.id===id);if(p)document.getElementById("confirmacao-texto").textContent="Pedido "+p.id+" registrado. Total demonstrativo: "+UAI.moeda(p.total)+". Status: "+p.status+".";else document.getElementById("confirmacao-texto").textContent="Pedido não encontrado neste navegador."; 
