@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-image: url(https://uploads.onecompiler.io/44g7ujbgc/1787313298296/ChatGPT%20Image%2021%20de%20ago.%20de%202026,%2008_45_55.png);
+
+    font-family: 'Poppins', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1150px;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(79, 48, 17, 0.10);
+}
+
+/* FORMULÁRIO */
+
+.form-box {
+    width: 430px;
+    padding: 10px;
+    text-align: center;
+}
+
+.form-box h1 {
+    font-size: 30px;
+    color: #e15800;
+    margin-bottom: 5px;
+}
+
+.form-box p {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.campo-form {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background: #fafafa;
+    outline: none;
+    font-family: Poppins;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.campo-form:focus {
+    border-color: #e15800;
+    background: white;
+    box-shadow: 0 0 0 3px #e1580015;
+}
+
+.campo-form::placeholder {
+    color: #aaa;
+}
+
+.data-label {
+    display: block;
+    text-align: left;
+    margin: 2px 5px 7px;
+    font-size: 12px;
+    color: #777;
+}
+
+.botao {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    background: #e15800;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #c94d00;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px #e1580030;
+}
+
+.botao:active {
+    transform: scale(0.98);
+}
+
+#mensagem {
+    color: #d62828;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.voltar {
+    display: inline-block;
+    margin-top: 18px;
+    color: #e15800;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+/* IMAGEM */
+
+.uai-imagem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f27029;
+    border-radius: 22px;
+    padding: 35px;
+    min-height: 520px;
+}
+
+.uai-imagem img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+}
+
+.caixa-marrom {
+    background: #4f3011;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.laranja {
+    color: #f27029;
+}
+@media (max-width: 850px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        max-width: 500px;
+        padding: 30px 20px;
+    }
+
+    .form-box {
+        width: 100%;
+    }
+
+    .uai-imagem {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 25px 15px;
+        border-radius: 18px;
+    }
+
+    .form-box h1 {
+        font-size: 26px;
+    }
+}
