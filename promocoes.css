@@ -1,0 +1,12 @@
+/* Tela de promocoes: somente os cards */
+.secao-promocoes{margin-top:10px}
+.secao-promocoes .cabeca-secao{margin-bottom:25px}
+.secao-promocoes .grade-promocoes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.secao-promocoes .card-produto{display:flex;flex-direction:column;border-radius:20px;overflow:hidden}
+.secao-promocoes .foto-produto img{height:200px}
+.secao-promocoes .card-corpo{display:flex;flex-direction:column;flex:1;padding:20px}
+.secao-promocoes .card-corpo p{min-height:45px}
+.secao-promocoes .valores{margin-top:auto;padding-top:15px}
+.secao-promocoes .acao-card{margin-top:8px}
+@media(max-width:1000px){.secao-promocoes .grade-promocoes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.secao-promocoes .grade-promocoes{grid-template-columns:1fr;gap:16px}.secao-promocoes .foto-produto img{height:220px}.secao-promocoes .cabeca-secao h2{font-size:25px}}
