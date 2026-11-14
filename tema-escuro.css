@@ -1,24 +1,39 @@
 /* Tema escuro UAIcheguei: carregado apos os estilos das paginas */
 html[data-tema="escuro"]{color-scheme:dark}
-html[data-tema="escuro"] body{background:#121417!important;color:#f4eee8!important}
-html[data-tema="escuro"] :is(.cliente-cabecalho,.cliente-topo,.cliente-menu,.cabecalho,.topo,.header,.menu,.navbar,.menu-lateral,.sidebar){background-color:#1b1e23!important;color:#f4eee8!important;border-color:#36373b!important}
-html[data-tema="escuro"] :is(.pagina-cliente,.explorar-novo,.pagina-conta,.conteudo,.container,.main,.principal){color:#f4eee8}
-html[data-tema="escuro"] :is(.boas-vindas,.hero-explorar,.hero-interno,.banner-ofertas,.titulo,.faixa-navegacao,.faixa,.escolha,.escolha-ofertas,.escolha-restaurantes){background:#29221f!important;color:#fff5ec!important;border-color:#514036!important}
-html[data-tema="escuro"] :is(.prato,.card-produto,.card-restaurante,.card-link,.categorias-cliente a,.atalhos-cliente>*,.detalhe-produto,.restaurante-card,.comida-card,.caixa-branca,.form-box,.caixa,.card,.painel,.menu-lateral,.informacoes,.formulario,.dados,.secao-conta,.campo,.pedido,.item-carrinho){background-color:#202329!important;color:#f5eee7!important;border-color:#3a3d43!important;box-shadow:none}
-html[data-tema="escuro"] :is(.preco-painel,.infos-rapidas>div,.observacao-detalhe,.card-corpo .acao-card,.pedir,.botao-secundario,.etiqueta,.tag,.selo,.voltar-detalhes,.controles-carrossel button){background:#302b29!important;color:#ffad6f!important;border-color:#564338!important}
-html[data-tema="escuro"] :is(h1,h2,h3,h4,h5,h6,strong,label,.cliente-marca,.cliente-menu a,.cliente-acoes a,.rodape-coluna a){color:#f6eee7}
-html[data-tema="escuro"] :is(p,small,.detalhe-info p,.card-corpo p,.cabeca-secao p,.prato p,.atalhos-cliente p,.boas-vindas p,.hero-explorar p,.hero-interno p,.escolha p,.nota,.aviso-demo){color:#c5b8ae}
-html[data-tema="escuro"] :is(input,textarea,select){background:#181a1f!important;color:#f7f2ec!important;border:1px solid #515159!important}
-html[data-tema="escuro"] input::placeholder{color:#a6a3a4}
-html[data-tema="escuro"] :is(.cliente-busca,.cliente-busca label){background:#25282e!important;color:#f4eee8!important;border-color:#48474a!important}
-html[data-tema="escuro"] :is(.rodape-uai,.rodape-conteudo,.rodape-final){background-color:#1a1c20!important;color:#eee4dc!important;border-color:#414047!important}
-html[data-tema="escuro"] :is(.rodape-uai p,.rodape-final span){color:#c7b9af!important}
-html[data-tema="escuro"] :is(.sobretitulo,.mini-label,.secao-titulo span,.cabeca-secao span,.link-secao,.card-corpo>a,.trilha a,.voltar-detalhes,.valores strong,.detalhe-precos strong){color:#ff9854!important}
+html[data-tema="escuro"] body{background:#19120f!important;color:#f7eade!important}
+html[data-tema="escuro"] :is(.cliente-cabecalho,.cliente-topo,.cliente-menu,.cabecalho,.topo,.header,.menu,.navbar,.menu-lateral,.sidebar){background-color:#251914!important;color:#f7eade!important;border-color:#483328!important}
+html[data-tema="escuro"] :is(.pagina-cliente,.explorar-novo,.pagina-conta,.conteudo,.container,.main,.principal){color:#f7eade}
+html[data-tema="escuro"] :is(.boas-vindas,.hero-explorar,.hero-interno,.banner-ofertas,.titulo,.faixa-navegacao,.faixa,.escolha,.escolha-ofertas,.escolha-restaurantes){background:#302019!important;color:#fff0df!important;border-color:#634633!important}
+html[data-tema="escuro"] :is(.prato,.card-produto,.card-restaurante,.card-link,.categorias-cliente a,.atalhos-cliente>*,.detalhe-produto,.restaurante-card,.comida-card,.caixa-branca,.form-box,.caixa,.card,.painel,.menu-lateral,.informacoes,.formulario,.dados,.secao-conta,.campo,.pedido,.item-carrinho){background-color:#2b1d17!important;color:#f8eee3!important;border-color:#50382c!important;box-shadow:none}
+html[data-tema="escuro"] :is(.preco-painel,.infos-rapidas>div,.observacao-detalhe,.card-corpo .acao-card,.pedir,.botao-secundario,.etiqueta,.tag,.selo,.voltar-detalhes,.controles-carrossel button){background:#3a281f!important;color:#ffbb87!important;border-color:#674736!important}
+html[data-tema="escuro"] :is(h1,h2,h3,h4,h5,h6,strong,label,.cliente-marca,.cliente-menu a,.cliente-acoes a,.rodape-coluna a){color:#f8eee3}
+html[data-tema="escuro"] :is(p,small,.detalhe-info p,.card-corpo p,.cabeca-secao p,.prato p,.atalhos-cliente p,.boas-vindas p,.hero-explorar p,.hero-interno p,.escolha p,.nota,.aviso-demo){color:#d5bfb0}
+html[data-tema="escuro"] :is(input,textarea,select){background:#211711!important;color:#f7f2ec!important;border:1px solid #63493b!important}
+html[data-tema="escuro"] input::placeholder{color:#b6a293}
+html[data-tema="escuro"] :is(.cliente-busca,.cliente-busca label){background:#33241c!important;color:#f7eade!important;border-color:#604637!important}
+html[data-tema="escuro"] :is(.rodape-uai,.rodape-conteudo,.rodape-final){background-color:#201611!important;color:#f5e8dc!important;border-color:#493328!important}
+html[data-tema="escuro"] :is(.rodape-uai p,.rodape-final span){color:#d4bbaa!important}
+html[data-tema="escuro"] :is(.sobretitulo,.mini-label,.secao-titulo span,.cabeca-secao span,.link-secao,.card-corpo>a,.trilha a,.voltar-detalhes,.valores strong,.detalhe-precos strong){color:#ffae73!important}
 html[data-tema="escuro"] :is(.botao-principal,.botao-primario,.desconto,.etiqueta-desconto){background:#e15800!important;color:white!important}
 html[data-tema="escuro"] .cliente-menu a:hover{background:#e15800!important;color:white!important}
-html[data-tema="escuro"] .cliente-menu a[href="ofertas.html"],html[data-tema="escuro"] .cliente-menu a[href="restaurantes.html"]{background:#302b29!important;color:#ffd0ac!important}
+html[data-tema="escuro"] .cliente-menu a[href="ofertas.html"],html[data-tema="escuro"] .cliente-menu a[href="restaurantes.html"]{background:#3a281f!important;color:#ffd0ac!important}
 html[data-tema="escuro"] .rodape-logo span{color:#fff!important}
-.botao-tema-uai{position:fixed;right:20px;bottom:20px;z-index:9999;display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;min-height:45px;border-radius:50px;background:#24262b;color:white;border:1px solid #56545a;box-shadow:0 8px 25px #0003;font-family:Poppins,Arial,sans-serif;font-size:13px;font-weight:700;cursor:pointer}
+.botao-tema-uai{position:fixed;right:20px;bottom:20px;z-index:9999;display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;min-height:45px;border-radius:50px;background:#34231b;color:white;border:1px solid #74513e;box-shadow:0 8px 25px #0003;font-family:Poppins,Arial,sans-serif;font-size:13px;font-weight:700;cursor:pointer}
 .botao-tema-uai:hover{background:#e15800;color:white}
 html[data-tema="escuro"] .botao-tema-uai{background:#fff0e5;color:#4f3011;border-color:#ffbd92}
 @media(max-width:600px){.botao-tema-uai{right:12px;bottom:12px;padding:11px 13px;font-size:12px}}
+
+/* Refinamento marrom-cafe para elementos e estados */
+html[data-tema="escuro"]{--uai-fundo:#19120f;--uai-card:#2b1d17;--uai-superficie:#38261d;--uai-borda:#594032;--uai-creme:#f8eee3;--uai-suave:#d5bfb0;--uai-destaque:#ffad70}
+html[data-tema="escuro"] :is(.card-produto,.card-restaurante,.prato,.detalhe-produto,.caixa-branca,.form-box,.card,.restaurante-card,.comida-card){box-shadow:0 12px 30px rgba(0,0,0,.16)!important}
+html[data-tema="escuro"] :is(.cliente-menu a,.cliente-acoes a,.trilha a,.voltar-inicio){color:#f4dac6!important}
+html[data-tema="escuro"] :is(.cliente-menu a:hover,.botao-primario:hover,.botao-principal:hover){background:#f27029!important;color:#fff!important}
+html[data-tema="escuro"] :is(.botao-tema-uai,.controles-carrossel button):focus-visible{outline:3px solid #ffc28d;outline-offset:3px}
+html[data-tema="escuro"] :is(.botao-primario,.botao-principal,.acao-card:hover){color:#fff!important}
+html[data-tema="escuro"] :is(.preco-painel,.observacao-detalhe){background:#37251b!important}
+html[data-tema="escuro"] :is(.etiqueta-categoria,.mini-label,.sobretitulo,.preco-legenda,.economia){color:#ffb37c!important}
+html[data-tema="escuro"] :is(.cliente-busca input,.cliente-busca input:focus){background:#241914!important;color:#f8eee3!important}
+html[data-tema="escuro"] :is(.cabecalho-vitrine,.secao-cliente,.secao-promocoes){color:#f8eee3}
+html[data-tema="escuro"] .selo-foto{background:#f9e7d5!important;color:#723b19!important}
+html[data-tema="escuro"] :is(.card-produto,.card-restaurante,.prato,.escolha):hover{border-color:#966044!important}
+html[data-tema="escuro"] .botao-tema-uai{background:#f0d3b8!important;color:#382116!important;border-color:#c99c78!important;box-shadow:0 8px 25px #0005}
