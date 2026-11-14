@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="fluxo-uai.css">
         <link rel="stylesheet" href="tema-escuro.css">
     <link rel="stylesheet" href="logo-global.css">
-</head>
+<link rel="stylesheet" href="dados-demo.css"><link rel="stylesheet" href="header-cores.css"></head>
     <body>
         <header class="cliente-cabecalho">
             <div class="cliente-topo">
@@ -34,34 +34,34 @@
             </div>
             <nav class="cliente-menu" aria-label="Categorias">
                 <a href="cliente.html">Início</a>
-                <a href="cliente.html#categorias">Categorias</a>
+                <a href="categorias.html">Categorias</a>
                 <a href="ofertas.html">Ofertas</a>
                 <a href="restaurantes.html">Restaurantes</a>
-                <a href="cliente.html#minha-conta">Meus pedidos</a>
+                <a href="meus-pedidos.html">Meus pedidos</a>
                 <a href="carrinho.html">Meu carrinho</a>
             </nav>
         </header>
         <main class="uai-app">
             <h1>Meu carrinho</h1>
-            <p>Confira seus produtos antes de finalizar.</p>
+            <p>Confira o carrinho fictício da cliente Ana Souza.</p>
             <div class="uai-grade">
                 <section class="uai-card">
                     <h2>Seus produtos</h2>
                     <div id="itens-carrinho">
-                        <p class="uai-vazio">Carrinho ilustrativo. Sem JavaScript, não é possível adicionar produtos automaticamente.</p>
+                        <div class="demo-carrinho-item"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=180&auto=format&fit=crop" alt="Prato de comida" loading="lazy"><div><strong>Feijão-tropeiro</strong><p>Cantinho Mineiro · 1 unidade</p><span>R$ 28,90</span></div></div><div class="demo-carrinho-item"><img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=180&auto=format&fit=crop" alt="Suco natural" loading="lazy"><div><strong>Suco natural</strong><p>Cantinho Mineiro · 1 unidade</p><span>R$ 9,90</span></div></div>
                     </div>
                     <a class="uai-botao secundario" href="ofertas.html">+ Adicionar mais comidas</a>
                 </section>
                 <aside class="uai-card">
                     <h2>Resumo do pedido</h2>
                     <div id="resumo-carrinho">
-                        <div class="uai-linha total">
+                        <div class="uai-linha"><span>Subtotal (2 itens)</span><strong>R$ 38,80</strong></div><div class="uai-linha"><span>Entrega fictícia</span><strong>R$ 4,10</strong></div><div class="uai-linha total">
                             <span>Total</span>
-                            <strong>—</strong>
+                            <strong>R$ 42,90</strong>
                         </div>
                     </div>
-                    <a class="uai-botao" id="ir-pagamento" href="pagamento.html">Ver pagamento demonstrativo →</a>
-                    <p class="uai-nota">Demonstração: nenhuma compra ou cobrança real.</p>
+                    <a class="uai-botao" id="ir-pagamento" href="pagamento.html">Continuar para pagamento demonstrativo →</a>
+                    <p class="uai-nota">Carrinho fictício do pedido #1048 de Ana Souza. Nenhuma compra ou cobrança real.</p>
                 </aside>
             </div>
         </main>
