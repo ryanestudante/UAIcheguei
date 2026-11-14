@@ -17,6 +17,7 @@
 <div class="container">
 
     <div class="caixa-branca">
+        <a class="voltar-inicio" href="index.html">← Voltar para o início</a>
 
         <h1>Bem-vindo(a)!</h1>
         <h2>Entre na sua conta</h2>
@@ -47,13 +48,6 @@
                 id="Senha"
                 class="campo-form"
                 placeholder="Senha"
-            >
-
-            <input
-                type="password"
-                id="ConfirmarSenha"
-                class="campo-form"
-                placeholder="Confirme sua senha"
             >
 
             <button
@@ -102,15 +96,9 @@ function entrar() {
     let cpf = document.getElementById("CPF").value.trim();
     let gmail = document.getElementById("Email").value.trim().toLowerCase();
     let senha = document.getElementById("Senha").value;
-    let confirmarSenha = document.getElementById("ConfirmarSenha").value;
 
-    if (cpf === "" || gmail === "" || senha === "" || confirmarSenha === "") {
+    if (cpf === "" || gmail === "" || senha === "") {
         document.getElementById("mensagem").innerHTML = "Preencha todos os campos.";
-        return;
-    }
-
-    if (senha !== confirmarSenha) {
-        document.getElementById("mensagem").innerHTML = "As senhas não conferem.";
         return;
     }
 
