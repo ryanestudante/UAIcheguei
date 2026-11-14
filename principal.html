@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="carrossel.css">
         <link rel="stylesheet" href="tema-escuro.css">
         <link rel="stylesheet" href="header-cores.css">
+        <link rel="stylesheet" href="vitrine-publica.css">
     </head>
     <body>
         <header class="cabecalho">
@@ -24,7 +25,8 @@
                 </a>
                 <nav class="menu" aria-label="Menu principal">
                     <a href="principal.html">Início</a>
-                    <a href="#restaurantes">Restaurantes</a>
+                    <a href="restaurantes.html">Restaurantes</a>
+                    <a href="#ofertas">Ofertas</a>
                     <a href="#ajuda">Ajuda</a>
                 </nav>
                 <div class="conta">
@@ -86,6 +88,132 @@
                         <strong>Bebidas</strong>
                     </a>
                 </div>
+            </section>
+            <!-- Vitrine pública: os visitantes podem ver as comidas sem fazer login. -->
+            <section class="vitrine-publica" id="ofertas">
+                <div class="vitrine-cabecalho">
+                    <div>
+                        <span class="vitrine-sobretitulo">ESCOLHAS DO DIA</span>
+                        <h2>Ofertas de dar água na boca</h2>
+                        <p>Conheça nossos pratos e veja os detalhes antes de entrar na sua conta.</p>
+                    </div>
+                    <a class="vitrine-ver-todas" href="ofertas.html">Ver todas as ofertas →</a>
+                </div>
+                <div class="vitrine-grade">
+                    <a class="vitrine-card" href="detalhes-comida.html?id=1">
+                        <div class="vitrine-foto">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700&auto=format&fit=crop&q=85" alt="X-Bacon especial" loading="lazy">
+                            <span class="vitrine-desconto">-19%</span>
+                        </div>
+                        <div class="vitrine-info">
+                            <span class="vitrine-tipo">LANCHES</span>
+                            <h3>X-Bacon especial</h3>
+                            <p>Hambúrguer com queijo, bacon e salada</p>
+                            <div class="vitrine-precos"><del>R$ 36,90</del><strong>R$ 29,90</strong></div>
+                            <span class="vitrine-link">Ver detalhes →</span>
+                        </div>
+                    </a>
+                    <a class="vitrine-card" href="detalhes-comida.html?id=2">
+                        <div class="vitrine-foto">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700&auto=format&fit=crop&q=85" alt="Pizza de calabresa" loading="lazy">
+                            <span class="vitrine-desconto">-20%</span>
+                        </div>
+                        <div class="vitrine-info">
+                            <span class="vitrine-tipo">PIZZAS</span>
+                            <h3>Pizza de calabresa</h3>
+                            <p>Uma pizza caprichada para compartilhar</p>
+                            <div class="vitrine-precos"><del>R$ 49,90</del><strong>R$ 39,90</strong></div>
+                            <span class="vitrine-link">Ver detalhes →</span>
+                        </div>
+                    </a>
+                    <a class="vitrine-card" href="detalhes-comida.html?id=3">
+                        <div class="vitrine-foto">
+                            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=700&auto=format&fit=crop&q=85" alt="Massa especial" loading="lazy">
+                            <span class="vitrine-desconto">-21%</span>
+                        </div>
+                        <div class="vitrine-info">
+                            <span class="vitrine-tipo">MASSAS</span>
+                            <h3>Massa especial</h3>
+                            <p>Macarrão com molho da casa</p>
+                            <div class="vitrine-precos"><del>R$ 32,90</del><strong>R$ 25,90</strong></div>
+                            <span class="vitrine-link">Ver detalhes →</span>
+                        </div>
+                    </a>
+                    <a class="vitrine-card" href="detalhes-comida.html?id=4">
+                        <div class="vitrine-foto">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700&auto=format&fit=crop&q=85" alt="Bolo de chocolate" loading="lazy">
+                            <span class="vitrine-desconto">-25%</span>
+                        </div>
+                        <div class="vitrine-info">
+                            <span class="vitrine-tipo">SOBREMESAS</span>
+                            <h3>Bolo de chocolate</h3>
+                            <p>Uma sobremesa para adoçar o dia</p>
+                            <div class="vitrine-precos"><del>R$ 19,90</del><strong>R$ 14,90</strong></div>
+                            <span class="vitrine-link">Ver detalhes →</span>
+                        </div>
+                    </a>
+                    <a class="vitrine-card" href="detalhes-comida.html?id=5">
+                        <div class="vitrine-foto">
+                            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=700&auto=format&fit=crop&q=85" alt="Hambúrguer artesanal" loading="lazy">
+                            <span class="vitrine-desconto">-21%</span>
+                        </div>
+                        <div class="vitrine-info">
+                            <span class="vitrine-tipo">LANCHES</span>
+                            <h3>Hambúrguer artesanal</h3>
+                            <p>Lanche com queijo e molho especial</p>
+                            <div class="vitrine-precos"><del>R$ 38,90</del><strong>R$ 30,90</strong></div>
+                            <span class="vitrine-link">Ver detalhes →</span>
+                        </div>
+                    </a>
+                    <a class="vitrine-card" href="detalhes-comida.html?id=6">
+                        <div class="vitrine-foto">
+                            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=700&auto=format&fit=crop&q=85" alt="Pizza marguerita" loading="lazy">
+                            <span class="vitrine-desconto">-22%</span>
+                        </div>
+                        <div class="vitrine-info">
+                            <span class="vitrine-tipo">PIZZAS</span>
+                            <h3>Pizza marguerita</h3>
+                            <p>Queijo, tomate e manjericão</p>
+                            <div class="vitrine-precos"><del>R$ 45,90</del><strong>R$ 35,90</strong></div>
+                            <span class="vitrine-link">Ver detalhes →</span>
+                        </div>
+                    </a>
+                    <a class="vitrine-card" href="detalhes-comida.html?id=7">
+                        <div class="vitrine-foto">
+                            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=700&auto=format&fit=crop&q=85" alt="Batata frita" loading="lazy">
+                            <span class="vitrine-desconto">-24%</span>
+                        </div>
+                        <div class="vitrine-info">
+                            <span class="vitrine-tipo">PORÇÕES</span>
+                            <h3>Batata frita</h3>
+                            <p>Porção crocante para compartilhar</p>
+                            <div class="vitrine-precos"><del>R$ 24,90</del><strong>R$ 18,90</strong></div>
+                            <span class="vitrine-link">Ver detalhes →</span>
+                        </div>
+                    </a>
+                    <a class="vitrine-card" href="detalhes-comida.html?id=8">
+                        <div class="vitrine-foto">
+                            <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=700&auto=format&fit=crop&q=85" alt="Panqueca doce" loading="lazy">
+                            <span class="vitrine-desconto">-22%</span>
+                        </div>
+                        <div class="vitrine-info">
+                            <span class="vitrine-tipo">SOBREMESAS</span>
+                            <h3>Panqueca doce</h3>
+                            <p>Panquecas macias e saborosas</p>
+                            <div class="vitrine-precos"><del>R$ 27,90</del><strong>R$ 21,90</strong></div>
+                            <span class="vitrine-link">Ver detalhes →</span>
+                        </div>
+                    </a>
+                </div>
+                <p class="vitrine-aviso">Preços e descontos ilustrativos do projeto UAIcheguei.</p>
+            </section>
+            <section class="vitrine-faixa">
+                <div>
+                    <span>DESCUBRA NOVOS SABORES</span>
+                    <h2>Que tal conhecer os restaurantes?</h2>
+                    <p>Explore os tipos de comida e escolha o que mais combina com você.</p>
+                </div>
+                <a href="restaurantes.html">Explorar restaurantes →</a>
             </section>
             <section class="chamada" id="ajuda">
                 <div>

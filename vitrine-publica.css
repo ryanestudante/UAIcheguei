@@ -1,0 +1,213 @@
+/* Conteúdo da página inicial para visitantes sem login */
+.vitrine-publica {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 12px 5% 60px;
+}
+
+.vitrine-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+    margin-bottom: 26px;
+}
+
+.vitrine-sobretitulo {
+    color: #B85A2D;
+    font-size: 11px;
+    letter-spacing: 1.3px;
+    font-weight: 800;
+}
+
+.vitrine-cabecalho h2 {
+    font-size: clamp(23px, 3vw, 32px);
+    margin: 7px 0;
+}
+
+.vitrine-cabecalho p {
+    color: #846D5E;
+    font-size: 13px;
+}
+
+.vitrine-ver-todas {
+    color: #B85A2D;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.vitrine-grade {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.vitrine-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #EEDBCB;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(79, 48, 17, .07);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.vitrine-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(79, 48, 17, .14);
+}
+
+.vitrine-foto {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+.vitrine-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.vitrine-desconto {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    background: #C96A32;
+    color: white;
+    padding: 7px 11px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.vitrine-info {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.vitrine-tipo {
+    color: #B65A2B;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.vitrine-info h3 {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.vitrine-info p {
+    color: #8A7669;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    flex: 1;
+}
+
+.vitrine-precos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 15px;
+}
+
+.vitrine-precos del {
+    color: #9B8B80;
+    font-size: 12px;
+}
+
+.vitrine-precos strong {
+    color: #B65A2B;
+    font-size: 21px;
+}
+
+.vitrine-link {
+    display: block;
+    background: #FFF0E3;
+    color: #A94E21;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.vitrine-card:hover .vitrine-link {
+    background: #C96A32;
+    color: white;
+}
+
+.vitrine-aviso {
+    margin-top: 17px;
+    color: #927F70;
+    font-size: 11px;
+}
+
+.vitrine-faixa {
+    max-width: 1295px;
+    margin: 0 auto 48px;
+    padding: 34px 40px;
+    background: #4F3011;
+    color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+}
+
+.vitrine-faixa span {
+    color: #FFD1A7;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.vitrine-faixa h2 {
+    margin: 7px 0;
+    font-size: clamp(20px, 2.4vw, 28px);
+}
+
+.vitrine-faixa p {
+    font-size: 13px;
+    color: #E9D6C7;
+}
+
+.vitrine-faixa a {
+    background: #F4A261;
+    color: #4F3011;
+    padding: 14px 19px;
+    border-radius: 11px;
+    font-weight: 700;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+@media (max-width: 1050px) {
+    .vitrine-grade { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 750px) {
+    .vitrine-grade { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .vitrine-foto { height: 150px; }
+    .vitrine-info { padding: 13px; }
+    .vitrine-info h3 { font-size: 14px; }
+    .vitrine-precos strong { font-size: 18px; }
+    .vitrine-faixa { margin: 0 5% 35px; padding: 26px; flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 480px) {
+    .vitrine-cabecalho { flex-direction: column; align-items: flex-start; }
+    .vitrine-foto { height: 120px; }
+    .vitrine-info p { font-size: 11px; }
+    .vitrine-faixa a { white-space: normal; }
+}
