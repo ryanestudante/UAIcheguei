@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="Intranet_cliente.css">
     <link rel="stylesheet" href="rodape.css">
     <link rel="stylesheet" href="responsivo.css">
+    <link rel="stylesheet" href="carrossel.css">
 </head>
 <body>
 <header class="cliente-cabecalho">
@@ -45,8 +46,8 @@
     </section>
 
     <section class="secao-cliente" id="categorias">
-        <div class="secao-titulo"><div><span>Escolha seu favorito</span><h2>O que vamos pedir hoje?</h2></div></div>
-        <div class="categorias-cliente">
+        <div class="secao-titulo"><div><span>Escolha seu favorito</span><h2>O que vamos pedir hoje?</h2></div></div><div class="controles-carrossel"><button type="button" data-anterior aria-label="Anterior">‹</button><button type="button" data-proximo aria-label="Próximo">›</button></div>
+        <div class="categorias-cliente" data-carrossel>
             <a href="#destaques"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=320&auto=format&fit=crop&q=80" alt="Hambúrguer"><strong>Lanches</strong></a>
             <a href="#destaques"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=320&auto=format&fit=crop&q=80" alt="Pizza"><strong>Pizzas</strong></a>
             <a href="#destaques"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=320&auto=format&fit=crop&q=80" alt="Macarrão"><strong>Massas</strong></a>
@@ -55,8 +56,8 @@
     </section>
 
     <section class="secao-cliente" id="destaques">
-        <div class="secao-titulo"><div><span>De dar água na boca</span><h2>Pratos em destaque</h2></div><a href="carrinho.html">Ver carrinho →</a></div>
-        <div class="destaques-cliente">
+        <div class="secao-titulo"><div><span>De dar água na boca</span><h2>Pratos em destaque</h2></div><a href="carrinho.html">Ver carrinho →</a></div><div class="controles-carrossel"><button type="button" data-anterior aria-label="Anterior">‹</button><button type="button" data-proximo aria-label="Próximo">›</button></div>
+        <div class="destaques-cliente" data-carrossel>
             <article class="prato"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=650&auto=format&fit=crop&q=85" alt="Hambúrguer"><div><span>🍔 Lanches</span><h3>Hambúrguer especial</h3><p>Uma opção deliciosa para matar a fome.</p><a href="carrinho.html">Ver carrinho →</a></div></article>
             <article class="prato"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=650&auto=format&fit=crop&q=85" alt="Pizza"><div><span>🍕 Pizzas</span><h3>Pizza caprichada</h3><p>O sabor que combina com qualquer momento.</p><a href="carrinho.html">Ver carrinho →</a></div></article>
             <article class="prato"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=650&auto=format&fit=crop&q=85" alt="Macarrão"><div><span>🍝 Massas</span><h3>Massa especial</h3><p>Uma refeição saborosa para o seu dia.</p><a href="carrinho.html">Ver carrinho →</a></div></article>
@@ -104,5 +105,6 @@
         <a href="index.html">Voltar ao início ↑</a>
     </div>
 </footer>
+<script src="carrossel.js" defer></script>
 </body>
 </html>
