@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UAIcheguei: descubra comidas e restaurantes com um jeitinho mineiro.">
+    <title>UAIcheguei | Seu delivery mineiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="rodape.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="stylesheet" href="carrossel.css">
+<link rel="stylesheet" href="tema-escuro.css">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="topo">
+            <a class="marca" href="principal.html" aria-label="UAIcheguei - início">
+                <img src="logo.png" alt="Logo do UAIcheguei">
+                <span>UAIcheguei</span>
+            </a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="principal.html">Início</a>
+                <a href="#restaurantes">Restaurantes</a>
+                <a href="#ajuda">Ajuda</a>
+            </nav>
+            <div class="conta">
+                <a class="botao botao-claro" href="login.html">Entrar</a>
+                <a class="botao botao-laranja" href="cadastro.html">Criar conta</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="destaque">
+            <div class="destaque-conteudo">
+                <h1>Seu delivery<br><span>mineiro tá aqui!</span></h1>
+                <p>Peça seus pratos favoritos nos melhores restaurantes da região.</p>
+                <form class="busca" action="login.html" method="get">
+                    <label class="sr-only" for="endereco">Endereço de entrega</label>
+                    
+                    <input id="endereco" name="endereco" type="text" placeholder="Digite seu endereço" required>
+                    <button type="submit" aria-label="Continuar para entrar">⌕</button>
+                </form>
+                <small>Entre na sua conta para continuar o pedido.</small>
+            </div>
+            <div class="destaque-imagem" role="img" aria-label="Feijoada com acompanhamentos"></div>
+        </section>
+
+        <section class="categorias" id="restaurantes">
+            <div class="titulo-secao">
+                <h2>Explore por categoria</h2>
+                <a href="login.html">Ver todas <span aria-hidden="true">→</span></a>
+            </div><div class="controles-carrossel"><button type="button" data-anterior aria-label="Anterior">‹</button><button type="button" data-proximo aria-label="Próximo">›</button></div>
+            <div class="grade-categorias" data-carrossel>
+                <a class="categoria" href="login.html">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=450&auto=format&fit=crop&q=85" alt="Hambúrguer" loading="lazy">
+                    <strong>Lanches</strong>
+                </a>
+                <a class="categoria" href="login.html">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=450&auto=format&fit=crop&q=85" alt="Pizza" loading="lazy">
+                    <strong>Pizzas</strong>
+                </a>
+                <a class="categoria" href="login.html">
+                    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=450&auto=format&fit=crop&q=85" alt="Macarrão" loading="lazy">
+                    <strong>Massas</strong>
+                </a>
+                <a class="categoria" href="login.html">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=450&auto=format&fit=crop&q=85" alt="Refeição" loading="lazy">
+                    <strong>Refeições</strong>
+                </a>
+                <a class="categoria" href="login.html">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=450&auto=format&fit=crop&q=85" alt="Bolo de chocolate" loading="lazy">
+                    <strong>Sobremesas</strong>
+                </a>
+                <a class="categoria" href="login.html">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=450&auto=format&fit=crop&q=85" alt="Bebida gelada" loading="lazy">
+                    <strong>Bebidas</strong>
+                </a>
+            </div>
+        </section>
+
+        <section class="chamada" id="ajuda">
+            <div>
+                <h2>Bateu aquela fome?</h2>
+                <p>Crie sua conta e encontre sua próxima comida favorita.</p>
+            </div>
+            <a class="botao botao-laranja" href="cadastro.html">Começar agora</a>
+        </section>
+    </main>
+
+    <footer class="rodape-uai">
+    <div class="rodape-conteudo">
+        <div class="rodape-marca">
+            <a href="principal.html" class="rodape-logo">
+                <img src="logo.png" alt="Logo UAIcheguei">
+                <span>UAIcheguei</span>
+            </a>
+            <p>Comida boa, pertinho de você. O sabor de Minas chegando à sua casa!</p>
+        </div>
+        <div class="rodape-coluna">
+            <h3>Explore</h3>
+            <a href="principal.html">Início</a>
+            <a href="principal.html#restaurantes">Categorias</a>
+            <a href="carrinho.html">Meu carrinho</a>
+        </div>
+        <div class="rodape-coluna">
+            <h3>Sua conta</h3>
+            <a href="login.html">Entrar</a>
+            <a href="cadastro.html">Criar conta</a>
+            <a href="recuperar-senha.html">Recuperar senha</a>
+        </div>
+        <div class="rodape-coluna">
+            <h3>Uai, que delícia!</h3>
+            <p>Seu cantinho para descobrir novos sabores e pedir suas comidas favoritas.</p>
+        </div>
+    </div>
+    <div class="rodape-final">
+        <span>© 2026 UAIcheguei. Feito com carinho em Minas Gerais.</span>
+        <a href="principal.html">Voltar ao início ↑</a>
+    </div>
+</footer>
+
+</body>
+</html>
