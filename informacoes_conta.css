@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Poppins, Arial, sans-serif; background: #fffaf7; color: #432b1c; }
+.pagina-conta { max-width: 1300px; margin: auto; padding: 30px 5% 70px; }
+.pagina-conta a { text-decoration: none; }
+.caminho { font-size: 12px; color: #978376; margin-bottom: 22px; }
+.caminho a { color: #e15800; }
+.apresentacao { display: flex; align-items: center; gap: 20px; background: linear-gradient(115deg,#fff0e4,#ffe2cf); border-radius: 22px; padding: 28px 34px; margin-bottom: 25px; }
+.avatar { width: 66px; height: 66px; display: grid; place-items: center; background: #e15800; color: white; font-size: 30px; border-radius: 19px; flex-shrink: 0; }
+.etiqueta { color: #e15800; font-size: 11px; font-weight: 800; letter-spacing: 1.2px; }
+.apresentacao h1 { margin: 4px 0; font-size: clamp(23px,3vw,32px); }
+.apresentacao p { margin: 0; color: #786357; font-size: 13px; }
+.layout-conta { display: grid; grid-template-columns: 230px minmax(0,1fr); gap: 24px; align-items: start; }
+.menu-conta,.cartao-formulario { background: white; border: 1px solid #f1e2d8; border-radius: 19px; box-shadow: 0 8px 30px #6d34100b; }
+.menu-conta { padding: 21px 14px; }
+.menu-conta h2 { font-size: 16px; padding: 0 12px; margin: 4px 0 17px; }
+.menu-conta a { display: block; padding: 13px 12px; color: #655044; font-size: 12px; border-radius: 11px; margin-bottom: 5px; font-weight: 600; }
+.menu-conta a:hover,.menu-conta .selecionado { background: #fff0e5; color: #e15800; }
+.cartao-formulario { padding: 32px; }
+.cabeca-secao { display: flex; align-items: center; gap: 13px; border-bottom: 1px solid #f1e5db; padding-bottom: 18px; margin-bottom: 24px; }
+.cabeca-secao > span { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: #fff0e5; font-size: 23px; }
+.cabeca-secao h2 { margin: 0 0 4px; font-size: 20px; }
+.cabeca-secao p { margin: 0; color: #958075; font-size: 12px; }
+.cabeca-secao.entrega { margin-top: 32px; }
+.grade-campos { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; }
+.campo { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.campo-grande { grid-column: span 1; }
+.campo label { font-size: 12px; font-weight: 700; color: #5d483c; }
+.campo input { width: 100%; min-width: 0; padding: 13px 15px; border: 1px solid #e9dcd3; border-radius: 11px; outline: none; font: inherit; font-size: 13px; background: #fffdfb; color: #4f3011; }
+.campo input:focus { border-color: #e15800; box-shadow: 0 0 0 3px #e1580018; }
+.campo input::placeholder { color: #b5a59b; }
+.acoes-formulario { display: flex; justify-content: space-between; align-items: end; gap: 25px; border-top: 1px solid #f1e5db; margin-top: 32px; padding-top: 24px; }
+.acoes-formulario p { color: #9a8477; font-size: 11px; max-width: 350px; line-height: 1.6; }
+.acoes-formulario > div { display: flex; align-items: center; gap: 12px; }
+.cancelar { color: #6d5547; font-size: 13px; font-weight: 600; padding: 12px; }
+.acoes-formulario button { border: 0; border-radius: 11px; background: #e15800; color: white; padding: 13px 20px; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; white-space: nowrap; }
+.acoes-formulario button:hover { background: #b94700; }
+#aviso-conta { color: #a34a00; font-size: 12px; }
+@media(max-width:800px) { .layout-conta { grid-template-columns: 1fr; } .menu-conta { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; } .menu-conta h2 { width: 100%; } .menu-conta a { margin: 0; } }
+@media(max-width:550px) { .pagina-conta { padding: 20px 5% 40px; } .apresentacao { padding: 22px; } .avatar { width: 50px; height: 50px; } .cartao-formulario { padding: 20px; } .grade-campos { grid-template-columns: 1fr; } .acoes-formulario { flex-direction: column; align-items: stretch; } .acoes-formulario > div { justify-content: flex-end; } }
