@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="responsivo.css">
         <link rel="stylesheet" href="promocoes.css">
         <link rel="stylesheet" href="tema-escuro.css">
+<link rel="stylesheet" href="header-cores.css">
     </head>
     <body>
         <header class="cliente-cabecalho">
@@ -34,7 +35,7 @@
             </div>
             <nav class="cliente-menu" aria-label="Categorias">
                 <a href="cliente.html">Início</a>
-                <a href="cliente.html#categorias">Categorias</a>
+                <a href="categorias.html">Categorias</a>
                 <a href="ofertas.html">Ofertas</a>
                 <a href="restaurantes.html">Restaurantes</a>
                 <a href="meus-pedidos.html">Meus pedidos</a>
@@ -149,5 +150,19 @@
                 <a href="principal.html">Voltar ao início ↑</a>
             </div>
         </footer>
-    </body>
+    <script>
+(function(){
+const p=new URLSearchParams(location.search),n=p.get('nome'),v=p.get('preco'),i=p.get('imagem');
+if(!n||!v||!i)return;
+const el=id=>document.getElementById(id);
+el('detalhe-nome').textContent=n;el('nome-trilha').textContent=n;el('detalhe-preco').textContent=v;
+el('detalhe-imagem').src=i;el('detalhe-imagem').alt=n;
+el('detalhe-resumo').textContent='Conheça '+n+' na vitrine do UAIcheguei.';
+el('detalhe-descricao').textContent='Produto demonstrativo. Preço e informações ilustrativos.';
+el('detalhe-ingredientes').textContent='Consulte o restaurante para saber ingredientes e alergênicos.';
+el('detalhe-categoria').textContent=(p.get('categoria')||'comida').replaceAll('-',' ').toUpperCase();
+el('detalhe-desconto').textContent='';el('detalhe-anterior').textContent='';el('detalhe-economia').textContent='';
+document.title=n+' | UAIcheguei';
+})();
+</script></body>
 </html>
