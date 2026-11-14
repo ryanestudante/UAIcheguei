@@ -1,0 +1,81 @@
+/* Organização definitiva da vitrine: grade em vez de carrossel sem JavaScript */
+.pagina-cliente .categorias-novas,
+.pagina-cliente .pratos-grade {
+    display: grid !important;
+    overflow: visible !important;
+    scroll-snap-type: none !important;
+    padding: 0 !important;
+    gap: 16px !important;
+}
+.pagina-cliente .categorias-novas { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.pagina-cliente .categorias-novas > a {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0;
+    min-height: 92px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+    gap: 14px;
+    border-radius: 16px;
+    background: #fff0e3;
+    border: 1px solid #edcfb6;
+}
+.pagina-cliente .categorias-novas .icone-categoria {
+    display: grid;
+    place-items: center;
+    flex: 0 0 56px;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: #f7d7b8;
+    font-size: 28px;
+}
+.pagina-cliente .categorias-novas strong { font-size: 14px; line-height: 1.4; }
+.pagina-cliente .pratos-grade { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px !important; }
+.pagina-cliente .pratos-grade > .prato {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    scroll-margin-top: 24px;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #efd8c7;
+    box-shadow: 0 5px 18px rgba(79,48,17,.07);
+}
+.pagina-cliente .pratos-grade > .prato > img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    background: #f5e5d7;
+}
+.pagina-cliente .pratos-grade > .prato > .prato-conteudo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 18px;
+}
+.pagina-cliente .pratos-grade h3 { font-size: 18px; line-height: 1.35; margin: 8px 0; }
+.pagina-cliente .pratos-grade p { flex: 1; min-height: 0; margin: 4px 0 10px; }
+.pagina-cliente .pratos-grade .preco-mineiro { margin: 0 0 12px; }
+.pagina-cliente .pratos-grade a { display: block; margin-top: auto; }
+.pagina-cliente .secao-cliente { margin-top: 42px; }
+@media (max-width: 900px) {
+    .pagina-cliente .categorias-novas { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .pagina-cliente .pratos-grade { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 560px) {
+    .pagina-cliente .categorias-novas { gap: 10px !important; }
+    .pagina-cliente .categorias-novas > a { padding: 10px; min-height: 80px; gap: 8px; }
+    .pagina-cliente .categorias-novas .icone-categoria { width: 40px; height: 40px; flex-basis: 40px; font-size: 21px; }
+    .pagina-cliente .categorias-novas strong { font-size: 12px; }
+    .pagina-cliente .pratos-grade { grid-template-columns: 1fr; gap: 16px !important; }
+    .pagina-cliente .pratos-grade > .prato > img { height: 220px; }
+    .pagina-cliente .secao-titulo { align-items: flex-start; flex-wrap: wrap; }
+}

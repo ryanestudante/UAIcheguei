@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="tema-escuro.css">
         <link rel="stylesheet" href="header-cores.css">
         <link rel="stylesheet" href="sabores-mineiros.css">
+        <link rel="stylesheet" href="cliente-revisado.css">
     </head>
     <body>
         <header class="cliente-cabecalho">
@@ -56,147 +57,69 @@
                 <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=750&auto=format&fit=crop&q=85" alt="Comida caseira ilustrativa">
             </section>
             <section class="secao-cliente" id="categorias">
-                <div class="cabecalho-vitrine">
-                    <div class="secao-titulo">
-                        <div>
-                            <span>ESCOLHA SEU FAVORITO</span>
-                            <h2>O que vamos pedir hoje?</h2>
-                        </div>
-                    </div>
-                    <div class="controles-carrossel">
-                        <button type="button" data-anterior aria-label="Anterior">‹</button>
-                        <button type="button" data-proximo aria-label="Próximo">›</button>
-                    </div>
-                </div>
-                <div class="categorias-cliente" data-carrossel>
-                    <a href="#destaques" class="categoria-mineira"><span aria-hidden="true">🍲</span><strong>Pratos mineiros</strong></a>
-                    <a href="#destaques" class="categoria-mineira"><span aria-hidden="true">🧀</span><strong>Quitandas</strong></a>
-                    <a href="#destaques" class="categoria-mineira"><span aria-hidden="true">🍮</span><strong>Doces de Minas</strong></a>
-                    <a href="#destaques" class="categoria-mineira"><span aria-hidden="true">🍗</span><strong>Comida caseira</strong></a>
-                    <a href="restaurantes.html#pizzas" class="categoria-mineira"><span aria-hidden="true">🍕</span><strong>Pizzas</strong></a>
-                    <a href="restaurantes.html#lanches" class="categoria-mineira"><span aria-hidden="true">🍔</span><strong>Lanches</strong></a>
+                <div class="secao-titulo"><div><span>ESCOLHA SEU FAVORITO</span><h2>O que vamos pedir hoje?</h2></div></div>
+                <div class="categorias-cliente categorias-novas">
+                    <a href="#tropeiro" class="categoria-mineira"><span class="icone-categoria" aria-hidden="true">🍲</span><strong>Pratos mineiros</strong></a>
+                    <a href="#pao-de-queijo" class="categoria-mineira"><span class="icone-categoria" aria-hidden="true">🧀</span><strong>Quitandas</strong></a>
+                    <a href="#doce-de-leite" class="categoria-mineira"><span class="icone-categoria" aria-hidden="true">🍮</span><strong>Doces de Minas</strong></a>
+                    <a href="#vaca-atolada" class="categoria-mineira"><span class="icone-categoria" aria-hidden="true">🍗</span><strong>Comida caseira</strong></a>
+                    <a href="#pizza" class="categoria-mineira"><span class="icone-categoria" aria-hidden="true">🍕</span><strong>Pizzas</strong></a>
+                    <a href="#hamburguer" class="categoria-mineira"><span class="icone-categoria" aria-hidden="true">🍔</span><strong>Lanches</strong></a>
                 </div>
             </section>
             <section class="secao-cliente" id="destaques">
-                <div class="cabecalho-vitrine">
-                    <div class="secao-titulo">
-                        <div>
-                            <span>DIRETO DA COZINHA MINEIRA</span>
-                            <h2>Comidas mineiras e seus favoritos</h2>
-                        </div>
-                        <a href="ofertas.html">Ver ofertas →</a>
-                    </div>
-                    <div class="controles-carrossel">
-                        <button type="button" data-anterior aria-label="Anterior">‹</button>
-                        <button type="button" data-proximo aria-label="Próximo">›</button>
-                    </div>
-                </div>
-                <div class="destaques-cliente" data-carrossel>
-                    <article class="prato prato-mineiro">
-                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Picadinho%20com%20quiabo.jpg?width=700" alt="Foto real de Picadinho com quiabo" loading="lazy">
-                        <div>
-                            <span>TRADIÇÃO MINEIRA</span>
-                            <h3>Picadinho com quiabo</h3>
-                            <p>Carne em cubos com quiabo.</p>
-                            <strong class="preco-mineiro">R$ 32,90</strong>
-                            <a href="ofertas.html">Ver ofertas →</a>
-                        </div>
+                <div class="secao-titulo"><div><span>DE MINAS PARA TODOS OS GOSTOS</span><h2>Comidas mineiras e seus favoritos</h2></div><a href="ofertas.html">Ver ofertas →</a></div>
+                <div class="destaques-cliente pratos-grade">
+                    <article class="prato prato-mineiro" id="tropeiro">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Feij%C3%A3o%20Tropeiro.jpg?width=800" alt="Feijão-tropeiro" loading="lazy">
+                        <div class="prato-conteudo"><span>Comida mineira</span><h3>Feijão-tropeiro</h3><p>Feijão, farinha, ovos e couve.</p><strong class="preco-mineiro">R$ 28,90</strong><a href="ofertas.html">Ver ofertas →</a></div>
                     </article>
-                    <article class="prato prato-mineiro">
-                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Feij%C3%A3o%20Tropeiro.jpg?width=700" alt="Foto real de Feijão-tropeiro" loading="lazy">
-                        <div>
-                            <span>COMIDA MINEIRA</span>
-                            <h3>Feijão-tropeiro</h3>
-                            <p>Feijão, farinha, ovos e couve.</p>
-                            <strong class="preco-mineiro">R$ 28,90</strong>
-                            <a href="ofertas.html">Ver ofertas →</a>
-                        </div>
+                    <article class="prato prato-mineiro" id="pizza">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop&q=85" alt="Pizza de calabresa" loading="lazy">
+                        <div class="prato-conteudo"><span>Pizzas</span><h3>Pizza de calabresa</h3><p>Pizza com queijo e calabresa.</p><strong class="preco-mineiro">R$ 39,90</strong><a href="ofertas.html">Ver ofertas →</a></div>
                     </article>
-                    <article class="prato prato-mineiro"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700&auto=format&fit=crop&q=85" alt="Pizza de calabresa" loading="lazy"><div><span>PIZZAS</span><h3>Pizza de calabresa</h3><p>Pizza com queijo e calabresa.</p><strong class="preco-mineiro">R$ 39,90</strong><a href="ofertas.html">Ver ofertas →</a></div></article>
-                    <article class="prato prato-mineiro">
-                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tutu%20de%20feij%C3%A3o.JPG?width=700" alt="Foto real de Tutu de feijão" loading="lazy">
-                        <div>
-                            <span>SABOR DE MINAS</span>
-                            <h3>Tutu de feijão</h3>
-                            <p>Tutu cremoso com acompanhamentos.</p>
-                            <strong class="preco-mineiro">R$ 27,90</strong>
-                            <a href="ofertas.html">Ver ofertas →</a>
-                        </div>
+                    <article class="prato prato-mineiro" id="hamburguer">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop&q=85" alt="Hambúrguer artesanal" loading="lazy">
+                        <div class="prato-conteudo"><span>Lanches</span><h3>Hambúrguer artesanal</h3><p>Hambúrguer com queijo e salada.</p><strong class="preco-mineiro">R$ 30,90</strong><a href="ofertas.html">Ver ofertas →</a></div>
                     </article>
-                    <article class="prato prato-mineiro">
-                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Vaca%20Atolada.jpg?width=700" alt="Foto real de Vaca atolada" loading="lazy">
-                        <div>
-                            <span>RECEITA CASEIRA</span>
-                            <h3>Vaca atolada</h3>
-                            <p>Carne cozida com mandioca.</p>
-                            <strong class="preco-mineiro">R$ 38,90</strong>
-                            <a href="ofertas.html">Ver ofertas →</a>
-                        </div>
+                    <article class="prato prato-mineiro" id="pao-de-queijo">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%A3o%20de%20Queijo.jpg?width=800" alt="Pão de queijo" loading="lazy">
+                        <div class="prato-conteudo"><span>Quitandas</span><h3>Pão de queijo</h3><p>Porção de pães de queijo quentinhos.</p><strong class="preco-mineiro">R$ 14,90</strong><a href="ofertas.html">Ver ofertas →</a></div>
                     </article>
-                    <article class="prato prato-mineiro"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700&auto=format&fit=crop&q=85" alt="Hambúrguer artesanal" loading="lazy"><div><span>LANCHES</span><h3>Hambúrguer artesanal</h3><p>Hambúrguer com queijo e salada.</p><strong class="preco-mineiro">R$ 30,90</strong><a href="ofertas.html">Ver ofertas →</a></div></article>
-                    <article class="prato prato-mineiro">
-                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%A3o%20de%20Queijo.jpg?width=700" alt="Foto real de Pão de queijo" loading="lazy">
-                        <div>
-                            <span>QUITANDA MINEIRA</span>
-                            <h3>Pão de queijo</h3>
-                            <p>Porção de pães de queijo quentinhos.</p>
-                            <strong class="preco-mineiro">R$ 14,90</strong>
-                            <a href="ofertas.html">Ver ofertas →</a>
-                        </div>
+                    <article class="prato prato-mineiro" id="macarrao">
+                        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&auto=format&fit=crop&q=85" alt="Macarrão ao molho" loading="lazy">
+                        <div class="prato-conteudo"><span>Massas</span><h3>Macarrão ao molho</h3><p>Macarrão com molho da casa.</p><strong class="preco-mineiro">R$ 25,90</strong><a href="ofertas.html">Ver ofertas →</a></div>
                     </article>
-                    <article class="prato prato-mineiro">
-                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Coxinha%20de%20batata%20com%20pimenta%2012.jpg?width=700" alt="Foto real de Torresmo com mandioca" loading="lazy">
-                        <div>
-                            <span>PETISCOS</span>
-                            <h3>Torresmo com mandioca</h3>
-                            <p>Porção para compartilhar.</p>
-                            <strong class="preco-mineiro">R$ 26,90</strong>
-                            <a href="ofertas.html">Ver ofertas →</a>
-                        </div>
+                    <article class="prato prato-mineiro" id="tutu">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tutu%20de%20feij%C3%A3o.JPG?width=800" alt="Tutu de feijão" loading="lazy">
+                        <div class="prato-conteudo"><span>Comida mineira</span><h3>Tutu de feijão</h3><p>Tutu cremoso com acompanhamentos.</p><strong class="preco-mineiro">R$ 27,90</strong><a href="ofertas.html">Ver ofertas →</a></div>
                     </article>
-                    <article class="prato prato-mineiro">
-                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Canjiquinha%20em%20Coronel%20Fabriciano%20MG.JPG?width=700" alt="Foto real de Canjiquinha mineira" loading="lazy">
-                        <div>
-                            <span>COMIDA DE FAZENDA</span>
-                            <h3>Canjiquinha mineira</h3>
-                            <p>Canjiquinha tradicional de Minas Gerais.</p>
-                            <strong class="preco-mineiro">R$ 36,90</strong>
-                            <a href="ofertas.html">Ver ofertas →</a>
-                        </div>
+                    <article class="prato prato-mineiro" id="vaca-atolada">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Vaca%20Atolada.jpg?width=800" alt="Vaca atolada" loading="lazy">
+                        <div class="prato-conteudo"><span>Comida caseira</span><h3>Vaca atolada</h3><p>Carne cozida com mandioca.</p><strong class="preco-mineiro">R$ 38,90</strong><a href="ofertas.html">Ver ofertas →</a></div>
                     </article>
-                    <article class="prato prato-mineiro"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=700&auto=format&fit=crop&q=85" alt="Macarrão ao molho" loading="lazy"><div><span>MASSAS</span><h3>Macarrão ao molho</h3><p>Macarrão com molho da casa.</p><strong class="preco-mineiro">R$ 25,90</strong><a href="ofertas.html">Ver ofertas →</a></div></article>
-                    <article class="prato prato-mineiro">
-                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Prato%20de%20galinhada.jpg?width=700" alt="Foto real de Galinhada mineira" loading="lazy">
-                        <div>
-                            <span>ALMOÇO CASEIRO</span>
-                            <h3>Galinhada mineira</h3>
-                            <p>Arroz temperado com frango.</p>
-                            <strong class="preco-mineiro">R$ 29,90</strong>
-                            <a href="ofertas.html">Ver ofertas →</a>
-                        </div>
+                    <article class="prato prato-mineiro" id="galinhada">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Prato%20de%20galinhada.jpg?width=800" alt="Galinhada mineira" loading="lazy">
+                        <div class="prato-conteudo"><span>Comida caseira</span><h3>Galinhada mineira</h3><p>Arroz temperado com frango.</p><strong class="preco-mineiro">R$ 29,90</strong><a href="ofertas.html">Ver ofertas →</a></div>
                     </article>
-                    <article class="prato prato-mineiro">
-                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Doce%20de%20leite.jpg?width=700" alt="Foto real de Doce de leite" loading="lazy">
-                        <div>
-                            <span>DOCES DE MINAS</span>
-                            <h3>Doce de leite</h3>
-                            <p>Doce de leite cremoso da casa.</p>
-                            <strong class="preco-mineiro">R$ 12,90</strong>
-                            <a href="ofertas.html">Ver ofertas →</a>
-                        </div>
+                    <article class="prato prato-mineiro" id="doce-de-leite">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Doce%20de%20leite.jpg?width=800" alt="Doce de leite" loading="lazy">
+                        <div class="prato-conteudo"><span>Doces de Minas</span><h3>Doce de leite</h3><p>Doce de leite cremoso da casa.</p><strong class="preco-mineiro">R$ 12,90</strong><a href="ofertas.html">Ver ofertas →</a></div>
+                    </article>
+                    <article class="prato prato-mineiro" id="bolo-de-fuba">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bolo%20de%20fub%C3%A1.jpg?width=800" alt="Bolo de fubá" loading="lazy">
+                        <div class="prato-conteudo"><span>Quitandas</span><h3>Bolo de fubá</h3><p>Fatia de bolo macio e caseiro.</p><strong class="preco-mineiro">R$ 11,90</strong><a href="ofertas.html">Ver ofertas →</a></div>
+                    </article>
+                    <article class="prato prato-mineiro" id="canjiquinha">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Canjiquinha%20em%20Coronel%20Fabriciano%20MG.JPG?width=800" alt="Canjiquinha mineira" loading="lazy">
+                        <div class="prato-conteudo"><span>Comida mineira</span><h3>Canjiquinha mineira</h3><p>Canjiquinha tradicional de Minas.</p><strong class="preco-mineiro">R$ 36,90</strong><a href="ofertas.html">Ver ofertas →</a></div>
+                    </article>
+                    <article class="prato prato-mineiro" id="marguerita">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&auto=format&fit=crop&q=85" alt="Pizza marguerita" loading="lazy">
+                        <div class="prato-conteudo"><span>Pizzas</span><h3>Pizza marguerita</h3><p>Queijo, tomate e manjericão.</p><strong class="preco-mineiro">R$ 35,90</strong><a href="ofertas.html">Ver ofertas →</a></div>
                     </article>
                 </div>
-<article class="prato prato-mineiro">
-                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bolo%20de%20fub%C3%A1.jpg?width=700" alt="Foto real de Bolo de fubá" loading="lazy">
-                        <div>
-                            <span>CAFÉ DA TARDE</span>
-                            <h3>Bolo de fubá</h3>
-                            <p>Fatia de bolo macio e caseiro.</p>
-                            <strong class="preco-mineiro">R$ 11,90</strong>
-                            <a href="ofertas.html">Ver ofertas →</a>
-                        </div>
-                    </article>
-                <p class="aviso-mineiro">Cardápio demonstrativo: preços fictícios. Fotos de pratos reais ou imagens ilustrativas. Créditos das fotografias: Wikimedia Commons.</p>
+                <p class="aviso-mineiro">Cardápio demonstrativo: preços fictícios e imagens de referência.</p>
             </section>
             <section class="secao-cliente" id="minha-conta">
                 <div class="secao-titulo">
