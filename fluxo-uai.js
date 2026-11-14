@@ -13,6 +13,6 @@ function taxa(){return carrinho().length?9.99:0}
 function total(){return subtotal()+taxa()}
 function add(id){const p=(window.produtosUai||[]).find(x=>x.id===id);if(!p)return false;const lista=carrinho();const achado=lista.find(x=>x.id===id);if(achado)achado.qtd++;else lista.push({id:p.id,nome:p.nome,preco:Number(p.preco.replace(",",".")),qtd:1,imagem:p.imagem});salvar("carrinho",lista);return true}
 function alterar(id,d){const lista=carrinho();const p=lista.find(x=>x.id===id);if(!p)return;p.qtd+=d;salvar("carrinho",lista.filter(x=>x.qtd>0))}
-function iniciarExemplo(){if(!ler("inicializado",false)){salvar("carrinho",exemplo);salvar("inicializado",true)}}
+function iniciarExemplo(){if(!ler("inicializado",false)){if(!carrinho().length)salvar("carrinho",exemplo);salvar("inicializado",true)}}
 window.UAI={ler,salvar,carrinho,pedidos,moeda,seguro,subtotal,taxa,total,add,alterar,iniciarExemplo};
 })();
