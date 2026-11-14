@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Explorar comidas | UAIcheguei</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="cliente-topo.css">
-<link rel="stylesheet" href="explorar_comidas.css">
-<link rel="stylesheet" href="rodape.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorar comidas no UAIcheguei.">
+    <title>Explorar comidas | UAIcheguei</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cliente-topo.css">
+    <link rel="stylesheet" href="explorar_comidas.css">
+    <link rel="stylesheet" href="rodape.css">
 </head>
 <body>
 <header class="cliente-cabecalho">
@@ -32,14 +33,39 @@
         <a href="carrinho.html">Meu carrinho</a>
     </nav>
 </header>
-<main class="explorar">
-<section class="banner-ofertas"><div><span class="selo">🍽️ Descubra novos sabores</span><h1>O que vamos <em>comer hoje?</em></h1><p>Encontre comidas populares, aproveite ofertas e conheça opções de restaurantes.</p><a href="#explorar-opcoes">Começar a explorar →</a></div><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=850&auto=format&fit=crop&q=85" alt="Pizza"></section>
-<section class="opcoes-explorar" id="explorar-opcoes">
-<a class="opcao-explorar" href="ofertas.html"><div><span class="selo">🔥 Descontos</span><h2>Ver ofertas</h2><p>Confira as promoções e os preços especiais.</p><strong>Explorar ofertas →</strong></div><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=85" alt="Hambúrguer"></a>
-<a class="opcao-explorar" href="restaurantes.html"><div><span class="selo">🏪 Descubra</span><h2>Ver restaurantes</h2><p>Conheça os restaurantes da nossa vitrine.</p><strong>Ver restaurantes →</strong></div><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&auto=format&fit=crop&q=85" alt="Ambiente de restaurante"></a>
-</section>
-<section class="secao-comidas" id="mais-pedidos"><div class="titulo-secao"><div><span>⭐ Favoritos da casa</span><h2>Comidas mais pedidas</h2><p>Alguns pratos populares da nossa vitrine demonstrativa.</p></div></div><div class="grade-comidas"><article class="comida-card"><div class="foto-card"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=700&auto=format&fit=crop&q=85" alt="Hambúrguer artesanal" loading="lazy"></div><div class="detalhes-card"><span class="tipo">Mais pedido</span><h3>Hambúrguer artesanal</h3><p>Pão macio e recheio caprichado</p><div class="precos"><strong>R$ 31,90</strong></div><a href="carrinho.html" class="pedir">Ver carrinho <span>→</span></a></div></article><article class="comida-card"><div class="foto-card"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=700&auto=format&fit=crop&q=85" alt="Pizza especial" loading="lazy"></div><div class="detalhes-card"><span class="tipo">Mais pedido</span><h3>Pizza especial</h3><p>Sabor para toda a família</p><div class="precos"><strong>R$ 44,90</strong></div><a href="carrinho.html" class="pedir">Ver carrinho <span>→</span></a></div></article><article class="comida-card"><div class="foto-card"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=700&auto=format&fit=crop&q=85" alt="Massa italiana" loading="lazy"></div><div class="detalhes-card"><span class="tipo">Mais pedido</span><h3>Massa italiana</h3><p>Molho e ingredientes selecionados</p><div class="precos"><strong>R$ 28,90</strong></div><a href="carrinho.html" class="pedir">Ver carrinho <span>→</span></a></div></article><article class="comida-card"><div class="foto-card"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700&auto=format&fit=crop&q=85" alt="Bolo especial" loading="lazy"></div><div class="detalhes-card"><span class="tipo">Mais pedido</span><h3>Bolo especial</h3><p>Uma sobremesa irresistível</p><div class="precos"><strong>R$ 17,90</strong></div><a href="carrinho.html" class="pedir">Ver carrinho <span>→</span></a></div></article></div></section>
-<p class="nota">Esta vitrine é demonstrativa: os destaques não representam dados reais de vendas.</p>
+<main class="explorar-novo">
+    <nav class="trilha" aria-label="Caminho"><a href="Intranet_cliente.html">Início</a><span>›</span>Explorar comidas</nav>
+    <section class="hero-explorar">
+        <div class="hero-texto">
+            <span class="sobretitulo">🍽️ SEU PRÓXIMO PEDIDO COMEÇA AQUI</span>
+            <h1>Uai, qual vai ser <em>a boa de hoje?</em></h1>
+            <p>Escolha por onde começar: aproveite ofertas especiais ou descubra novos restaurantes.</p>
+            <a class="botao-primario" href="#escolher">Explorar opções <span>→</span></a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1000&auto=format&fit=crop&q=85" alt="Pizza recém-preparada">
+    </section>
+    <section class="secao" id="escolher">
+        <div class="cabeca-secao"><div><span class="sobretitulo">ESCOLHA SEU CAMINHO</span><h2>O que você procura?</h2></div></div>
+        <div class="escolhas">
+            <a href="ofertas.html" class="escolha escolha-ofertas">
+                <div class="escolha-texto"><span class="tag">🔥 PREÇOS ESPECIAIS</span><h3>Ver ofertas</h3><p>Promoções e comidas deliciosas para aproveitar.</p><strong>Conferir ofertas <span>→</span></strong></div>
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=650&auto=format&fit=crop&q=85" alt="Hambúrguer artesanal">
+            </a>
+            <a href="restaurantes.html" class="escolha escolha-restaurantes">
+                <div class="escolha-texto"><span class="tag">🏪 NOVOS SABORES</span><h3>Ver restaurantes</h3><p>Conheça lugares e descubra o que pedir.</p><strong>Explorar restaurantes <span>→</span></strong></div>
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=650&auto=format&fit=crop&q=85" alt="Ambiente de restaurante">
+            </a>
+        </div>
+    </section>
+    <section class="secao">
+        <div class="cabeca-secao"><div><span class="sobretitulo">🍔 FAVORITOS DA CASA</span><h2>Comidas em destaque</h2><p>Algumas ideias para abrir o apetite.</p></div><a class="link-secao" href="ofertas.html">Ver ofertas →</a></div>
+        <div class="grade-cards">
+            <article class="card-produto"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop&q=85" alt="Hambúrguer"><div class="card-corpo"><span class="mini-label">LANCHES</span><h3>Hambúrguer especial</h3><p>Uma opção caprichada para matar a fome.</p><a href="ofertas.html">Conhecer ofertas →</a></div></article>
+            <article class="card-produto"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop&q=85" alt="Pizza"><div class="card-corpo"><span class="mini-label">PIZZAS</span><h3>Pizza da casa</h3><p>O sabor perfeito para compartilhar.</p><a href="ofertas.html">Conhecer ofertas →</a></div></article>
+            <article class="card-produto"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&auto=format&fit=crop&q=85" alt="Macarrão"><div class="card-corpo"><span class="mini-label">MASSAS</span><h3>Massa especial</h3><p>Uma refeição para qualquer ocasião.</p><a href="restaurantes.html">Ver restaurantes →</a></div></article>
+        </div>
+    </section>
+    <p class="aviso-demo">Vitrine demonstrativa do projeto UAIcheguei.</p>
 </main>
 <footer class="rodape-uai">
     <div class="rodape-conteudo">
