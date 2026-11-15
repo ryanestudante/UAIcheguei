@@ -27,44 +27,12 @@
                     class="campo-form"
                     placeholder="Digite seu e-mail"
                     >
-                    <button class="buton-entrar" onclick="continuarEmail()">
+                    <button type="button" class="buton-entrar" disabled>
                         Continuar
                     </button>
                 </div>
-                <div id="etapaCodigo" class="etapa">
-                    <p class="descricao">
-                        Digite o código enviado para seu e-mail:
-                    </p>
-                    <input
-                    type="text"
-                    id="codigo"
-                    class="campo-form"
-                    placeholder="Digite o código"
-                    >
-                    <button class="buton-entrar" onclick="continuarCodigo()">
-                        Confirmar código
-                    </button>
-                </div>
-                <div id="etapaSenha" class="etapa">
-                    <p class="descricao">Digite sua nova senha:</p>
-                    <input
-                    type="password"
-                    id="senha"
-                    class="campo-form"
-                    placeholder="Digite sua nova senha"
-                    >
-                    <input
-                    type="password"
-                    id="confirmarSenha"
-                    class="campo-form"
-                    placeholder="Confirme sua nova senha"
-                    >
-                    <button class="buton-entrar" onclick="redefinirSenha()">
-                        Redefinir senha
-                    </button>
-                </div>
-                <p id="mensagem" role="status" aria-live="polite">
-                </p>
+
+                <p class="descricao">Recuperação de senha demonstrativa: o envio de e-mails não está disponível.</p>
             </div>
             <div class="imagem-box">
                 <img
@@ -75,52 +43,6 @@
                 </div>
             </div>
         </div>
-        <script>
-    // Recuperação demonstrativa: não envia códigos nem altera senhas reais.
-    function mostrarMensagem(texto) {
-        const mensagem = document.getElementById("mensagem");
-        mensagem.style.color = "#a33d0d";
-        mensagem.textContent = texto;
-    }
-
-    function continuarEmail() {
-        const email = document.getElementById("email").value.trim();
-
-        if (!email || !email.includes("@") || !email.includes(".")) {
-            mostrarMensagem("Digite um e-mail válido.");
-            return;
-        }
-
-        mostrarMensagem("");
-        document.getElementById("etapaEmail").classList.remove("ativa");
-        document.getElementById("etapaCodigo").classList.add("ativa");
-    }
-
-    function continuarCodigo() {
-        const codigo = document.getElementById("codigo").value.trim();
-
-        if (!codigo) {
-            mostrarMensagem("Digite o código.");
-            return;
-        }
-
-        mostrarMensagem("");
-        document.getElementById("etapaCodigo").classList.remove("ativa");
-        document.getElementById("etapaSenha").classList.add("ativa");
-    }
-
-    function redefinirSenha() {
-        const senha = document.getElementById("senha").value;
-        const confirmacao = document.getElementById("confirmarSenha").value;
-
-        if (!senha || !confirmacao) {
-            mostrarMensagem("Preencha os dois campos.");
-        } else if (senha !== confirmacao) {
-            mostrarMensagem("As senhas não conferem.");
-        } else {
-            mostrarMensagem("Simulação concluída. Sua senha real não foi alterada.");
-        }
-    }
-</script>
+        
     </body>
 </html>

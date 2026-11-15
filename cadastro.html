@@ -21,7 +21,7 @@
                     Faça parte do UAIcheguei e descubra
                     o melhor da comida de Minas Gerais.
                 </p>
-                <form onsubmit="entrar(); return false;">
+                <form>
                     <input
                     class="campo-form"
                     id="nome"
@@ -66,14 +66,8 @@
                     placeholder="Confirme sua senha"
                     required
                     >
-                    <button
-                        class="botao"
-                        type="submit"
-                        >
-                        Criar conta
-                    </button>
-                    <div id="mensagem" role="status" aria-live="polite">
-                    </div>
+                    <button class="botao" type="button" disabled>Criar conta</button>
+                    <p>Cadastro demonstrativo: não há armazenamento de dados nesta versão.</p>
                     <a href="login.html" class="voltar">
                         ← Voltar para o login
                     </a>
@@ -90,29 +84,6 @@
                 </div>
             </div>
         </div>
-        <script>
-    function entrar() {
-        const nome = document.getElementById("nome").value.trim();
-        const email = document.getElementById("Email").value.trim().toLowerCase();
-        const telefone = document.getElementById("telefone").value.trim();
-        const nascimento = document.getElementById("data-nascimento").value;
-        const senha = document.getElementById("Senha").value;
-        const confirmacao = document.getElementById("ConfirmarSenha").value;
-        const mensagem = document.getElementById("mensagem");
-
-        if (!nome || !email || !telefone || !nascimento || !senha || !confirmacao) {
-            mensagem.textContent = "Preencha todos os campos.";
-            return;
-        }
-
-        if (senha !== confirmacao) {
-            mensagem.textContent = "As senhas não conferem.";
-            return;
-        }
-
-        // Cadastro ilustrativo: ainda não salva novos usuários.
-        mensagem.textContent = "Cadastro demonstrativo. Para criar uma conta de verdade, é necessário conectar um banco de dados.";
-    }
-</script>
+        
     </body>
 </html>

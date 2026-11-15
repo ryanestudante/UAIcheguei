@@ -20,7 +20,7 @@
                     Faça seu login no UAIcheguei e descubra
                     o melhor da comida de Minas Gerais!
                 </p>
-                <form onsubmit="entrar(); return false;">
+                <form>
                     <input
                     type="text"
                     id="CPF"
@@ -43,14 +43,8 @@
                     class="campo-form"
                     placeholder="Senha"
                     >
-                    <button
-                        type="submit"
-                        class="buton-entrar"
-                        >
-                        Entrar
-                    </button>
-                    <div id="mensagem" role="status" aria-live="polite">
-                    </div>
+                    <button type="button" class="buton-entrar" disabled>Entrar</button>
+                    <p class="descricao">Tela demonstrativa: o login não está disponível nesta versão HTML e CSS.</p><a href="cliente.html" class="criar-conta">Visualizar painel do cliente</a>
                     <a href="recuperar-senha.html" class="esqueci">
                         Esqueci minha senha
                     </a>
@@ -71,36 +65,6 @@
                 </div>
             </div>
         </div>
-        <script>
-    function entrar() {
-        const cpf = document.getElementById("CPF").value.trim();
-        const email = document.getElementById("Email").value.trim().toLowerCase();
-        const senha = document.getElementById("Senha").value;
-        const mensagem = document.getElementById("mensagem");
-
-        if (!cpf || !email || !senha) {
-            mensagem.textContent = "Preencha todos os campos.";
-            return;
-        }
-
-        // Contas de demonstração. O acesso real precisa ser validado no servidor.
-        const contas = [
-            { cpf: "12345678900", email: "cliente@gmail.com", senha: "123456", pagina: "cliente.html" },
-            { cpf: "98765432100", email: "dono@gmail.com", senha: "123456", pagina: "restaurante-painel.html" },
-            { cpf: "11122233344", email: "entregador@gmail.com", senha: "123456", pagina: "entregador.html" },
-            { cpf: "12312312312", email: "admin@gmail.com", senha: "123456", pagina: "administrador.html" }
-        ];
-
-        const conta = contas.find(item =>
-            item.cpf === cpf && item.email === email && item.senha === senha
-        );
-
-        if (conta) {
-            window.location.href = conta.pagina;
-        } else {
-            mensagem.textContent = "CPF, e-mail ou senha não conferem.";
-        }
-    }
-</script>
+        
     </body>
 </html>
