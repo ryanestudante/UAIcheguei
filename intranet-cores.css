@@ -34,3 +34,84 @@ body:has(.adm-layout),body:has(.ent-layout),body:has(.rp-container){
 .rp-pedido,.rp-produto{border-top-color:#dcb58d!important}
 .rp-container .cliente-cabecalho{background:#f1cda6!important}
 @media(max-width:650px){.adm-main,.ent-conteudo{padding-left:16px;padding-right:16px}}
+
+/* Refinamento visual dos tres paineis — UAIcheguei */
+body:has(.adm-layout),body:has(.ent-layout),body:has(.rp-container){
+ background-color:#f3d9bc!important;
+ background-image:radial-gradient(ellipse 720px 470px at 100% 0%,#e9a96e38,transparent 76%),radial-gradient(ellipse 620px 520px at 0% 95%,#c8794430,transparent 76%)!important;
+}
+.adm-layout,.ent-layout{min-height:100vh}
+.adm-sidebar,.ent-sidebar{
+ background:linear-gradient(165deg,#a84412 0%,#8d350e 52%,#60280f 100%)!important;
+ box-shadow:6px 0 30px #67300d18;
+}
+.adm-brand,.ent-marca{padding:8px 10px 18px!important;border-bottom:1px solid #ffdfb52b}
+.adm-brand img,.ent-marca img{filter:drop-shadow(0 4px 9px #38170530)}
+.adm-nav,.ent-nav{gap:8px!important}
+.adm-nav a,.ent-nav a,.ent-sidebar-final a,.adm-sair{border-radius:12px!important;transition:background .18s,transform .18s!important}
+.adm-nav a:hover,.ent-nav a:hover{transform:translateX(3px)}
+.adm-nav a.ativo,.ent-nav .ent-ativo{box-shadow:inset 4px 0 0 #fff3d6,0 5px 15px #3817051c}
+.adm-main,.ent-conteudo{max-width:1500px!important}
+.adm-topbar,.ent-topo,.rp-topo{padding:16px 0 23px;border-bottom:1px solid #c8946766;margin-bottom:28px!important}
+.adm-topbar h1,.ent-topo h1,.rp-topo h1{font-weight:800!important;letter-spacing:-1px;line-height:1.2}
+.adm-eyebrow,.ent-sobre,.rp-etiqueta{display:inline-block;letter-spacing:1.5px!important;font-size:11px!important}
+.adm-layout .uai-estatisticas,.ent-resumo,.rp-numeros{gap:18px!important}
+.adm-layout .uai-estatisticas .uai-card,.ent-indicador,.rp-numeros>div{
+ position:relative;overflow:hidden;border-radius:19px!important;
+ padding:23px!important;border:1px solid #e0b58a!important;
+ box-shadow:0 8px 24px #7c3b1714!important;
+}
+.adm-layout .uai-estatisticas .uai-card:before,.ent-indicador:before,.rp-numeros>div:before{
+ content:"";position:absolute;left:0;right:0;top:0;height:5px;
+ background:linear-gradient(90deg,#9d390d,#e88a3b,#f5c58c)
+}
+.adm-layout .uai-estatisticas strong,.ent-indicador>strong,.rp-numeros strong{
+ font-size:clamp(24px,2.5vw,32px)!important;font-weight:800!important;
+ color:#8f330b!important
+}
+.adm-box,.ent-card,.rp-card{
+ border-radius:22px!important;padding:clamp(18px,2.3vw,28px)!important;
+ background:#f9e4ca!important;border:1px solid #dfb489!important;
+ box-shadow:0 10px 30px #75401c14!important;
+}
+.adm-box h3,.ent-secao-topo h2,.rp-card h2{font-weight:800!important;color:#693319!important}
+.adm-secao-titulo h2{border-left:5px solid #b94b14;padding-left:13px}
+.ent-card,.rp-card{transition:box-shadow .2s}
+.ent-card:hover,.rp-card:hover{box-shadow:0 14px 35px #75401c20!important}
+.ent-aviso,.adm-layout .uai-nota{
+ border-left:5px solid #a83b09!important;border-radius:14px!important;
+ background:#f1c79e!important
+}
+.ent-demo,.adm-demo-selo{background:#9d3d10!important;color:#fff0dc!important;border-color:#9d3d10!important}
+.ent-icone{border-radius:13px!important}
+.ent-exemplo,.ent-dados,.ent-ajuda,.ent-linha,.rp-pedido,.rp-produto{border-color:#dbb58e!important}
+.rp-banner{
+ position:relative;overflow:hidden;border-radius:23px!important;
+ background:linear-gradient(110deg,#b34b15,#d87932)!important;
+ border:1px solid #b75b22!important;
+ box-shadow:0 12px 26px #8b3c171c!important;
+ padding:29px!important
+}
+.rp-banner:after{
+ content:"";position:absolute;right:-65px;bottom:-145px;width:290px;height:290px;
+ border:32px solid #ffd7a337;border-radius:50%;pointer-events:none
+}
+.rp-banner h2,.rp-banner small,.rp-banner p{color:#fff2e1!important;position:relative;z-index:1}
+.rp-banner h2{font-size:clamp(24px,3vw,34px);font-weight:800}
+.rp-status{position:relative;z-index:1;background:#ffe2bb!important;color:#78300c!important}
+.rp-logo,.adm-avatar,.ent-avatar,.ent-usuario{box-shadow:0 6px 17px #71310d23}
+.rp-pedido,.rp-produto{padding:19px 0!important}
+.rp-select,.adm-btn{border-radius:11px!important;font-weight:700!important}
+.rp-select:focus-visible,.adm-btn:focus-visible,.adm-nav a:focus-visible,.ent-nav a:focus-visible{
+ outline:3px solid #e88b41;outline-offset:3px
+}
+.rp-container .cliente-cabecalho{background:#f3d4b3!important}
+@media(max-width:900px){
+ .adm-layout .uai-estatisticas .uai-card,.ent-indicador,.rp-numeros>div{padding:17px!important}
+ .adm-box,.ent-card,.rp-card{padding:19px!important}
+}
+@media(max-width:600px){
+ .adm-topbar,.ent-topo,.rp-topo{padding-top:8px}
+ .rp-banner{padding:22px!important}
+ .adm-nav a:hover,.ent-nav a:hover{transform:none}
+}
