@@ -210,7 +210,7 @@ body  {
     color: white;
 }
 
-/* CARRINHO */
+
 #principal  {
     display: flex;
     gap: 30px;
@@ -306,7 +306,7 @@ body  {
     cursor: pointer;
 }
 
-/* RESUMO */
+
 #resumo  {
     flex: 1;
     background: white;
@@ -380,7 +380,7 @@ body  {
     background: #c94d00;
 }
 
-/* RESPONSIVIDADE */
+
 @media (max-width: 900px)  {
     #principal  {
         flex-direction: column;

@@ -1,4 +1,4 @@
-/* Carrossel horizontal de produtos e categorias */
+
 [data-carrossel] {
     display:flex!important;
     flex-wrap:nowrap!important;

@@ -363,7 +363,7 @@ html[data-tema="escuro"] .adm-btn {
 
 }
 
-/* Atualização visual — dashboard premium */
+
 body:has(.adm-layout) {
     background:#f8f4ef!important
 }
@@ -766,7 +766,7 @@ html[data-tema="escuro"] .adm-layout .uai-tabela button {
 
 }
 
-/* Painel administrativo na mesma paleta suave do site */
+
 body:has(.adm-layout) {
     background:#FFF9F4!important
 }

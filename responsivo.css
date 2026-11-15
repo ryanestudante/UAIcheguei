@@ -1,4 +1,4 @@
-/* UAIcheguei - acabamento visual e responsividade global */
+
 :root {
     --uai-laranja:#e15800;
     --uai-texto:#40291c;
@@ -408,7 +408,7 @@ body:has(.cabecalho + .titulo) .conteudo {
 
 }
 
-/* Paleta suave UAIcheguei: pessego, creme e terracota */
+
 :root {
     --laranja:#C96A32;
     --laranja-claro:#F4A261;

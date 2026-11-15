@@ -1,4 +1,4 @@
-/* Paleta mineira compartilhada: painéis administrativo, entregador e restaurante */
+
 :root{--intra-fundo:#efd0ac;--intra-card:#f8dfc2;--intra-card-alt:#f2cfa9;--intra-laranja:#b7470b;--intra-laranja-escuro:#8d3109;--intra-terra:#563019;--intra-borda:#dbac7c}
 body:has(.adm-layout),body:has(.ent-layout),body:has(.rp-container){
  background-color:var(--intra-fundo)!important;
@@ -35,7 +35,7 @@ body:has(.adm-layout),body:has(.ent-layout),body:has(.rp-container){
 .rp-container .cliente-cabecalho{background:#f1cda6!important}
 @media(max-width:650px){.adm-main,.ent-conteudo{padding-left:16px;padding-right:16px}}
 
-/* Refinamento visual dos tres paineis — UAIcheguei */
+
 body:has(.adm-layout),body:has(.ent-layout),body:has(.rp-container){
  background-color:#f3d9bc!important;
  background-image:radial-gradient(ellipse 720px 470px at 100% 0%,#e9a96e38,transparent 76%),radial-gradient(ellipse 620px 520px at 0% 95%,#c8794430,transparent 76%)!important;
@@ -116,7 +116,7 @@ body:has(.adm-layout),body:has(.ent-layout),body:has(.rp-container){
  .adm-nav a:hover,.ent-nav a:hover{transform:none}
 }
 
-/* Correção definitiva do painel administrativo: remover superfícies brancas */
+
 html:has(.adm-layout),html:has(.adm-layout) body,
 body:has(.adm-layout),body:has(.adm-layout) .adm-layout,
 body:has(.adm-layout) .adm-main{
@@ -157,7 +157,7 @@ body:has(.adm-layout) .adm-layout .uai-nota{
 body:has(.adm-layout) .adm-sair{border-top:1px solid #f4d0ac45}
 @media(max-width:600px){body:has(.adm-layout) .adm-topbar{padding:20px!important}}
 
-/* Correção de largura e contraste — painel do administrador */
+
 html:has(.adm-layout),html:has(.adm-layout) body{margin:0!important;max-width:100%!important;overflow-x:hidden!important}
 body:has(.adm-layout) *,body:has(.adm-layout) *:before,body:has(.adm-layout) *:after{box-sizing:border-box}
 body:has(.adm-layout) .adm-layout{display:grid!important;grid-template-columns:250px minmax(0,1fr)!important;width:100%!important;max-width:100%!important;overflow:clip}

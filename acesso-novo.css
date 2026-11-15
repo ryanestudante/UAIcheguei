@@ -1,4 +1,4 @@
-/* Telas de acesso UAIcheguei — HTML e CSS */
+
 :root {
     --uai-laranja:#e15800;
     --uai-marrom:#4f3011;
@@ -302,7 +302,7 @@ body:has(.imagem-box) .form-box {
 
 }
 
-/* Paleta pessego suave nas tres telas de acesso */
+
 :root {
     --uai-laranja:#C96A32;
     --uai-marrom:#4F3011;

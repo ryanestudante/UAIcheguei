@@ -141,7 +141,7 @@ body  {
     text-decoration: underline;
 }
 
-/* IMAGEM */
+
 .uai_imagem  {
     flex: 1;
     display: flex;
@@ -175,7 +175,7 @@ body  {
     color: #f27029;
 }
 
-/* RESPONSIVIDADE */
+
 @media (max-width: 850px)  {
     body  {
         padding: 15px;
@@ -212,7 +212,7 @@ body  {
 
 }
 
-/* Link para retornar à página pública */
+
 .voltar-inicio {
     display:inline-flex;
     align-items:center;

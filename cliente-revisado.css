@@ -1,4 +1,4 @@
-/* Organização definitiva da vitrine: grade em vez de carrossel sem JavaScript */
+
 .pagina-cliente .categorias-novas,
 .pagina-cliente .pratos-grade {
     display: grid !important;

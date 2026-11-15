@@ -1,4 +1,4 @@
-/* Tela de promocoes: somente os cards */
+
 .secao-promocoes {
     margin-top:10px
 }
@@ -67,7 +67,7 @@
 
 }
 
-/* Cards inteiros clicaveis */
+
 .secao-promocoes .card-link {
     color:inherit;
     text-decoration:none;
@@ -223,7 +223,7 @@
 
 }
 
-/* Detalhes de produtos: visual renovado */
+
 .pagina-detalhes {
     padding-bottom:55px
 }

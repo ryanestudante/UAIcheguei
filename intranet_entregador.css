@@ -86,7 +86,7 @@ body  {
     font-size: 18px !important;
 }
 
-/* FAIXA */
+
 .titulo  {
     background-color: #fff3ec;
     padding: 30px 8%;
@@ -104,7 +104,7 @@ body  {
     font-size: 16px;
 }
 
-/* CONTEÚDO */
+
 .conteudo  {
     width: 90%;
     margin: 35px auto;
@@ -162,7 +162,7 @@ body  {
     margin-bottom: 30px;
 }
 
-/* NÚMEROS */
+
 .numeros  {
     display: flex;
     gap: 20px;
@@ -195,7 +195,7 @@ body  {
     color: #777;
 }
 
-/* CARTÕES */
+
 .titulo-menu  {
     margin-top: 30px;
 }
@@ -236,7 +236,7 @@ body  {
     font-weight: bold;
 }
 
-/* RODAPÉ */
+
 footer  {
     background-color: #222;
     color: white;

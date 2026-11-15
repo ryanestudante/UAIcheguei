@@ -10,7 +10,7 @@ body  {
     color: #4f3011;
 }
 
-/* TOPO */
+
 .topo  {
     background: white;
     border-bottom: 2px solid #FF6B00;
@@ -110,7 +110,7 @@ body  {
     color: #FF6B00;
 }
 
-/* CONTEÚDO */
+
 .pagina  {
     max-width: 1150px;
     margin: 35px auto;
@@ -174,7 +174,7 @@ h1  {
     font-weight: bold;
 }
 
-/* PAGAMENTO */
+
 .opcao  {
     display: flex;
     align-items: center;
@@ -206,7 +206,7 @@ h1  {
     border-color: #e15800;
 }
 
-/* OBSERVAÇÕES */
+
 textarea  {
     width: 100%;
     min-height: 100px;
@@ -222,7 +222,7 @@ textarea:focus  {
     border-color: #e15800;
 }
 
-/* RESUMO */
+
 .resumo  {
     background: white;
     padding: 25px;
@@ -309,7 +309,7 @@ hr  {
     text-decoration: none;
 }
 
-/* RODAPÉ */
+
 .rodape  {
     text-align: center;
     padding: 25px;
@@ -318,7 +318,7 @@ hr  {
     color: #777;
 }
 
-/* RESPONSIVIDADE */
+
 @media (max-width: 850px)  {
     .conteudo  {
         grid-template-columns: 1fr;

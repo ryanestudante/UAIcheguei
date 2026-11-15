@@ -1,4 +1,4 @@
-/* Cabeçalhos em laranja para dar mais identidade ao UAIcheguei. */
+
 .cabecalho,
 .cliente-cabecalho {
     background: #C96A32;
@@ -49,7 +49,7 @@
     color: #4F3011;
 }
 
-/* Âncoras dos restaurantes não ficam escondidas no topo. */
+
 .card-restaurante[id] {
     scroll-margin-top: 25px;
 }
@@ -60,7 +60,7 @@
     }
 }
 
-/* Topo branco nas páginas do cliente e de categorias */
+
 .cliente-cabecalho{background:#fff !important;border-bottom:1px solid #efdfd1 !important;box-shadow:0 3px 12px rgba(79,48,17,.06) !important}
 .cliente-cabecalho .cliente-marca,.cliente-cabecalho .cliente-acoes a{color:#4f3011 !important}
 .cliente-cabecalho .cliente-acoes a:hover{color:#c96a32 !important}

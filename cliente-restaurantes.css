@@ -1,4 +1,4 @@
-/* Restaurantes em destaque na página do cliente */
+
 .pagina-cliente .restaurantes-grade{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .pagina-cliente .restaurante-resumo{display:flex;flex-direction:column;overflow:hidden;border:1px solid #efd8c7;border-radius:18px;background:#fff;color:#4f3011;text-decoration:none;box-shadow:0 5px 18px rgba(79,48,17,.07);transition:transform .2s,box-shadow .2s}
 .pagina-cliente .restaurante-resumo:hover{transform:translateY(-4px);box-shadow:0 12px 25px rgba(79,48,17,.13)}

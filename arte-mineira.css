@@ -1,4 +1,4 @@
-/* UAIcheguei — fundo acolhedor, inspirado nas paisagens de Minas */
+
 :root{--uai-laranja:#e7650b;--uai-terracota:#bb4a17;--uai-creme:#fff0dc;--uai-terra:#56351e}
 html{background:#f8e5d0}
 body{
@@ -12,7 +12,7 @@ body{
  background-attachment:scroll;
  color:#50321f
 }
-/* Ondas suaves que lembram o relevo mineiro, sem competir com os pratos */
+
 .explorar-novo,.categorias-pagina,.pagina-categoria,.cp-pagina,.vitrine-publica,.categorias,.chamada,.pagina-detalhes{background-color:transparent!important}
 .cliente-cabecalho,.cabecalho{background:#fff2e2!important;border-bottom:1px solid #e9c5a3}
 .cliente-topo,.topo{background:transparent}
@@ -38,7 +38,7 @@ body{
 .trilha,.cp-trilha{color:#895a39}
 @media(max-width:600px){body{background-size:auto,auto,auto,280px 220px!important}.destaque{background:#f7d2aa!important}}
 
-/* Segunda camada: menos branco, mais calor de Minas */
+
 html,body{background-color:#efd0ac!important}
 body{background-image:
  radial-gradient(ellipse 650px 450px at 5% 8%,#f7a95d40,transparent 72%),
@@ -64,7 +64,7 @@ body{background-image:
 .vitrine-publica .vitrine-cabecalho,.cabeca-secao,.titulo-secao{background:transparent!important}
 @media(prefers-reduced-motion:reduce){.card-produto,.card-restaurante,.produto-categoria,.categoria-cartao{transition:none}}
 
-/* Contraste mineiro: laranja queimado, cobre e marrom */
+
 :root{--uai-laranja-escuro:#a83b09;--uai-laranja-queimado:#bd4b0a;--uai-cobre:#cf641d;--uai-areia:#f3d2aa}
 .cliente-menu{background:#a83b09!important;border-bottom:3px solid #d97727!important}
 .cliente-menu a{color:#fff2e1!important}
@@ -91,7 +91,7 @@ body{background-image:
 .cp-painel,.detalhe-produto{border-top:4px solid #b84b10!important}
 @media(max-width:650px){.cliente-menu{background:#a83b09!important}.cabeca-secao h2,.titulo-secao h2{padding-left:10px}}
 
-/* Navegação redesenhada: barra integrada, sem pílulas claras */
+
 .cliente-cabecalho .cliente-menu{
  background:#9f390b!important;
  border:0!important;
@@ -131,7 +131,7 @@ body{background-image:
  .cliente-cabecalho .cliente-menu a{font-size:11px!important;padding:8px 10px!important}
 }
 
-/* Área da marca transparente, sem bloco de fundo */
+
 .cliente-cabecalho .cliente-marca,
 .cliente-cabecalho .cliente-marca img,
 .cabecalho .marca,

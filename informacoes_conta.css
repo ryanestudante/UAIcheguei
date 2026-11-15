@@ -299,7 +299,6 @@ body  {
 }
 
 
-/* Paleta oficial UAIcheguei: laranja, creme e marrom */
 body {
     background: #fffaf6;
     color: #4f3011;
@@ -364,7 +363,7 @@ body {
     background: #f27029;
 }
 
-/* Ajuste final: paleta compartilhada do site */
+
 .menu-conta {background:#634633;border-color:#634633}
 .menu-conta h2 {color:#fff9f4}
 .menu-conta a {color:#fff3e8}
@@ -376,7 +375,7 @@ body {
 .acoes-formulario button {background:#c96a32}
 .acoes-formulario button:hover {background:#ad5726}
 
-/* Identidade visual completa da página Minha conta */
+
 .pagina-conta {
     --conta-laranja:#c96a32;
     --conta-marrom:#634633;
@@ -449,7 +448,7 @@ body {
 .pagina-conta .acoes-formulario button:hover {background:#ad5726}
 .pagina-conta #aviso-conta {color:#a94f24}
 
-/* Topo da Minha conta igual ao restante do UAIcheguei */
+
 .cliente-cabecalho {
     background:#f9dfc3!important;
     border-bottom:0!important;

@@ -1,4 +1,4 @@
-/* Painel do proprietário - acabamento visual */
+
 body:has(.rp-container){background:radial-gradient(circle at 10% 20%,#f8d9b5 0,transparent 35%),linear-gradient(140deg,#f5e3d0,#f0cba8)!important;color:#58301c}
 .rp-container{max-width:1320px;padding:42px 30px 90px}
 .rp-topo{padding:6px 0 20px;align-items:center}
