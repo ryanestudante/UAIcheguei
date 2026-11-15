@@ -1,8 +1,8 @@
-body:has(.adm-layout)  {
+body:has(.adm-layout) {
     background: #fbf7f3
 }
 
-.adm-layout  {
+.adm-layout {
     display: grid;
     grid-template-columns: 250px minmax(0,1fr);
     min-height: calc(100vh - 80px);
@@ -10,7 +10,7 @@ body:has(.adm-layout)  {
     color: #402a1f
 }
 
-.adm-sidebar  {
+.adm-sidebar {
     background: #fff;
     border-right: 1px solid #f0e3d9;
     padding: 25px 16px;
@@ -19,7 +19,7 @@ body:has(.adm-layout)  {
     gap: 20px
 }
 
-.adm-brand  {
+.adm-brand {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -28,13 +28,13 @@ body:has(.adm-layout)  {
     font-size: 19px
 }
 
-.adm-brand img  {
+.adm-brand img {
     width: 48px;
     height: 48px;
     object-fit: contain
 }
 
-.adm-sidebar-label  {
+.adm-sidebar-label {
     font-size: 10px;
     letter-spacing: 1.4px;
     color: #9d8b7c;
@@ -42,13 +42,13 @@ body:has(.adm-layout)  {
     padding: 0 12px
 }
 
-.adm-nav  {
+.adm-nav {
     display: flex;
     flex-direction: column;
     gap: 5px
 }
 
-.adm-nav a,.adm-sair  {
+.adm-nav a,.adm-sair {
     display: block;
     padding: 12px 14px;
     border-radius: 12px;
@@ -59,16 +59,16 @@ body:has(.adm-layout)  {
     transition: .2s
 }
 
-.adm-nav a:hover,.adm-nav a.ativo  {
+.adm-nav a:hover,.adm-nav a.ativo {
     background: #fff0e4;
     color: #d35406
 }
 
-.adm-sair  {
+.adm-sair {
     margin-top: auto
 }
 
-.adm-main  {
+.adm-main {
     min-width: 0;
     padding: 35px clamp(20px,4vw,55px) 60px;
     max-width: 1450px;
@@ -76,7 +76,7 @@ body:has(.adm-layout)  {
     margin: auto
 }
 
-.adm-topbar  {
+.adm-topbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -84,25 +84,25 @@ body:has(.adm-layout)  {
     margin-bottom: 20px
 }
 
-.adm-eyebrow,.adm-secao-titulo span  {
+.adm-eyebrow,.adm-secao-titulo span {
     font-size: 11px;
     letter-spacing: 1px;
     color: #e15800;
     font-weight: 800
 }
 
-.adm-topbar h1  {
+.adm-topbar h1 {
     font-size: clamp(25px,3vw,35px);
     margin: 4px 0
 }
 
-.adm-topbar p  {
+.adm-topbar p {
     margin: 0;
     color: #8a7568;
     font-size: 14px
 }
 
-.adm-avatar  {
+.adm-avatar {
     width: 49px;
     height: 49px;
     display: grid;
@@ -113,11 +113,11 @@ body:has(.adm-layout)  {
     font-weight: 800
 }
 
-.adm-secao[hidden]  {
+.adm-secao[hidden] {
     display: none!important
 }
 
-.adm-secao-titulo  {
+.adm-secao-titulo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,12 +125,12 @@ body:has(.adm-layout)  {
     margin: 28px 0 20px
 }
 
-.adm-secao-titulo h2  {
+.adm-secao-titulo h2 {
     font-size: 24px;
     margin: 4px 0
 }
 
-.adm-btn  {
+.adm-btn {
     background: #fff2e7;
     border: 1px solid #f0d8c5;
     border-radius: 10px;
@@ -140,29 +140,29 @@ body:has(.adm-layout)  {
     cursor: pointer
 }
 
-.adm-layout .uai-estatisticas  {
+.adm-layout .uai-estatisticas {
     margin-bottom: 24px
 }
 
-.adm-layout .uai-estatisticas .uai-card  {
+.adm-layout .uai-estatisticas .uai-card {
     border-radius: 16px;
     padding: 22px;
     background: #fff;
     box-shadow: 0 5px 20px #5930120a
 }
 
-.adm-layout .uai-estatisticas small  {
+.adm-layout .uai-estatisticas small {
     display: block;
     color: #8b7667;
     font-size: 12px
 }
 
-.adm-layout .uai-estatisticas strong  {
+.adm-layout .uai-estatisticas strong {
     font-size: clamp(21px,2.4vw,28px);
     margin-top: 10px
 }
 
-.adm-box  {
+.adm-box {
     background: #fff;
     border: 1px solid #eee0d4;
     border-radius: 18px;
@@ -171,22 +171,22 @@ body:has(.adm-layout)  {
     margin-bottom: 22px
 }
 
-.adm-box h3  {
+.adm-box h3 {
     margin: 0 0 14px
 }
 
-.adm-box p  {
+.adm-box p {
     color: #8b7667;
     font-size: 13px
 }
 
-.adm-filtros  {
+.adm-filtros {
     display: flex;
     gap: 12px;
     margin-bottom: 18px
 }
 
-.adm-filtros input,.adm-filtros select,.adm-form input  {
+.adm-filtros input,.adm-filtros select,.adm-form input {
     border: 1px solid #e9d8cb;
     border-radius: 10px;
     padding: 12px;
@@ -195,11 +195,11 @@ body:has(.adm-layout)  {
     min-width: 0
 }
 
-.adm-filtros input  {
+.adm-filtros input {
     flex: 1
 }
 
-.adm-form  {
+.adm-form {
     display: flex;
     align-items: flex-end;
     gap: 12px;
@@ -209,7 +209,7 @@ body:has(.adm-layout)  {
     border-top: 1px solid #f0e1d7
 }
 
-.adm-form label  {
+.adm-form label {
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -219,25 +219,25 @@ body:has(.adm-layout)  {
     min-width: 175px
 }
 
-.adm-form input  {
+.adm-form input {
     width: 100%
 }
 
-.adm-layout .uai-tabela  {
+.adm-layout .uai-tabela {
     width: 100%
 }
 
-.adm-layout .uai-tabela th  {
+.adm-layout .uai-tabela th {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: .5px
 }
 
-.adm-layout .uai-tabela td  {
+.adm-layout .uai-tabela td {
     font-size: 12px
 }
 
-.adm-layout .uai-tabela button,.adm-layout .uai-tabela select  {
+.adm-layout .uai-tabela button,.adm-layout .uai-tabela select {
     padding: 9px 10px;
     border: 1px solid #e9d4c3;
     border-radius: 9px;
@@ -247,118 +247,118 @@ body:has(.adm-layout)  {
     cursor: pointer
 }
 
-.adm-layout .uai-nota  {
+.adm-layout .uai-nota {
     margin: 18px 0 24px
 }
 
-.adm-layout .uai-status  {
+.adm-layout .uai-status {
     white-space: nowrap
 }
 
-html[data-tema="escuro"] body:has(.adm-layout)  {
+html[data-tema="escuro"] body:has(.adm-layout) {
     background: #1b1411!important
 }
 
-html[data-tema="escuro"] .adm-layout  {
+html[data-tema="escuro"] .adm-layout {
     color: #f8ecdf
 }
 
-html[data-tema="escuro"] .adm-sidebar,html[data-tema="escuro"] .adm-box,html[data-tema="escuro"] .adm-layout .uai-estatisticas .uai-card  {
+html[data-tema="escuro"] .adm-sidebar,html[data-tema="escuro"] .adm-box,html[data-tema="escuro"] .adm-layout .uai-estatisticas .uai-card {
     background: #30231d;
     border-color: #574033
 }
 
-html[data-tema="escuro"] .adm-nav a  {
+html[data-tema="escuro"] .adm-nav a {
     color: #dfc7b5
 }
 
-html[data-tema="escuro"] .adm-nav a.ativo,html[data-tema="escuro"] .adm-nav a:hover  {
+html[data-tema="escuro"] .adm-nav a.ativo,html[data-tema="escuro"] .adm-nav a:hover {
     background: #503629;
     color: #ffb980
 }
 
-html[data-tema="escuro"] .adm-box p,html[data-tema="escuro"] .adm-topbar p  {
+html[data-tema="escuro"] .adm-box p,html[data-tema="escuro"] .adm-topbar p {
     color: #d5bfb0
 }
 
-html[data-tema="escuro"] .adm-filtros input,html[data-tema="escuro"] .adm-filtros select,html[data-tema="escuro"] .adm-form input  {
+html[data-tema="escuro"] .adm-filtros input,html[data-tema="escuro"] .adm-filtros select,html[data-tema="escuro"] .adm-form input {
     background: #251a15;
     color: #f8ecdf;
     border-color: #574033
 }
 
-html[data-tema="escuro"] .adm-btn  {
+html[data-tema="escuro"] .adm-btn {
     background: #453024;
     color: #ffc193;
     border-color: #574033
 }
 
-@media(max-width:850px)  {
-    .adm-layout  {
+@media(max-width:850px) {
+    .adm-layout {
         grid-template-columns: 1fr
     }
-    .adm-sidebar  {
+    .adm-sidebar {
         padding: 12px 5%;
         gap: 10px;
         border-right: 0;
         border-bottom: 1px solid #eee0d4
     }
-    .adm-brand img  {
+    .adm-brand img {
         width: 35px;
         height: 35px
     }
-    .adm-sidebar-label,.adm-sair  {
+    .adm-sidebar-label,.adm-sair {
         display: none
     }
-    .adm-nav  {
+    .adm-nav {
         flex-direction: row;
         overflow-x: auto;
         padding-bottom: 5px
     }
-    .adm-nav a  {
+    .adm-nav a {
         white-space: nowrap;
         font-size: 12px
     }
-    .adm-main  {
+    .adm-main {
         padding: 20px 5% 45px
     }
 }
 
-@media(max-width:550px)  {
-    .adm-box  {
+@media(max-width:550px) {
+    .adm-box {
         padding: 15px
     }
-    .adm-filtros  {
+    .adm-filtros {
         flex-direction: column
     }
-    .adm-layout .uai-estatisticas  {
+    .adm-layout .uai-estatisticas {
         grid-template-columns: repeat(2,minmax(0,1fr))
     }
-    .adm-layout .uai-estatisticas .uai-card  {
+    .adm-layout .uai-estatisticas .uai-card {
         padding: 14px
     }
-    .adm-topbar h1  {
+    .adm-topbar h1 {
         font-size: 23px
     }
-    .adm-avatar  {
+    .adm-avatar {
         width: 42px;
         height: 42px
     }
-    .adm-secao-titulo h2  {
+    .adm-secao-titulo h2 {
         font-size: 21px
     }
 }
 
-body:has(.adm-layout)  {
+body:has(.adm-layout) {
     background: #f8f4ef!important
 }
 
-.adm-layout  {
+.adm-layout {
     grid-template-columns: 258px minmax(0,1fr);
     background: #f8f4ef
 }
 
-.adm-sidebar  {
+.adm-sidebar {
     background: #251914!important;
     border-right: 1px solid #3e2b21!important;
     padding: 28px 18px;
@@ -368,7 +368,7 @@ body:has(.adm-layout)  {
     align-self: start
 }
 
-.adm-brand  {
+.adm-brand {
     padding: 0 10px 22px;
     border-bottom: 1px solid #483226;
     color: #fff3e7!important;
@@ -376,113 +376,113 @@ body:has(.adm-layout)  {
     letter-spacing: -.7px
 }
 
-.adm-brand img  {
+.adm-brand img {
     background: #fff4ea;
     border-radius: 12px;
     padding: 4px
 }
 
-.adm-brand strong  {
+.adm-brand strong {
     color: #fff3e7
 }
 
-.adm-sidebar-label  {
+.adm-sidebar-label {
     color: #aa9180;
     margin-top: 8px
 }
 
-.adm-nav  {
+.adm-nav {
     gap: 6px
 }
 
-.adm-nav a  {
+.adm-nav a {
     color: #ddc9ba!important;
     padding: 14px 16px;
     border-radius: 12px;
     font-size: 13px
 }
 
-.adm-nav a:hover  {
+.adm-nav a:hover {
     background: #453024!important;
     color: #fff!important
 }
 
-.adm-nav a.ativo  {
+.adm-nav a.ativo {
     background: linear-gradient(100deg,#e15800,#f0782e)!important;
     color: #fff!important;
     box-shadow: 0 7px 18px #e1580030
 }
 
-.adm-sair  {
+.adm-sair {
     color: #d5b8a2!important;
     border: 1px solid #574033;
     margin-top: auto;
     text-align: center
 }
 
-.adm-sair:hover  {
+.adm-sair:hover {
     background: #453024;
     color: #fff!important
 }
 
-.adm-main  {
+.adm-main {
     max-width: 1540px;
     padding: 36px clamp(24px,4vw,64px) 80px
 }
 
-.adm-topbar  {
+.adm-topbar {
     padding-bottom: 24px;
     border-bottom: 1px solid #e8ddd2;
     margin-bottom: 25px
 }
 
-.adm-topbar h1  {
+.adm-topbar h1 {
     font-size: clamp(28px,3vw,38px);
     letter-spacing: -1.1px;
     font-weight: 800;
     color: #352117
 }
 
-.adm-topbar p  {
+.adm-topbar p {
     font-size: 14px
 }
 
-.adm-avatar  {
+.adm-avatar {
     border-radius: 50%;
     width: 52px;
     height: 52px;
     box-shadow: 0 5px 16px #df600d30
 }
 
-.adm-eyebrow,.adm-secao-titulo span  {
+.adm-eyebrow,.adm-secao-titulo span {
     color: #c15b19;
     font-size: 11px;
     letter-spacing: 1.8px
 }
 
-.adm-secao-titulo  {
+.adm-secao-titulo {
     margin: 32px 0 20px
 }
 
-.adm-secao-titulo h2  {
+.adm-secao-titulo h2 {
     color: #3a261c;
     font-size: 25px;
     letter-spacing: -.6px
 }
 
-.adm-layout .uai-nota  {
+.adm-layout .uai-nota {
     border: 1px solid #f0ddcb;
     background: #fff5ec;
     border-radius: 13px;
     margin-bottom: 28px
 }
 
-.adm-layout .uai-estatisticas  {
+.adm-layout .uai-estatisticas {
     gap: 18px;
     margin-bottom: 28px
 }
 
-.adm-layout .uai-estatisticas .uai-card  {
+.adm-layout .uai-estatisticas .uai-card {
     background: #fff;
     border: 1px solid #efe3d9;
     border-radius: 20px;
@@ -493,7 +493,7 @@ body:has(.adm-layout)  {
     overflow: hidden
 }
 
-.adm-layout .uai-estatisticas .uai-card:before  {
+.adm-layout .uai-estatisticas .uai-card:before {
     content: "";
     position: absolute;
     top: 0;
@@ -503,36 +503,36 @@ body:has(.adm-layout)  {
     background: linear-gradient(90deg,#e15800,#ffc48e)
 }
 
-.adm-layout .uai-estatisticas small  {
+.adm-layout .uai-estatisticas small {
     font-size: 12px;
     color: #927b6a;
     font-weight: 600
 }
 
-.adm-layout .uai-estatisticas strong  {
+.adm-layout .uai-estatisticas strong {
     font-size: clamp(22px,2.4vw,30px);
     letter-spacing: -.8px;
     color: #c45b18
 }
 
-.adm-box  {
+.adm-box {
     border-radius: 20px;
     border: 1px solid #eee1d7;
     box-shadow: 0 10px 32px #4223130a!important;
     padding: 28px
 }
 
-.adm-box h3  {
+.adm-box h3 {
     font-size: 18px;
     color: #3a261c
 }
 
-.adm-layout .uai-tabela  {
+.adm-layout .uai-tabela {
     border-collapse: separate;
     border-spacing: 0
 }
 
-.adm-layout .uai-tabela th  {
+.adm-layout .uai-tabela th {
     background: #fff7f0;
     color: #946443;
     font-size: 11px;
@@ -540,78 +540,78 @@ body:has(.adm-layout)  {
     border-bottom: 1px solid #eeded1
 }
 
-.adm-layout .uai-tabela th:first-child  {
+.adm-layout .uai-tabela th:first-child {
     border-radius: 10px 0 0 0
 }
 
-.adm-layout .uai-tabela th:last-child  {
+.adm-layout .uai-tabela th:last-child {
     border-radius: 0 10px 0 0
 }
 
-.adm-layout .uai-tabela td  {
+.adm-layout .uai-tabela td {
     padding: 16px 13px;
     border-bottom: 1px solid #f0e7df;
     color: #5b4336
 }
 
-.adm-layout .uai-tabela tr:last-child td  {
+.adm-layout .uai-tabela tr:last-child td {
     border-bottom: 0
 }
 
-.adm-layout .uai-tabela tbody tr:hover  {
+.adm-layout .uai-tabela tbody tr:hover {
     background: #fffbf7
 }
 
-.adm-layout .uai-tabela button  {
+.adm-layout .uai-tabela button {
     background: #fff0e5;
     color: #b4531a;
     border-color: #f2d8c4;
     font-weight: 700
 }
 
-.adm-layout .uai-tabela button:hover  {
+.adm-layout .uai-tabela button:hover {
     background: #f9dcc6
 }
 
-.adm-layout .uai-status  {
+.adm-layout .uai-status {
     background: #fff0e2;
     color: #b65318
 }
 
-.adm-filtros input,.adm-filtros select,.adm-form input  {
+.adm-filtros input,.adm-filtros select,.adm-form input {
     background: #fffcfa;
     border-color: #e9d9cd;
     border-radius: 12px;
     min-height: 46px
 }
 
-.adm-filtros input:focus,.adm-form input:focus  {
+.adm-filtros input:focus,.adm-form input:focus {
     outline: 2px solid #ed995f;
     outline-offset: 1px
 }
 
-.adm-form  {
+.adm-form {
     gap: 15px
 }
 
-.adm-form label  {
+.adm-form label {
     color: #705548
 }
 
-.adm-layout .uai-botao  {
+.adm-layout .uai-botao {
     min-height: 46px;
     border-radius: 12px;
     box-shadow: 0 5px 15px #e1580020
 }
 
-.adm-btn  {
+.adm-btn {
     background: #fff0e3;
     border-color: #efd7c4;
     border-radius: 12px;
     min-height: 42px
 }
 
-.adm-vazio  {
+.adm-vazio {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -622,163 +622,163 @@ body:has(.adm-layout)  {
     color: #967d6d
 }
 
-.adm-vazio span  {
+.adm-vazio span {
     font-size: 34px
 }
 
-html[data-tema="escuro"] body:has(.adm-layout),html[data-tema="escuro"] .adm-layout  {
+html[data-tema="escuro"] body:has(.adm-layout),html[data-tema="escuro"] .adm-layout {
     background: #1b1411!important
 }
 
-html[data-tema="escuro"] .adm-sidebar  {
+html[data-tema="escuro"] .adm-sidebar {
     background: #211713!important
 }
 
-html[data-tema="escuro"] .adm-topbar  {
+html[data-tema="escuro"] .adm-topbar {
     border-color: #574033
 }
 
-html[data-tema="escuro"] .adm-topbar h1,html[data-tema="escuro"] .adm-secao-titulo h2,html[data-tema="escuro"] .adm-box h3  {
+html[data-tema="escuro"] .adm-topbar h1,html[data-tema="escuro"] .adm-secao-titulo h2,html[data-tema="escuro"] .adm-box h3 {
     color: #f8ecdf
 }
 
-html[data-tema="escuro"] .adm-layout .uai-estatisticas .uai-card,html[data-tema="escuro"] .adm-box  {
+html[data-tema="escuro"] .adm-layout .uai-estatisticas .uai-card,html[data-tema="escuro"] .adm-box {
     background: #30231d!important;
     border-color: #574033!important;
     box-shadow: none!important
 }
 
-html[data-tema="escuro"] .adm-layout .uai-tabela th  {
+html[data-tema="escuro"] .adm-layout .uai-tabela th {
     background: #3e2b22;
     color: #f0c39d;
     border-color: #574033
 }
 
-html[data-tema="escuro"] .adm-layout .uai-tabela td  {
+html[data-tema="escuro"] .adm-layout .uai-tabela td {
     color: #ead8c9;
     border-color: #574033
 }
 
-html[data-tema="escuro"] .adm-layout .uai-tabela tbody tr:hover  {
+html[data-tema="escuro"] .adm-layout .uai-tabela tbody tr:hover {
     background: #3a2a22
 }
 
-html[data-tema="escuro"] .adm-layout .uai-nota  {
+html[data-tema="escuro"] .adm-layout .uai-nota {
     background: #3a281f;
     border-color: #574033;
     color: #f0c39d
 }
 
-html[data-tema="escuro"] .adm-layout .uai-estatisticas strong  {
+html[data-tema="escuro"] .adm-layout .uai-estatisticas strong {
     color: #ffad72
 }
 
-html[data-tema="escuro"] .adm-layout .uai-tabela button  {
+html[data-tema="escuro"] .adm-layout .uai-tabela button {
     background: #4c3428;
     color: #ffc193;
     border-color: #76513e
 }
 
-@media(max-width:850px)  {
-    .adm-layout  {
+@media(max-width:850px) {
+    .adm-layout {
         grid-template-columns: 1fr
     }
-    .adm-sidebar  {
+    .adm-sidebar {
         position: relative;
         top: auto;
         height: auto;
         padding: 14px 5%;
         gap: 8px
     }
-    .adm-brand  {
+    .adm-brand {
         padding: 0 0 10px;
         border-bottom: 0
     }
-    .adm-nav  {
+    .adm-nav {
         gap: 7px
     }
-    .adm-nav a  {
+    .adm-nav a {
         padding: 10px 12px
     }
-    .adm-main  {
+    .adm-main {
         padding: 24px 5% 55px
     }
 }
 
-@media(max-width:550px)  {
-    .adm-main  {
+@media(max-width:550px) {
+    .adm-main {
         padding: 18px 4% 50px
     }
-    .adm-box  {
+    .adm-box {
         padding: 16px
     }
-    .adm-layout .uai-estatisticas  {
+    .adm-layout .uai-estatisticas {
         gap: 10px
     }
-    .adm-layout .uai-estatisticas .uai-card  {
+    .adm-layout .uai-estatisticas .uai-card {
         min-height: 110px;
         padding: 16px
     }
-    .adm-layout .uai-estatisticas strong  {
+    .adm-layout .uai-estatisticas strong {
         font-size: 22px
     }
-    .adm-topbar  {
+    .adm-topbar {
         align-items: flex-start
     }
-    .adm-topbar h1  {
+    .adm-topbar h1 {
         font-size: 26px
     }
-    .adm-secao-titulo  {
+    .adm-secao-titulo {
         align-items: flex-start
     }
-    .adm-secao-titulo h2  {
+    .adm-secao-titulo h2 {
         font-size: 22px
     }
 }
 
-body:has(.adm-layout)  {
+body:has(.adm-layout) {
     background: #FFF9F4!important
 }
 
-.adm-layout  {
+.adm-layout {
     color: #4F3011
 }
 
-.adm-main  {
+.adm-main {
     background: #FFF9F4
 }
 
-.adm-sidebar  {
+.adm-sidebar {
     background: #4F3011!important
 }
 
-.adm-brand  {
+.adm-brand {
     color: #FFD3A5!important
 }
 
-.adm-nav a:hover,.adm-nav a.ativo  {
+.adm-nav a:hover,.adm-nav a.ativo {
     background: #F4A261!important;
     color: #4F3011!important
 }
 
-.adm-eyebrow,.adm-secao-titulo span  {
+.adm-eyebrow,.adm-secao-titulo span {
     color: #B65B2B!important
 }
 
-.adm-avatar  {
+.adm-avatar {
     background: #C96A32!important
 }
 
-.adm-btn  {
+.adm-btn {
     background: #FFF3E8!important;
     color: #91461F!important;
     border-color: #F4D4BA!important
 }
 
-.adm-layout .uai-estatisticas strong  {
+.adm-layout .uai-estatisticas strong {
     color: #B65B2B!important
 }
 
-.adm-box,.adm-layout .uai-estatisticas .uai-card  {
+.adm-box,.adm-layout .uai-estatisticas .uai-card {
     border-color: #F0E0D2!important
 }

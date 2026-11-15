@@ -1,29 +1,29 @@
-*  {
+* {
     box-sizing: border-box
 }
 
-html  {
+html {
     scroll-behavior: smooth
 }
 
-body  {
+body {
     margin: 0;
     font-family: Poppins,Arial,sans-serif;
     background: #fffbf8;
     color: #40291c
 }
 
-.explorar-novo  {
+.explorar-novo {
     max-width: 1320px;
     margin: 0 auto;
     padding: 24px 5% 60px
 }
 
-.explorar-novo a  {
+.explorar-novo a {
     text-decoration: none
 }
 
-.trilha  {
+.trilha {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -36,7 +36,7 @@ body  {
     color: #ad5a28
 }
 
-.hero-explorar,.hero-interno  {
+.hero-explorar,.hero-interno {
     display: grid;
     grid-template-columns: 1.08fr .92fr;
     gap: 28px;
@@ -47,33 +47,33 @@ body  {
     overflow: hidden
 }
 
-.hero-explorar img,.hero-interno img  {
+.hero-explorar img,.hero-interno img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 19px
 }
 
-.sobretitulo  {
+.sobretitulo {
     font-size: 11px;
     letter-spacing: 1px;
     font-weight: 800;
     color: #e15800
 }
 
-.hero-explorar h1,.hero-interno h1  {
+.hero-explorar h1,.hero-interno h1 {
     font-size: clamp(30px,3.7vw,49px);
     line-height: 1.18;
     margin: 14px 0 16px;
     letter-spacing: -1px
 }
 
-.hero-explorar h1 em,.hero-interno h1 em  {
+.hero-explorar h1 em,.hero-interno h1 em {
     font-style: normal;
     color: #e15800
 }
 
-.hero-explorar p,.hero-interno p  {
+.hero-explorar p,.hero-interno p {
     font-size: 14px;
     line-height: 1.8;
     color: #795f50;
@@ -81,7 +81,7 @@ body  {
     margin-bottom: 25px
 }
 
-.botao-primario  {
+.botao-primario {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -94,15 +94,15 @@ body  {
     font-weight: 700
 }
 
-.botao-primario:hover  {
+.botao-primario:hover {
     background: #bd4a00
 }
 
-.secao  {
+.secao {
     margin-top: 52px
 }
 
-.cabeca-secao  {
+.cabeca-secao {
     display: flex;
     align-items: end;
     justify-content: space-between;
@@ -110,31 +110,31 @@ body  {
     margin-bottom: 22px
 }
 
-.cabeca-secao h2  {
+.cabeca-secao h2 {
     font-size: 28px;
     margin: 6px 0 0
 }
 
-.cabeca-secao p  {
+.cabeca-secao p {
     font-size: 13px;
     color: #8b776b;
     margin: 6px 0 0
 }
 
-.link-secao  {
+.link-secao {
     color: #e15800;
     font-size: 13px;
     font-weight: 700;
     white-space: nowrap
 }
 
-.escolhas  {
+.escolhas {
     display: grid;
     grid-template-columns: repeat(2,minmax(0,1fr));
     gap: 22px
 }
 
-.escolha  {
+.escolha {
     min-height: 260px;
     display: grid;
     grid-template-columns: 1.1fr .9fr;
@@ -148,23 +148,23 @@ body  {
     transition: transform .2s,box-shadow .2s
 }
 
-.escolha-restaurantes  {
+.escolha-restaurantes {
     background: #fff8ed
 }
 
-.escolha:hover  {
+.escolha:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 30px #65330d16
 }
 
-.escolha img  {
+.escolha img {
     width: 100%;
     height: 185px;
     object-fit: cover;
     border-radius: 15px
 }
 
-.tag  {
+.tag {
     display: inline-block;
     background: white;
     color: #d75905;
@@ -174,35 +174,35 @@ body  {
     padding: 8px 11px
 }
 
-.escolha h3  {
+.escolha h3 {
     font-size: 26px;
     margin: 16px 0 9px
 }
 
-.escolha p  {
+.escolha p {
     font-size: 12px;
     line-height: 1.7;
     color: #806b5e
 }
 
-.escolha strong  {
+.escolha strong {
     display: inline-block;
     color: #e15800;
     font-size: 13px;
     margin-top: 14px
 }
 
-.grade-cards  {
+.grade-cards {
     display: grid;
     grid-template-columns: repeat(3,minmax(0,1fr));
     gap: 20px
 }
 
-.grade-quatro  {
+.grade-quatro {
     grid-template-columns: repeat(4,minmax(0,1fr))
 }
 
-.card-produto,.card-restaurante  {
+.card-produto,.card-restaurante {
     background: white;
     border: 1px solid #f1e5dc;
     border-radius: 18px;
@@ -211,18 +211,18 @@ body  {
     min-width: 0
 }
 
-.card-produto>img,.card-restaurante>img,.foto-produto img  {
+.card-produto>img,.card-restaurante>img,.foto-produto img {
     width: 100%;
     height: 190px;
     object-fit: cover;
     display: block
 }
 
-.foto-produto  {
+.foto-produto {
     position: relative
 }
 
-.desconto  {
+.desconto {
     position: absolute;
     top: 13px;
     left: 13px;
@@ -234,30 +234,30 @@ body  {
     font-weight: 800
 }
 
-.card-corpo  {
+.card-corpo {
     padding: 20px
 }
 
-.mini-label  {
+.mini-label {
     font-size: 10px;
     font-weight: 800;
     color: #e15800;
     letter-spacing: .5px
 }
 
-.card-corpo h3  {
+.card-corpo h3 {
     font-size: 17px;
     margin: 9px 0
 }
 
-.card-corpo p  {
+.card-corpo p {
     font-size: 12px;
     color: #89766a;
     line-height: 1.7;
     min-height: 40px
 }
 
-.card-corpo>a  {
+.card-corpo>a {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -267,7 +267,7 @@ body  {
     margin-top: 13px
 }
 
-.valores  {
+.valores {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -275,29 +275,29 @@ body  {
     margin: 15px 0
 }
 
-.valores del  {
+.valores del {
     font-size: 12px;
     color: #9f9189
 }
 
-.valores strong  {
+.valores strong {
     font-size: 20px;
     color: #e15800
 }
 
-.card-corpo .acao-card  {
+.card-corpo .acao-card {
     display: flex;
     background: #fff0e5;
     padding: 12px 14px;
     border-radius: 10px
 }
 
-.card-corpo .acao-card:hover  {
+.card-corpo .acao-card:hover {
     background: #e15800;
     color: white
 }
 
-.faixa-navegacao  {
+.faixa-navegacao {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -308,86 +308,86 @@ body  {
     border-radius: 18px
 }
 
-.faixa-navegacao h2  {
+.faixa-navegacao h2 {
     font-size: 21px;
     margin: 0 0 6px
 }
 
-.faixa-navegacao p  {
+.faixa-navegacao p {
     font-size: 13px;
     color: #897164;
     margin: 0
 }
 
-.aviso-demo  {
+.aviso-demo {
     font-size: 11px;
     color: #9b877b;
     line-height: 1.7;
     margin-top: 30px
 }
 
-@media(max-width:1050px)  {
-    .grade-quatro  {
+@media(max-width:1050px) {
+    .grade-quatro {
         grid-template-columns: repeat(2,minmax(0,1fr))
     }
-    .escolha  {
+    .escolha {
         grid-template-columns: 1fr
     }
-    .escolha img  {
+    .escolha img {
         height: 150px;
         order: -1
     }
 }
 
-@media(max-width:750px)  {
-    .hero-explorar,.hero-interno  {
+@media(max-width:750px) {
+    .hero-explorar,.hero-interno {
         grid-template-columns: 1fr;
         padding: 25px
     }
-    .hero-explorar img,.hero-interno img  {
+    .hero-explorar img,.hero-interno img {
         height: 210px
     }
-    .grade-cards  {
+    .grade-cards {
         grid-template-columns: repeat(2,minmax(0,1fr))
     }
-    .escolhas  {
+    .escolhas {
         gap: 14px
     }
 }
 
-@media(max-width:540px)  {
-    .explorar-novo  {
+@media(max-width:540px) {
+    .explorar-novo {
         padding: 18px 5% 45px
     }
-    .escolhas,.grade-cards  {
+    .escolhas,.grade-cards {
         grid-template-columns: 1fr
     }
-    .escolha  {
+    .escolha {
         grid-template-columns: 1fr;
         min-height: 0;
         padding: 18px
     }
-    .escolha img  {
+    .escolha img {
         height: 170px
     }
-    .escolha h3  {
+    .escolha h3 {
         font-size: 22px
     }
-    .secao  {
+    .secao {
         margin-top: 35px
     }
-    .cabeca-secao h2  {
+    .cabeca-secao h2 {
         font-size: 23px
     }
-    .card-produto>img,.card-restaurante>img,.foto-produto img  {
+    .card-produto>img,.card-restaurante>img,.foto-produto img {
         height: 190px
     }
-    .faixa-navegacao  {
+    .faixa-navegacao {
         flex-direction: column;
         align-items: flex-start;
         padding: 22px
     }
-    .hero-explorar h1,.hero-interno h1  {
+    .hero-explorar h1,.hero-interno h1 {
         font-size: 31px
     }
 }

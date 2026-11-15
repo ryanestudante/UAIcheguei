@@ -1,10 +1,10 @@
-*   {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body   {
+body {
     background-image: url(https://uploads.onecompiler.io/44g7ujbgc/1787313298296/ChatGPT%20Image%2021%20de%20ago.%20de%202026,%2008_45_55.png);
     font-family: 'Poppins', Arial, sans-serif;
     min-height: 100vh;
@@ -14,7 +14,7 @@ body   {
     padding: 30px;
 }
 
-.container   {
+.container {
     width: 100%;
     max-width: 1150px;
     min-height: 650px;
@@ -28,37 +28,37 @@ body   {
     box-shadow: 0 10px 40px rgba(79, 48, 17, 0.10);
 }
 
-.caixa-branca   {
+.caixa-branca {
     width: 430px;
     padding: 15px;
     text-align: center;
 }
 
-.logo   {
+.logo {
     width: 120px;
     margin-bottom: 20px;
 }
 
-.caixa-branca h1   {
+.caixa-branca h1 {
     font-size: 30px;
     color: #e15800;
     margin-bottom: 5px;
 }
 
-.caixa-branca h2   {
+.caixa-branca h2 {
     font-size: 24px;
     color: #4f3011;
     margin-bottom: 10px;
 }
 
-.descricao   {
+.descricao {
     color: #999;
     font-size: 13px;
     margin-bottom: 30px;
     line-height: 1.7;
 }
 
-.campo-form   {
+.campo-form {
     width: 100%;
     padding: 15px 18px;
     margin-bottom: 17px;
@@ -71,17 +71,17 @@ body   {
     transition: 0.3s;
 }
 
-.campo-form:focus   {
+.campo-form:focus {
     border-color: #e15800;
     background: white;
     box-shadow: 0 0 0 3px #e1580015;
 }
 
-.campo-form::placeholder   {
+.campo-form::placeholder {
     color: #aaa;
 }
 
-.buton-entrar   {
+.buton-entrar {
     width: 100%;
     padding: 14px;
     margin-top: 5px;
@@ -96,23 +96,23 @@ body   {
     transition: 0.3s;
 }
 
-.buton-entrar:hover   {
+.buton-entrar:hover {
     background: #c94d00;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px #e1580030;
 }
 
-.buton-entrar:active   {
+.buton-entrar:active {
     transform: scale(0.98);
 }
 
-#mensagem   {
+#mensagem {
     color: #d62828;
     font-size: 12px;
     margin-top: 12px;
 }
 
-.esqueci   {
+.esqueci {
     display: block;
     margin-top: 18px;
     color: #e15800;
@@ -120,11 +120,11 @@ body   {
     font-size: 13px;
 }
 
-.esqueci:hover   {
+.esqueci:hover {
     text-decoration: underline;
 }
 
-.criar-conta   {
+.criar-conta {
     display: block;
     margin-top: 20px;
     color: #777;
@@ -132,16 +132,16 @@ body   {
     text-decoration: none;
 }
 
-.criar-conta span   {
+.criar-conta span {
     color: #e15800;
     font-weight: 600;
 }
 
-.criar-conta:hover span   {
+.criar-conta:hover span {
     text-decoration: underline;
 }
 
-.uai_imagem   {
+.uai_imagem {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -153,13 +153,13 @@ body   {
     min-height: 520px;
 }
 
-.uai_imagem img   {
+.uai_imagem img {
     width: 100%;
     max-width: 500px;
     object-fit: contain;
 }
 
-.caixa-marrom   {
+.caixa-marrom {
     background: #4f3011;
     color: white;
     padding: 15px 25px;
@@ -170,40 +170,40 @@ body   {
     margin-top: 15px;
 }
 
-.laranja   {
+.laranja {
     color: #f27029;
 }
 
-@media (max-width: 850px)   {
-    body   {
+@media (max-width: 850px) {
+    body {
         padding: 15px;
     }
-    .container   {
+    .container {
         max-width: 500px;
         padding: 30px 20px;
     }
-    .caixa-branca   {
+    .caixa-branca {
         width: 100%;
     }
-    .uai_imagem   {
+    .uai_imagem {
         display: none;
     }
 }
 
-@media (max-width: 500px)   {
-    .container   {
+@media (max-width: 500px) {
+    .container {
         padding: 25px 15px;
         border-radius: 18px;
     }
-    .caixa-branca h1   {
+    .caixa-branca h1 {
         font-size: 26px;
     }
-    .caixa-branca h2   {
+    .caixa-branca h2 {
         font-size: 21px;
     }
 }
 
-.voltar-inicio  {
+.voltar-inicio {
     display: inline-flex;
     align-items: center;
     gap: 7px;
@@ -215,15 +215,15 @@ body   {
     align-self: flex-start
 }
 
-.voltar-inicio:hover  {
+.voltar-inicio:hover {
     text-decoration: underline
 }
 
-.caixa-branca  {
+.caixa-branca {
     text-align: center
 }
 
-.caixa-branca .voltar-inicio  {
+.caixa-branca .voltar-inicio {
     display: flex;
     text-align: left
 }

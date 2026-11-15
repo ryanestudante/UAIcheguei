@@ -1,4 +1,4 @@
-html[data-tema="escuro"]  {
+html[data-tema="escuro"] {
     color-scheme: dark;
     --cafe-fundo: #1b1411;
     --cafe-topo: #241a16;
@@ -10,108 +10,108 @@ html[data-tema="escuro"]  {
     --cafe-acento: #ffad72;
 }
 
-html[data-tema="escuro"] body  {
+html[data-tema="escuro"] body {
     background: var(--cafe-fundo)!important;
     color: var(--cafe-texto)!important
 }
 
-html[data-tema="escuro"] :is(.cliente-cabecalho,.cliente-topo,.cliente-menu,.cabecalho,.topo,.header,.navbar,.sidebar,.menu-lateral)  {
+html[data-tema="escuro"] :is(.cliente-cabecalho,.cliente-topo,.cliente-menu,.cabecalho,.topo,.header,.navbar,.sidebar,.menu-lateral) {
     background: var(--cafe-topo)!important;
     color: var(--cafe-texto)!important;
     border-color: var(--cafe-borda)!important
 }
 
-html[data-tema="escuro"] :is(.pagina-cliente,.explorar-novo,.pagina-conta,.conteudo,.container,.principal,main)  {
+html[data-tema="escuro"] :is(.pagina-cliente,.explorar-novo,.pagina-conta,.conteudo,.container,.principal,main) {
     color: var(--cafe-texto)
 }
 
-html[data-tema="escuro"] :is(.boas-vindas,.hero-explorar,.hero-interno,.banner-ofertas,.titulo,.faixa-navegacao,.faixa,.escolha,.escolha-ofertas,.escolha-restaurantes)  {
+html[data-tema="escuro"] :is(.boas-vindas,.hero-explorar,.hero-interno,.banner-ofertas,.titulo,.faixa-navegacao,.faixa,.escolha,.escolha-ofertas,.escolha-restaurantes) {
     background: linear-gradient(115deg,#38251b,#4a3022)!important;
     color: var(--cafe-texto)!important;
     border-color: var(--cafe-borda)!important
 }
 
-html[data-tema="escuro"] :is(.prato,.card-produto,.card-restaurante,.categorias-cliente a,.atalhos-cliente>*,.detalhe-produto,.restaurante-card,.comida-card,.caixa-branca,.form-box,.caixa,.card,.painel,.informacoes,.formulario,.dados,.secao-conta,.pedido,.item-carrinho,.restaurante-grid article)  {
+html[data-tema="escuro"] :is(.prato,.card-produto,.card-restaurante,.categorias-cliente a,.atalhos-cliente>*,.detalhe-produto,.restaurante-card,.comida-card,.caixa-branca,.form-box,.caixa,.card,.painel,.informacoes,.formulario,.dados,.secao-conta,.pedido,.item-carrinho,.restaurante-grid article) {
     background: var(--cafe-card)!important;
     color: var(--cafe-texto)!important;
     border-color: var(--cafe-borda)!important;
     box-shadow: 0 10px 30px #0002!important
 }
 
-html[data-tema="escuro"] :is(.preco-painel,.infos-rapidas>div,.observacao-detalhe,.card-corpo .acao-card,.pedir,.botao-secundario,.etiqueta,.tag,.selo,.voltar-detalhes,.controles-carrossel button,.cliente-menu a)  {
+html[data-tema="escuro"] :is(.preco-painel,.infos-rapidas>div,.observacao-detalhe,.card-corpo .acao-card,.pedir,.botao-secundario,.etiqueta,.tag,.selo,.voltar-detalhes,.controles-carrossel button,.cliente-menu a) {
     background: var(--cafe-elevado)!important;
     color: var(--cafe-acento)!important;
     border-color: var(--cafe-borda)!important
 }
 
-html[data-tema="escuro"] :is(h1,h2,h3,h4,h5,h6,.cliente-marca,.cliente-acoes a,.rodape-coluna a,.card-corpo h3,.prato h3,.categorias-cliente strong)  {
+html[data-tema="escuro"] :is(h1,h2,h3,h4,h5,h6,.cliente-marca,.cliente-acoes a,.rodape-coluna a,.card-corpo h3,.prato h3,.categorias-cliente strong) {
     color: var(--cafe-texto)!important
 }
 
-html[data-tema="escuro"] :is(p,small,.detalhe-info p,.card-corpo p,.cabeca-secao p,.prato p,.atalhos-cliente p,.boas-vindas p,.hero-explorar p,.hero-interno p,.escolha p,.nota,.aviso-demo)  {
+html[data-tema="escuro"] :is(p,small,.detalhe-info p,.card-corpo p,.cabeca-secao p,.prato p,.atalhos-cliente p,.boas-vindas p,.hero-explorar p,.hero-interno p,.escolha p,.nota,.aviso-demo) {
     color: var(--cafe-suave)!important
 }
 
-html[data-tema="escuro"] :is(input,textarea,select)  {
+html[data-tema="escuro"] :is(input,textarea,select) {
     background: #241a16!important;
     color: var(--cafe-texto)!important;
     border: 1px solid #6b4c3a!important
 }
 
-html[data-tema="escuro"] :is(input,textarea)::placeholder  {
+html[data-tema="escuro"] :is(input,textarea)::placeholder {
     color: #bca99a!important
 }
 
-html[data-tema="escuro"] :is(.cliente-busca,.cliente-busca label)  {
+html[data-tema="escuro"] :is(.cliente-busca,.cliente-busca label) {
     background: var(--cafe-elevado)!important;
     color: var(--cafe-acento)!important;
     border-color: var(--cafe-borda)!important
 }
 
-html[data-tema="escuro"] .cliente-busca input  {
+html[data-tema="escuro"] .cliente-busca input {
     background: transparent!important;
     border: 0!important
 }
 
-html[data-tema="escuro"] :is(.rodape-uai,.rodape-conteudo,.rodape-final)  {
+html[data-tema="escuro"] :is(.rodape-uai,.rodape-conteudo,.rodape-final) {
     background: #201713!important;
     color: var(--cafe-texto)!important;
     border-color: var(--cafe-borda)!important
 }
 
-html[data-tema="escuro"] :is(.rodape-uai p,.rodape-final span)  {
+html[data-tema="escuro"] :is(.rodape-uai p,.rodape-final span) {
     color: var(--cafe-suave)!important
 }
 
-html[data-tema="escuro"] :is(.sobretitulo,.mini-label,.secao-titulo span,.cabeca-secao span,.link-secao,.card-corpo>a,.trilha a,.voltar-inicio,.valores strong,.detalhe-precos strong,.economia,.preco-legenda,.etiqueta-categoria)  {
+html[data-tema="escuro"] :is(.sobretitulo,.mini-label,.secao-titulo span,.cabeca-secao span,.link-secao,.card-corpo>a,.trilha a,.voltar-inicio,.valores strong,.detalhe-precos strong,.economia,.preco-legenda,.etiqueta-categoria) {
     color: var(--cafe-acento)!important
 }
 
-html[data-tema="escuro"] :is(.botao-principal,.botao-primario,.desconto,.etiqueta-desconto)  {
+html[data-tema="escuro"] :is(.botao-principal,.botao-primario,.desconto,.etiqueta-desconto) {
     background: #d65a13!important;
     color: #fff!important
 }
 
-html[data-tema="escuro"] :is(.botao-principal,.botao-primario,.cliente-menu a):hover  {
+html[data-tema="escuro"] :is(.botao-principal,.botao-primario,.cliente-menu a):hover {
     background: #f07830!important;
     color: #fff!important
 }
 
-html[data-tema="escuro"] :is(.card-produto,.card-restaurante,.prato,.escolha):hover  {
+html[data-tema="escuro"] :is(.card-produto,.card-restaurante,.prato,.escolha):hover {
     border-color: #b37a56!important
 }
 
-html[data-tema="escuro"] .selo-foto  {
+html[data-tema="escuro"] .selo-foto {
     background: #f6dfc8!important;
     color: #713b1c!important
 }
 
-html[data-tema="escuro"] :is(a,button,input):focus-visible  {
+html[data-tema="escuro"] :is(a,button,input):focus-visible {
     outline: 3px solid #ffc08b;
     outline-offset: 3px
 }
 
-.botao-tema-uai  {
+.botao-tema-uai {
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -134,25 +134,25 @@ html[data-tema="escuro"] :is(a,button,input):focus-visible  {
     transition: background .2s,transform .2s
 }
 
-.botao-tema-uai:hover  {
+.botao-tema-uai:hover {
     background: #d65a13;
     color: white;
     transform: translateY(-2px)
 }
 
-html[data-tema="escuro"] .botao-tema-uai  {
+html[data-tema="escuro"] .botao-tema-uai {
     background: #e9c8a8;
     color: #382318;
     border-color: #e7b98e
 }
 
-html[data-tema="escuro"] .botao-tema-uai:hover  {
+html[data-tema="escuro"] .botao-tema-uai:hover {
     background: #ffdbb6;
     color: #382318
 }
 
-@media(max-width:600px)  {
-    .botao-tema-uai  {
+@media(max-width:600px) {
+    .botao-tema-uai {
         right: 12px;
         bottom: 12px;
         padding: 11px 13px;
@@ -160,8 +160,8 @@ html[data-tema="escuro"] .botao-tema-uai:hover  {
     }
 }
 
-@media(prefers-reduced-motion:reduce)  {
-    .botao-tema-uai  {
+@media(prefers-reduced-motion:reduce) {
+    .botao-tema-uai {
         transition: none
     }
 }
