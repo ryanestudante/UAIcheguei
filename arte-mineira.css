@@ -1,0 +1,20 @@
+:root{--uai-laranja:#e7650b;--uai-terracota:#bb4a17;--uai-creme:#fff5e9;--uai-terra:#56351e}
+body{background-color:#fffaf5}
+.cliente-menu,.menu{border-bottom:2px solid #f4d6b9}
+.cliente-menu a:hover,.menu a:hover{color:var(--uai-laranja)}
+.explorar-novo .sobretitulo,.pagina-categoria .mini-label,.vitrine-sobretitulo,.cp-sobretitulo{letter-spacing:1.7px;color:var(--uai-terracota);font-weight:800}
+.explorar-novo .cabeca-secao h2,.categorias-pagina h1,.pagina-categoria .intro h1,.cp-titulo h1{color:var(--uai-terra)}
+.explorar-novo .cabeca-secao h2:after,.categorias-pagina h1:after,.pagina-categoria .intro h1:after{content:"";display:block;width:65px;height:5px;margin-top:10px;border-radius:8px;background:linear-gradient(90deg,#ef790c,#ffcc84)}
+.card-produto,.card-restaurante,.produto-categoria,.categoria-cartao,.vitrine-card{border-radius:18px!important;border:1px solid #f4dfcb!important;box-shadow:0 7px 24px #a55b2010;transition:transform .2s,box-shadow .2s}
+.card-produto:hover,.card-restaurante:hover,.produto-categoria:hover,.categoria-cartao:hover,.vitrine-card:hover{transform:translateY(-4px);box-shadow:0 12px 27px #a55b2020}
+.card-produto img,.card-restaurante img,.produto-categoria img,.vitrine-card img{object-fit:cover}
+.botao-primario,.cp-botao,.produto-acao,.acao-card{border-radius:12px}
+.categorias-hero,.hero-interno,.pagina-categoria .intro{position:relative;overflow:hidden;background-image:radial-gradient(circle at 94% 8%,#ffcf9b4a 0 75px,transparent 76px),radial-gradient(circle at 100% 100%,#e87c2c1c 0 125px,transparent 126px)}
+.categorias-hero:after,.hero-interno:after{content:"✦";position:absolute;right:25px;top:15px;color:#e8761680;font-size:30px;pointer-events:none}
+.categoria-cartao:nth-child(3n+1),.produto-categoria:nth-child(3n+1){border-bottom:3px solid #e96b13!important}
+.categoria-cartao:nth-child(3n+2),.produto-categoria:nth-child(3n+2){border-bottom:3px solid #eeb978!important}
+.categoria-cartao:nth-child(3n),.produto-categoria:nth-child(3n){border-bottom:3px solid #b96637!important}
+.rodape-uai:before,.rodape-simples:before{content:"";display:block;height:9px;background:repeating-linear-gradient(90deg,#ed761c 0 28px,#ffcb87 28px 48px,#fff3e3 48px 58px);opacity:.65}
+.cp-painel,.cp-produto{border-color:#f3ddc8}
+.trilha,.cp-trilha{color:#a9673e}
+@media(max-width:600px){.categorias-hero:after,.hero-interno:after{right:10px;font-size:22px}}
