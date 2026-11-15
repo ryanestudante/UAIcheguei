@@ -18,7 +18,7 @@ const CONTAS_PADRAO = [
         email: "dono@gmail.com",
         senha: "123456",
         nome: "Restaurante",
-        pagina: "restaurante-painel.html"
+        pagina: "restaurante.html"
     },
     {
         cpf: "11122233344",
@@ -32,7 +32,7 @@ const CONTAS_PADRAO = [
         email: "admin@gmail.com",
         senha: "123456",
         nome: "Administrador",
-        pagina: "administrador.html"
+        pagina: "admin.html"
     }
 ];
 
