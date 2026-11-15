@@ -1,0 +1,213 @@
+.marca-formulario {
+    display: none;
+}
+
+.uai_imagem img.logo-destaque,
+.uai-imagem img.logo-destaque,
+.imagem-box img.logo-destaque {
+    display: block;
+    width: min(250px, 90%) !important;
+    max-width: 250px !important;
+    max-height: 260px;
+    height: auto;
+    object-fit: contain;
+    padding: 14px;
+    background: #fff6e9;
+    border-radius: 24px !important;
+    box-shadow: 0 12px 28px #6d300929;
+}
+
+.rotulo-acesso {
+    display: block;
+    margin: 8px 2px 6px;
+    color: #704a35;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.caixa-branca .campo-form,
+.form-box .campo-form {
+    margin-bottom: 11px;
+}
+
+.caixa-branca .descricao,
+.form-box > .descricao {
+    margin-bottom: 18px !important;
+}
+
+.caixa-branca .buton-entrar,
+.form-box .botao,
+.form-box .buton-entrar {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.caixa-branca button:disabled,
+.form-box button:disabled {
+    opacity: .65;
+    cursor: wait;
+}
+
+.mensagem-acesso {
+    min-height: 22px;
+    margin-top: 12px !important;
+    color: #a22f16 !important;
+    font-size: 12px !important;
+    line-height: 1.5;
+}
+
+.mensagem-acesso.sucesso {
+    color: #26652e !important;
+}
+
+.aviso-local {
+    margin: 15px 0 0 !important;
+    color: #82634d !important;
+    font-size: 11px !important;
+    line-height: 1.65;
+}
+
+.caixa-branca .esqueci {
+    margin-top: 18px;
+}
+
+.caixa-branca .criar-conta {
+    margin-top: 16px !important;
+}
+
+.resultado-cadastro {
+    padding: 18px;
+    border: 1px solid #efd6be;
+    border-radius: 14px;
+    background: #fff8f1;
+}
+
+.resultado-cadastro[hidden],
+form[hidden] {
+    display: none !important;
+}
+
+.resultado-cadastro h2 {
+    color: #9e4317;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.resultado-cadastro p {
+    margin-bottom: 13px;
+    line-height: 1.6;
+}
+
+.codigo-recuperacao {
+    display: block;
+    overflow-wrap: anywhere;
+    padding: 13px;
+    background: white;
+    border: 1px dashed #be7448;
+    border-radius: 10px;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    color: #713919;
+}
+
+.botao-continuar {
+    display: block;
+    margin-top: 17px;
+    padding: 13px 20px;
+    background: #b95118;
+    color: white !important;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.demonstracoes {
+    margin-top: 16px;
+    font-size: 12px;
+    color: #785f4d;
+}
+
+.demonstracoes summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.demonstracoes a {
+    display: inline-block;
+    margin: 11px 14px 2px 0;
+    color: #a54b18;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+    .marca-formulario {
+        display: block;
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin: 0 auto 18px;
+        padding: 6px;
+        background: #fff1de;
+        border-radius: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .caixa-branca,
+    .form-box {
+        padding: 30px 22px !important;
+    }
+
+    .marca-formulario {
+        width: 70px;
+        height: 70px;
+    }
+
+    .codigo-recuperacao {
+        font-size: 12px;
+        letter-spacing: .6px;
+    }
+}
+
+.sessao-demo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    max-width: 1260px;
+    margin: 24px auto;
+    padding: 15px 21px;
+    background: #fff3df;
+    color: #6f3b19;
+    border: 1px solid #eac19c;
+    border-radius: 14px;
+}
+
+.sessao-demo[hidden] {
+    display: none;
+}
+
+.sessao-demo p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.sessao-demo button {
+    border: 0;
+    border-radius: 9px;
+    padding: 9px 17px;
+    font: 600 13px Poppins, Arial, sans-serif;
+    color: white;
+    background: #a74413;
+    cursor: pointer;
+}
+
+@media (max-width: 540px) {
+    .sessao-demo {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 15px 4%;
+    }
+}

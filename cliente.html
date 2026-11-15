@@ -39,6 +39,8 @@
 @media(max-width:600px){.banner-sabor{grid-template-columns:1fr 1fr;gap:15px;padding:28px 18px 42px}.banner-centro{grid-column:1/-1;grid-row:1}.banner-centro h1{font-size:53px}.banner-foto-esq{grid-column:1;grid-row:2;width:145px}.banner-direita{grid-column:2;grid-row:2;height:165px}.banner-foto-dir{width:140px;transform:rotate(10deg)}.banner-desconto{right:-3px;top:-15px;width:65px;height:65px;font-size:12px}.banner-faixa{display:none}.banner-estrela.tres{right:10%;top:12%}}
 </style><link rel="stylesheet" href="arte-mineira.css">
 <link rel="stylesheet" href="topo-mobile.css?v=2">
+<link rel="stylesheet" href="acesso-funcional.css?v=1">
+<script src="acesso-local.js?v=1" defer></script>
 </head>
     <body>
         <header class="cliente-cabecalho">
@@ -63,6 +65,7 @@
             </nav>
         </header>
         <main class="explorar-novo">
+<section class="sessao-demo" id="sessao-demo" hidden><p>Olá, <strong id="nome-sessao"></strong>! Seu acesso demonstrativo está ativo neste navegador.</p><button type="button" id="sair-demo">Sair</button></section>
 
                 <section class="banner-sabor" aria-label="Destaque UAIcheguei">
 <span class="banner-estrela um" aria-hidden="true">✦</span><span class="banner-estrela dois" aria-hidden="true">✳</span><span class="banner-estrela tres" aria-hidden="true">✦</span>
