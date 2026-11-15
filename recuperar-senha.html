@@ -68,7 +68,7 @@
             </div>
             <div class="imagem-box">
                 <img
-                src="https://uploads.onecompiler.io/44g7ujbgc/1787314084228/C%C3%B3pia_de_UAIcheguei__2_-removebg-preview.png"
+                src="logo.png"
                 alt="Ilustração UAIcheguei"
                 >
                 <div class="caixa-marrom">Seu cantinho de sabores <span class="laranja">mineiros!</span>
@@ -76,66 +76,51 @@
             </div>
         </div>
         <script>
+    // Recuperação demonstrativa: não envia códigos nem altera senhas reais.
+    function mostrarMensagem(texto) {
+        const mensagem = document.getElementById("mensagem");
+        mensagem.style.color = "#a33d0d";
+        mensagem.textContent = texto;
+    }
 
-        function continuarEmail() {
-            let email = document.getElementById("email").value;
-            let mensagem = document.getElementById("mensagem");
+    function continuarEmail() {
+        const email = document.getElementById("email").value.trim();
 
-            if (email === "") {
-                mensagem.style.color = "red";
-                mensagem.innerText = "Digite seu e-mail!";
-                return;
-            }
-
-            if (!email.includes("@") || !email.includes(".")) {
-                mensagem.style.color = "red";
-                mensagem.innerText = "Digite um e-mail válido!";
-                return;
-            }
-
-            mensagem.innerText = "";
-
-            document.getElementById("etapaEmail").classList.remove("ativa");
-            document.getElementById("etapaCodigo").classList.add("ativa");
+        if (!email || !email.includes("@") || !email.includes(".")) {
+            mostrarMensagem("Digite um e-mail válido.");
+            return;
         }
 
-        function continuarCodigo() {
-            let codigo = document.getElementById("codigo").value;
-            let mensagem = document.getElementById("mensagem");
+        mostrarMensagem("");
+        document.getElementById("etapaEmail").classList.remove("ativa");
+        document.getElementById("etapaCodigo").classList.add("ativa");
+    }
 
-            if (codigo === "") {
-                mensagem.style.color = "red";
-                mensagem.innerText = "Digite o código!";
-                return;
-            }
+    function continuarCodigo() {
+        const codigo = document.getElementById("codigo").value.trim();
 
-            mensagem.innerText = "";
-
-            document.getElementById("etapaCodigo").classList.remove("ativa");
-            document.getElementById("etapaSenha").classList.add("ativa");
+        if (!codigo) {
+            mostrarMensagem("Digite o código.");
+            return;
         }
 
-        function redefinirSenha() {
-            let senha = document.getElementById("senha").value;
-            let confirmarSenha = document.getElementById("confirmarSenha").value;
-            let mensagem = document.getElementById("mensagem");
+        mostrarMensagem("");
+        document.getElementById("etapaCodigo").classList.remove("ativa");
+        document.getElementById("etapaSenha").classList.add("ativa");
+    }
 
-            if (senha === "" || confirmarSenha === "") {
-                mensagem.style.color = "red";
-                mensagem.innerText = "Preencha os dois campos!";
-                return;
-            }
+    function redefinirSenha() {
+        const senha = document.getElementById("senha").value;
+        const confirmacao = document.getElementById("confirmarSenha").value;
 
-            if (senha !== confirmarSenha) {
-                mensagem.style.color = "red";
-                mensagem.innerText = "As senhas não são iguais!";
-                return;
-            }
-
-            mensagem.style.color = "green";
-            mensagem.innerText = "Senha redefinida com sucesso!";
+        if (!senha || !confirmacao) {
+            mostrarMensagem("Preencha os dois campos.");
+        } else if (senha !== confirmacao) {
+            mostrarMensagem("As senhas não conferem.");
+        } else {
+            mostrarMensagem("Simulação concluída. Sua senha real não foi alterada.");
         }
-
-    </script>
+    }
+</script>
     </body>
 </html>
