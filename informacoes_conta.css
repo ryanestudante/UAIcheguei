@@ -363,3 +363,15 @@ body {
 .acoes-formulario button:hover {
     background: #f27029;
 }
+
+/* Ajuste final: paleta compartilhada do site */
+.menu-conta {background:#634633;border-color:#634633}
+.menu-conta h2 {color:#fff9f4}
+.menu-conta a {color:#fff3e8}
+.menu-conta a:hover,.menu-conta .selecionado {background:#c96a32;color:#fff}
+.campo input {background:#fff3e8;border-color:#f0d6c1}
+.campo input:focus {border-color:#c96a32;box-shadow:0 0 0 3px #c96a3226}
+.cabeca-secao > span {background:#ffe5cc}
+.cabeca-secao h2,.campo label {color:#634633}
+.acoes-formulario button {background:#c96a32}
+.acoes-formulario button:hover {background:#ad5726}
