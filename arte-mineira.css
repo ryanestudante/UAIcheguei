@@ -130,3 +130,16 @@ body{background-image:
  .cliente-cabecalho .cliente-menu{gap:3px 5px!important;padding:9px 3%!important}
  .cliente-cabecalho .cliente-menu a{font-size:11px!important;padding:8px 10px!important}
 }
+
+/* Área da marca transparente, sem bloco de fundo */
+.cliente-cabecalho .cliente-marca,
+.cliente-cabecalho .cliente-marca img,
+.cabecalho .marca,
+.cabecalho .marca img{
+ background:transparent!important;
+ background-color:transparent!important;
+ box-shadow:none!important;
+ border:0!important;
+}
+.cliente-cabecalho .cliente-topo,
+.cabecalho .topo{background:transparent!important}
