@@ -1,0 +1,39 @@
+/* Topo exclusivo da intranet do dono do restaurante */
+body .cliente-cabecalho{
+ background:linear-gradient(110deg,#8b350f 0%,#b54a13 58%,#d36b2a 100%)!important;
+ background-color:#9f390b!important;
+ border:0!important;
+ border-bottom:5px solid #f2a65e!important;
+ box-shadow:0 8px 24px #56240f30!important;
+}
+body .cliente-cabecalho .cliente-topo{
+ background:transparent!important;
+ max-width:1320px;
+ min-height:96px;
+ padding:16px 5%;
+}
+body .cliente-cabecalho .cliente-marca{
+ color:#fff4e7!important;
+ font-weight:800;
+ font-size:24px;
+}
+body .cliente-cabecalho .cliente-marca img{
+ width:58px;height:58px;object-fit:contain;
+ background:#fff5e8;border-radius:14px;padding:4px;
+}
+body .cliente-cabecalho .rp-cabecalho-nome{
+ color:#fff4e7!important;
+ font-weight:700;
+ font-size:14px;
+ background:#ffffff20;
+ border:1px solid #ffffff45;
+ border-radius:12px;
+ padding:12px 18px;
+}
+body .cliente-cabecalho:after{display:none!important;content:none!important}
+@media(max-width:560px){
+ body .cliente-cabecalho .cliente-topo{gap:10px;min-height:75px}
+ body .cliente-cabecalho .cliente-marca{font-size:19px}
+ body .cliente-cabecalho .cliente-marca img{width:43px;height:43px}
+ body .cliente-cabecalho .rp-cabecalho-nome{font-size:11px;padding:8px}
+}
