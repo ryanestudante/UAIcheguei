@@ -16,22 +16,27 @@
         <link rel="stylesheet" href="vitrine-ajustes.css">
     <link rel="stylesheet" href="logo-global.css">
 <style>
-.banner-sabor{position:relative;min-height:350px;margin:26px 0 38px;padding:34px 26px;display:grid;grid-template-columns:30% 40% 30%;align-items:center;overflow:hidden;border-radius:22px;background:#f4f0dd;color:#503820;isolation:isolate}
-.banner-sabor:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.36;background-image:repeating-radial-gradient(ellipse at 10% 20%,transparent 0 18px,#d5c6a3 19px 20px,transparent 21px 38px);background-size:260px 220px}
-.banner-foto-esq{width:260px;height:260px;border-radius:50%;object-fit:cover;justify-self:center;border:9px solid #fff7e9;box-shadow:0 14px 35px #67432624}
-.banner-centro{text-align:center;z-index:2;padding:0 10px}
-.banner-centro .banner-selo{font-size:11px;font-weight:800;letter-spacing:2px;color:#a15e2c}
-.banner-centro h1{font-size:clamp(36px,4.7vw,65px);line-height:.98;font-weight:800;letter-spacing:1px;color:#e96b00;margin:13px 0 17px}
-.banner-centro p{font-size:13px;color:#75624e;max-width:310px;margin:0 auto 18px}
-.banner-botao{display:inline-block;background:#5b422e;color:#fff;padding:12px 27px;text-decoration:none;font-weight:800;font-size:12px;letter-spacing:.5px}
-.banner-botao:hover{background:#e96b00}
+.banner-sabor{position:relative;min-height:405px;margin:25px 0 42px;padding:35px 28px;display:grid;grid-template-columns:30% 40% 30%;align-items:center;overflow:hidden;border-radius:28px;background:linear-gradient(125deg,#ffb24d 0%,#ff8a19 46%,#ed5900 100%);color:#fff;isolation:isolate;box-shadow:0 16px 38px #c45a1528}
+.banner-sabor:before{content:"";position:absolute;inset:-60px;z-index:-1;opacity:.5;background:repeating-radial-gradient(ellipse at 5% 10%,transparent 0 18px,#ffda9b75 19px 21px,transparent 22px 42px);transform:rotate(-10deg)}
+.banner-sabor:after{content:"";position:absolute;right:-85px;bottom:-180px;width:380px;height:380px;border:52px solid #ffd0796b;border-radius:50%;z-index:-1}
+.banner-foto-esq{width:min(100%,295px);aspect-ratio:1;object-fit:cover;border-radius:50%;justify-self:center;border:11px solid #fff7e5;box-shadow:14px 20px 0 #b9440980,0 20px 36px #8132084d;transform:rotate(-9deg);z-index:1}
+.banner-centro{text-align:center;z-index:3;padding:0 4px}
+.banner-centro .banner-selo{display:inline-block;font-size:11px;font-weight:800;letter-spacing:2.2px;color:#fff;background:#9b3609;padding:9px 14px;border-radius:30px;transform:rotate(-3deg)}
+.banner-centro h1{font-size:clamp(43px,5.5vw,78px);line-height:.91;font-weight:800;letter-spacing:-2px;color:#fff8e6;margin:22px 0 16px;text-shadow:5px 6px 0 #b83b04}
+.banner-centro p{font-size:14px;line-height:1.6;color:#fff8ee;max-width:315px;margin:0 auto 20px;font-weight:500}
+.banner-botao{display:inline-block;background:#fff6e5;color:#a53b0a;padding:14px 29px;text-decoration:none;font-weight:800;font-size:13px;letter-spacing:.6px;border-radius:8px;box-shadow:5px 6px 0 #a63a07;transition:transform .2s}
+.banner-botao:hover{transform:translateY(-3px);background:#fff}
 .banner-direita{height:100%;position:relative;display:flex;align-items:center;justify-content:center}
-.banner-foto-dir{width:245px;height:245px;object-fit:cover;border-radius:50%;border:9px solid #fff7e9;box-shadow:0 14px 35px #67432624;transform:translateX(42px)}
-.banner-desconto{position:absolute;right:15px;top:0;width:90px;height:90px;background:#ff8a00;border-radius:50%;color:white;display:flex;align-items:center;justify-content:center;text-align:center;font-size:20px;font-weight:800;line-height:1.05;box-shadow:0 8px 20px #c9761640}
-.banner-faixa{position:absolute;right:0;bottom:45px;width:125px;height:19px;background:#f58b08}
-.banner-pontos{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);color:#ad9c83;letter-spacing:5px;font-size:18px}
-@media(max-width:850px){.banner-sabor{grid-template-columns:28% 44% 28%;min-height:290px;padding:25px 12px}.banner-foto-esq{width:180px;height:180px}.banner-foto-dir{width:175px;height:175px}.banner-desconto{width:65px;height:65px;font-size:15px;right:0}.banner-centro h1{font-size:38px}}
-@media(max-width:600px){.banner-sabor{grid-template-columns:1fr 1fr;gap:12px;padding:22px 15px 35px}.banner-centro{grid-column:1/-1;grid-row:1}.banner-centro h1{font-size:42px}.banner-foto-esq{grid-column:1;grid-row:2;width:145px;height:145px}.banner-direita{grid-column:2;grid-row:2;height:150px}.banner-foto-dir{width:145px;height:145px;transform:none}.banner-desconto{top:-12px;right:0;width:60px;height:60px;font-size:13px}.banner-faixa{display:none}}
+.banner-foto-dir{width:min(100%,260px);aspect-ratio:1;object-fit:cover;border-radius:50%;border:10px solid #fff7e5;box-shadow:-12px 16px 0 #b9440970,0 18px 36px #8132084d;transform:rotate(10deg) translateX(20px)}
+.banner-desconto{position:absolute;right:4px;top:-5px;width:105px;height:105px;background:#fff4d8;border:5px dashed #f78c22;border-radius:50%;color:#c54b08;display:flex;align-items:center;justify-content:center;text-align:center;font-size:20px;font-weight:800;line-height:1.05;box-shadow:0 8px 18px #8b300b45;transform:rotate(12deg)}
+.banner-faixa{position:absolute;right:-25px;bottom:48px;width:145px;height:22px;background:#ffdd75;transform:rotate(-9deg);box-shadow:0 6px 0 #b84009}
+.banner-pontos{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);color:#fff4dc;letter-spacing:7px;font-size:18px}
+.banner-estrela{position:absolute;color:#ffe0a0;font-size:40px;line-height:1;z-index:2;text-shadow:2px 3px #bb4307}
+.banner-estrela.um{top:22px;left:24px;transform:rotate(-20deg)}
+.banner-estrela.dois{bottom:22px;left:35%;font-size:30px}
+.banner-estrela.tres{top:22%;right:32%;font-size:28px}
+@media(max-width:850px){.banner-sabor{grid-template-columns:27% 46% 27%;min-height:320px;padding:26px 15px}.banner-foto-esq{width:185px}.banner-foto-dir{width:170px}.banner-desconto{width:70px;height:70px;font-size:14px}.banner-centro h1{font-size:46px}}
+@media(max-width:600px){.banner-sabor{grid-template-columns:1fr 1fr;gap:15px;padding:28px 18px 42px}.banner-centro{grid-column:1/-1;grid-row:1}.banner-centro h1{font-size:53px}.banner-foto-esq{grid-column:1;grid-row:2;width:145px}.banner-direita{grid-column:2;grid-row:2;height:165px}.banner-foto-dir{width:140px;transform:rotate(10deg)}.banner-desconto{right:-3px;top:-15px;width:65px;height:65px;font-size:12px}.banner-faixa{display:none}.banner-estrela.tres{right:10%;top:12%}}
 </style></head>
     <body>
         <header class="cliente-cabecalho">
@@ -65,6 +70,7 @@
         <main class="explorar-novo">
             
                 <section class="banner-sabor" aria-label="Destaque UAIcheguei">
+<span class="banner-estrela um" aria-hidden="true">✦</span><span class="banner-estrela dois" aria-hidden="true">✳</span><span class="banner-estrela tres" aria-hidden="true">✦</span>
 <img class="banner-foto-esq" src="hamburguer.jpg" alt="Hambúrguer artesanal">
 <div class="banner-centro">
 <span class="banner-selo">SABOR DE VERDADE, UAI!</span>
