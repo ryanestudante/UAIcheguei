@@ -448,3 +448,32 @@ body {
 }
 .pagina-conta .acoes-formulario button:hover {background:#ad5726}
 .pagina-conta #aviso-conta {color:#a94f24}
+
+/* Topo da Minha conta igual ao restante do UAIcheguei */
+.cliente-cabecalho {
+    background:#f9dfc3!important;
+    border-bottom:0!important;
+}
+.cliente-cabecalho .cliente-topo {
+    max-width:1320px;
+    margin:auto;
+    background:transparent!important;
+}
+.cliente-cabecalho .cliente-menu {
+    background:#9f390b!important;
+    border-bottom:3px solid #d87832!important;
+}
+.cliente-cabecalho .cliente-menu a {
+    color:#fff!important;
+    background:transparent!important;
+    font-weight:700!important;
+}
+.cliente-cabecalho .cliente-menu a:hover {
+    background:#c75b21!important;
+    color:#fff!important;
+}
+.cliente-cabecalho .cliente-busca {
+    background:#fff3e8!important;
+    border:1px solid #e9a66d!important;
+    border-radius:30px;
+}
