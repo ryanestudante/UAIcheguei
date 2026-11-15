@@ -375,3 +375,76 @@ body {
 .cabeca-secao h2,.campo label {color:#634633}
 .acoes-formulario button {background:#c96a32}
 .acoes-formulario button:hover {background:#ad5726}
+
+/* Identidade visual completa da página Minha conta */
+.pagina-conta {
+    --conta-laranja:#c96a32;
+    --conta-marrom:#634633;
+    --conta-creme:#fff3e8;
+    --conta-pessego:#ffe5cc;
+    --conta-borda:#f0d6c1;
+    color:var(--conta-marrom);
+}
+.pagina-conta .caminho,.pagina-conta .caminho a {color:#a94f24}
+.pagina-conta .apresentacao {
+    background:linear-gradient(115deg,#fff3e8,#ffe5cc);
+    border:1px solid var(--conta-borda);
+    box-shadow:0 8px 25px #6346330b;
+}
+.pagina-conta .avatar {
+    background:var(--conta-laranja);
+    color:#fff;
+}
+.pagina-conta .etiqueta {color:#a94f24}
+.pagina-conta .apresentacao h1,.pagina-conta .menu-conta h2,
+.pagina-conta .cabeca-secao h2 {color:var(--conta-marrom)}
+.pagina-conta .apresentacao p,.pagina-conta .cabeca-secao p {color:#896f5d}
+.pagina-conta .menu-conta {
+    background:#fff;
+    border:1px solid var(--conta-borda);
+}
+.pagina-conta .menu-conta a {
+    color:var(--conta-marrom);
+    background:transparent;
+}
+.pagina-conta .menu-conta a:hover,
+.pagina-conta .menu-conta a.selecionado {
+    background:var(--conta-creme);
+    color:#a94f24;
+    box-shadow:inset 4px 0 0 var(--conta-laranja);
+}
+.pagina-conta .cartao-formulario {
+    background:#fff;
+    border:1px solid var(--conta-borda);
+}
+.pagina-conta .cabeca-secao {
+    border-bottom:1px solid var(--conta-borda);
+}
+.pagina-conta .cabeca-secao > span {
+    background:var(--conta-pessego);
+    border:1px solid var(--conta-borda);
+}
+.pagina-conta .campo label {color:var(--conta-marrom)}
+.pagina-conta .campo input {
+    background:#fff9f4;
+    border:1px solid var(--conta-borda);
+    color:var(--conta-marrom);
+}
+.pagina-conta .campo input:hover {border-color:#e8ad87}
+.pagina-conta .campo input:focus {
+    background:#fff;
+    border-color:var(--conta-laranja);
+    box-shadow:0 0 0 3px #c96a3224;
+}
+.pagina-conta .campo input::placeholder {color:#a58b7b}
+.pagina-conta .acoes-formulario {border-top:1px solid var(--conta-borda)}
+.pagina-conta .acoes-formulario p {color:#896f5d}
+.pagina-conta .cancelar {color:var(--conta-marrom)}
+.pagina-conta .cancelar:hover {color:var(--conta-laranja)}
+.pagina-conta .acoes-formulario button {
+    background:var(--conta-laranja);
+    color:#fff;
+    box-shadow:0 4px 12px #c96a3226;
+}
+.pagina-conta .acoes-formulario button:hover {background:#ad5726}
+.pagina-conta #aviso-conta {color:#a94f24}
