@@ -16,23 +16,22 @@
         <link rel="stylesheet" href="vitrine-ajustes.css">
     <link rel="stylesheet" href="logo-global.css">
 <style>
-.inicio-catalogo{padding:38px 0 8px}
-.inicio-catalogo-topo{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}
-.inicio-catalogo-topo h1{font-size:clamp(28px,4vw,45px);line-height:1.2;color:#4f3011;margin:8px 0}
-.inicio-catalogo-topo p{color:#886b5b;margin:0}
-.inicio-catalogo-link{color:#d95d10;font-weight:700;text-decoration:none;white-space:nowrap}
-.inicio-mosaico{display:grid;grid-template-columns:1.5fr 1fr 1fr;grid-template-rows:190px 190px;gap:15px}
-.inicio-mosaico a{position:relative;display:block;overflow:hidden;border-radius:20px;text-decoration:none;background:#e9d5c7}
-.inicio-mosaico a:first-child{grid-row:span 2}
-.inicio-mosaico img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
-.inicio-mosaico a:hover img{transform:scale(1.06)}
-.inicio-mosaico a:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#1c110cc9)}
-.inicio-mosaico span{position:absolute;bottom:17px;left:19px;z-index:1;color:#fff;font-size:19px;font-weight:800}
-.inicio-mosaico a:first-child span{font-size:27px}
-.inicio-atalhos{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
-.inicio-atalhos a{background:#fff;border:1px solid #f0d8c6;border-radius:30px;padding:11px 18px;color:#693c23;text-decoration:none;font-size:13px;font-weight:700}
-.inicio-atalhos a:hover{background:#fff0e5}
-@media(max-width:750px){.inicio-catalogo-topo{align-items:start;flex-direction:column}.inicio-mosaico{grid-template-columns:1fr 1fr;grid-template-rows:180px 150px 150px}.inicio-mosaico a:first-child{grid-column:span 2;grid-row:span 1}.inicio-mosaico span{font-size:15px}.inicio-mosaico a:first-child span{font-size:22px}}
+.banner-sabor{position:relative;min-height:350px;margin:26px 0 38px;padding:34px 26px;display:grid;grid-template-columns:30% 40% 30%;align-items:center;overflow:hidden;border-radius:22px;background:#f4f0dd;color:#503820;isolation:isolate}
+.banner-sabor:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.36;background-image:repeating-radial-gradient(ellipse at 10% 20%,transparent 0 18px,#d5c6a3 19px 20px,transparent 21px 38px);background-size:260px 220px}
+.banner-foto-esq{width:260px;height:260px;border-radius:50%;object-fit:cover;justify-self:center;border:9px solid #fff7e9;box-shadow:0 14px 35px #67432624}
+.banner-centro{text-align:center;z-index:2;padding:0 10px}
+.banner-centro .banner-selo{font-size:11px;font-weight:800;letter-spacing:2px;color:#a15e2c}
+.banner-centro h1{font-size:clamp(36px,4.7vw,65px);line-height:.98;font-weight:800;letter-spacing:1px;color:#e96b00;margin:13px 0 17px}
+.banner-centro p{font-size:13px;color:#75624e;max-width:310px;margin:0 auto 18px}
+.banner-botao{display:inline-block;background:#5b422e;color:#fff;padding:12px 27px;text-decoration:none;font-weight:800;font-size:12px;letter-spacing:.5px}
+.banner-botao:hover{background:#e96b00}
+.banner-direita{height:100%;position:relative;display:flex;align-items:center;justify-content:center}
+.banner-foto-dir{width:245px;height:245px;object-fit:cover;border-radius:50%;border:9px solid #fff7e9;box-shadow:0 14px 35px #67432624;transform:translateX(42px)}
+.banner-desconto{position:absolute;right:15px;top:0;width:90px;height:90px;background:#ff8a00;border-radius:50%;color:white;display:flex;align-items:center;justify-content:center;text-align:center;font-size:20px;font-weight:800;line-height:1.05;box-shadow:0 8px 20px #c9761640}
+.banner-faixa{position:absolute;right:0;bottom:45px;width:125px;height:19px;background:#f58b08}
+.banner-pontos{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);color:#ad9c83;letter-spacing:5px;font-size:18px}
+@media(max-width:850px){.banner-sabor{grid-template-columns:28% 44% 28%;min-height:290px;padding:25px 12px}.banner-foto-esq{width:180px;height:180px}.banner-foto-dir{width:175px;height:175px}.banner-desconto{width:65px;height:65px;font-size:15px;right:0}.banner-centro h1{font-size:38px}}
+@media(max-width:600px){.banner-sabor{grid-template-columns:1fr 1fr;gap:12px;padding:22px 15px 35px}.banner-centro{grid-column:1/-1;grid-row:1}.banner-centro h1{font-size:42px}.banner-foto-esq{grid-column:1;grid-row:2;width:145px;height:145px}.banner-direita{grid-column:2;grid-row:2;height:150px}.banner-foto-dir{width:145px;height:145px;transform:none}.banner-desconto{top:-12px;right:0;width:60px;height:60px;font-size:13px}.banner-faixa{display:none}}
 </style></head>
     <body>
         <header class="cliente-cabecalho">
@@ -65,24 +64,20 @@
         </header>
         <main class="explorar-novo">
             
-                <section class="inicio-catalogo">
-  <div class="inicio-catalogo-topo">
-    <div><span class="sobretitulo">DESCUBRA SEU PRÓXIMO PEDIDO</span><h1>O que vai querer hoje?</h1><p>Escolha um sabor e encontre sua próxima refeição.</p></div>
-    <a class="inicio-catalogo-link" href="categorias.html">Todas as categorias →</a>
-  </div>
-  <div class="inicio-mosaico">
-    <a href="categoria-mineiras.html"><img src="feijao-tropeiro.jpg" alt="Feijão tropeiro"><span>Comida mineira →</span></a>
-    <a href="categoria-pizzas.html"><img src="pizza-calabresa.jpg" alt="Pizza"><span>Pizzas →</span></a>
-    <a href="categoria-hamburgueres.html"><img src="hamburguer.jpg" alt="Hambúrguer"><span>Hambúrgueres →</span></a>
-    <a href="categoria-pao-de-queijo.html"><img src="pao-de-queijo.jpg" alt="Pão de queijo"><span>Quitandas →</span></a>
-    <a href="categoria-acai.html"><img src="acai.jpg" alt="Açaí"><span>Açaí →</span></a>
-  </div>
-  <nav class="inicio-atalhos" aria-label="Acessos rápidos">
-    <a href="ofertas.html">🔥 Ofertas</a>
-    <a href="restaurantes.html">🍽️ Restaurantes</a>
-    <a href="categoria-bebidas.html">🥤 Bebidas</a>
-    <a href="categoria-doces.html">🍰 Doces</a>
-  </nav>
+                <section class="banner-sabor" aria-label="Destaque UAIcheguei">
+<img class="banner-foto-esq" src="hamburguer.jpg" alt="Hambúrguer artesanal">
+<div class="banner-centro">
+<span class="banner-selo">SABOR DE VERDADE, UAI!</span>
+<h1>BATEU<br>A FOME?</h1>
+<p>Do lanche caprichado à comida mineira. Seu próximo pedido começa aqui!</p>
+<a class="banner-botao" href="categorias.html">VER CARDÁPIO →</a>
+</div>
+<div class="banner-direita">
+<img class="banner-foto-dir" src="pizza-calabresa.jpg" alt="Pizza de calabresa">
+<span class="banner-desconto">OFERTAS<br>DO DIA</span>
+<span class="banner-faixa" aria-hidden="true"></span>
+</div>
+<span class="banner-pontos" aria-hidden="true">•••••</span>
 </section>
 <section class="secao">
                     <div class="cabeca-secao">
