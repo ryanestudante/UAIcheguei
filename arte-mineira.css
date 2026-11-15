@@ -37,3 +37,29 @@ body{
 .categoria-cartao,.produto-categoria{border-bottom:1px solid #e9c8a9!important}
 .trilha,.cp-trilha{color:#895a39}
 @media(max-width:600px){body{background-size:auto,auto,auto,280px 220px!important}.destaque{background:#f7d2aa!important}}
+
+/* Segunda camada: menos branco, mais calor de Minas */
+html,body{background-color:#efd0ac!important}
+body{background-image:
+ radial-gradient(ellipse 650px 450px at 5% 8%,#f7a95d40,transparent 72%),
+ radial-gradient(ellipse 550px 520px at 95% 35%,#d7773b32,transparent 75%),
+ radial-gradient(ellipse 600px 480px at 0% 80%,#e6a56840,transparent 75%),
+ repeating-radial-gradient(ellipse at 45% 35%,transparent 0 42px,#9e5b2710 43px 44px,transparent 45px 86px)!important}
+.cliente-cabecalho,.cabecalho{background:#f9dfc1!important}
+.cliente-menu{background:#f5d1ac!important}
+.cliente-busca,.busca{background:#fff0dd!important;border-color:#dca978!important}
+.explorar-novo .secao,.vitrine-publica,.categorias,.categorias-pagina,.pagina-categoria,.cp-pagina{background:transparent!important}
+.card-produto,.card-restaurante,.produto-categoria,.categoria-cartao,.vitrine-card,.categoria,.escolha,.cp-painel,.detalhe-produto,.preco-painel,.infos-rapidas>div,.observacao-detalhe{
+ background-color:#f8ddbe!important;border-color:#dfb48b!important}
+.card-produto:nth-child(even),.card-restaurante:nth-child(even),.produto-categoria:nth-child(even),.categoria-cartao:nth-child(even),.vitrine-card:nth-child(even),.categoria:nth-child(even){background-color:#f4d2ae!important}
+.card-corpo,.produto-dados,.vitrine-info{background:transparent!important}
+.categorias-hero,.hero-interno,.faixa-navegacao,.chamada,.pagina-categoria .intro{background:#f0c296!important;border-color:#dfa66e!important}
+.categorias-aviso{background:#84491f!important}
+.categoria-emoji,.tag,.filtros a,.info-icone,.mini-label,.cp-quantidade{background-color:#f1bc87!important}
+.filtros a:hover,.categoria-emoji:hover{background-color:#eba568!important}
+.detalhe-info,.detalhe-foto,.cp-produto,.cp-resumo,.cp-itens{background-color:transparent}
+.rodape-uai,.rodape-simples,footer{background-color:#dba879!important}
+.rodape-final{background-color:#c99262!important}
+.destaque{background:linear-gradient(105deg,#f3c69c,#eea764)!important}
+.vitrine-publica .vitrine-cabecalho,.cabeca-secao,.titulo-secao{background:transparent!important}
+@media(prefers-reduced-motion:reduce){.card-produto,.card-restaurante,.produto-categoria,.categoria-cartao{transition:none}}
