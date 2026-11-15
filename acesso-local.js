@@ -200,7 +200,7 @@ if (formularioRecuperacao) {
     });
 }
 
-const painelSessao = document.getElementById("sessao-demo");
+const painelSessao = document.getElementById("sessao-conta");
 
 if (painelSessao) {
     try {
@@ -213,7 +213,7 @@ if (painelSessao) {
         painelSessao.hidden = true;
     }
 
-    const sair = document.getElementById("sair-demo");
+    const sair = document.getElementById("sair-conta");
     sair.addEventListener("click", () => {
         sessionStorage.removeItem(CHAVE_SESSAO);
         window.location.href = "principal.html";

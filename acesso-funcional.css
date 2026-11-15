@@ -122,56 +122,7 @@ form[hidden] {
     text-decoration: none;
 }
 
-.demonstracoes {
-    margin-top: 16px;
-    font-size: 12px;
-    color: #785f4d;
-}
-
-.demonstracoes summary {
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.demonstracoes a {
-    display: inline-block;
-    margin: 11px 14px 2px 0;
-    color: #a54b18;
-    font-weight: 600;
-    text-decoration: underline;
-}
-
-@media (max-width: 850px) {
-    .marca-formulario {
-        display: block;
-        width: 80px;
-        height: 80px;
-        object-fit: contain;
-        margin: 0 auto 18px;
-        padding: 6px;
-        background: #fff1de;
-        border-radius: 18px;
-    }
-}
-
-@media (max-width: 480px) {
-    .caixa-branca,
-    .form-box {
-        padding: 30px 22px !important;
-    }
-
-    .marca-formulario {
-        width: 70px;
-        height: 70px;
-    }
-
-    .codigo-recuperacao {
-        font-size: 12px;
-        letter-spacing: .6px;
-    }
-}
-
-.sessao-demo {
+.sessao-conta {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -185,16 +136,16 @@ form[hidden] {
     border-radius: 14px;
 }
 
-.sessao-demo[hidden] {
+.sessao-conta[hidden] {
     display: none;
 }
 
-.sessao-demo p {
+.sessao-conta p {
     margin: 0;
     font-size: 14px;
 }
 
-.sessao-demo button {
+.sessao-conta button {
     border: 0;
     border-radius: 9px;
     padding: 9px 17px;
@@ -205,7 +156,7 @@ form[hidden] {
 }
 
 @media (max-width: 540px) {
-    .sessao-demo {
+    .sessao-conta {
         flex-direction: column;
         align-items: flex-start;
         margin: 15px 4%;
