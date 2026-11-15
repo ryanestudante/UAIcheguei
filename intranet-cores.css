@@ -115,3 +115,44 @@ body:has(.adm-layout),body:has(.ent-layout),body:has(.rp-container){
  .rp-banner{padding:22px!important}
  .adm-nav a:hover,.ent-nav a:hover{transform:none}
 }
+
+/* Correção definitiva do painel administrativo: remover superfícies brancas */
+html:has(.adm-layout),html:has(.adm-layout) body,
+body:has(.adm-layout),body:has(.adm-layout) .adm-layout,
+body:has(.adm-layout) .adm-main{
+ background-color:#edc69d!important;
+ background-image:radial-gradient(ellipse 700px 500px at 100% 0%,#d77b3b40,transparent 75%),radial-gradient(ellipse 700px 500px at 0% 100%,#f9b56a50,transparent 75%)!important;
+}
+body:has(.adm-layout) .adm-main{background:transparent!important}
+body:has(.adm-layout) .adm-sidebar{background:linear-gradient(160deg,#a84412,#7d300f 65%,#57220e)!important}
+body:has(.adm-layout) .adm-topbar{
+ background:linear-gradient(110deg,#a73e0e,#d96c22)!important;
+ border:1px solid #a84718!important;border-radius:22px!important;
+ padding:26px 30px!important;box-shadow:0 12px 30px #81361025!important
+}
+body:has(.adm-layout) .adm-topbar h1,
+body:has(.adm-layout) .adm-topbar p,
+body:has(.adm-layout) .adm-topbar .adm-eyebrow{color:#fff0dd!important}
+body:has(.adm-layout) .adm-avatar{background:#f4c18d!important;color:#73300e!important}
+body:has(.adm-layout) .adm-box,
+body:has(.adm-layout) .adm-layout .uai-estatisticas .uai-card{
+ background:#f5d7b5!important;border-color:#d9a472!important;color:#593019!important
+}
+body:has(.adm-layout) .adm-layout .uai-estatisticas .uai-card:nth-child(even){background:#efc79d!important}
+body:has(.adm-layout) .adm-mini-indicadores>div,
+body:has(.adm-layout) .demo-metricas>div{
+ background:#ebc39b!important;border:1px solid #d9a472!important
+}
+body:has(.adm-layout) .demo-tabela th{background:#a74311!important;color:#fff0dd!important;border-color:#bb703b!important}
+body:has(.adm-layout) .demo-tabela td{background:#f6dfc5!important;border-color:#d9b38d!important;color:#563019!important}
+body:has(.adm-layout) .demo-tabela tbody tr:nth-child(even) td{background:#edc9a5!important}
+body:has(.adm-layout) .demo-tabela tbody tr:hover td{background:#e8b889!important}
+body:has(.adm-layout) .adm-gerencia-topo p,
+body:has(.adm-layout) .adm-box p{color:#75452a!important}
+body:has(.adm-layout) .adm-layout .uai-nota{
+ background:#efbd8e!important;color:#653012!important;
+ border:1px solid #dca06b!important;border-left:5px solid #a63c0e!important;
+ padding:15px 18px;border-radius:13px
+}
+body:has(.adm-layout) .adm-sair{border-top:1px solid #f4d0ac45}
+@media(max-width:600px){body:has(.adm-layout) .adm-topbar{padding:20px!important}}
