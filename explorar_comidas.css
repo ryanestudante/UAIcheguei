@@ -32,7 +32,7 @@ body  {
     margin-bottom: 22px
 }
 
-.trilha a  {
+.trilha a, .trilha > span:first-child {
     color: #ad5a28
 }
 

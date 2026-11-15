@@ -25,7 +25,7 @@ a {
     margin-bottom: 26px
 }
 
-.trilha a {
+.trilha a, .trilha > span:first-child {
     color: #b65a2b
 }
 

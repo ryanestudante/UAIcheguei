@@ -71,7 +71,7 @@ body   {
 
 .layout-conta   {
     display: grid;
-    grid-template-columns: 230px minmax(0,1fr);
+    grid-template-columns: 1fr;
     gap: 24px;
     align-items: start;
 }
