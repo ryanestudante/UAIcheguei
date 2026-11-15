@@ -90,3 +90,43 @@ body{background-image:
 .rodape-uai a:hover,footer a:hover{color:#ffd28b!important}
 .cp-painel,.detalhe-produto{border-top:4px solid #b84b10!important}
 @media(max-width:650px){.cliente-menu{background:#a83b09!important}.cabeca-secao h2,.titulo-secao h2{padding-left:10px}}
+
+/* Navegação redesenhada: barra integrada, sem pílulas claras */
+.cliente-cabecalho .cliente-menu{
+ background:#9f390b!important;
+ border:0!important;
+ border-bottom:3px solid #d87832!important;
+ padding:11px 5% 13px!important;
+ gap:5px 12px!important;
+ align-items:center;
+ box-shadow:inset 0 1px 0 #e8a26a55
+}
+.cliente-cabecalho .cliente-menu a{
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ background:transparent!important;
+ color:#fff5e9!important;
+ border-radius:9px!important;
+ padding:10px 16px!important;
+ font-size:13px!important;
+ font-weight:700!important;
+ letter-spacing:.1px;
+ border:1px solid transparent;
+ transition:background .18s,color .18s
+}
+.cliente-cabecalho .cliente-menu a:hover,
+.cliente-cabecalho .cliente-menu a:focus-visible{
+ background:#c75b21!important;
+ color:#fff!important;
+ border-color:#e18b55;
+ outline-offset:2px
+}
+.cliente-cabecalho .cliente-menu a[aria-current="page"]{
+ background:#f5c99e!important;
+ color:#79320c!important
+}
+@media(max-width:600px){
+ .cliente-cabecalho .cliente-menu{gap:3px 5px!important;padding:9px 3%!important}
+ .cliente-cabecalho .cliente-menu a{font-size:11px!important;padding:8px 10px!important}
+}
