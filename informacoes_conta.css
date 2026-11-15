@@ -297,3 +297,69 @@ body  {
     }
 
 }
+
+
+/* Paleta oficial UAIcheguei: laranja, creme e marrom */
+body {
+    background: #fffaf6;
+    color: #4f3011;
+}
+.apresentacao {
+    background: linear-gradient(115deg, #fff3ec, #ffe1c8);
+    border: 1px solid #f5d8c6;
+}
+.avatar, .acoes-formulario button {
+    background: #e15800;
+}
+.etiqueta, .caminho a {
+    color: #e15800;
+}
+.menu-conta {
+    background: #4f3011;
+    border-color: #4f3011;
+}
+.menu-conta h2 {
+    color: #ffffff;
+}
+.menu-conta a {
+    color: #fff3ec;
+}
+.menu-conta a:hover, .menu-conta .selecionado {
+    background: #e15800;
+    color: #ffffff;
+}
+.cartao-formulario {
+    background: #ffffff;
+    border-color: #f2d7c6;
+}
+.cabeca-secao > span {
+    background: #fff3ec;
+    border: 1px solid #ffe1c8;
+}
+.cabeca-secao {
+    border-bottom-color: #f2d7c6;
+}
+.cabeca-secao h2, .campo label {
+    color: #4f3011;
+}
+.cabeca-secao p {
+    color: #8c6b58;
+}
+.campo input {
+    background: #fff3ec;
+    border-color: #f2c9b1;
+    color: #4f3011;
+}
+.campo input:focus {
+    border-color: #e15800;
+    box-shadow: 0 0 0 3px #f2702930;
+}
+.acoes-formulario {
+    border-top-color: #f2d7c6;
+}
+.cancelar {
+    color: #4f3011;
+}
+.acoes-formulario button:hover {
+    background: #f27029;
+}
