@@ -23,7 +23,30 @@
             <h2>Entre e aproveite os sabores de Minas</h2>
             <p class="descricao">Entre na sua conta e encontre seus sabores favoritos.</p>
 
-            <form id="form-login">
+            <section class="recuperar-conta" id="recuperar">
+                <h2>Recuperar senha</h2>
+                <p>Informe o código de recuperação recebido ao criar sua conta.</p>
+                <form id="form-recuperacao">
+                    <label class="rotulo-acesso" for="email-recuperar">E-mail cadastrado</label>
+                    <input class="campo-form" id="email-recuperar" type="email" placeholder="Seu e-mail" autocomplete="email" required>
+
+                    <label class="rotulo-acesso" for="codigo">Código de recuperação</label>
+                    <input class="campo-form" id="codigo" type="text" placeholder="Código recebido no cadastro" autocomplete="off" required>
+
+                    <label class="rotulo-acesso" for="senha-recuperar">Nova senha</label>
+                    <input class="campo-form" id="senha-recuperar" type="password" placeholder="Pelo menos 8 caracteres" autocomplete="new-password" minlength="8" required>
+
+                    <label class="rotulo-acesso" for="confirmar-recuperar">Confirmar nova senha</label>
+                    <input class="campo-form" id="confirmar-recuperar" type="password" placeholder="Repita a nova senha" autocomplete="new-password" minlength="8" required>
+
+                    <button class="buton-entrar" type="submit">Redefinir senha</button>
+                    <p id="mensagem-recuperacao" class="mensagem-acesso" role="status" aria-live="polite"></p>
+                </form>
+                <p class="aviso-local">O código é fornecido no cadastro e não é enviado por e-mail.</p>
+                <a class="voltar-login" href="login.html">← Voltar ao login</a>
+            </section>
+            <div class="login-conteudo">
+                <form id="form-login">
                 <label class="rotulo-acesso" for="cpf">CPF</label>
                 <input class="campo-form" id="cpf" name="cpf" type="text" inputmode="numeric" maxlength="14" autocomplete="off" placeholder="000.000.000-00" required>
 
@@ -37,9 +60,10 @@
                 <p id="mensagem" class="mensagem-acesso" role="status" aria-live="polite"></p>
             </form>
 
-            <a class="esqueci" href="recuperar-senha.html">Esqueci minha senha</a>
+            <a class="esqueci" href="#recuperar">Esqueci minha senha</a>
             <a class="criar-conta" href="cadastro.html">Ainda não tem uma conta? <span>Criar conta</span></a>
             <p class="aviso-local">Seus dados de acesso ficam salvos neste dispositivo. Use uma senha exclusiva.</p>
+            </div>
         </section>
 
         <aside class="uai_imagem" aria-label="Identidade do UAIcheguei">

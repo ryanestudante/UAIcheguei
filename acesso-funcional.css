@@ -162,3 +162,45 @@ form[hidden] {
         margin: 15px 4%;
     }
 }
+
+.recuperar-conta {
+    display: none;
+    padding-top: 8px;
+}
+
+.recuperar-conta:target {
+    display: block;
+}
+
+.recuperar-conta:target ~ .login-conteudo {
+    display: none;
+}
+
+.recuperar-conta h2 {
+    font-size: 23px;
+    color: #a74b16;
+    margin-bottom: 12px;
+}
+
+.recuperar-conta > p {
+    color: #775f51;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.recuperar-conta form {
+    margin-top: 18px;
+}
+
+.recuperar-conta .voltar-login {
+    display: inline-block;
+    margin-top: 16px;
+    color: #ac511f;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.recuperar-conta .voltar-login:hover {
+    text-decoration: underline;
+}

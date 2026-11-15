@@ -1,6 +1,10 @@
 const CHAVE_CONTAS = "uaicheguei_contas_demo_v2";
 const CHAVE_SESSAO = "uaicheguei_sessao_demo_v2";
 
+if (document.getElementById("form-login") && new URLSearchParams(window.location.search).has("logout")) {
+    sessionStorage.removeItem(CHAVE_SESSAO);
+}
+
 
 const CONTAS_ANTIGAS = [
     { cpf: "12345678900", email: "cliente@gmail.com", senha: "123456", nome: "Cliente", pagina: "cliente.html" },
@@ -23,7 +27,8 @@ function lerContas() {
 }
 
 function mostrarAviso(texto, sucesso = false) {
-    const aviso = document.getElementById("mensagem");
+    const emRecuperacao = window.location.hash === "#recuperar" && document.getElementById("mensagem-recuperacao");
+    const aviso = emRecuperacao || document.getElementById("mensagem");
     if (!aviso) return;
     aviso.textContent = texto;
     aviso.classList.toggle("sucesso", sucesso);
@@ -230,10 +235,10 @@ if (formularioRecuperacao) {
         evento.preventDefault();
         if (!validarAmbiente()) return;
 
-        const email = document.getElementById("email").value.trim().toLowerCase();
+        const email = document.getElementById("email-recuperar").value.trim().toLowerCase();
         const codigo = document.getElementById("codigo").value.replace(/[^a-fA-F0-9]/g, "").toUpperCase();
-        const novaSenha = document.getElementById("senha").value;
-        const confirmar = document.getElementById("confirmar-senha").value;
+        const novaSenha = document.getElementById("senha-recuperar").value;
+        const confirmar = document.getElementById("confirmar-recuperar").value;
         const contas = lerContas();
         const conta = contas.find(item => item.email === email);
         const botao = formularioRecuperacao.querySelector("button[type='submit']");
@@ -272,22 +277,3 @@ if (formularioRecuperacao) {
     });
 }
 
-const painelSessao = document.getElementById("sessao-conta");
-
-if (painelSessao) {
-    try {
-        const sessao = JSON.parse(sessionStorage.getItem(CHAVE_SESSAO) || "null");
-        if (sessao && sessao.nome) {
-            document.getElementById("nome-sessao").textContent = sessao.nome;
-            painelSessao.hidden = false;
-        }
-    } catch {
-        painelSessao.hidden = true;
-    }
-
-    const sair = document.getElementById("sair-conta");
-    sair.addEventListener("click", () => {
-        sessionStorage.removeItem(CHAVE_SESSAO);
-        window.location.href = "principal.html";
-    });
-}
