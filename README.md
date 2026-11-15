@@ -24,4 +24,4 @@ Ao alterar o visual, edite os CSS existentes. **A ordem dos links para folhas de
 
 ## Sobre as contas
 
-As contas deste projeto são locais ao navegador. A página de recuperação apenas leva ao login e não muda a senha. Esta implementação não equivale a uma autenticação com servidor; não utilize dados pessoais ou senhas reais para testes.
+O login utiliza apenas condições simples (`if` e `else if`) para direcionar as quatro contas predefinidas às respectivas páginas. Não existe sessão, autorização no servidor ou cadastro persistente nessa implementação. A página de cadastro valida a confirmação da senha e informa que a criação de novas contas requer um servidor. A recuperação apenas retorna ao login, sem redefinir senhas. **Não use dados pessoais ou senhas reais nesse fluxo.**
