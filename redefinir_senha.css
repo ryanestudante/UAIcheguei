@@ -1,8 +1,8 @@
-*  {
+*   {
     box-sizing: border-box;
 }
 
-body  {
+body   {
     background-image: url(https://uploads.onecompiler.io/44g7ujbgc/1787313298296/ChatGPT%20Image%2021%20de%20ago.%20de%202026,%2008_45_55.png);
     margin: 0;
     min-height: 100vh;
@@ -13,7 +13,7 @@ body  {
     padding: 30px;
 }
 
-.container  {
+.container   {
     width: 100%;
     max-width: 1150px;
     min-height: 620px;
@@ -24,7 +24,7 @@ body  {
     box-shadow: 0 10px 35px rgba(79, 48, 17, 0.15);
 }
 
-.form-box  {
+.form-box   {
     width: 55%;
     padding: 55px 65px;
     position: relative;
@@ -33,7 +33,7 @@ body  {
     justify-content: center;
 }
 
-.voltar  {
+.voltar   {
     position: absolute;
     top: 30px;
     left: 40px;
@@ -43,39 +43,39 @@ body  {
     font-size: 14px;
 }
 
-.voltar:hover  {
+.voltar:hover   {
     color: #e15800;
 }
 
-h1  {
+h1   {
     color: #e15800;
     font-size: 32px;
     margin: 25px 0 5px;
     font-weight: 800;
 }
 
-.subtitulo  {
+.subtitulo   {
     color: #999;
     font-size: 13px;
     margin-bottom: 25px;
 }
 
-.etapa  {
+.etapa   {
     display: none;
 }
 
-.etapa.ativa  {
+.etapa.ativa   {
     display: block;
 }
 
-.descricao  {
+.descricao   {
     color: #4f3011;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-.campo-form  {
+.campo-form   {
     width: 100%;
     padding: 15px 18px;
     margin-bottom: 18px;
@@ -87,12 +87,12 @@ h1  {
     background: #fafafa;
 }
 
-.campo-form:focus  {
+.campo-form:focus   {
     border-color: #e15800;
     background: white;
 }
 
-.buton-entrar  {
+.buton-entrar   {
     background: #e15800;
     padding: 14px;
     border: none;
@@ -107,19 +107,19 @@ h1  {
     transition: 0.3s;
 }
 
-.buton-entrar:hover  {
+.buton-entrar:hover   {
     background: #c94d00;
     transform: translateY(-2px);
 }
 
-#mensagem  {
+#mensagem   {
     font-size: 13px;
     font-weight: 600;
     margin-top: 15px;
     color: red;
 }
 
-.imagem-box  {
+.imagem-box   {
     width: 45%;
     background: #f27029;
     display: flex;
@@ -128,39 +128,33 @@ h1  {
     padding: 35px;
 }
 
-.imagem-box img  {
+.imagem-box img   {
     width: 100%;
     max-width: 430px;
     object-fit: contain;
 }
 
-@media (max-width: 850px)  {
-    .container  {
+@media (max-width: 850px)   {
+    .container   {
         max-width: 550px;
     }
-
-    .form-box  {
+    .form-box   {
         width: 100%;
         padding: 65px 40px;
     }
-
-    .imagem-box  {
+    .imagem-box   {
         display: none;
     }
-
 }
 
-@media (max-width: 500px)  {
-    body  {
+@media (max-width: 500px)   {
+    body   {
         padding: 15px;
     }
-
-    .form-box  {
+    .form-box   {
         padding: 65px 25px 35px;
     }
-
-    h1  {
+    h1   {
         font-size: 26px;
     }
-
 }

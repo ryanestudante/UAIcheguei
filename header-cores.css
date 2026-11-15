@@ -1,69 +1,83 @@
-
-.cabecalho,
-.cliente-cabecalho {
+.cabecalho, .cliente-cabecalho  {
     background: #C96A32;
     border-bottom: 1px solid #AD5528;
     box-shadow: 0 5px 18px rgba(79, 48, 17, .16);
 }
 
-.cabecalho .marca,
-.cabecalho .menu a,
-.cliente-cabecalho .cliente-marca,
-.cliente-cabecalho .cliente-acoes a {
+.cabecalho .marca, .cabecalho .menu a, .cliente-cabecalho .cliente-marca, .cliente-cabecalho .cliente-acoes a  {
     color: #fff;
 }
 
-.cabecalho .menu a:hover,
-.cliente-cabecalho .cliente-acoes a:hover {
+.cabecalho .menu a:hover, .cliente-cabecalho .cliente-acoes a:hover  {
     color: #FFE1C7;
 }
 
-.cabecalho .botao-claro {
+.cabecalho .botao-claro  {
     background: #fff;
     color: #A94E21;
     border-color: #fff;
 }
 
-.cabecalho .botao-laranja {
+.cabecalho .botao-laranja  {
     background: #4F3011;
     border-color: #4F3011;
     color: #fff;
 }
 
-.cliente-cabecalho .cliente-menu a {
+.cliente-cabecalho .cliente-menu a  {
     background: rgba(255,255,255,.17);
     color: #fff;
 }
 
-.cliente-cabecalho .cliente-menu a:hover {
+.cliente-cabecalho .cliente-menu a:hover  {
     background: #4F3011;
     color: #fff;
 }
 
-.cliente-cabecalho .cliente-busca {
+.cliente-cabecalho .cliente-busca  {
     background: #fff;
     border-color: #fff;
 }
 
-.cliente-cabecalho .cliente-busca input {
+.cliente-cabecalho .cliente-busca input  {
     color: #4F3011;
 }
 
-
-.card-restaurante[id] {
+.card-restaurante[id]  {
     scroll-margin-top: 25px;
 }
 
-@media (max-width: 700px) {
-    .cabecalho .topo {
+@media (max-width: 700px)  {
+    .cabecalho .topo  {
         gap: 12px;
     }
 }
 
+.cliente-cabecalho {
+    background: #fff !important;
+    border-bottom: 1px solid #efdfd1 !important;
+    box-shadow: 0 3px 12px rgba(79,48,17,.06) !important
+}
 
-.cliente-cabecalho{background:#fff !important;border-bottom:1px solid #efdfd1 !important;box-shadow:0 3px 12px rgba(79,48,17,.06) !important}
-.cliente-cabecalho .cliente-marca,.cliente-cabecalho .cliente-acoes a{color:#4f3011 !important}
-.cliente-cabecalho .cliente-acoes a:hover{color:#c96a32 !important}
-.cliente-cabecalho .cliente-menu a{background:#fff3e9 !important;color:#4f3011 !important}
-.cliente-cabecalho .cliente-menu a:hover{background:#f5d5bd !important;color:#9f481d !important}
-.cliente-cabecalho .cliente-busca{background:#fffaf6 !important;border-color:#e9d6c8 !important}
+.cliente-cabecalho .cliente-marca,.cliente-cabecalho .cliente-acoes a {
+    color: #4f3011 !important
+}
+
+.cliente-cabecalho .cliente-acoes a:hover {
+    color: #c96a32 !important
+}
+
+.cliente-cabecalho .cliente-menu a {
+    background: #fff3e9 !important;
+    color: #4f3011 !important
+}
+
+.cliente-cabecalho .cliente-menu a:hover {
+    background: #f5d5bd !important;
+    color: #9f481d !important
+}
+
+.cliente-cabecalho .cliente-busca {
+    background: #fffaf6 !important;
+    border-color: #e9d6c8 !important
+}

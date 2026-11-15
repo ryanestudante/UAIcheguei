@@ -1,66 +1,57 @@
-.cabecalho,
-.cliente-cabecalho {
+.cabecalho, .cliente-cabecalho  {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
 }
 
-.cabecalho *,
-.cliente-cabecalho * {
+.cabecalho *, .cliente-cabecalho *  {
     box-sizing: border-box;
 }
 
-.cabecalho .topo,
-.cliente-cabecalho .cliente-topo {
+.cabecalho .topo, .cliente-cabecalho .cliente-topo  {
     width: 100%;
     max-width: 1320px;
     margin-inline: auto;
 }
 
-.cabecalho .marca,
-.cliente-cabecalho .cliente-marca {
+.cabecalho .marca, .cliente-cabecalho .cliente-marca  {
     min-width: 0;
     flex-shrink: 0;
 }
 
-.cabecalho .marca img,
-.cliente-cabecalho .cliente-marca img {
+.cabecalho .marca img, .cliente-cabecalho .cliente-marca img  {
     flex-shrink: 0;
 }
 
-.cliente-cabecalho .cliente-busca,
-.cliente-cabecalho .cliente-busca input {
+.cliente-cabecalho .cliente-busca, .cliente-cabecalho .cliente-busca input  {
     min-width: 0;
 }
 
-.cliente-cabecalho .cliente-menu {
+.cliente-cabecalho .cliente-menu  {
     max-width: 1320px;
     margin-inline: auto;
 }
 
-@media (max-width: 850px) {
-    .cabecalho .topo {
+@media (max-width: 850px)  {
+    .cabecalho .topo  {
         display: grid;
         grid-template-columns: minmax(0, 1fr) auto;
         align-items: center;
         gap: 12px 16px;
         padding: 14px 5%;
     }
-
-    .cabecalho .marca {
+    .cabecalho .marca  {
         grid-column: 1;
         grid-row: 1;
     }
-
-    .cabecalho .conta {
+    .cabecalho .conta  {
         grid-column: 2;
         grid-row: 1;
         display: flex;
         justify-content: flex-end;
         gap: 8px;
     }
-
-    .cabecalho .menu {
+    .cabecalho .menu  {
         grid-column: 1 / -1;
         grid-row: 2;
         display: flex;
@@ -73,8 +64,7 @@
         scrollbar-width: thin;
         -webkit-overflow-scrolling: touch;
     }
-
-    .cabecalho .menu a {
+    .cabecalho .menu a  {
         flex-shrink: 0;
         white-space: nowrap;
         padding: 8px 12px;
@@ -83,21 +73,18 @@
         color: #56351e;
         font-size: 13px;
     }
-
-    .cliente-cabecalho .cliente-topo {
+    .cliente-cabecalho .cliente-topo  {
         display: grid;
         grid-template-columns: minmax(0, 1fr) auto;
         align-items: center;
         gap: 12px;
         padding: 13px 5%;
     }
-
-    .cliente-cabecalho .cliente-marca {
+    .cliente-cabecalho .cliente-marca  {
         grid-column: 1;
         grid-row: 1;
     }
-
-    .cliente-cabecalho .cliente-acoes {
+    .cliente-cabecalho .cliente-acoes  {
         grid-column: 2;
         grid-row: 1;
         display: flex;
@@ -106,8 +93,7 @@
         gap: 7px;
         min-width: 0;
     }
-
-    .cliente-cabecalho .cliente-acoes a {
+    .cliente-cabecalho .cliente-acoes a  {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -122,12 +108,10 @@
         text-align: center;
         white-space: nowrap;
     }
-
-    .cliente-cabecalho .cliente-acoes a span {
+    .cliente-cabecalho .cliente-acoes a span  {
         display: inline !important;
     }
-
-    .cliente-cabecalho .cliente-busca {
+    .cliente-cabecalho .cliente-busca  {
         grid-column: 1 / -1;
         grid-row: 2;
         order: initial !important;
@@ -135,8 +119,7 @@
         max-width: none;
         margin: 0;
     }
-
-    .cliente-cabecalho .cliente-menu {
+    .cliente-cabecalho .cliente-menu  {
         display: flex !important;
         flex-wrap: nowrap !important;
         justify-content: flex-start !important;
@@ -147,50 +130,40 @@
         scrollbar-width: thin;
         padding: 10px 5% 12px;
     }
-
-    .cliente-cabecalho .cliente-menu a {
+    .cliente-cabecalho .cliente-menu a  {
         flex: 0 0 auto;
         white-space: nowrap;
     }
 }
 
-@media (max-width: 620px) {
-    .cabecalho .topo,
-    .cliente-cabecalho .cliente-topo {
+@media (max-width: 620px)  {
+    .cabecalho .topo, .cliente-cabecalho .cliente-topo  {
         padding: 12px 4%;
         gap: 10px;
     }
-
-    .cabecalho .marca,
-    .cliente-cabecalho .cliente-marca {
+    .cabecalho .marca, .cliente-cabecalho .cliente-marca  {
         font-size: 18px !important;
         gap: 6px;
     }
-
-    .cabecalho .marca img,
-    .cliente-cabecalho .cliente-marca img {
+    .cabecalho .marca img, .cliente-cabecalho .cliente-marca img  {
         width: 40px !important;
         height: 40px !important;
     }
-
-    .cabecalho .conta {
+    .cabecalho .conta  {
         grid-column: 1 / -1;
         grid-row: 2;
         justify-content: flex-start;
     }
-
-    .cabecalho .conta .botao {
+    .cabecalho .conta .botao  {
         min-height: 40px;
         padding: 9px 13px;
         font-size: 12px;
         border-radius: 10px;
     }
-
-    .cabecalho .menu {
+    .cabecalho .menu  {
         grid-row: 3;
     }
-
-    .cliente-cabecalho .cliente-acoes {
+    .cliente-cabecalho .cliente-acoes  {
         grid-column: 1 / -1;
         grid-row: 2;
         display: grid;
@@ -198,69 +171,54 @@
         width: 100%;
         gap: 7px;
     }
-
-    .cliente-cabecalho .cliente-acoes a {
+    .cliente-cabecalho .cliente-acoes a  {
         min-width: 0;
         white-space: normal;
         font-size: 12px !important;
         padding: 9px 6px;
     }
-
-    .cliente-cabecalho .cliente-busca {
+    .cliente-cabecalho .cliente-busca  {
         grid-row: 3;
     }
-
-    .cliente-cabecalho .cliente-menu {
+    .cliente-cabecalho .cliente-menu  {
         padding-inline: 4%;
     }
-
-    .cliente-cabecalho .cliente-menu a {
+    .cliente-cabecalho .cliente-menu a  {
         min-height: 36px;
         padding: 8px 11px;
         font-size: 12px;
     }
-
-    .cliente-cabecalho .rp-cabecalho-nome {
+    .cliente-cabecalho .rp-cabecalho-nome  {
         grid-column: 2;
         grid-row: 1;
         font-size: 11px;
         padding: 8px;
         text-align: center;
     }
-
-    .adm-topbar,
-    .ent-topo {
+    .adm-topbar, .ent-topo  {
         flex-wrap: wrap;
         gap: 12px;
     }
-
-    .adm-topbar > div:first-child,
-    .ent-topo > div:first-child {
+    .adm-topbar > div:first-child, .ent-topo > div:first-child  {
         min-width: 0;
     }
-
-    .ent-topo-direita {
+    .ent-topo-direita  {
         flex-wrap: wrap;
     }
 }
 
-@media (max-width: 380px) {
-    .cabecalho .marca,
-    .cliente-cabecalho .cliente-marca {
+@media (max-width: 380px)  {
+    .cabecalho .marca, .cliente-cabecalho .cliente-marca  {
         font-size: 16px !important;
     }
-
-    .cabecalho .marca img,
-    .cliente-cabecalho .cliente-marca img {
+    .cabecalho .marca img, .cliente-cabecalho .cliente-marca img  {
         width: 36px !important;
         height: 36px !important;
     }
-
-    .cliente-cabecalho .cliente-acoes a {
+    .cliente-cabecalho .cliente-acoes a  {
         font-size: 11px !important;
     }
-
-    .cliente-cabecalho .rp-cabecalho-nome {
+    .cliente-cabecalho .rp-cabecalho-nome  {
         font-size: 10px;
         padding: 7px;
     }

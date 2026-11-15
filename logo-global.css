@@ -1,1 +1,5 @@
-img[src*="logo"],.cliente-marca img,.marca img,.rodape-logo img{border-radius:18px!important;object-fit:contain;overflow:hidden}
+img[src*="logo"],.cliente-marca img,.marca img,.rodape-logo img {
+    border-radius: 18px!important;
+    object-fit: contain;
+    overflow: hidden
+}

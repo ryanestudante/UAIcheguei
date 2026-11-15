@@ -5,12 +5,35 @@ if (document.getElementById("form-login") && new URLSearchParams(window.location
     sessionStorage.removeItem(CHAVE_SESSAO);
 }
 
-
-const CONTAS_ANTIGAS = [
-    { cpf: "12345678900", email: "cliente@gmail.com", senha: "123456", nome: "Cliente", pagina: "cliente.html" },
-    { cpf: "98765432100", email: "dono@gmail.com", senha: "123456", nome: "Restaurante", pagina: "restaurante-painel.html" },
-    { cpf: "11122233344", email: "entregador@gmail.com", senha: "123456", nome: "Entregador", pagina: "entregador.html" },
-    { cpf: "12312312312", email: "admin@gmail.com", senha: "123456", nome: "Administrador", pagina: "administrador.html" }
+const CONTAS_PADRAO = [
+    {
+        cpf: "12345678900",
+        email: "cliente@gmail.com",
+        senha: "123456",
+        nome: "Cliente",
+        pagina: "cliente.html"
+    },
+    {
+        cpf: "98765432100",
+        email: "dono@gmail.com",
+        senha: "123456",
+        nome: "Restaurante",
+        pagina: "restaurante-painel.html"
+    },
+    {
+        cpf: "11122233344",
+        email: "entregador@gmail.com",
+        senha: "123456",
+        nome: "Entregador",
+        pagina: "entregador.html"
+    },
+    {
+        cpf: "12312312312",
+        email: "admin@gmail.com",
+        senha: "123456",
+        nome: "Administrador",
+        pagina: "administrador.html"
+    }
 ];
 
 function somenteNumeros(valor) {
@@ -29,7 +52,9 @@ function lerContas() {
 function mostrarAviso(texto, sucesso = false) {
     const emRecuperacao = window.location.hash === "#recuperar" && document.getElementById("mensagem-recuperacao");
     const aviso = emRecuperacao || document.getElementById("mensagem");
+
     if (!aviso) return;
+
     aviso.textContent = texto;
     aviso.classList.toggle("sucesso", sucesso);
 }
@@ -64,6 +89,7 @@ async function protegerSegredo(segredo, sal) {
 
 function validarAmbiente() {
     if (window.crypto && crypto.subtle && window.localStorage) return true;
+
     mostrarAviso("Abra o site em HTTPS, em um navegador atualizado, para usar o login e o cadastro.");
     return false;
 }
@@ -100,12 +126,12 @@ if (formularioCadastro) {
         }
 
         const contas = lerContas();
-        if (contas.some(conta => conta.email === email) || CONTAS_ANTIGAS.some(conta => conta.email === email)) {
+        if (contas.some(conta => conta.email === email) || CONTAS_PADRAO.some(conta => conta.email === email)) {
             mostrarAviso("Esse e-mail já foi cadastrado neste navegador. Faça login.");
             return;
         }
 
-        if (CONTAS_ANTIGAS.some(conta => conta.cpf === cpf)) {
+        if (CONTAS_PADRAO.some(conta => conta.cpf === cpf)) {
             mostrarAviso("Este CPF já está vinculado a outra conta.");
             return;
         }
@@ -149,7 +175,6 @@ if (formularioCadastro) {
     });
 }
 
-
 const formularioLogin = document.getElementById("form-login");
 
 if (formularioLogin) {
@@ -167,17 +192,17 @@ if (formularioLogin) {
             return;
         }
 
-        const contaAntiga = CONTAS_ANTIGAS.find(conta =>
+        const contaPadrao = CONTAS_PADRAO.find(conta =>
             conta.cpf === cpf && conta.email === email && conta.senha === senha
         );
 
-        if (contaAntiga) {
+        if (contaPadrao) {
             sessionStorage.setItem(CHAVE_SESSAO, JSON.stringify({
-                nome: contaAntiga.nome,
-                email: contaAntiga.email,
+                nome: contaPadrao.nome,
+                email: contaPadrao.email,
                 entrada: Date.now()
             }));
-            window.location.href = contaAntiga.pagina;
+            window.location.href = contaPadrao.pagina;
             return;
         }
 
@@ -204,7 +229,7 @@ if (formularioLogin) {
                     return;
                 }
             } else {
-                const cpfJaUsado = CONTAS_ANTIGAS.some(item => item.cpf === cpf);
+                const cpfJaUsado = CONTAS_PADRAO.some(item => item.cpf === cpf);
                 if (cpfJaUsado) {
                     mostrarAviso("CPF já vinculado a outra conta.");
                     return;

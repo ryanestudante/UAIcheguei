@@ -1,35 +1,35 @@
-*  {
+*   {
     box-sizing: border-box;
 }
 
-body  {
+body   {
     margin: 0;
     font-family: Poppins, Arial, sans-serif;
     background: #fffaf7;
     color: #432b1c;
 }
 
-.pagina-conta  {
+.pagina-conta   {
     max-width: 1300px;
     margin: auto;
     padding: 30px 5% 70px;
 }
 
-.pagina-conta a  {
+.pagina-conta a   {
     text-decoration: none;
 }
 
-.caminho  {
+.caminho   {
     font-size: 12px;
     color: #978376;
     margin-bottom: 22px;
 }
 
-.caminho a  {
+.caminho a   {
     color: #e15800;
 }
 
-.apresentacao  {
+.apresentacao   {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -39,7 +39,7 @@ body  {
     margin-bottom: 25px;
 }
 
-.avatar  {
+.avatar   {
     width: 66px;
     height: 66px;
     display: grid;
@@ -51,49 +51,49 @@ body  {
     flex-shrink: 0;
 }
 
-.etiqueta  {
+.etiqueta   {
     color: #e15800;
     font-size: 11px;
     font-weight: 800;
     letter-spacing: 1.2px;
 }
 
-.apresentacao h1  {
+.apresentacao h1   {
     margin: 4px 0;
     font-size: clamp(23px,3vw,32px);
 }
 
-.apresentacao p  {
+.apresentacao p   {
     margin: 0;
     color: #786357;
     font-size: 13px;
 }
 
-.layout-conta  {
+.layout-conta   {
     display: grid;
     grid-template-columns: 230px minmax(0,1fr);
     gap: 24px;
     align-items: start;
 }
 
-.menu-conta,.cartao-formulario  {
+.menu-conta,.cartao-formulario   {
     background: white;
     border: 1px solid #f1e2d8;
     border-radius: 19px;
     box-shadow: 0 8px 30px #6d34100b;
 }
 
-.menu-conta  {
+.menu-conta   {
     padding: 21px 14px;
 }
 
-.menu-conta h2  {
+.menu-conta h2   {
     font-size: 16px;
     padding: 0 12px;
     margin: 4px 0 17px;
 }
 
-.menu-conta a  {
+.menu-conta a   {
     display: block;
     padding: 13px 12px;
     color: #655044;
@@ -103,16 +103,16 @@ body  {
     font-weight: 600;
 }
 
-.menu-conta a:hover,.menu-conta .selecionado  {
+.menu-conta a:hover,.menu-conta .selecionado   {
     background: #fff0e5;
     color: #e15800;
 }
 
-.cartao-formulario  {
+.cartao-formulario   {
     padding: 32px;
 }
 
-.cabeca-secao  {
+.cabeca-secao   {
     display: flex;
     align-items: center;
     gap: 13px;
@@ -121,7 +121,7 @@ body  {
     margin-bottom: 24px;
 }
 
-.cabeca-secao > span  {
+.cabeca-secao > span   {
     width: 44px;
     height: 44px;
     border-radius: 12px;
@@ -131,45 +131,45 @@ body  {
     font-size: 23px;
 }
 
-.cabeca-secao h2  {
+.cabeca-secao h2   {
     margin: 0 0 4px;
     font-size: 20px;
 }
 
-.cabeca-secao p  {
+.cabeca-secao p   {
     margin: 0;
     color: #958075;
     font-size: 12px;
 }
 
-.cabeca-secao.entrega  {
+.cabeca-secao.entrega   {
     margin-top: 32px;
 }
 
-.grade-campos  {
+.grade-campos   {
     display: grid;
     grid-template-columns: repeat(2,minmax(0,1fr));
     gap: 20px;
 }
 
-.campo  {
+.campo   {
     display: flex;
     flex-direction: column;
     gap: 8px;
     min-width: 0;
 }
 
-.campo-grande  {
+.campo-grande   {
     grid-column: span 1;
 }
 
-.campo label  {
+.campo label   {
     font-size: 12px;
     font-weight: 700;
     color: #5d483c;
 }
 
-.campo input  {
+.campo input   {
     width: 100%;
     min-width: 0;
     padding: 13px 15px;
@@ -182,16 +182,16 @@ body  {
     color: #4f3011;
 }
 
-.campo input:focus  {
+.campo input:focus   {
     border-color: #e15800;
     box-shadow: 0 0 0 3px #e1580018;
 }
 
-.campo input::placeholder  {
+.campo input::placeholder   {
     color: #b5a59b;
 }
 
-.acoes-formulario  {
+.acoes-formulario   {
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -201,27 +201,27 @@ body  {
     padding-top: 24px;
 }
 
-.acoes-formulario p  {
+.acoes-formulario p   {
     color: #9a8477;
     font-size: 11px;
     max-width: 350px;
     line-height: 1.6;
 }
 
-.acoes-formulario > div  {
+.acoes-formulario > div   {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.cancelar  {
+.cancelar   {
     color: #6d5547;
     font-size: 13px;
     font-weight: 600;
     padding: 12px;
 }
 
-.acoes-formulario button  {
+.acoes-formulario button   {
     border: 0;
     border-radius: 11px;
     background: #e15800;
@@ -234,245 +234,333 @@ body  {
     white-space: nowrap;
 }
 
-.acoes-formulario button:hover  {
+.acoes-formulario button:hover   {
     background: #b94700;
 }
 
-#aviso-conta  {
+#aviso-conta   {
     color: #a34a00;
     font-size: 12px;
 }
 
-@media(max-width:800px)  {
-    .layout-conta  {
+@media(max-width:800px)   {
+    .layout-conta   {
         grid-template-columns: 1fr;
     }
-
-    .menu-conta  {
+    .menu-conta   {
         display: flex;
         flex-wrap: wrap;
         gap: 7px;
         align-items: center;
     }
-
-    .menu-conta h2  {
+    .menu-conta h2   {
         width: 100%;
     }
-
-    .menu-conta a  {
+    .menu-conta a   {
         margin: 0;
     }
-
 }
 
-@media(max-width:550px)  {
-    .pagina-conta  {
+@media(max-width:550px)   {
+    .pagina-conta   {
         padding: 20px 5% 40px;
     }
-
-    .apresentacao  {
+    .apresentacao   {
         padding: 22px;
     }
-
-    .avatar  {
+    .avatar   {
         width: 50px;
         height: 50px;
     }
-
-    .cartao-formulario  {
+    .cartao-formulario   {
         padding: 20px;
     }
-
-    .grade-campos  {
+    .grade-campos   {
         grid-template-columns: 1fr;
     }
-
-    .acoes-formulario  {
+    .acoes-formulario   {
         flex-direction: column;
         align-items: stretch;
     }
-
-    .acoes-formulario > div  {
+    .acoes-formulario > div   {
         justify-content: flex-end;
     }
-
 }
 
-
-body {
+body  {
     background: #fffaf6;
     color: #4f3011;
 }
-.apresentacao {
+
+.apresentacao  {
     background: linear-gradient(115deg, #fff3ec, #ffe1c8);
     border: 1px solid #f5d8c6;
 }
-.avatar, .acoes-formulario button {
+
+.avatar, .acoes-formulario button  {
     background: #e15800;
 }
-.etiqueta, .caminho a {
+
+.etiqueta, .caminho a  {
     color: #e15800;
 }
-.menu-conta {
+
+.menu-conta  {
     background: #4f3011;
     border-color: #4f3011;
 }
-.menu-conta h2 {
+
+.menu-conta h2  {
     color: #ffffff;
 }
-.menu-conta a {
+
+.menu-conta a  {
     color: #fff3ec;
 }
-.menu-conta a:hover, .menu-conta .selecionado {
+
+.menu-conta a:hover, .menu-conta .selecionado  {
     background: #e15800;
     color: #ffffff;
 }
-.cartao-formulario {
+
+.cartao-formulario  {
     background: #ffffff;
     border-color: #f2d7c6;
 }
-.cabeca-secao > span {
+
+.cabeca-secao > span  {
     background: #fff3ec;
     border: 1px solid #ffe1c8;
 }
-.cabeca-secao {
+
+.cabeca-secao  {
     border-bottom-color: #f2d7c6;
 }
-.cabeca-secao h2, .campo label {
+
+.cabeca-secao h2, .campo label  {
     color: #4f3011;
 }
-.cabeca-secao p {
+
+.cabeca-secao p  {
     color: #8c6b58;
 }
-.campo input {
+
+.campo input  {
     background: #fff3ec;
     border-color: #f2c9b1;
     color: #4f3011;
 }
-.campo input:focus {
+
+.campo input:focus  {
     border-color: #e15800;
     box-shadow: 0 0 0 3px #f2702930;
 }
-.acoes-formulario {
+
+.acoes-formulario  {
     border-top-color: #f2d7c6;
 }
-.cancelar {
+
+.cancelar  {
     color: #4f3011;
 }
-.acoes-formulario button:hover {
+
+.acoes-formulario button:hover  {
     background: #f27029;
 }
 
+.menu-conta  {
+    background: #634633;
+    border-color: #634633
+}
 
-.menu-conta {background:#634633;border-color:#634633}
-.menu-conta h2 {color:#fff9f4}
-.menu-conta a {color:#fff3e8}
-.menu-conta a:hover,.menu-conta .selecionado {background:#c96a32;color:#fff}
-.campo input {background:#fff3e8;border-color:#f0d6c1}
-.campo input:focus {border-color:#c96a32;box-shadow:0 0 0 3px #c96a3226}
-.cabeca-secao > span {background:#ffe5cc}
-.cabeca-secao h2,.campo label {color:#634633}
-.acoes-formulario button {background:#c96a32}
-.acoes-formulario button:hover {background:#ad5726}
+.menu-conta h2  {
+    color: #fff9f4
+}
 
+.menu-conta a  {
+    color: #fff3e8
+}
 
-.pagina-conta {
-    --conta-laranja:#c96a32;
-    --conta-marrom:#634633;
-    --conta-creme:#fff3e8;
-    --conta-pessego:#ffe5cc;
-    --conta-borda:#f0d6c1;
-    color:var(--conta-marrom);
+.menu-conta a:hover,.menu-conta .selecionado  {
+    background: #c96a32;
+    color: #fff
 }
-.pagina-conta .caminho,.pagina-conta .caminho a {color:#a94f24}
-.pagina-conta .apresentacao {
-    background:linear-gradient(115deg,#fff3e8,#ffe5cc);
-    border:1px solid var(--conta-borda);
-    box-shadow:0 8px 25px #6346330b;
-}
-.pagina-conta .avatar {
-    background:var(--conta-laranja);
-    color:#fff;
-}
-.pagina-conta .etiqueta {color:#a94f24}
-.pagina-conta .apresentacao h1,.pagina-conta .menu-conta h2,
-.pagina-conta .cabeca-secao h2 {color:var(--conta-marrom)}
-.pagina-conta .apresentacao p,.pagina-conta .cabeca-secao p {color:#896f5d}
-.pagina-conta .menu-conta {
-    background:#fff;
-    border:1px solid var(--conta-borda);
-}
-.pagina-conta .menu-conta a {
-    color:var(--conta-marrom);
-    background:transparent;
-}
-.pagina-conta .menu-conta a:hover,
-.pagina-conta .menu-conta a.selecionado {
-    background:var(--conta-creme);
-    color:#a94f24;
-    box-shadow:inset 4px 0 0 var(--conta-laranja);
-}
-.pagina-conta .cartao-formulario {
-    background:#fff;
-    border:1px solid var(--conta-borda);
-}
-.pagina-conta .cabeca-secao {
-    border-bottom:1px solid var(--conta-borda);
-}
-.pagina-conta .cabeca-secao > span {
-    background:var(--conta-pessego);
-    border:1px solid var(--conta-borda);
-}
-.pagina-conta .campo label {color:var(--conta-marrom)}
-.pagina-conta .campo input {
-    background:#fff9f4;
-    border:1px solid var(--conta-borda);
-    color:var(--conta-marrom);
-}
-.pagina-conta .campo input:hover {border-color:#e8ad87}
-.pagina-conta .campo input:focus {
-    background:#fff;
-    border-color:var(--conta-laranja);
-    box-shadow:0 0 0 3px #c96a3224;
-}
-.pagina-conta .campo input::placeholder {color:#a58b7b}
-.pagina-conta .acoes-formulario {border-top:1px solid var(--conta-borda)}
-.pagina-conta .acoes-formulario p {color:#896f5d}
-.pagina-conta .cancelar {color:var(--conta-marrom)}
-.pagina-conta .cancelar:hover {color:var(--conta-laranja)}
-.pagina-conta .acoes-formulario button {
-    background:var(--conta-laranja);
-    color:#fff;
-    box-shadow:0 4px 12px #c96a3226;
-}
-.pagina-conta .acoes-formulario button:hover {background:#ad5726}
-.pagina-conta #aviso-conta {color:#a94f24}
 
+.campo input  {
+    background: #fff3e8;
+    border-color: #f0d6c1
+}
 
-.cliente-cabecalho {
-    background:#f9dfc3!important;
-    border-bottom:0!important;
+.campo input:focus  {
+    border-color: #c96a32;
+    box-shadow: 0 0 0 3px #c96a3226
 }
-.cliente-cabecalho .cliente-topo {
-    max-width:1320px;
-    margin:auto;
-    background:transparent!important;
+
+.cabeca-secao > span  {
+    background: #ffe5cc
 }
-.cliente-cabecalho .cliente-menu {
-    background:#9f390b!important;
-    border-bottom:3px solid #d87832!important;
+
+.cabeca-secao h2,.campo label  {
+    color: #634633
 }
-.cliente-cabecalho .cliente-menu a {
-    color:#fff!important;
-    background:transparent!important;
-    font-weight:700!important;
+
+.acoes-formulario button  {
+    background: #c96a32
 }
-.cliente-cabecalho .cliente-menu a:hover {
-    background:#c75b21!important;
-    color:#fff!important;
+
+.acoes-formulario button:hover  {
+    background: #ad5726
 }
-.cliente-cabecalho .cliente-busca {
-    background:#fff3e8!important;
-    border:1px solid #e9a66d!important;
-    border-radius:30px;
+
+.pagina-conta  {
+    --conta-laranja: #c96a32;
+    --conta-marrom: #634633;
+    --conta-creme: #fff3e8;
+    --conta-pessego: #ffe5cc;
+    --conta-borda: #f0d6c1;
+    color: var(--conta-marrom);
+}
+
+.pagina-conta .caminho,.pagina-conta .caminho a  {
+    color: #a94f24
+}
+
+.pagina-conta .apresentacao  {
+    background: linear-gradient(115deg,#fff3e8,#ffe5cc);
+    border: 1px solid var(--conta-borda);
+    box-shadow: 0 8px 25px #6346330b;
+}
+
+.pagina-conta .avatar  {
+    background: var(--conta-laranja);
+    color: #fff;
+}
+
+.pagina-conta .etiqueta  {
+    color: #a94f24
+}
+
+.pagina-conta .apresentacao h1,.pagina-conta .menu-conta h2, .pagina-conta .cabeca-secao h2  {
+    color: var(--conta-marrom)
+}
+
+.pagina-conta .apresentacao p,.pagina-conta .cabeca-secao p  {
+    color: #896f5d
+}
+
+.pagina-conta .menu-conta  {
+    background: #fff;
+    border: 1px solid var(--conta-borda);
+}
+
+.pagina-conta .menu-conta a  {
+    color: var(--conta-marrom);
+    background: transparent;
+}
+
+.pagina-conta .menu-conta a:hover, .pagina-conta .menu-conta a.selecionado  {
+    background: var(--conta-creme);
+    color: #a94f24;
+    box-shadow: inset 4px 0 0 var(--conta-laranja);
+}
+
+.pagina-conta .cartao-formulario  {
+    background: #fff;
+    border: 1px solid var(--conta-borda);
+}
+
+.pagina-conta .cabeca-secao  {
+    border-bottom: 1px solid var(--conta-borda);
+}
+
+.pagina-conta .cabeca-secao > span  {
+    background: var(--conta-pessego);
+    border: 1px solid var(--conta-borda);
+}
+
+.pagina-conta .campo label  {
+    color: var(--conta-marrom)
+}
+
+.pagina-conta .campo input  {
+    background: #fff9f4;
+    border: 1px solid var(--conta-borda);
+    color: var(--conta-marrom);
+}
+
+.pagina-conta .campo input:hover  {
+    border-color: #e8ad87
+}
+
+.pagina-conta .campo input:focus  {
+    background: #fff;
+    border-color: var(--conta-laranja);
+    box-shadow: 0 0 0 3px #c96a3224;
+}
+
+.pagina-conta .campo input::placeholder  {
+    color: #a58b7b
+}
+
+.pagina-conta .acoes-formulario  {
+    border-top: 1px solid var(--conta-borda)
+}
+
+.pagina-conta .acoes-formulario p  {
+    color: #896f5d
+}
+
+.pagina-conta .cancelar  {
+    color: var(--conta-marrom)
+}
+
+.pagina-conta .cancelar:hover  {
+    color: var(--conta-laranja)
+}
+
+.pagina-conta .acoes-formulario button  {
+    background: var(--conta-laranja);
+    color: #fff;
+    box-shadow: 0 4px 12px #c96a3226;
+}
+
+.pagina-conta .acoes-formulario button:hover  {
+    background: #ad5726
+}
+
+.pagina-conta #aviso-conta  {
+    color: #a94f24
+}
+
+.cliente-cabecalho  {
+    background: #f9dfc3!important;
+    border-bottom: 0!important;
+}
+
+.cliente-cabecalho .cliente-topo  {
+    max-width: 1320px;
+    margin: auto;
+    background: transparent!important;
+}
+
+.cliente-cabecalho .cliente-menu  {
+    background: #9f390b!important;
+    border-bottom: 3px solid #d87832!important;
+}
+
+.cliente-cabecalho .cliente-menu a  {
+    color: #fff!important;
+    background: transparent!important;
+    font-weight: 700!important;
+}
+
+.cliente-cabecalho .cliente-menu a:hover  {
+    background: #c75b21!important;
+    color: #fff!important;
+}
+
+.cliente-cabecalho .cliente-busca  {
+    background: #fff3e8!important;
+    border: 1px solid #e9a66d!important;
+    border-radius: 30px;
 }
