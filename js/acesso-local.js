@@ -50,8 +50,7 @@ function lerContas() {
 }
 
 function mostrarAviso(texto, sucesso = false) {
-    const emRecuperacao = window.location.hash === "#recuperar" && document.getElementById("mensagem-recuperacao");
-    const aviso = emRecuperacao || document.getElementById("mensagem");
+    const aviso = document.getElementById("mensagem");
 
     if (!aviso) return;
 
@@ -147,10 +146,7 @@ if (formularioCadastro) {
             const salCpf = criarCodigo(16);
             const hashCpf = await protegerSegredo(cpf, salCpf);
             const sal = criarCodigo(16);
-            const salRecuperacao = criarCodigo(16);
-            const codigo = criarCodigo(12).toUpperCase();
             const hashSenha = await protegerSegredo(senha, sal);
-            const hashRecuperacao = await protegerSegredo(codigo, salRecuperacao);
 
             contas.push({
                 nome,
@@ -158,12 +154,9 @@ if (formularioCadastro) {
                 salCpf,
                 hashCpf,
                 sal,
-                hashSenha,
-                salRecuperacao,
-                hashRecuperacao
+                hashSenha
             });
             localStorage.setItem(CHAVE_CONTAS, JSON.stringify(contas));
-            document.getElementById("codigo-recuperacao").textContent = codigo.match(/.{1,4}/g).join("-");
             formularioCadastro.hidden = true;
             document.getElementById("cadastro-concluido").hidden = false;
             mostrarAviso("");
@@ -252,53 +245,3 @@ if (formularioLogin) {
         }
     });
 }
-
-const formularioRecuperacao = document.getElementById("form-recuperacao");
-
-if (formularioRecuperacao) {
-    formularioRecuperacao.addEventListener("submit", async evento => {
-        evento.preventDefault();
-        if (!validarAmbiente()) return;
-
-        const email = document.getElementById("email-recuperar").value.trim().toLowerCase();
-        const codigo = document.getElementById("codigo").value.replace(/[^a-fA-F0-9]/g, "").toUpperCase();
-        const novaSenha = document.getElementById("senha-recuperar").value;
-        const confirmar = document.getElementById("confirmar-recuperar").value;
-        const contas = lerContas();
-        const conta = contas.find(item => item.email === email);
-        const botao = formularioRecuperacao.querySelector("button[type='submit']");
-
-        if (novaSenha.length < 8) {
-            mostrarAviso("A nova senha precisa ter pelo menos 8 caracteres.");
-            return;
-        }
-        if (novaSenha !== confirmar) {
-            mostrarAviso("As duas senhas não são iguais.");
-            return;
-        }
-        if (!conta || codigo.length !== 24) {
-            mostrarAviso("Conta ou código de recuperação inválido.");
-            return;
-        }
-
-        botao.disabled = true;
-        try {
-            const hashCodigo = await protegerSegredo(codigo, conta.salRecuperacao);
-            if (hashCodigo !== conta.hashRecuperacao) {
-                mostrarAviso("Código de recuperação incorreto.");
-                return;
-            }
-
-            conta.sal = criarCodigo(16);
-            conta.hashSenha = await protegerSegredo(novaSenha, conta.sal);
-            localStorage.setItem(CHAVE_CONTAS, JSON.stringify(contas));
-            formularioRecuperacao.reset();
-            mostrarAviso("Senha alterada neste navegador. Volte para o login.", true);
-        } catch {
-            mostrarAviso("Não foi possível redefinir a senha neste navegador.");
-        } finally {
-            botao.disabled = false;
-        }
-    });
-}
-

@@ -1,11 +1,12 @@
 # UAIcheguei
 
-Site de delivery com identidade mineira, desenvolvido com HTML e CSS. O JavaScript é utilizado somente no login, no cadastro e na recuperação de senha integrada ao login.
+Site de delivery com identidade mineira, desenvolvido com HTML e CSS. O JavaScript é utilizado somente nas telas de login e cadastro.
 
 ## Estrutura
 
 - `index.html`: página inicial para visitantes.
 - `login.html` e `cadastro.html`: acesso e criação de conta.
+- `senha.html`: página estática que direciona de volta ao login, sem redefinir a senha.
 - `cliente.html`: página principal do cliente.
 - `admin.html`, `restaurante.html` e `entregador.html`: painéis.
 - Demais arquivos `.html` na raiz: categorias, produtos e fluxo de pedidos.
@@ -23,4 +24,4 @@ Ao alterar o visual, edite os CSS existentes. **A ordem dos links para folhas de
 
 ## Sobre as contas
 
-As contas e a recuperação de senha deste projeto são locais ao navegador. Esta implementação não equivale a uma autenticação com servidor; não utilize dados pessoais ou senhas reais para testes.
+As contas deste projeto são locais ao navegador. A página de recuperação apenas leva ao login e não muda a senha. Esta implementação não equivale a uma autenticação com servidor; não utilize dados pessoais ou senhas reais para testes.
