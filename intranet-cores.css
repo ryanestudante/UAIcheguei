@@ -1,0 +1,36 @@
+/* Paleta mineira compartilhada: painéis administrativo, entregador e restaurante */
+:root{--intra-fundo:#efd0ac;--intra-card:#f8dfc2;--intra-card-alt:#f2cfa9;--intra-laranja:#b7470b;--intra-laranja-escuro:#8d3109;--intra-terra:#563019;--intra-borda:#dbac7c}
+body:has(.adm-layout),body:has(.ent-layout),body:has(.rp-container){
+ background-color:var(--intra-fundo)!important;
+ background-image:radial-gradient(ellipse 550px 420px at 95% 10%,#d9793b25,transparent 75%),radial-gradient(ellipse 550px 480px at 0% 90%,#f9ae632c,transparent 75%)!important;
+ color:var(--intra-terra)
+}
+.adm-sidebar,.ent-sidebar{background:linear-gradient(165deg,#a9410c,#78300f)!important;border-right:1px solid #d98142!important;color:#fff0dd!important}
+.adm-brand,.adm-brand strong,.ent-marca,.ent-destaque{color:#fff2de!important}
+.adm-sidebar-label,.ent-label,.ent-perfil small{color:#f6c59d!important}
+.adm-nav a,.adm-sair,.ent-nav a,.ent-sidebar-final a{color:#ffe9d5!important}
+.adm-nav a:hover,.adm-nav a.ativo,.ent-nav a:hover,.ent-nav .ent-ativo{background:#f4c08d!important;color:#74300c!important}
+.ent-perfil{background:#ffffff17!important;border-color:#f0bd8a55!important}
+.adm-layout,.ent-layout,.rp-container{color:var(--intra-terra)!important}
+.adm-box,.adm-layout .uai-estatisticas .uai-card,.ent-indicador,.ent-card,.rp-numeros>div,.rp-card{
+ background:var(--intra-card)!important;border:1px solid var(--intra-borda)!important;
+ box-shadow:0 7px 24px #7c3b1715!important
+}
+.adm-layout .uai-estatisticas .uai-card:nth-child(even),.ent-indicador:nth-child(even),.rp-numeros>div:nth-child(even){background:var(--intra-card-alt)!important}
+.adm-topbar h1,.ent-topo h1,.rp-topo h1,.adm-secao-titulo h2,.ent-secao-topo h2,.rp-card h2{color:#653013!important}
+.adm-eyebrow,.adm-secao-titulo span,.ent-sobre,.rp-etiqueta,.rp-banner small{color:var(--intra-laranja)!important}
+.adm-avatar,.ent-avatar,.ent-usuario,.rp-logo{background:#b94b10!important;color:#fff3e5!important}
+.adm-btn,.adm-layout .uai-tabela button,.adm-layout .uai-tabela select,.rp-select{
+ background:#f3bd88!important;border:1px solid #d99a64!important;color:#77320e!important
+}
+.adm-btn:hover,.adm-layout .uai-tabela button:hover{background:#e8a66c!important}
+.adm-filtros input,.adm-filtros select,.adm-form input{background:#fff0dd!important;border-color:#dba977!important;color:#563019!important}
+.ent-demo,.ent-aviso,.rp-banner{background:#edbd8f!important;border:1px solid #d99c67!important;color:#653013!important}
+.rp-banner{background:linear-gradient(110deg,#f1c698,#e8a86e)!important;border-left:6px solid #a83b09!important}
+.rp-banner p,.rp-topo p,.rp-card p,.ent-topo p,.adm-topbar p{color:#77503a!important}
+.rp-numeros strong,.ent-indicador>strong{color:#a83b09!important}
+.ent-icone{background:#edb57e!important;color:#87320b!important}
+.rp-status{background:#fff0db!important;color:#75421e!important}
+.rp-pedido,.rp-produto{border-top-color:#dcb58d!important}
+.rp-container .cliente-cabecalho{background:#f1cda6!important}
+@media(max-width:650px){.adm-main,.ent-conteudo{padding-left:16px;padding-right:16px}}
