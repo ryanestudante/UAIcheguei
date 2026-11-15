@@ -156,3 +156,34 @@ body:has(.adm-layout) .adm-layout .uai-nota{
 }
 body:has(.adm-layout) .adm-sair{border-top:1px solid #f4d0ac45}
 @media(max-width:600px){body:has(.adm-layout) .adm-topbar{padding:20px!important}}
+
+/* Correção de largura e contraste — painel do administrador */
+html:has(.adm-layout),html:has(.adm-layout) body{margin:0!important;max-width:100%!important;overflow-x:hidden!important}
+body:has(.adm-layout) *,body:has(.adm-layout) *:before,body:has(.adm-layout) *:after{box-sizing:border-box}
+body:has(.adm-layout) .adm-layout{display:grid!important;grid-template-columns:250px minmax(0,1fr)!important;width:100%!important;max-width:100%!important;overflow:clip}
+body:has(.adm-layout) .adm-main{width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important;padding:28px clamp(16px,3vw,40px) 60px!important}
+body:has(.adm-layout) .adm-secao,body:has(.adm-layout) .adm-box,body:has(.adm-layout) .adm-topbar{min-width:0!important;max-width:100%!important}
+body:has(.adm-layout) .adm-layout .uai-estatisticas{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;width:100%!important;gap:14px!important}
+body:has(.adm-layout) .adm-layout .uai-estatisticas .uai-card{min-width:0!important;overflow-wrap:anywhere!important}
+body:has(.adm-layout) .adm-layout .uai-estatisticas strong{font-size:clamp(18px,2vw,28px)!important;overflow-wrap:anywhere}
+body:has(.adm-layout) .adm-box{overflow-x:auto!important}
+body:has(.adm-layout) .demo-tabela{width:100%!important;min-width:580px}
+body:has(.adm-layout) .adm-topbar{
+ background:linear-gradient(115deg,#a53c0b,#cb5b19 60%,#e48a3c)!important;
+ border:1px solid #ad4c1b!important;
+ border-radius:20px!important;
+ padding:26px!important;
+ box-shadow:0 12px 25px #78300c26!important
+}
+body:has(.adm-layout) .adm-topbar h1,
+body:has(.adm-layout) .adm-topbar p,
+body:has(.adm-layout) .adm-topbar .adm-eyebrow{color:#fff7ed!important}
+body:has(.adm-layout) .adm-topbar .adm-avatar{background:#f9d1a1!important;color:#78300c!important}
+body:has(.adm-layout) .adm-main{background:transparent!important}
+body:has(.adm-layout){background:#eec79f!important}
+body:has(.adm-layout) .adm-layout .uai-estatisticas .uai-card{background:#f3d1ab!important}
+body:has(.adm-layout) .adm-layout .uai-estatisticas .uai-card:nth-child(even){background:#e9bd8f!important}
+body:has(.adm-layout) .adm-box{background:#f2d2ae!important}
+@media(max-width:1100px){body:has(.adm-layout) .adm-layout .uai-estatisticas{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:850px){body:has(.adm-layout) .adm-layout{grid-template-columns:minmax(0,1fr)!important}body:has(.adm-layout) .adm-sidebar{position:relative!important;height:auto!important;min-height:0!important}body:has(.adm-layout) .adm-main{padding:22px 4% 50px!important}}
+@media(max-width:500px){body:has(.adm-layout) .adm-layout .uai-estatisticas{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}body:has(.adm-layout) .adm-topbar{padding:18px!important}body:has(.adm-layout) .demo-tabela{min-width:520px}}
