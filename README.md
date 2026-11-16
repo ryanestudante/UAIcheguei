@@ -4,17 +4,26 @@ Site de delivery com identidade mineira, desenvolvido com HTML e CSS. O JavaScri
 
 ## Estrutura
 
-- `index.html`: página inicial para visitantes.
-- `login.html` e `cadastro.html`: acesso e criação de conta.
-- `senha.html`: página estática que direciona de volta ao login, sem redefinir a senha.
-- `cliente.html`: página principal do cliente.
-- `admin.html`, `restaurante.html` e `entregador.html`: painéis.
-- Demais arquivos `.html` na raiz: categorias, produtos e fluxo de pedidos.
-- `css/global/`: estilos compartilhados, cabeçalhos, rodapés e responsividade.
-- `css/paginas/`: estilos específicos das páginas.
-- `css/paineis/`: estilos dos painéis de administração, restaurante e entregador.
-- `js/acesso-local.js`: lógica local das telas de acesso.
-- `img/`: imagens e logotipo.
+```text
+UAIcheguei/
+├── index.html               Página inicial
+├── *.html                   Demais páginas públicas e painéis
+├── css/
+│   ├── global/              Cabeçalhos, rodapés, cores e responsividade
+│   ├── paginas/             Estilos específicos de cada página
+│   └── paineis/             Estilos das intranets
+├── img/                     Logo, pratos e marcas dos restaurantes
+├── js/
+│   └── acesso-local.js      Login e avisos do cadastro
+├── .editorconfig            Padrões de formatação do editor
+└── README.md                Documentação
+```
+
+A tela `cadastro.html` usa `css/paginas/cadastro.css`. A página `senha.html` volta ao login, sem modificar senhas. Os painéis são `cliente.html`, `admin.html`, `restaurante.html` e `entregador.html`.
+
+Os HTML permanecem na raiz para **preservar as URLs já usadas no GitHub Pages**, inclusive links diretos de categorias, produtos e intranets. Não existe pasta `pages/` porque a mudança exigiria alterar os endereços públicos.
+
+Arquivos com nomes históricos, como `css/global/dados-demo.css` e `css/paginas/acesso-novo.css`, permanecem porque são carregados pelas páginas e podem influenciar o visual.
 
 ## Edição
 
