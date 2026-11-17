@@ -1,0 +1,14 @@
+UAIcheguei - versao com nomes de pastas simples
+
+Esse e o projeto completo. Abra index.html no navegador.
+
+estilos/geral    = CSS geral
+estilos/telas    = CSS das paginas
+estilos/painel   = CSS dos paineis
+imagens          = fotos, marcas e logo
+javascript       = arquivo JS do login e cadastro
+
+Os HTML ficaram na pasta principal.
+As referencias de HTML e CSS foram ajustadas para os novos nomes.
+Nao foi mudada a logica do site.
+Esta copia e separada da versao publicada no GitHub Pages.

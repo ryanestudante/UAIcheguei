@@ -8,22 +8,22 @@ Site de delivery com identidade mineira, desenvolvido com HTML e CSS. O JavaScri
 UAIcheguei/
 ├── index.html               Página inicial
 ├── *.html                   Demais páginas públicas e painéis
-├── css/
+├── estilos/
 │   ├── global/              Cabeçalhos, rodapés, cores e responsividade
 │   ├── paginas/             Estilos específicos de cada página
 │   └── paineis/             Estilos das intranets
-├── img/                     Logo, pratos e marcas dos restaurantes
-├── js/
+├── imagens/                     Logo, pratos e marcas dos restaurantes
+├── javascript/
 │   └── acesso-local.js      Login e avisos do cadastro
 ├── .editorconfig            Padrões de formatação do editor
 └── README.md                Documentação
 ```
 
-A tela `cadastro.html` usa `css/paginas/cadastro.css`. A página `senha.html` volta ao login, sem modificar senhas. Os painéis são `cliente.html`, `admin.html`, `restaurante.html` e `entregador.html`.
+A tela `cadastro.html` usa `estilos/telas/cadastro.css`. A página `senha.html` volta ao login, sem modificar senhas. Os painéis são `cliente.html`, `admin.html`, `restaurante.html` e `entregador.html`.
 
 Os HTML permanecem na raiz para **preservar as URLs já usadas no GitHub Pages**, inclusive links diretos de categorias, produtos e intranets. Não existe pasta `pages/` porque a mudança exigiria alterar os endereços públicos.
 
-Arquivos com nomes históricos, como `css/global/dados-demo.css` e `css/paginas/acesso-novo.css`, permanecem porque são carregados pelas páginas e podem influenciar o visual.
+Arquivos com nomes históricos, como `estilos/geral/dados-demo.css` e `estilos/telas/acesso-novo.css`, permanecem porque são carregados pelas páginas e podem influenciar o visual.
 
 ## Edição
 
